@@ -1,69 +1,57 @@
 export type SiteConfig = typeof siteConfig;
 
 export const siteConfig = {
-  name: "Next.js + NextUI",
-  description: "Make beautiful websites regardless of your design experience.",
+  name: "Baoren Liu's Website",
+  description: "I am a freshman studying at Northeastern University. You can learn more about me on this website.",
   navItems: [
     {
       label: "Home",
       href: "/",
     },
     {
-      label: "Docs",
-      href: "/docs",
+      label: "Projects",
+      href: "/projects",
     },
     {
-      label: "Pricing",
-      href: "/pricing",
-    },
-    {
-      label: "Blog",
-      href: "/blog",
+      label: "Education",
+      href: "/education",
     },
     {
       label: "About",
       href: "/about",
     },
+    {
+      label: "Contacts",
+      href: "/contacts",
+    },
   ],
   navMenuItems: [
     {
-      label: "Profile",
-      href: "/profile",
-    },
-    {
-      label: "Dashboard",
-      href: "/dashboard",
+      label: "Home",
+      href: "/",
     },
     {
       label: "Projects",
       href: "/projects",
     },
     {
-      label: "Team",
-      href: "/team",
+      label: "Education",
+      href: "/education",
     },
     {
-      label: "Calendar",
-      href: "/calendar",
+      label: "About",
+      href: "/about",
     },
     {
-      label: "Settings",
-      href: "/settings",
-    },
-    {
-      label: "Help & Feedback",
-      href: "/help-feedback",
-    },
-    {
-      label: "Logout",
-      href: "/logout",
+      label: "Contacts",
+      href: "/contacts",
     },
   ],
   links: {
     github: "https://github.com/RoboticReaper",
     instagram: "https://www.instagram.com/littleant2333/",
-    docs: "https://nextui.org",
     discord: "https://discord.com/users/1294767398972428391",
-    sponsor: "https://patreon.com/jrgarciadev",
+    projects: "/projects",
+    about: "about"
   },
 };

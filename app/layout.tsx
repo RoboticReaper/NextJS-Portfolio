@@ -2,7 +2,6 @@ import "@/styles/globals.css";
 import { Metadata, Viewport } from "next";
 import { Link } from "@nextui-org/link";
 import clsx from "clsx";
-
 import { Providers } from "./providers";
 
 import { siteConfig } from "@/config/site";
@@ -48,15 +47,8 @@ export default function RootLayout({
               {children}
             </main>
             <footer className="w-full flex items-center justify-center py-3">
-              <Link
-                isExternal
-                className="flex items-center gap-1 text-current"
-                href="https://nextui-docs-v2.vercel.app?utm_source=next-app-template"
-                title="nextui.org homepage"
-              >
-                <span className="text-xs text-slate-400">&copy; 2024 Baoren Liu. All rights reserved.</span>
-                <span className="text-xs text-slate-400">This site uses NextUI components, &copy; 2020 Next UI.</span>
-              </Link>
+              <span className="text-xs text-slate-400">&copy; 2024 Baoren Liu. All rights reserved. This site uses NextUI components.</span>
+
             </footer>
           </div>
         </Providers>
