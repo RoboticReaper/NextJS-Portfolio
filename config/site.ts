@@ -22,7 +22,7 @@ export const siteConfig = {
     },
     {
       label: "Contacts",
-      href: "/contacts",
+      href: "/#contacts",
     },
   ],
   navMenuItems: [

@@ -47,7 +47,7 @@ export default function RootLayout({
               {children}
             </main>
             <footer className="w-full flex items-center justify-center p-3">
-              <span className="text-xs text-slate-400">&copy; 2024 Baoren Liu. All rights reserved. This site uses NextUI components.</span>
+              <span className="text-xs text-slate-400 text-center">&copy; 2024 Baoren Liu. All rights reserved. This site uses NextUI components.</span>
             </footer>
           </div>
         </Providers>

@@ -5,7 +5,15 @@ import { button as buttonStyles } from "@nextui-org/theme";
 import { Divider } from "@nextui-org/divider";
 import { siteConfig } from "@/config/site";
 import { title, subtitle } from "@/components/primitives";
-import { GithubIcon } from "@/components/icons";
+import {
+  TwitterIcon,
+  GithubIcon,
+  DiscordIcon,
+  HeartFilledIcon,
+  SearchIcon,
+  InstagramIcon,
+  Logo,
+} from "@/components/icons";
 import { Image } from "@nextui-org/image";
 
 export default function Home() {
@@ -44,6 +52,9 @@ export default function Home() {
   return (
     <div>
       <section className="flex flex-col items-center justify-center gap-4 py-8 md:py-10">
+        <div className="inline-block">
+          <Image src="Baoren Liu Portrait.jpg" height={300} alt="My portrait" />
+        </div>
         <div className="inline-block max-w-xl text-center justify-center">
           <span className={title({ color: "violet" })}>Baoren Liu</span>
           <div className={subtitle({ class: "mt-4" })}>
@@ -155,6 +166,29 @@ export default function Home() {
               </div>
             </div>
           })}
+        </div>
+      </section>
+
+      <Divider className="my-4" />
+
+      <section className="flex flex-col items-center justify-center gap-4 py-8 md:py-10">
+        <div className="inline-block max-w-xl text-center justify-center">
+          <span className={title()} id="contacts">Contacts</span>
+        </div>
+
+        <div className="flex flex-wrap justify-center gap-2">
+          <Link isExternal aria-label="Instagram" href={siteConfig.links.instagram}>
+            <InstagramIcon className="text-default-500" />
+          </Link>
+          <Link isExternal aria-label="Discord" href={siteConfig.links.discord}>
+            <DiscordIcon className="text-default-500" />
+          </Link>
+          <Link isExternal aria-label="Github" href={siteConfig.links.github}>
+            <GithubIcon className="text-default-500" />
+          </Link>
+        </div>
+        <div className="flex flex-wrap justify-center gap-2">
+          Email: <Link href="mailto:liubaoren2006@gmail.com" isExternal>liubaoren2006@gmail.com</Link>
         </div>
       </section>
     </div>
