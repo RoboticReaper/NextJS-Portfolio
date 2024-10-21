@@ -1,18 +1,12 @@
-'use client'
 import { Link } from "@nextui-org/link";
-import { Input } from "@nextui-org/input";
 import { button as buttonStyles } from "@nextui-org/theme";
 import { Divider } from "@nextui-org/divider";
 import { siteConfig } from "@/config/site";
 import { title, subtitle } from "@/components/primitives";
 import {
-  TwitterIcon,
   GithubIcon,
   DiscordIcon,
-  HeartFilledIcon,
-  SearchIcon,
-  InstagramIcon,
-  Logo,
+  InstagramIcon
 } from "@/components/icons";
 import { Image } from "@nextui-org/image";
 

@@ -13,10 +13,6 @@ export const siteConfig = {
       href: "/projects",
     },
     {
-      label: "Education",
-      href: "/education",
-    },
-    {
       label: "About",
       href: "/about",
     },
@@ -35,16 +31,12 @@ export const siteConfig = {
       href: "/projects",
     },
     {
-      label: "Education",
-      href: "/education",
-    },
-    {
       label: "About",
       href: "/about",
     },
     {
       label: "Contacts",
-      href: "/contacts",
+      href: "/#contacts",
     },
   ],
   links: {
