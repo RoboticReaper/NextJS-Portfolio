@@ -27,40 +27,20 @@ import {
   InstagramIcon,
   Logo,
 } from "@/components/icons";
+import { Image } from "@nextui-org/image";
 
 export const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useReducer((current) => !current, false);
 
-  const searchInput = (
-    <Input
-      aria-label="Search"
-      classNames={{
-        inputWrapper: "bg-default-100",
-        input: "text-sm",
-      }}
-      endContent={
-        <Kbd className="hidden lg:inline-block" keys={["command"]}>
-          K
-        </Kbd>
-      }
-      labelPlacement="outside"
-      placeholder="Search..."
-      startContent={
-        <SearchIcon className="text-base text-default-400 pointer-events-none flex-shrink-0" />
-      }
-      type="search"
-    />
-  );
-
   return (
     <NextUINavbar maxWidth="xl" isMenuOpen={isMenuOpen} onMenuOpenChange={setIsMenuOpen} position="sticky">
       <NavbarContent className="basis-1/5 sm:basis-full" justify="start">
-        {/* <NavbarBrand as="li" className="gap-3 max-w-fit">
-          <NextLink className="flex justify-start items-center gap-1" href="/">
-            <Logo />
+        <NavbarBrand as="li" className="gap-3 max-w-fit min-w-fit">
+          <NextLink className="flex justify-start items-center gap-2 min-w-fit" href="/" onClick={()=>{if(isMenuOpen)setIsMenuOpen()}}>
+            <Image src="logo.svg" width={36} height={36} radius="none"/>
             <p className="font-bold text-inherit">Baoren</p>
           </NextLink>
-        </NavbarBrand> */}
+        </NavbarBrand>
         <ul className="hidden sm:flex gap-4 justify-start ml-2">
           {siteConfig.navItems.map((item) => (
             <NavbarItem key={item.href}>

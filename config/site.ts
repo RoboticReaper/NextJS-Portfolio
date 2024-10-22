@@ -5,10 +5,6 @@ export const siteConfig = {
   description: "I am a freshman studying at Northeastern University. You can learn more about me on this website.",
   navItems: [
     {
-      label: "Home",
-      href: "/",
-    },
-    {
       label: "Projects",
       href: "/projects",
     },
@@ -22,10 +18,6 @@ export const siteConfig = {
     },
   ],
   navMenuItems: [
-    {
-      label: "Home",
-      href: "/",
-    },
     {
       label: "Projects",
       href: "/projects",
