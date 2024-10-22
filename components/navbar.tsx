@@ -41,7 +41,7 @@ export const Navbar = () => {
             <p className="font-bold text-inherit">Baoren</p>
           </NextLink>
         </NavbarBrand>
-        <div className="hidden sm:flex gap-4 justify-start ml-2">
+        <ul className="hidden sm:flex gap-4 justify-start ml-2">
           {siteConfig.navItems.map((item) => (
               <NavbarItem key={item.href} as="li">
                 <NextLink
@@ -56,7 +56,7 @@ export const Navbar = () => {
                 </NextLink>
               </NavbarItem>
           ))}
-        </div>
+        </ul>
       </NavbarContent>
 
       <NavbarContent
