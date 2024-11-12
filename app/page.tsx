@@ -9,6 +9,7 @@ import {
   InstagramIcon
 } from "@/components/icons";
 import { Image } from "@nextui-org/image";
+import Skills from "@/components/skills";
 
 export default function Home() {
 
@@ -144,23 +145,7 @@ export default function Home() {
           <span className={title()}>Skills</span>
         </div>
 
-        <div className="flex flex-wrap justify-center gap-2">
-          {languages.map((item) => {
-            return <div className="inline-block max-w-md text-center justify-center p-4" key={item.language}>
-              <div className="text-base text-center justify-center">
-                {item.language}
-              </div>
-              <div className="inline-block m-2">
-                <Image
-                  width={100}
-                  height={100}
-                  loading="lazy"
-                  alt={"Logo of " + item.language}
-                  src={item.img} />
-              </div>
-            </div>
-          })}
-        </div>
+        <Skills />
       </section>
 
       <Divider className="my-4" />
