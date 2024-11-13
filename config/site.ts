@@ -36,6 +36,7 @@ export const siteConfig = {
     instagram: "https://www.instagram.com/littleant2333/",
     discord: "https://discord.com/users/1294767398972428391",
     projects: "/projects",
-    about: "/about"
+    about: "/about",
+    resume: "/Baoren Liu Resume v2.pdf"
   },
 };

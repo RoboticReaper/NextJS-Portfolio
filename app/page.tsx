@@ -145,7 +145,7 @@ export default function Home() {
           <span className={title()}>Skills</span>
         </div>
 
-        <Skills />
+        <Skills alignment="center"/>
       </section>
 
       <Divider className="my-4" />

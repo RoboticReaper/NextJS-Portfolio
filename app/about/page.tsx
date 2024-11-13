@@ -1,8 +1,11 @@
+'use client'
 import { title, subtitle } from "@/components/primitives";
 import { Image } from "@nextui-org/image";
 import { Link } from "@nextui-org/link";
 import { siteConfig } from "@/config/site";
-import Skills from "@/components/skills";
+import { Tabs, Tab } from "@nextui-org/tabs";
+import { Card, CardBody } from "@nextui-org/card";
+import { button as buttonStyles } from "@nextui-org/theme";
 
 export default function AboutPage() {
   return (
@@ -27,7 +30,7 @@ export default function AboutPage() {
             <h2 className={subtitle()}>Related Experience</h2>
             <ul className="list-disc list-outside grid gap-2">
               <li>Leader for many projects in the <Link href="https://lexyouthstem.org/" isExternal>Lexington Youth STEAM Team</Link> from 2020 to 2024,
-                and volunteered nearly 400 hours on projects like website development, data analysis, and event organization to engage with the community.</li>
+                and volunteered nearly 400 hours on projects like website development, data analysis, and event organization to create impact on the community.</li>
               <li>Interned at <Link href="https://www.massgeneralbrigham.org/en/about/careers/working-here-assembly-row" isExternal>Mass General Brigham</Link> to
                 work on utilizing Electronic Health Record data (MIMIC-IV) and Retrieval Augmented Generation with Generative AI to help diagnose patients based on structured and unstructured data.</li>
               <li>Researching with <Link href="https://www.massgeneral.org/" isExternal>Mass General Hospital</Link> to quantify pain measurements scientifically</li>
@@ -35,13 +38,44 @@ export default function AboutPage() {
 
             </ul>
           </div>
-          <div className="text-left text-base w-full mt-10 lg:px-12 xl:px-16">
-            <h2 className={subtitle()}>Skills</h2>
-            <Skills />
-          </div>
+          <Link
+            className={`${buttonStyles({
+              color: "primary",
+              radius: "full",
+              variant: "shadow",
+            })} m-8`}
+            href={siteConfig.links.resume}
+            isExternal
+          >
+            View Resume
+          </Link>
           <div className="text-left text-base w-full mt-10 lg:px-12 xl:px-16">
             <h2 className={subtitle()}>Hobbies</h2>
-            Coming
+            <div className="flex w-full flex-col">
+              <Tabs aria-label="Options">
+                <Tab key="sports" title="Sports">
+                  <Card>
+                    <CardBody>
+                      I like to play tennis. 
+                    </CardBody>
+                  </Card>
+                </Tab>
+                <Tab key="games" title="Video Games">
+                  <Card>
+                    <CardBody>
+                      Rocket League, PUBG, Genshin Impact.
+                    </CardBody>
+                  </Card>
+                </Tab>
+                <Tab key="music" title="Musics">
+                  <Card>
+                    <CardBody>
+                      I listen to these musics.
+                    </CardBody>
+                  </Card>
+                </Tab>
+              </Tabs>
+            </div>
           </div>
         </main>
       </section>

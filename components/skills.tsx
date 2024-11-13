@@ -1,7 +1,7 @@
 
 import { Image } from "@nextui-org/image";
 
-export default function Skills() {
+export default function Skills({alignment}:{alignment:string}) {
     const languages = [
         {
           language: "Python",
@@ -34,7 +34,7 @@ export default function Skills() {
       ]
 
     return (
-        <div className="flex flex-wrap justify-center gap-2">
+        <div className={`flex flex-wrap justify-${alignment} gap-2`}>
           {languages.map((item) => {
             return <div className="inline-block max-w-md text-center justify-center p-4" key={item.language}>
               <div className="text-base text-center justify-center">
