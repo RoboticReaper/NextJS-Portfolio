@@ -6,8 +6,13 @@ import { siteConfig } from "@/config/site";
 import { Tabs, Tab } from "@nextui-org/tabs";
 import { Card, CardBody } from "@nextui-org/card";
 import { button as buttonStyles } from "@nextui-org/theme";
+import { Button } from "@nextui-org/button";
 
 export default function AboutPage() {
+  function runDB(){
+    fetch('/api/coc').then(res => res.json()).then(data => console.log(data))
+  }
+
   return (
     <div>
       <h1 className={title()}>About</h1>
@@ -49,6 +54,7 @@ export default function AboutPage() {
           >
             View Resume
           </Link>
+          {/* <Button onClick={runDB}>DB</Button> */}
           <div className="text-left text-base w-full mt-10 lg:px-12 xl:px-16">
             <h2 className={subtitle()}>Hobbies</h2>
             <div className="flex w-full flex-col">
