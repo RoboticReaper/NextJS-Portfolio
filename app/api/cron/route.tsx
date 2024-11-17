@@ -1,7 +1,7 @@
 import { NextResponse } from "next/server";
 import { sql } from '@vercel/postgres';
 
-export async function PUT(request: Request) {
+export async function GET(request: Request) {
     if(request.headers.get('Authorization') !== `Bearer ${process.env.CRON_SECRET}`) {
         return NextResponse.json({ message: 'unauthorized' }, { status: 401 });
     } else {
