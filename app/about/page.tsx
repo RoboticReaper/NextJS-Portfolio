@@ -10,9 +10,15 @@ import { Button } from "@nextui-org/button";
 import { useEffect } from "react";
 
 export default function AboutPage() {
-  
+
   useEffect(()=>{
     fetch('/api/coc').then(res => res.json()).then(data => console.log(data))
+
+    fetch('https://api.clashofclans.com/v1/players/%23LY8L20QQR', {
+      headers: {
+        'Authorization': `Bearer ${process.env.COC_API_KEY}`
+      }
+  }).then(res => res.json()).then(data => console.log(data))
   },[])
 
 
