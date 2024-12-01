@@ -11,7 +11,7 @@ export async function GET(request: Request) {
               'Authorization': `Bearer ${process.env.COC_API_KEY}`
             }
         }).then(res => res.json()).then(data => console.log(data))
-
+        
         sql`INSERT INTO clashofclans (name, townhall) VALUES ('test', ${JSON.stringify(cocData)})`
     
         return NextResponse.json({ message: 'success' });
