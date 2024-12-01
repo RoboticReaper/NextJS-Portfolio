@@ -6,9 +6,13 @@ export async function GET(request: Request) {
     if(request.headers.get('Authorization') !== `Bearer ${process.env.CRON_SECRET}`) {
         return NextResponse.json({ message: 'unauthorized'}, { status: 401 });
     } else {
-        
+        let cocData = await fetch('https://api.clashofclans.com/v1/players/%23LY8L20QQR', {
+            headers: {
+              'Authorization': `Bearer ${process.env.COC_API_KEY}`
+            }
+        }).then(res => res.json()).then(data => console.log(data))
 
-        sql`INSERT INTO clashofclans (name, townhall) VALUES ('test', ${epoch})`
+        sql`INSERT INTO clashofclans (name, townhall) VALUES ('test', ${JSON.stringify(cocData)})`
     
         return NextResponse.json({ message: 'success' });
     }
