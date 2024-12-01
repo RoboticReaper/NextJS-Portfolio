@@ -10,7 +10,7 @@ export async function GET(request: Request) {
             headers: {
               'Authorization': `Bearer ${process.env.COC_API_KEY}`
             }
-        }).then(res => res.json()).catch((err) => {return NextResponse.json({message: "coc failed", err})})
+        }).then(res => res.json())
 
         sql`INSERT INTO clashofclans (name, townhall) VALUES ('test', ${JSON.stringify(cocData)})`
     
