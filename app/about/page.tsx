@@ -7,11 +7,14 @@ import { Tabs, Tab } from "@nextui-org/tabs";
 import { Card, CardBody } from "@nextui-org/card";
 import { button as buttonStyles } from "@nextui-org/theme";
 import { Button } from "@nextui-org/button";
+import { useEffect } from "react";
 
 export default function AboutPage() {
-  function runDB(){
+  
+  useEffect(()=>{
     fetch('/api/coc').then(res => res.json()).then(data => console.log(data))
-  }
+  },[])
+
 
   return (
     <div>
@@ -70,6 +73,7 @@ export default function AboutPage() {
                   <Card>
                     <CardBody>
                       Rocket League, PUBG, Genshin Impact.
+
                     </CardBody>
                   </Card>
                 </Tab>
