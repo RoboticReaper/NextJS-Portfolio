@@ -6,14 +6,20 @@ import { siteConfig } from "@/config/site";
 import { Tabs, Tab } from "@nextui-org/tabs";
 import { Card, CardBody } from "@nextui-org/card";
 import { button as buttonStyles } from "@nextui-org/theme";
-import { Button } from "@nextui-org/button";
-import { useEffect } from "react";
+import { Skeleton, Button } from "@nextui-org/react";
+import { useEffect, useState } from "react";
 
 export default function AboutPage() {
+  const [cocLoaded, setCocLoaded] = useState(false);
+  const [cocData, setCocData] = useState();
 
-  useEffect(()=>{
-    fetch('/api/coc').then(res => res.json()).then(data => console.log(data))
-  },[])
+  useEffect(() => {
+    fetch('/api/coc').then(res => res.json()).then((data)=>{
+      data = data.rows[0]
+      setCocData(data)
+      setCocLoaded(true)
+    })
+  }, [])
 
 
   return (
@@ -65,13 +71,33 @@ export default function AboutPage() {
                 <Tab key="sports" title="Sports">
                   <Card>
                     <CardBody>
-                      I like to play tennis. 
+                      I like to play tennis.
                     </CardBody>
                   </Card>
                 </Tab>
                 <Tab key="games" title="Video Games">
                   <Card>
                     <CardBody>
+                      <div className="flex flex-row gap-3">
+                        <Card className="w-[200px] space-y-4 p-4" radius="lg">
+                          <Image isLoading={!cocLoaded} src="cocIcon.jpg" alt="CoC icon"/>
+                          <div className="pb-4">
+                            {!cocData ? <Skeleton isLoaded={cocLoaded} className="w-full rounded-lg mb-2"></Skeleton>: 
+                              <div>
+                                <div className="text-sm text-center">Clash of Clans</div>
+                                <div className="w-full rounded-lg text-sm">Name: {cocData.playername}</div>
+                                <div className="w-full rounded-lg text-sm">TH Level: {cocData.townhall}</div>
+                                <div className="w-full rounded-lg text-sm">Trophies: {cocData.trophies}</div>
+                                <div className="flex flex-col items-center">
+                                  <Image src={cocData.leagueicon} width={50} alt="League icon"/>
+                                  <div className="w-full rounded-lg text-sm text-center">{cocData.league}</div>
+                                </div>
+                              </div>
+                            }
+                          </div>
+                        </Card>
+                        
+                      </div>
                       Rocket League, PUBG, Genshin Impact.
 
                     </CardBody>
