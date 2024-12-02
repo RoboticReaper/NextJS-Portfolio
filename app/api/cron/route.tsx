@@ -13,7 +13,11 @@ export async function GET(request: Request) {
             }
         }).then(res => res.json())
 
-        sql`INSERT INTO clashofclans (name, townhall) VALUES (${JSON.stringify(cocData)}, ${epoch})`
+        sql`
+            UPDATE clashofclans
+            SET playername = 'test'
+            WHERE tag = '#LY8L20QQR'
+        `
     
         return NextResponse.json({ message: 'success', cocData });
     }
