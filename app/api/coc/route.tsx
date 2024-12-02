@@ -4,5 +4,6 @@ import { sql } from '@vercel/postgres';
 export async function GET(request: Request) {
   const {rows, fields} = await sql`SELECT * FROM clashofclans`
     
-  return NextResponse.json({ rows, fields });
+  // cache control for 1 day
+  return NextResponse.json({ rows, fields }, { headers: { 'Cache-Control': 's-maxage=86400' } });
 }
