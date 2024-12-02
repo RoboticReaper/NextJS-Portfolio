@@ -11,12 +11,28 @@ import { useEffect, useState } from "react";
 
 export default function AboutPage() {
   const [cocLoaded, setCocLoaded] = useState(false);
-  const [cocData, setCocData] = useState();
+
+  interface CocData {
+    playername: string;
+    townhall: number;
+    trophies: number;
+    leagueicon: string;
+    league: string;
+  }
+
+  const [cocData, setCocData] = useState<CocData | null>(null);
 
   useEffect(() => {
     fetch('/api/coc').then(res => res.json()).then((data)=>{
       data = data.rows[0]
-      setCocData(data)
+      // add cocData
+      setCocData({
+        playername: data.playername,
+        townhall: data.townhall,
+        trophies: data.trophies,
+        leagueicon: data.leagueicon,
+        league: data.league
+      })
       setCocLoaded(true)
     })
   }, [])
