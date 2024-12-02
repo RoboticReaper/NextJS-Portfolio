@@ -16,7 +16,9 @@ export default function AboutPage() {
 
     fetch('https://cocproxy.royaleapi.dev/v1/players/%23LY8L20QQR', {
       headers: {
-        'Authorization': `Bearer ${process.env.COC_API_KEY}`
+        'Authorization': `Bearer ${process.env.COC_API_KEY}`,
+        'Content-Type': 'application/json',
+        
       }
     }).then(res => res.json()).catch(err => console.log(err)).then(data => console.log(data))
 

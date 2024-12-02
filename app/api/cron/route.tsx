@@ -8,11 +8,12 @@ export async function GET(request: Request) {
     } else {
         let cocData = await fetch('https://cocproxy.royaleapi.dev/v1/players/%23LY8L20QQR', {
             headers: {
-              'Authorization': `Bearer ${process.env.COC_API_KEY}`
+              'Authorization': `Bearer ${process.env.COC_API_KEY}`,
+                'Content-Type': 'application/json',
             }
         }).then(res => res.json())
 
-        sql`INSERT INTO clashofclans (name, townhall) VALUES ('test', ${JSON.stringify(cocData)})`
+        sql`INSERT INTO clashofclans (name, townhall) VALUES (${JSON.stringify(cocData)}, ${epoch})`
     
         return NextResponse.json({ message: 'success', cocData });
     }
