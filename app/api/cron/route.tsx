@@ -15,7 +15,7 @@ export async function GET(request: Request) {
 
         sql`
             UPDATE clashofclans
-            SET playername = ${cocData.name}, townhall = ${cocData.townHallLevel}, trophies = ${cocData.trophies}, league = ${cocData.league.name}, leagueicon = ${cocData.league.iconUrls.small}, clanname = ${cocData.clan?.name}, clahnbadge = ${cocData.clan?.badgeUrls.small}
+            SET playername = ${cocData.name}, townhall = ${cocData.townHallLevel}, trophies = ${cocData.trophies}, league = ${cocData.league.name}, leagueicon = ${cocData.league.iconUrls.small}
             WHERE tag = ${cocData.tag}
         `
     

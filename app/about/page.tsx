@@ -13,15 +13,6 @@ export default function AboutPage() {
 
   useEffect(()=>{
     fetch('/api/coc').then(res => res.json()).then(data => console.log(data))
-
-    fetch('https://cocproxy.royaleapi.dev/v1/players/%23LY8L20QQR', {
-      headers: {
-        'Authorization': `Bearer ${process.env.COC_API_KEY}`,
-        'Content-Type': 'application/json',
-        
-      }
-    }).then(res => res.json()).catch(err => console.log(err)).then(data => console.log(data))
-
   },[])
 
 
