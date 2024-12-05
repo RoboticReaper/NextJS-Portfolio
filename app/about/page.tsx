@@ -23,19 +23,15 @@ export default function AboutPage() {
   const [cocData, setCocData] = useState<CocData | null>(null);
 
   useEffect(() => {
-    fetch('https://cocproxy.royaleapi.dev/v1/players/%23LY8L20QQR', {
-      headers: {
-        'Authorization': `Bearer ${process.env.COC_API_KEY}`,
-        'Content-Type': 'application/json',
-      }
-    }).then(res => res.json()).then((data) => {
+    fetch('/api/coc').then(res => res.json()).then((data) => {
+      data = data.cocData
       // add cocData
       setCocData({
         playername: data.name,
         townhall: data.townHallLevel,
         trophies: data.trophies,
-        leagueicon: data.league.name,
-        league: data.league.small
+        leagueicon: data.league.iconUrls.small,
+        league: data.league.name
       })
       setCocLoaded(true)
     })
