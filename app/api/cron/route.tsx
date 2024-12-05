@@ -14,12 +14,19 @@ export async function GET(request: Request) {
             }
         }).then(res => res.json())
 
-        sql`
+        let error;
+        try{
+            sql`
             UPDATE clashofclans
             SET playername = ${cocData.name}, townhall = ${cocData.townHallLevel}, trophies = ${cocData.trophies}, league = ${cocData.league.name}, leagueicon = ${cocData.league.iconUrls.small}
             WHERE tag = ${cocData.tag}
         `
+        } catch (e) {
+            console.error(e)
+            error = e
+        }
+        
     
-        return NextResponse.json({ message: 'success', cocData });
+        return NextResponse.json({ message: 'success', cocData, error });
     }
 }
