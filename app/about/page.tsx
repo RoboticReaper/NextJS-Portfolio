@@ -23,7 +23,7 @@ export default function AboutPage() {
   const [cocData, setCocData] = useState<CocData | null>(null);
 
   useEffect(() => {
-    fetch('/api/coc?timestamp=${Date.now()}').then(res => res.json()).then((data) => {
+    fetch(`/api/coc?timestamp=${Date.now()}`).then(res => res.json()).then((data) => {
       // add cocData
       setCocData({
         playername: data.name,
