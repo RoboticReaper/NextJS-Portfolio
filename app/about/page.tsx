@@ -23,15 +23,19 @@ export default function AboutPage() {
   const [cocData, setCocData] = useState<CocData | null>(null);
 
   useEffect(() => {
-    fetch('/api/coc').then(res => res.json()).then((data)=>{
-      data = data.rows[0]
+    fetch('https://cocproxy.royaleapi.dev/v1/players/%23LY8L20QQR', {
+      headers: {
+        'Authorization': `Bearer ${process.env.COC_API_KEY}`,
+        'Content-Type': 'application/json',
+      }
+    }).then(res => res.json()).then((data) => {
       // add cocData
       setCocData({
-        playername: data.playername,
-        townhall: data.townhall,
+        playername: data.name,
+        townhall: data.townHallLevel,
         trophies: data.trophies,
-        leagueicon: data.leagueicon,
-        league: data.league
+        leagueicon: data.league.name,
+        league: data.league.small
       })
       setCocLoaded(true)
     })
@@ -96,23 +100,23 @@ export default function AboutPage() {
                     <CardBody>
                       <div className="flex flex-row gap-3">
                         <Card className="w-[200px] space-y-4 p-4" radius="lg">
-                          <Image isLoading={!cocLoaded} src="cocIcon.jpg" alt="CoC icon"/>
+                          <Image isLoading={!cocLoaded} src="cocIcon.jpg" alt="CoC icon" />
                           <div className="pb-4">
-                            {!cocData ? <Skeleton isLoaded={cocLoaded} className="w-full rounded-lg mb-2"></Skeleton>: 
+                            {!cocData ? <Skeleton isLoaded={cocLoaded} className="w-full rounded-lg mb-2"></Skeleton> :
                               <div>
                                 <div className="text-sm text-center">Clash of Clans</div>
                                 <div className="w-full rounded-lg text-sm">Name: {cocData.playername}</div>
                                 <div className="w-full rounded-lg text-sm">TH Level: {cocData.townhall}</div>
                                 <div className="w-full rounded-lg text-sm">Trophies: {cocData.trophies}</div>
                                 <div className="flex flex-col items-center">
-                                  <Image src={cocData.leagueicon} width={50} alt="League icon"/>
+                                  <Image src={cocData.leagueicon} width={50} alt="League icon" />
                                   <div className="w-full rounded-lg text-sm text-center">{cocData.league}</div>
                                 </div>
                               </div>
                             }
                           </div>
                         </Card>
-                        
+
                       </div>
                       Rocket League, PUBG, Genshin Impact.
 
