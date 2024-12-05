@@ -12,7 +12,7 @@ export async function GET(request: Request) {
     }).then(res => res.json())
 
     // cache control for 1 day
-    return NextResponse.json({cocData}, {
+    return NextResponse.json(cocData, {
         headers: {
             'Cache-Control': 'no-store', // Ensures the data is always fresh
         },

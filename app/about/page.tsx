@@ -24,7 +24,6 @@ export default function AboutPage() {
 
   useEffect(() => {
     fetch('/api/coc').then(res => res.json()).then((data) => {
-      data = data.cocData
       // add cocData
       setCocData({
         playername: data.name,
