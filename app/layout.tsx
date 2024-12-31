@@ -35,7 +35,13 @@ export default function RootLayout({
 
   return (
     <html suppressHydrationWarning lang="en">
-      <head />
+      <head>
+        <meta property="og:title" content={siteConfig.name} />
+        <meta property="og:description" content={siteConfig.description} />
+        <meta property="og:image" content="logo.svg" />
+        <meta property="og:url" content="https://baorenliu.com" />
+        <meta property="og:type" content="website" />
+      </head>
       <body
         className={clsx(
           "min-h-screen bg-background font-sans antialiased",
@@ -53,6 +59,8 @@ export default function RootLayout({
             </footer>
           </div>
         </Providers>
+        <Analytics />
+        <SpeedInsights />
       </body>
     </html>
   );
