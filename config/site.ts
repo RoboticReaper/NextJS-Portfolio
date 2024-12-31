@@ -37,6 +37,6 @@ export const siteConfig = {
     discord: "https://discord.com/users/1294767398972428391",
     projects: "/projects",
     about: "/about",
-    resume: "/Baoren Liu Resume v2.pdf"
+    resume: "/Baoren Liu Resume.pdf"
   },
 };

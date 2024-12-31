@@ -24,6 +24,15 @@ export default function AboutPage() {
 
   useEffect(() => {
     fetch(`/api/coc?timestamp=${Date.now()}`).then(res => res.json()).then((data) => {
+      if(data.league === undefined) {
+        data.league = {
+          name: "Unranked",
+          iconUrls: {
+            small: "coc_unranked.png"
+          }
+        }
+      }
+      
       // add cocData
       setCocData({
         playername: data.name,
