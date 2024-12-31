@@ -38,9 +38,7 @@ export default function RootLayout({
       <head>
         <meta property="og:title" content={siteConfig.name} />
         <meta property="og:description" content={siteConfig.description} />
-        <meta property="og:image" content="https://baorenliu.com/logo.svg" />
-        <meta property="og:image:width" content="150" />
-        <meta property="og:image:height" content="150" />
+        <meta property="og:image" content="https://baorenliu.com/social_preview.jpg" />
         <meta property="og:url" content="https://baorenliu.com" />
         <meta property="og:type" content="website" />
       </head>
