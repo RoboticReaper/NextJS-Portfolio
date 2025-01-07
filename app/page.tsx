@@ -102,7 +102,7 @@ export default function Home() {
                 src="LHS Schedule.png" />
             </div>
             <div className="text-base text-center justify-center">
-              A popular web app built for managing my high school's weird schedule that repeats every 6 working days. More than <span className="text-blue-400">1300 users</span> currently.
+              A popular web app built for managing my high school's weird schedule that repeats every 6 working days. More than <span className="text-red-400">1300 users</span> currently.
             </div>
           </div>
           <div className="inline-block max-w-md text-center justify-center p-4">
@@ -119,7 +119,7 @@ export default function Home() {
                 src="Notes.jpg" />
             </div>
             <div className="text-base text-center justify-center">
-              A native Android app for taking notes. Distributed on various popular third-party app stores with <span className="text-blue-400">7k+ downloads</span>.
+              A native Android app for taking notes. Distributed on various popular third-party app stores with <span className="text-red-400">7k+ downloads</span>.
             </div>
           </div>
         </div>

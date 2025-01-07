@@ -89,7 +89,7 @@ export default function AboutPage() {
           </Link>
           {/* <Button onClick={runDB}>DB</Button> */}
           <div className="text-left text-base w-full mt-10 lg:px-12 xl:px-16">
-            <h2 className={subtitle()}>Hobbies</h2>
+            <h2 className={subtitle()}>Hobbies (to be worked on)</h2>
             <div className="flex w-full flex-col">
               <Tabs aria-label="Options">
                 <Tab key="sports" title="Sports">
