@@ -1,6 +1,7 @@
 'use client'
 import { title, subtitle } from "@/components/primitives";
 import { Table, TableHeader, TableColumn, TableBody, TableRow, TableCell } from "@nextui-org/react";
+import { Link } from "@nextui-org/link";
 
 export default function PricingPage() {
   return (
@@ -15,9 +16,12 @@ export default function PricingPage() {
           </TableHeader>
           <TableBody>
             <TableRow key="1">
-              <TableCell>LHS Schedule asdf  asdf asdf </TableCell>
-              <TableCell>CEO asdf asd fasdf asdf asdf asdf asdf asdf asdf asdf asdf asdf asdf asdf  </TableCell>
-              <TableCell>Active asdf asdf </TableCell>
+              <TableCell>LHS Schedule</TableCell>
+              <TableCell>Developed and launched a successful web app to address my high school's confusing schedule.</TableCell>
+              <TableCell>
+                <Link aria-label="Read more about LHS Schedule" href="projects/lhsschedule">Read more</Link> or 
+                <Link isExternal aria-label="LHS Schedule Link" href="https://lhsschedule.netlify.app/">open</Link>
+              </TableCell>
             </TableRow>
             <TableRow key="2">
               <TableCell>Project 2</TableCell>
