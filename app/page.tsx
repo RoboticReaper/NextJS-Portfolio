@@ -93,16 +93,18 @@ export default function Home() {
               LHS Schedule
             </div>
             <div className="inline-block m-2">
-              <Image
-                width={250}
-                height={250}
-                isZoomed
-                loading="lazy"
-                alt="Logo of LHS Schedule"
-                src="LHS Schedule.png" />
+              <Link href="/projects/lhsschedule">
+                <Image
+                  width={250}
+                  height={250}
+                  isZoomed
+                  loading="lazy"
+                  alt="Logo of LHS Schedule"
+                  src="LHS Schedule.png" />
+              </Link>
             </div>
             <div className="text-base text-center justify-center">
-              A popular web app built for managing my high school's weird schedule that repeats every 6 working days. More than <span className="text-blue-400">1300 users</span> currently.
+              A popular web app built for managing my high school's weird schedule that repeats every 6 working days. More than <span className="text-red-400">1300 users</span> currently.
             </div>
           </div>
           <div className="inline-block max-w-md text-center justify-center p-4">
@@ -110,16 +112,18 @@ export default function Home() {
               Notes
             </div>
             <div className="inline-block m-2">
-              <Image
-                width={250}
-                height={250}
-                isZoomed
-                loading="lazy"
-                alt="Logo of Notes"
-                src="Notes.jpg" />
+              <Link href="/projects/notes">
+                <Image
+                  width={250}
+                  height={250}
+                  isZoomed
+                  loading="lazy"
+                  alt="Logo of Notes"
+                  src="Notes.jpg" />
+              </Link>
             </div>
             <div className="text-base text-center justify-center">
-              A native Android app for taking notes. Distributed on various popular third-party app stores with <span className="text-blue-400">7k+ downloads</span>.
+              A native Android app for taking notes. Distributed on various popular third-party app stores with <span className="text-red-400">7k+ downloads</span>.
             </div>
           </div>
         </div>
@@ -145,7 +149,7 @@ export default function Home() {
           <span className={title()}>Skills</span>
         </div>
 
-        <Skills alignment="center"/>
+        <Skills alignment="center" />
       </section>
 
       <Divider className="my-4" />

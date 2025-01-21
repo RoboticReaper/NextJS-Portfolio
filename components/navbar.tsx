@@ -37,7 +37,7 @@ export const Navbar = () => {
       <NavbarContent className="basis-1/5 sm:basis-full" justify="start">
         <NavbarBrand as="li" className="gap-3 max-w-fit min-w-fit">
           <NextLink className="flex justify-start items-center gap-2 min-w-fit" href="/" onClick={() => { if (isMenuOpen) setIsMenuOpen() }}>
-            <Image src="logo.svg" width={36} height={36} radius="none" alt="Logo of my website"/>
+            <Image src="/logo.svg" width={36} height={36} radius="none" alt="Logo of my website"/>
             <p className="font-bold text-inherit">Baoren</p>
           </NextLink>
         </NavbarBrand>
