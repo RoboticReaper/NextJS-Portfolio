@@ -54,5 +54,5 @@ export async function GET(request: Request) {
   })
 
   // return successful message
-  return NextResponse.json({ message: 'success' }, { status: 200 });
+  return NextResponse.json({ message: 'success', songs }, { status: 200 });
 }
