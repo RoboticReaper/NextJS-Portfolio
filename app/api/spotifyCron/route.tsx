@@ -47,12 +47,14 @@ export async function GET(request: Request) {
   })
 
   // create the sql command that stores all items in songs array into the table
+  // create the sql command that stores all items in songs array into the table
+  const insertPromises = songs.map((song: any) => {
+    return sql`
+    INSERT INTO songs (name, artist, image, link) VALUES (${song.name}, ${song.artist}, ${song.image}, ${song.link});
+  `;
+  });
 
-  songs.forEach(async (song: any) => {
-    sql`
-      INSERT INTO songs (name, artist, image, link) VALUES (${song.name}, ${song.artist}, ${song.image}, ${song.link});
-    `
-  })
+  await Promise.all(insertPromises);
 
   // return successful message
   return NextResponse.json({ message: 'success', songs }, { status: 200 });
