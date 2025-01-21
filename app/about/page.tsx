@@ -11,6 +11,7 @@ import { useEffect, useState } from "react";
 
 export default function AboutPage() {
   const [cocLoaded, setCocLoaded] = useState(false);
+  const [spotifyLoaded, setSpotifyLoaded] = useState(false);
 
   interface CocData {
     playername: string;
@@ -21,10 +22,11 @@ export default function AboutPage() {
   }
 
   const [cocData, setCocData] = useState<CocData | null>(null);
+  const [spotifyData, setSpotifyData] = useState<any | null>(null);
 
   useEffect(() => {
     fetch(`/api/coc?timestamp=${Date.now()}`).then(res => res.json()).then((data) => {
-      if(data.league === undefined) {
+      if (data.league === undefined) {
         data.league = {
           name: "Unranked",
           iconUrls: {
@@ -32,7 +34,7 @@ export default function AboutPage() {
           }
         }
       }
-      
+
       // add cocData
       setCocData({
         playername: data.name,
@@ -42,6 +44,11 @@ export default function AboutPage() {
         league: data.league.name
       })
       setCocLoaded(true)
+    });
+
+    fetch('/api/spotify').then(res => res.json()).then((data) => {
+      setSpotifyData(data.rows)
+      setSpotifyLoaded(true)
     })
   }, [])
 
@@ -89,7 +96,7 @@ export default function AboutPage() {
           </Link>
           {/* <Button onClick={runDB}>DB</Button> */}
           <div className="text-left text-base w-full mt-10 lg:px-12 xl:px-16">
-            <h2 className={subtitle()}>Hobbies (to be worked on)</h2>
+            <h2 className={subtitle()}>Hobbies</h2>
             <div className="flex w-full flex-col">
               <Tabs aria-label="Options">
                 <Tab key="sports" title="Sports">
@@ -102,8 +109,8 @@ export default function AboutPage() {
                 <Tab key="games" title="Video Games">
                   <Card>
                     <CardBody>
-                      <div className="flex flex-row gap-3">
-                        <Card className="w-[200px] space-y-4 p-4" radius="lg">
+                      <div className="flex flex-row gap-3 justify-center flex-wrap">
+                        <Card className="w-48 space-y-4 p-4" radius="lg">
                           <Image isLoading={!cocLoaded} src="cocIcon.jpg" alt="CoC icon" />
                           <div className="pb-4">
                             {!cocData ? <Skeleton isLoaded={cocLoaded} className="w-full rounded-lg mb-2"></Skeleton> :
@@ -120,17 +127,25 @@ export default function AboutPage() {
                             }
                           </div>
                         </Card>
-
                       </div>
-                      Rocket League, PUBG, Genshin Impact.
-
                     </CardBody>
                   </Card>
                 </Tab>
                 <Tab key="music" title="Musics">
                   <Card>
                     <CardBody>
-                      I listen to these musics.
+                      <div className="text-center text-md mb-2">My top musics this week on Spotify.</div>
+                      <div className="flex flex-row gap-3 justify-center flex-wrap">
+                        {spotifyData?.map((song: any, index: number) => (
+                          <Card key={index} className="w-48 space-y-4 p-4" radius="lg">
+                            <Link isExternal href={song.link}><Image src={song.image} alt="Song icon" /></Link>
+                            <div>
+                              <div className="text-sm text-center">{song.name}</div>
+                              <div className="text-sm text-center text-gray-500">{song.artist}</div>
+                            </div>
+                          </Card>
+                        ))}
+                      </div>
                     </CardBody>
                   </Card>
                 </Tab>

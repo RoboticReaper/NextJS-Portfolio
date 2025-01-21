@@ -1,0 +1,15 @@
+name: Monday Spotify API Update
+
+on:
+  schedule:
+    - cron: '0 0 * * 1' # Every Monday at 00:00
+  workflow_dispatch:  # Allows manual triggering of the workflow
+
+jobs:
+  request-api:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Send API Request
+        run: |
+          curl -H "Authorization: Bearer ${{ secrets.CRON_SECRET }}" https://baorenliu.com/api/spotifyCron
