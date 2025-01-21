@@ -9,6 +9,8 @@ export async function GET(request: Request) {
     return NextResponse.json({ message: 'unauthorized' }, { status: 401 });
   }
 
+  await sql`TRUNCATE TABLE songs;` // clear the table
+
   const response = await fetch('https://accounts.spotify.com/api/token', {
     method: 'POST',
     headers: {
@@ -45,7 +47,6 @@ export async function GET(request: Request) {
   })
 
   // create the sql command that stores all items in songs array into the table
-  await sql`TRUNCATE TABLE songs;` // clear the table
 
   songs.forEach(async (song: any) => {
     sql`
