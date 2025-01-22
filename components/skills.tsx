@@ -1,5 +1,5 @@
 
-import { Image } from "@nextui-org/image";
+import { Image } from "@heroui/image";
 
 export default function Skills({alignment}:{alignment:string}) {
     const languages = [

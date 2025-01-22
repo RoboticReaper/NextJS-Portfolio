@@ -37,6 +37,38 @@ export const siteConfig = {
     discord: "https://discord.com/users/1294767398972428391",
     projects: "/projects",
     about: "/about",
-    resume: "/Baoren Liu Resume.pdf"
+    resume: "/Baoren Liu Resume.pdf",
+    projectLinks: [
+      {
+        label: "Projects",
+        href: "/projects",
+        id: -1,
+      },
+      {
+        label: "LHS Schedule",
+        href: "/projects/lhsschedule",
+        id: 0,
+      },
+      {
+        label: "Notes",
+        href: "/projects/notes",
+        id: 1,
+      },
+      {
+        label: "Coaching Website",
+        href: "/projects/coachingWebsite",
+        id: 2,
+      },
+      {
+        label: "Fourier Series Visualizer",
+        href: "/projects/fourier",
+        id: 3,
+      },
+      {
+        label: "Naive Bayes Spam Detection",
+        href: "/projects/bayes",
+        id: 4,
+      },
+    ]
   },
 };

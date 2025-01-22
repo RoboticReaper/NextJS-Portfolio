@@ -1,6 +1,6 @@
-import { Link } from "@nextui-org/link";
-import { button as buttonStyles } from "@nextui-org/theme";
-import { Divider } from "@nextui-org/divider";
+import { Link } from "@heroui/link";
+import { button as buttonStyles } from "@heroui/theme";
+import { Divider } from "@heroui/divider";
 import { siteConfig } from "@/config/site";
 import { title, subtitle } from "@/components/primitives";
 import {
@@ -8,41 +8,10 @@ import {
   DiscordIcon,
   InstagramIcon
 } from "@/components/icons";
-import { Image } from "@nextui-org/image";
+import { Image } from "@heroui/image";
 import Skills from "@/components/skills";
 
 export default function Home() {
-
-  const languages = [
-    {
-      language: "Python",
-      img: "python logo.png"
-    },
-    {
-      language: "Java",
-      img: "java logo.svg"
-    },
-    {
-      language: "C++",
-      img: "cpp logo.svg"
-    },
-    {
-      language: "Kotlin",
-      img: "kotlin logo.png"
-    },
-    {
-      language: "HTML, CSS, JavaScript",
-      img: "js logo.png"
-    },
-    {
-      language: "ReactJS",
-      img: "react logo.webp"
-    },
-    {
-      language: "Firebase",
-      img: "firebase logo.png"
-    }
-  ]
 
   return (
     <div>
@@ -90,10 +59,10 @@ export default function Home() {
         <div className="grid grid-cols-1 gap-6 md:grid-cols-2">
           <div className="inline-block max-w-md text-center justify-center p-4">
             <div className={subtitle({ class: "mt-4" })}>
-              LHS Schedule
+              {siteConfig.links.projectLinks.find(item => item.id === 0)?.label}
             </div>
             <div className="inline-block m-2">
-              <Link href="/projects/lhsschedule">
+              <Link href={siteConfig.links.projectLinks.find(item => item.id === 0)?.href}>
                 <Image
                   width={250}
                   height={250}
@@ -109,10 +78,10 @@ export default function Home() {
           </div>
           <div className="inline-block max-w-md text-center justify-center p-4">
             <div className={subtitle({ class: "mt-4" })}>
-              Notes
+              {siteConfig.links.projectLinks.find(item => item.id === 1)?.label}
             </div>
             <div className="inline-block m-2">
-              <Link href="/projects/notes">
+              <Link href={siteConfig.links.projectLinks.find(item => item.id === 1)?.href}>
                 <Image
                   width={250}
                   height={250}

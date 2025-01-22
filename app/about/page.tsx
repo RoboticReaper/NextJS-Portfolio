@@ -1,12 +1,12 @@
 'use client'
 import { title, subtitle } from "@/components/primitives";
-import { Image } from "@nextui-org/image";
-import { Link } from "@nextui-org/link";
+import { Image } from "@heroui/image";
+import { Link } from "@heroui/link";
 import { siteConfig } from "@/config/site";
-import { Tabs, Tab } from "@nextui-org/tabs";
-import { Card, CardBody } from "@nextui-org/card";
-import { button as buttonStyles } from "@nextui-org/theme";
-import { Skeleton, Button } from "@nextui-org/react";
+import { Tabs, Tab } from "@heroui/tabs";
+import { Card, CardBody } from "@heroui/card";
+import { button as buttonStyles } from "@heroui/theme";
+import { Skeleton, Button } from "@heroui/react";
 import { useEffect, useState } from "react";
 
 export default function AboutPage() {
