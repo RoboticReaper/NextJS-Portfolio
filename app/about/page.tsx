@@ -127,6 +127,21 @@ export default function AboutPage() {
                             }
                           </div>
                         </Card>
+                        <Card className="w-48 space-y-4 p-4" radius="lg">
+                          <Image src="A9 icon.jpg" alt="CoC icon" />
+                          <div className="pb-4">
+                              <div>
+                                <div className="text-sm text-center">Asphalt Legends Unite</div>
+                                <div className="w-full rounded-lg text-sm">Name: Skibidi Sigma</div>
+                                <div className="w-full rounded-lg text-sm">Reputation Level: 100</div>
+                                <div className="w-full rounded-lg text-sm">Garage Level: 20</div>
+                                <div className="flex flex-col items-center">
+                                  <Image src="legions.png" width={50} alt="Asphalt 9 club icon" />
+                                  <div className="w-full rounded-lg text-sm text-center">Ex-Legions United Club</div>
+                                </div>
+                              </div>
+                          </div>
+                        </Card>
                       </div>
                     </CardBody>
                   </Card>
