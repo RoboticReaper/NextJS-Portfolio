@@ -30,6 +30,10 @@ export default function Skills({alignment}:{alignment:string}) {
         {
           language: "Firebase",
           img: "firebase logo.png"
+        },
+        {
+          language:"MySQL",
+          img: "mysql.png"
         }
       ]
 

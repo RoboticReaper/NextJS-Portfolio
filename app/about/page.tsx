@@ -74,7 +74,7 @@ export default function AboutPage() {
           <div className="text-left text-base w-full mt-10 lg:px-12 xl:px-16">
             <h2 className={subtitle()}>Related Experience</h2>
             <ul className="list-disc list-outside grid gap-2">
-              <li>Leader for many projects in the <Link href="https://lexyouthstem.org/" isExternal>Lexington Youth STEAM Team</Link> from 2020 to 2024,
+              <li>Leader for many projects in the <Link href="https://youthsteaminitiative.org/" isExternal>Lexington Youth STEAM Team</Link> from 2020 to 2024,
                 and volunteered nearly 400 hours on projects like website development, data analysis, and event organization to create impact on the community.</li>
               <li>Interned at <Link href="https://www.massgeneralbrigham.org/en/about/careers/working-here-assembly-row" isExternal>Mass General Brigham</Link> to
                 work on utilizing Electronic Health Record data (MIMIC-IV) and Retrieval Augmented Generation with Generative AI to help diagnose patients based on structured and unstructured data.</li>
@@ -99,13 +99,6 @@ export default function AboutPage() {
             <h2 className={subtitle()}>Hobbies</h2>
             <div className="flex w-full flex-col">
               <Tabs aria-label="Options">
-                <Tab key="sports" title="Sports">
-                  <Card>
-                    <CardBody>
-                      I like to play tennis.
-                    </CardBody>
-                  </Card>
-                </Tab>
                 <Tab key="games" title="Video Games">
                   <Card>
                     <CardBody>
@@ -115,7 +108,7 @@ export default function AboutPage() {
                           <div className="pb-4">
                             {!cocData ? <Skeleton isLoaded={cocLoaded} className="w-full rounded-lg mb-2"></Skeleton> :
                               <div>
-                                <div className="text-sm text-center">Clash of Clans</div>
+                                <div className="text-sm text-center mb-2">Clash of Clans</div>
                                 <div className="w-full rounded-lg text-sm">Name: {cocData.playername}</div>
                                 <div className="w-full rounded-lg text-sm">TH Level: {cocData.townhall}</div>
                                 <div className="w-full rounded-lg text-sm">Trophies: {cocData.trophies}</div>
@@ -128,18 +121,27 @@ export default function AboutPage() {
                           </div>
                         </Card>
                         <Card className="w-48 space-y-4 p-4" radius="lg">
-                          <Image src="A9 icon.jpg" alt="CoC icon" />
+                          <Image src="A9 icon.jpg" alt="Asphalt icon" />
                           <div className="pb-4">
-                              <div>
-                                <div className="text-sm text-center">Asphalt Legends Unite</div>
-                                <div className="w-full rounded-lg text-sm">Name: Skibidi Sigma</div>
-                                <div className="w-full rounded-lg text-sm">Reputation Level: 100</div>
-                                <div className="w-full rounded-lg text-sm">Garage Level: 20</div>
-                                <div className="flex flex-col items-center">
-                                  <Image src="legions.png" width={50} alt="Asphalt 9 club icon" />
-                                  <div className="w-full rounded-lg text-sm text-center">Ex-Legions United Club</div>
-                                </div>
+                            <div>
+                              <div className="text-sm text-center mb-2">Asphalt Legends Unite</div>
+                              <div className="w-full rounded-lg text-sm">Reputation Level: 100</div>
+                              <div className="w-full rounded-lg text-sm">Garage Level: 20</div>
+                              <div className="flex flex-col items-center">
+                                <Image src="legions.png" width={50} alt="Asphalt 9 club icon" />
+                                <div className="w-full rounded-lg text-sm text-center">Ex-Legions United Club</div>
                               </div>
+                            </div>
+                          </div>
+                        </Card>
+                        <Card className="w-48 space-y-4 p-4" radius="lg">
+                          <Image src="genshin.webp" alt="genshin impact icon" />
+                          <div className="pb-4">
+                            <div>
+                              <div className="text-sm text-center mb-2">Genshin Impact</div>
+                              <div className="w-full rounded-lg text-sm">Adventure Rank: 59</div>
+                              <div className="w-full rounded-lg text-sm">Joined since version 1.0</div>
+                            </div>
                           </div>
                         </Card>
                       </div>

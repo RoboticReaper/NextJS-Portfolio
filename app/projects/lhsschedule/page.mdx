@@ -1,19 +1,37 @@
 import { Breadcrumb } from "@/components/breadcrumb";
+import { Image } from "@heroui/image";
 
-# More details lol
+## Building the LHS Schedule App – From Confusion to Purpose
 
 <Breadcrumb />
 <br />
 
-This is some **bold** and _italics_ text.
+The summer before I started high school, I learned about a quirky challenge unique to Lexington High School: a 6-day rotating schedule. Unlike traditional schedules that align neatly with weekdays, ours rotated every six working days, quickly falling out of sync with the regular Monday–Friday calendar. Add in snow days and holidays, and confusion was guaranteed. My friends and I were nervous—none of us wanted to show up to the wrong class.
+<br />
+<div className="flex flex-col items-center">
+  <Image src="/schedule_screenshot.jpg" alt="Screenshot of messy schedule" height={350} className="rounded-lg" />
+  <figcaption className="mt-2 text-sm text-gray-400">Holidays breaking up the schedule cycle.</figcaption>
+</div>
+<br />
+But instead of stressing, I saw an opportunity. As someone passionate about computer science, I decided to build a solution.
 
-This is a list in markdown:asdfasdfasdfasdfasdfsadfasdfasdf
-asdfasdf
+<br />
+My goal was to create a simple, accessible web app that could help every student know what classes they had, every day. I chose React for the frontend because of its flexibility and modern UI capabilities, and Firebase for the backend to manage user data securely. I wanted students to be able to sign in, save their unique schedules, and even reset their passwords if needed—all through a polished interface.
 
-## OMG OMG
-[Duck Duck Go](https://duckduckgo.com)
-- One
-- Two
-- Three
+<br />
+The school published a public Google Calendar with class information, so I dug into Chrome's developer tools and located the JSON feed behind it. By parsing that data, I could show accurate daily schedules even when holidays disrupted the rotation.
 
-Checkout my React component:
+<br />
+It wasn't all smooth sailing. I hit bugs I didn't know how to solve, features that broke unexpectedly, and moments where I felt stuck. But I pushed through by reading documentation, watching tutorials, and reminding myself of the impact this tool could have.
+
+<br />
+When I finally launched, I emailed the student body to share what the app offered. I watched with excitement as the registration count ticked up: tens, then hundreds, and eventually nearly 1,500 students signed up. I started getting thank-you emails, requests for customer support, and feature suggestions. I responded by adding customization options, offline access, and the ability to see friends' schedules.
+
+<br />
+Today, the app still runs and helps hundreds of students daily. It's one of the most meaningful projects I've worked on—not only for the technical growth it gave me, but because I built something that solved a real problem for my school community.
+
+<br />
+<div className="flex flex-col items-center">
+  <Image src="/schedule_interface.png" alt="Screenshot of my schedule app" height={400} className="rounded-lg" />
+  <figcaption className="mt-2 text-sm text-gray-400">Screenshot of my app's main page.</figcaption>
+</div>
