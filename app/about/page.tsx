@@ -61,11 +61,11 @@ export default function AboutPage() {
           <div className="flex flex-col lg:flex-row items-center gap-6 justify-center lg:items-start">
             <div><Image src="Baoren Liu Portrait.jpg" width={200} alt="My portrait" /></div>
             <div className="w-full lg:w-2/3 text-left text-base">
-              I am Baoren Liu, a freshman at <span className="text-red-400">Northeastern University</span>, Boston, currently majoring in <span className="text-red-400">Computer Science</span>.
+              I am Baoren Liu, a sophomore at <span className="text-red-400">UIUC</span> after transferring from Northeastern University. I'm currently majoring in <span className="text-red-400">Computer Science + Math</span>.
               I have been coding for {new Date().getFullYear() - new Date(2018, 0, 1).getFullYear()}~ years, and I enjoy making programs to solve random problems.
               <br /><br />
               My current goal is to learn more AI algorithms and do some projects related to them.
-              I am looking forward to Northeastern's co-op program and explore which branch of computer science I like the most.
+              I am looking forward to UIUC's co-op program and explore which branch of computer science I like the most.
               <br /><br />
               I have written details on some of my proudest projects, so you can read about them on my <Link href={siteConfig.links.projects}>projects page</Link>.
               Feel free to explore other projects on my <Link href={siteConfig.links.github} isExternal>GitHub</Link> as well.

@@ -22,7 +22,7 @@ export default function Home() {
         <div className="inline-block max-w-xl text-center justify-center">
           <span className={title({ color: "violet" })}>Baoren Liu</span>
           <div className={subtitle({ class: "mt-4" })}>
-            Freshman at Northeastern University, Boston. Currently majoring in Computer Science.
+            Sophomore at University of Illinois Urbana-Champaign, majoring in Computer Science + Math.
           </div>
         </div>
 
