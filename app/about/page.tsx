@@ -61,11 +61,11 @@ export default function AboutPage() {
           <div className="flex flex-col lg:flex-row items-center gap-6 justify-center lg:items-start">
             <div><Image src="Baoren Liu Portrait.jpg" width={200} alt="My portrait" /></div>
             <div className="w-full lg:w-2/3 text-left text-base">
-              I am Baoren Liu, a sophomore at <span className="text-red-400">UIUC</span> after transferring from Northeastern University. I'm currently majoring in <span className="text-red-400">Computer Science + Math</span>.
+              I am Baoren Liu, a sophomore at <span className="text-red-400">University of Illinois Urbana-Champaign</span> after transferring from Northeastern University. I'm currently majoring in <span className="text-red-400">Computer Science + Math</span>.
               I have been coding for {new Date().getFullYear() - new Date(2018, 0, 1).getFullYear()}~ years, and I enjoy making programs to solve random problems.
               <br /><br />
               My current goal is to learn more AI algorithms and do some projects related to them.
-              I am looking forward to UIUC's co-op program and explore which branch of computer science I like the most.
+              I am looking for summer internships and explore which branch of computer science I like the most.
               <br /><br />
               I have written details on some of my proudest projects, so you can read about them on my <Link href={siteConfig.links.projects}>projects page</Link>.
               Feel free to explore other projects on my <Link href={siteConfig.links.github} isExternal>GitHub</Link> as well.
@@ -77,7 +77,7 @@ export default function AboutPage() {
               <li>Leader for many projects in the <Link href="https://youthsteaminitiative.org/" isExternal>Lexington Youth STEAM Team</Link> from 2020 to 2024,
                 and volunteered nearly 400 hours on projects like website development, data analysis, and event organization to create impact on the community.</li>
               <li>Interned at <Link href="https://www.massgeneralbrigham.org/en/about/careers/working-here-assembly-row" isExternal>Mass General Brigham</Link> to
-                work on utilizing Electronic Health Record data (MIMIC-IV) and Retrieval Augmented Generation with Generative AI to help diagnose patients based on structured and unstructured data.</li>
+                work on utilizing Electronic Health Record data and Retrieval Augmented Generation with Generative AI to help diagnose patients based on structured and unstructured data. Co-author on the research paper.</li>
               <li>Researching with <Link href="https://www.massgeneral.org/" isExternal>Mass General Hospital</Link> to quantify pain measurements scientifically</li>
               <li>Teaching assistant at <Link href="https://www.ktbyte.com/" isExternal>KTByte</Link> from 2021 to 2023. Helped students with Java and Processing homeworks during office hour.</li>
 
@@ -126,7 +126,7 @@ export default function AboutPage() {
                             <div>
                               <div className="text-sm text-center mb-2">Asphalt Legends Unite</div>
                               <div className="w-full rounded-lg text-sm">Reputation Level: 100</div>
-                              <div className="w-full rounded-lg text-sm">Garage Level: 20</div>
+                              <div className="w-full rounded-lg text-sm">Garage Level: 22</div>
                               <div className="flex flex-col items-center">
                                 <Image src="legions.png" width={50} alt="Asphalt 9 club icon" />
                                 <div className="w-full rounded-lg text-sm text-center">Ex-Legions United Club</div>

@@ -2,7 +2,7 @@ export type SiteConfig = typeof siteConfig;
 
 export const siteConfig = {
   name: "Baoren Liu's Website",
-  description: "I am a freshman studying at Northeastern University. You can learn more about me on this website.",
+  description: "I am a sophomore studying at University of Illinois Urbana-Champaign. You can learn more about me on this website.",
   navItems: [
     {
       label: "Projects",
@@ -68,6 +68,11 @@ export const siteConfig = {
         label: "Naive Bayes Spam Detection",
         href: "/projects/bayes",
         id: 4,
+      },
+      {
+        label: "Capture The Flag",
+        href: "/projects/ctf",
+        id: 5,
       },
     ]
   },
