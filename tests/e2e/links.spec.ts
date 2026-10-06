@@ -10,7 +10,7 @@ test("section links jump instantly to content below the navbar", async ({
   );
   for (const destination of [
     { link: "View selected work", hash: "#work", content: ".section-heading" },
-    { link: "More details", hash: "#research", content: ".section-heading" },
+    { link: "Full background", hash: "#research", content: ".section-heading" },
     { link: "More about my hobbies", hash: "#hobbies", content: ".eyebrow" },
   ]) {
     await page.goto("/");

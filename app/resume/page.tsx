@@ -52,7 +52,9 @@ export default function ResumePage() {
             </article>
           ))}
         </div>
-        <h2 className="resume-subheading">Technical skills</h2>
+        <h2 className="resume-subheading" id="technical-skills">
+          Technical skills
+        </h2>
         <dl className="technical-skills">
           {Object.entries(technicalSkills).map(([group, values]) => (
             <div key={group}>

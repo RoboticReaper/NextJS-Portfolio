@@ -1,4 +1,5 @@
 type Experience = {
+  id?: string;
   date: string;
   role: string;
   organization: string;
@@ -18,6 +19,7 @@ export const education = {
 };
 export const workExperience: Experience[] = [
   {
+    id: "hcesc-xr",
     date: "July 2026 — Present",
     role: "Undergraduate Student Researcher",
     organization: "HCESC-XR Lab, UIUC",
@@ -28,6 +30,7 @@ export const workExperience: Experience[] = [
     href: "https://illinois.edu/",
   },
   {
+    id: "mass-general-brigham",
     date: "June 2024 — Present",
     role: "AI Research Intern",
     organization: "Mass General Brigham",
@@ -43,6 +46,7 @@ export const workExperience: Experience[] = [
     },
   },
   {
+    id: "nobe",
     date: "September 2026 — Present",
     role: "Software Engineer",
     organization: "NOBE, Illinois Chapter",
@@ -51,20 +55,6 @@ export const workExperience: Experience[] = [
     detail:
       "Working as a software engineer in the Technology Division of UIUC’s National Organization for Business and Engineering chapter.",
     href: "https://www.linkedin.com/in/baoren-liu/",
-  },
-];
-export const researchExperience: Experience[] = [
-  {
-    ...workExperience[0],
-    role: "AI agents and robotic manipulation",
-    summary:
-      "Studying how agents diagnose hidden physical failures and recover in Isaac Sim.",
-  },
-  {
-    ...workExperience[1],
-    role: "Clinical retrieval augmented generation",
-    summary:
-      "Co-authored a paper on identifying dementia from clinical evidence; currently under peer review.",
   },
 ];
 export const earlierExperience: Experience[] = [

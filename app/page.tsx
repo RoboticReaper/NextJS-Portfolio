@@ -3,11 +3,11 @@ import { ProjectCard } from "@/components/project-card";
 import { SkillList } from "@/components/skill-list";
 import { LiveInterests } from "@/components/live-interests";
 import { SystemsGraphic } from "@/components/systems-graphic";
-import { researchExperience, workExperience } from "@/config/profile";
+import { workExperience } from "@/config/profile";
 import { projects, siteConfig } from "@/config/site";
 export default function Home() {
   return (
-    <>
+    <div className="home-page">
       <section className="hero container">
         <div className="hero-copy">
           <p className="eyebrow">
@@ -21,25 +21,19 @@ export default function Home() {
             </span>
           </h1>
           <p className="hero-description">
-            I enjoy understanding how systems work and building practical
-            software. My interests include AI research, full-stack web
-            applications, and infrastructure.
+            I enjoy figuring out how systems work and building useful software,
+            from web applications to AI and robotics research.
           </p>
           <div className="hero-actions">
             <Link className="button primary" href="#work">
               View selected work <span aria-hidden="true">↗</span>
             </Link>
-            <Link className="button secondary" href="/resume">
-              My résumé <span aria-hidden="true">↗</span>
+            <Link className="button secondary" href="/about">
+              About me <span aria-hidden="true">↗</span>
             </Link>
-            <a
-              className="text-link hero-linkedin"
-              href={siteConfig.links.linkedin}
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              LinkedIn <span aria-hidden="true">↗</span>
-            </a>
+            <Link className="text-link hero-context-link" href="/resume">
+              Résumé <span aria-hidden="true">↗</span>
+            </Link>
           </div>
           <div className="hero-footnote">
             <span className="status-dot" /> Open to internship opportunities
@@ -49,34 +43,10 @@ export default function Home() {
           <SystemsGraphic />
         </div>
       </section>
-      <section
-        className="section container home-overview"
-        aria-labelledby="work-experience-heading"
-      >
-        <div className="section-heading">
-          <div>
-            <p className="eyebrow">01 / Current roles</p>
-            <h2 id="work-experience-heading">Work experience</h2>
-          </div>
-          <Link className="text-link" href="/about">
-            More about me <span aria-hidden="true">↗</span>
-          </Link>
-        </div>
-        <div className="overview-grid">
-          {workExperience.map((item) => (
-            <article className="overview-card" key={item.organization}>
-              <p className="eyebrow">{item.date}</p>
-              <h3>{item.organization}</h3>
-              <p className="overview-role">{item.role}</p>
-              <p>{item.summary}</p>
-            </article>
-          ))}
-        </div>
-      </section>
       <section className="section container">
         <div className="section-heading" id="work">
           <div>
-            <p className="eyebrow">02 / Selected work</p>
+            <p className="eyebrow">01 / Selected work</p>
             <h2>Highlighted projects</h2>
           </div>
           <Link className="text-link" href="/projects">
@@ -89,60 +59,77 @@ export default function Home() {
           ))}
         </div>
       </section>
-      <section className="section container skills-section">
-        <p className="eyebrow">03 / My toolkit</p>
-        <h2>Skills</h2>
-        <SkillList />
-      </section>
-      <section className="research-band">
-        <div className="section container">
-          <div className="section-heading">
-            <div>
-              <p className="eyebrow">04 / Healthcare and robotics</p>
-              <h2>Research</h2>
-            </div>
-            <Link className="text-link" href="/about#research">
-              More details <span aria-hidden="true">↗</span>
-            </Link>
+      <section
+        className="section container home-overview"
+        aria-labelledby="work-experience-heading"
+      >
+        <div className="section-heading">
+          <div>
+            <p className="eyebrow">02 / Work and research</p>
+            <h2 id="work-experience-heading">Experience &amp; research</h2>
           </div>
-          <div className="overview-grid">
-            {researchExperience.map((item) => (
-              <article className="overview-card" key={item.organization}>
-                <h3>{item.role}</h3>
-                <p className="overview-role">{item.organization}</p>
-                <p>{item.summary}</p>
-                {item.publication && (
-                  <a
-                    className="inline-link research-paper-link"
-                    href={item.publication.href}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    Read the preprint ↗
-                  </a>
-                )}
-              </article>
-            ))}
-          </div>
+          <Link className="text-link" href="/about#research">
+            Full background <span aria-hidden="true">↗</span>
+          </Link>
         </div>
+        <div className="overview-grid">
+          {workExperience.map((item) => (
+            <article className="overview-card" key={item.organization}>
+              <p className="eyebrow">{item.date}</p>
+              <h3>
+                <Link href={`/about#${item.id}`}>
+                  {item.organization} <span aria-hidden="true">↗</span>
+                </Link>
+              </h3>
+              <p className="overview-role">{item.role}</p>
+              <p>{item.summary}</p>
+              {item.publication && (
+                <a
+                  className="inline-link research-paper-link"
+                  href={item.publication.href}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Research preprint ↗
+                </a>
+              )}
+            </article>
+          ))}
+        </div>
+      </section>
+      <section className="section container skills-section">
+        <div className="section-heading">
+          <div>
+            <p className="eyebrow">03 / My toolkit</p>
+            <h2>Skills</h2>
+          </div>
+          <Link className="text-link" href="/resume#technical-skills">
+            All skills <span aria-hidden="true">↗</span>
+          </Link>
+        </div>
+        <SkillList />
       </section>
       <section
         className="section container personal-section"
         aria-labelledby="hobbies-heading"
       >
-        <p className="eyebrow">05 / Outside of school</p>
-        <h2 id="hobbies-heading">Games and music</h2>
+        <div className="section-heading">
+          <div>
+            <p className="eyebrow">04 / Outside of school</p>
+            <h2 id="hobbies-heading">Games and music</h2>
+          </div>
+          <Link className="text-link" href="/about#hobbies">
+            More about my hobbies <span aria-hidden="true">↗</span>
+          </Link>
+        </div>
         <p className="section-description">
           I play Clash of Clans, Asphalt Legends Unite, and Genshin Impact.
           Here’s what I’ve been playing and listening to lately.
         </p>
         <LiveInterests trackLimit={3} />
-        <Link className="text-link hobbies-link" href="/about#hobbies">
-          More about my hobbies <span aria-hidden="true">↗</span>
-        </Link>
       </section>
       <section className="contact-section container" id="contacts">
-        <p className="eyebrow">06 / Let’s connect</p>
+        <p className="eyebrow">05 / Let’s connect</p>
         <h2>Get in touch</h2>
         <p>
           Feel free to reach out about internships, projects, or anything on
@@ -189,6 +176,6 @@ export default function Home() {
           </a>
         </div>
       </section>
-    </>
+    </div>
   );
 }

@@ -333,10 +333,6 @@ p {
     34px Georgia,
     serif;
 }
-.hero-linkedin {
-  align-self: center;
-  margin-left: 6px;
-}
 .about-profile-card {
   padding: 32px;
   border: 1px solid var(--line);
@@ -681,12 +677,6 @@ p {
 .overview-card .overview-role {
   color: var(--text);
   margin-bottom: 14px;
-}
-.research-band {
-  background: var(--band);
-}
-.hobbies-link {
-  margin-top: 28px;
 }
 .resume-actions {
   display: flex;
@@ -1672,4 +1662,233 @@ html[data-intro-pending] .name-intro {
   color: var(--accent);
   text-decoration: underline;
   text-underline-offset: 4px;
+}
+
+/* Home previews stay compact; full stories live on Projects and About. */
+.home-page .hero {
+  padding-block: 48px 40px;
+  gap: 40px;
+}
+.home-page .hero-copy > .eyebrow {
+  margin-bottom: 18px;
+}
+.home-page .hero h1 {
+  font-size: clamp(56px, 6.6vw, 88px);
+  margin-bottom: 16px;
+}
+.home-page .hero-description {
+  margin-block: 18px 24px;
+  line-height: 1.75;
+  max-width: 540px;
+}
+.home-page .hero-visual {
+  min-height: 300px;
+}
+.home-page .systems-graphic {
+  max-width: 320px;
+}
+.home-page .hero-footnote {
+  margin-top: 18px;
+}
+.hero-context-link {
+  align-self: center;
+  margin-left: 6px;
+}
+.home-page .section {
+  padding-block: 44px;
+  border-top: 1px solid var(--line);
+}
+.home-page .section-heading {
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 12px 24px;
+  margin-bottom: 24px;
+}
+.home-page .section h2,
+.home-page .contact-section h2 {
+  font-size: clamp(28px, 3vw, 38px);
+  margin-block: 6px 0;
+}
+.home-page .section-heading .text-link {
+  margin: 0;
+  gap: 12px;
+  font-size: 12px;
+}
+.home-page .project-card {
+  display: grid;
+  grid-template-columns: 128px minmax(0, 1fr);
+  align-items: start;
+  gap: 18px;
+  padding: 20px;
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  background: var(--surface);
+}
+.home-page .project-art {
+  height: 144px;
+  border-radius: 8px;
+}
+.home-page .project-number,
+.home-page .impact-badge {
+  display: none;
+}
+.home-page .project-launch {
+  top: 8px;
+  right: 8px;
+  width: 26px;
+  height: 26px;
+  font-size: 15px;
+}
+.home-page .type-art {
+  padding: 12px;
+  font-size: 22px;
+}
+.home-page .project-copy {
+  padding: 0;
+}
+.home-page .project-copy h3 {
+  font-size: 22px;
+  margin-top: 4px;
+}
+.home-page .project-copy > p:not(.eyebrow) {
+  margin-top: 8px;
+  max-width: none;
+}
+.home-page .tags {
+  margin-top: 12px;
+}
+.project-links {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 12px 20px;
+  margin-top: 16px;
+  font-size: 12px;
+}
+.project-story-link {
+  color: var(--accent);
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+.project-links .project-live-link {
+  margin-top: 0;
+  font-size: inherit;
+}
+.home-page .home-overview .overview-grid {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 18px;
+}
+.home-page .overview-card {
+  padding: 20px;
+}
+.home-page .overview-card h3 {
+  font-size: 19px;
+  line-height: 1.35;
+  margin-block: 8px;
+}
+.home-page .overview-card h3 a:hover {
+  color: var(--accent);
+}
+.home-page .overview-role {
+  margin-bottom: 10px;
+}
+.home-page .research-paper-link {
+  margin-top: 12px;
+  font-size: 12px;
+}
+.home-page .skills-section {
+  display: block;
+}
+.home-page .skill-list {
+  margin-top: 0;
+  gap: 8px;
+}
+.home-page .skill-list > li {
+  padding: 8px 12px;
+  gap: 8px;
+}
+.home-page .skill-list img {
+  width: 26px;
+  height: 26px;
+}
+.home-page .section-description {
+  margin-bottom: 22px;
+}
+.home-page .interest-card {
+  padding: 22px;
+}
+.home-page .contact-section {
+  padding-block: 44px;
+}
+.home-page .contact-section h2 {
+  margin-bottom: 12px;
+}
+.home-page .contact-email {
+  padding-block: 20px 16px;
+  font-size: clamp(20px, 2.5vw, 30px);
+}
+.home-page .contact-links {
+  margin-top: 18px;
+}
+@media (max-width: 1000px) {
+  .home-page .project-grid {
+    grid-template-columns: 1fr;
+    gap: 18px;
+  }
+}
+@media (max-width: 800px) {
+  .home-page .hero {
+    grid-template-columns: minmax(0, 1fr) 200px;
+    gap: 24px;
+  }
+  .home-page .hero-visual {
+    width: 100%;
+    min-height: 200px;
+  }
+  .home-page .hero h1 {
+    font-size: 64px;
+  }
+}
+@media (max-width: 600px) {
+  .home-page .hero {
+    grid-template-columns: 1fr;
+    padding-block: 32px;
+    gap: 20px;
+  }
+  .home-page .hero h1 {
+    font-size: clamp(52px, 14vw, 72px);
+  }
+  .home-page .hero-visual {
+    min-height: 170px;
+  }
+  .home-page .systems-graphic {
+    max-width: 220px;
+  }
+  .home-page .section,
+  .home-page .contact-section {
+    padding-block: 32px;
+  }
+  .home-page .section-heading {
+    margin-bottom: 20px;
+  }
+  .home-page .project-card {
+    grid-template-columns: 1fr;
+    padding: 18px;
+  }
+  .home-page .project-art {
+    display: none;
+  }
+  .home-page .home-overview .overview-grid {
+    grid-template-columns: 1fr;
+    gap: 12px;
+  }
+  .home-page .overview-card {
+    padding: 16px 18px;
+  }
+  .home-page .skill-list > li {
+    padding: 8px 10px;
+  }
+  .home-page .interest-card {
+    padding: 18px;
+  }
 }

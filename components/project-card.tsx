@@ -81,14 +81,23 @@ export function ProjectCard({
           ))}
         </div>
         {!external && (
-          <a
-            className="project-live-link"
-            href={project.external}
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Open live app ↗
-          </a>
+          <div className="project-links">
+            <Link
+              className="project-story-link"
+              href={project.href}
+              aria-label={`Project details for ${project.title}`}
+            >
+              Project details <span aria-hidden="true">→</span>
+            </Link>
+            <a
+              className="project-live-link"
+              href={project.external}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Open live app ↗
+            </a>
+          </div>
         )}
       </div>
     </article>

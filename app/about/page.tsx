@@ -53,6 +53,17 @@ export default function AboutPage() {
             </Link>
             .
           </p>
+          <p>
+            Two recent projects are{" "}
+            <Link className="inline-link" href="/projects/otherwise">
+              OtherWise
+            </Link>,
+            a topic discovery tool, and{" "}
+            <Link className="inline-link" href="/projects/ridelist">
+              RideList
+            </Link>,
+            a campus ridesharing app.
+          </p>
           <a
             className="button primary"
             href={siteConfig.links.resume}
@@ -74,7 +85,7 @@ export default function AboutPage() {
           {experience.map((item) => (
             <article className="experience-row" key={item.organization}>
               <span className="eyebrow">{item.date}</span>
-              <div>
+              <div id={item.id}>
                 <h3>{item.role}</h3>
                 <a
                   className="inline-link"
@@ -104,7 +115,7 @@ export default function AboutPage() {
         </div>
       </section>
       <section className="section about-skills">
-        <p className="eyebrow">Programming</p>
+        <p className="eyebrow" id="tools">Programming</p>
         <h2>Tools and languages</h2>
         <SkillList />
       </section>

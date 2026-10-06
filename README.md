@@ -2,7 +2,7 @@
 
 A responsive portfolio built with Next.js 16.3.8 and React 19.3. Includes light/dark mode, a typography intro, project stories, and live Clash of Clans / Spotify cards. The first intro lasts about 1.8 seconds; later document loads take about 0.25 seconds. Internal navigation does not replay it. Reduced-motion visitors skip it, and content works without JavaScript.
 
-The homepage briefly covers work experience, highlighted projects, skills with icons, research, and games/music. Dedicated Projects, About, and Résumé pages are linked in the desktop and mobile navigation. The résumé includes a readable summary, PDF preview on larger screens, and open/download links on every screen. The homepage shows three Spotify tracks; About keeps the full list.
+The compact homepage flows from the introduction to highlighted projects, combined experience/research, skills with icons, and games/music. Project previews distinguish details from live apps; role titles link to matching About entries, and All skills opens the full technical résumé. About links back to the recent projects. Dedicated Projects, About, and Résumé pages are linked in the desktop and mobile navigation. The résumé includes a readable summary, PDF preview on larger screens, and open/download links on every screen. The homepage shows three Spotify tracks; About keeps the full list.
 
 Profile content and the downloadable PDF reflect the supplied October 2026 software engineering résumé. OtherWise and RideList are highlighted, with LHS Schedule alongside them on Projects; earlier apps remain available below. Shared experience and technical skills live in `config/profile.ts`. Additional skill glyphs come from the [Simple Icons project](https://simpleicons.org/); the SQL icon is a local SVG.
 
