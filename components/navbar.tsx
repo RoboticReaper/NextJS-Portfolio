@@ -42,12 +42,12 @@ export function Navbar() {
     <header className="site-header">
       <div className="nav-wrap">
         <Link
-          className="wordmark"
+          className="brand-logo"
           href="/"
           onClick={() => setOpen(false)}
           aria-label="Baoren Liu home"
         >
-          bl<span className="accent">.</span>
+          <img src="/logo.svg" alt="Baoren Liu logo" width={36} height={36} />
         </Link>
         <nav
           aria-label="Main navigation"

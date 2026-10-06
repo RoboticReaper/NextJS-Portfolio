@@ -21,8 +21,8 @@ export const metadata: Metadata = {
 };
 export const viewport: Viewport = {
   themeColor: [
-    { media: "(prefers-color-scheme: light)", color: "#f7f8f5" },
-    { media: "(prefers-color-scheme: dark)", color: "#111714" },
+    { media: "(prefers-color-scheme: light)", color: "#f7f9fc" },
+    { media: "(prefers-color-scheme: dark)", color: "#101722" },
   ],
 };
 const initialize = `(function(){var h=document.documentElement;var dark=window.matchMedia('(prefers-color-scheme: dark)').matches;try{var t=localStorage.getItem('portfolio-theme');h.dataset.theme=t==='dark'||t==='light'?t:(dark?'dark':'light')}catch(e){h.dataset.theme=dark?'dark':'light'}if(!window.matchMedia('(prefers-reduced-motion: reduce)').matches){h.dataset.introPending='true';window.setTimeout(function(){delete h.dataset.introPending;var c=document.getElementById('site-content');if(c)c.inert=false},3000)}})();`;

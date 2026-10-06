@@ -62,33 +62,6 @@ export default function Home() {
           </span>
         </div>
       </section>
-      <div className="container">
-        <div className="metrics-strip">
-          <div>
-            <strong>
-              1,300<span>+</span>
-            </strong>
-            <span>Peak schedule app users</span>
-          </div>
-          <div>
-            <strong>
-              7k<span>+</span>
-            </strong>
-            <span>Notes app downloads</span>
-          </div>
-          <div>
-            <strong>
-              400<span>~</span>
-            </strong>
-            <span>Hours of community service</span>
-          </div>
-          <p>
-            A few things
-            <br />
-            <span>I’ve worked on.</span>
-          </p>
-        </div>
-      </div>
       <section className="section container" id="work">
         <div className="section-heading">
           <div>
