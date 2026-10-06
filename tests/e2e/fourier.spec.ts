@@ -1,0 +1,102 @@
+import { expect, test } from "@playwright/test";
+
+test.beforeEach(async ({ page }) => {
+  await page.emulateMedia({ reducedMotion: "reduce" });
+  await page.route("**/api/{coc,spotify}", (route) =>
+    route.fulfill({ status: 503, json: { error: "Unavailable" } }),
+  );
+});
+
+test("example and detail controls work with the keyboard without autoplay", async ({ page }) => {
+  await page.goto("/");
+  const pad = page.getByRole("region", { name: "Fourier sketchpad", exact: true });
+  await expect(pad).toBeVisible({ timeout: 2000 });
+  await expect(pad.getByRole("button", { name: "Play animation" })).toBeVisible();
+  const path = pad.getByTestId("fourier-path");
+  const original = await path.getAttribute("d");
+  const slider = pad.getByRole("slider", { name: "Circles" });
+  await slider.focus();
+  await slider.press("Home");
+  await expect(slider).toHaveValue("1");
+  await expect(path).not.toHaveAttribute("d", original!);
+  await pad.getByRole("button", { name: "Load example" }).focus();
+  await page.keyboard.press("Enter");
+  await expect(path).toHaveAttribute("d", original!);
+  const afterFrames = await path.evaluate(async (element) => {
+    for (let i = 0; i < 5; i++) await new Promise(requestAnimationFrame);
+    return element.getAttribute("d");
+  });
+  expect(afterFrames).toBe(original);
+});
+
+test("a drawn loop replaces the example and restores without scrolling the page", async ({ page, isMobile }) => {
+  await page.goto("/");
+  const pad = page.getByRole("region", { name: "Fourier sketchpad", exact: true });
+  await expect(pad).toBeVisible({ timeout: 2000 });
+  const original = await pad.getByTestId("fourier-path").getAttribute("d");
+  await pad.getByRole("button", { name: "Draw a loop" }).click();
+  const board = pad.getByRole("img", { name: "Fourier drawing area" });
+  await board.scrollIntoViewIfNeeded();
+  const box = (await board.boundingBox())!;
+  const points = [
+    [0.3, 0.25], [0.7, 0.25], [0.7, 0.75], [0.3, 0.75], [0.3, 0.25],
+  ].map(([x, y]) => ({ x: box.x + box.width * x, y: box.y + box.height * y }));
+  const scrollBefore = await page.evaluate(() => scrollY);
+  if (isMobile) {
+    const session = await page.context().newCDPSession(page);
+    await session.send("Input.dispatchTouchEvent", { type: "touchStart", touchPoints: [{ ...points[0], id: 1 }] });
+    for (const point of points.slice(1))
+      await session.send("Input.dispatchTouchEvent", { type: "touchMove", touchPoints: [{ ...point, id: 1 }] });
+    await session.send("Input.dispatchTouchEvent", { type: "touchEnd", touchPoints: [] });
+    await session.detach();
+  } else {
+    await page.mouse.move(points[0].x, points[0].y);
+    await page.mouse.down();
+    for (const point of points.slice(1)) await page.mouse.move(point.x, point.y, { steps: 8 });
+    await page.mouse.up();
+  }
+  await expect(pad.getByRole("status", { name: "Drawing status" })).toContainText("Your loop is ready");
+  await expect(pad.getByTestId("fourier-path")).not.toHaveAttribute("d", original!);
+  expect(await page.evaluate(() => scrollY)).toBe(scrollBefore);
+  await pad.getByRole("button", { name: "Load example" }).click();
+  await expect(pad.getByTestId("fourier-path")).toHaveAttribute("d", original!);
+});
+
+test("animation plays on request and pauses at a stable curve", async ({ page }) => {
+  await page.goto("/");
+  const pad = page.getByRole("region", { name: "Fourier sketchpad", exact: true });
+  await expect(pad).toBeVisible({ timeout: 2000 });
+  await pad.getByRole("button", { name: "Play animation" }).click();
+  const path = pad.getByTestId("fourier-path");
+  const first = await path.getAttribute("d");
+  await expect(path).not.toHaveAttribute("d", first!);
+  await pad.getByRole("button", { name: "Pause animation" }).click();
+  const paused = await path.getAttribute("d");
+  const later = await path.evaluate(async (element) => {
+    for (let i = 0; i < 5; i++) await new Promise(requestAnimationFrame);
+    return element.getAttribute("d");
+  });
+  expect(later).toBe(paused);
+});
+
+test("rotating circles stop offscreen and resume on returning", async ({ page }) => {
+  await page.goto("/");
+  const pad = page.getByRole("region", { name: "Fourier sketchpad", exact: true });
+  const fullCurve = await pad.getByTestId("fourier-path").getAttribute("d");
+  await pad.getByRole("button", { name: "Play animation" }).click();
+  const tip = pad.locator(".fourier-tip");
+  const starting = await tip.getAttribute("cx");
+  await expect(tip).not.toHaveAttribute("cx", starting!);
+  await page.getByRole("contentinfo").scrollIntoViewIfNeeded();
+  await expect(pad).not.toBeInViewport();
+  // Wait until the IntersectionObserver has switched to the complete, static curve.
+  await expect(pad.getByTestId("fourier-path")).toHaveAttribute("d", fullCurve!);
+  const still = await tip.getAttribute("cx");
+  const later = await tip.evaluate(async (element) => {
+    for (let i = 0; i < 8; i++) await new Promise(requestAnimationFrame);
+    return element.getAttribute("cx");
+  });
+  expect(later).toBe(still);
+  await tip.scrollIntoViewIfNeeded();
+  await expect(tip).not.toHaveAttribute("cx", still!);
+});

@@ -302,37 +302,6 @@ p {
   isolation: isolate;
   background: radial-gradient(ellipse, var(--accent-soft), transparent 68%);
 }
-.systems-graphic {
-  display: block;
-  width: 100%;
-  max-width: 440px;
-  color: var(--accent);
-}
-.systems-paths {
-  stroke-width: 1;
-  opacity: 0.5;
-}
-.systems-nodes {
-  fill: var(--accent);
-}
-.systems-center {
-  fill: var(--surface);
-  stroke: var(--accent);
-  stroke-width: 1;
-}
-.systems-labels {
-  fill: var(--muted);
-  font:
-    11px ui-monospace,
-    monospace;
-  letter-spacing: 1px;
-}
-.systems-symbol {
-  fill: var(--text);
-  font:
-    34px Georgia,
-    serif;
-}
 .about-profile-card {
   padding: 32px;
   border: 1px solid var(--line);
@@ -1684,9 +1653,6 @@ html[data-intro-pending] .name-intro {
 .home-page .hero-visual {
   min-height: 300px;
 }
-.home-page .systems-graphic {
-  max-width: 320px;
-}
 .home-page .hero-footnote {
   margin-top: 18px;
 }
@@ -1861,9 +1827,6 @@ html[data-intro-pending] .name-intro {
   .home-page .hero-visual {
     min-height: 170px;
   }
-  .home-page .systems-graphic {
-    max-width: 220px;
-  }
   .home-page .section,
   .home-page .contact-section {
     padding-block: 32px;
@@ -1890,5 +1853,157 @@ html[data-intro-pending] .name-intro {
   }
   .home-page .interest-card {
     padding: 18px;
+  }
+}
+
+.home-page .hero {
+  grid-template-columns: minmax(0, 1.2fr) minmax(300px, 1fr);
+}
+.home-page .hero-playground {
+  width: 100%;
+  min-height: 0;
+  max-width: 440px;
+  background: none;
+}
+.fourier-sketchpad {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  background: var(--surface);
+}
+.fourier-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  margin-bottom: 8px;
+}
+.fourier-sketchpad h2 {
+  margin: 0;
+  font-size: 16px;
+  letter-spacing: -0.02em;
+  line-height: 1.3;
+}
+.fourier-board {
+  display: block;
+  width: 100%;
+  height: 180px;
+  overflow: hidden;
+  border-radius: 8px;
+  background: var(--bg);
+  touch-action: pan-y;
+}
+.fourier-board.is-drawing {
+  touch-action: none;
+  cursor: crosshair;
+}
+.fourier-grid {
+  color: var(--muted);
+  opacity: 0.22;
+}
+.fourier-source, .fourier-circle, .fourier-arms, .fourier-trace {
+  fill: none;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+.fourier-source {
+  stroke: var(--muted);
+  stroke-width: 1.5;
+  opacity: 0.35;
+}
+.is-drawing .fourier-source {
+  stroke: var(--accent);
+  stroke-width: 2;
+  opacity: 1;
+}
+.fourier-circle, .fourier-arms {
+  stroke: var(--muted);
+  stroke-width: 0.7;
+  opacity: 0.35;
+}
+.fourier-trace {
+  stroke: var(--accent);
+  stroke-width: 2;
+}
+.fourier-tip {
+  fill: var(--accent);
+}
+.fourier-controls {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 6px;
+  margin-top: 8px;
+}
+.fourier-button {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  min-height: 32px;
+  padding: 4px 9px;
+  border: 1px solid var(--line);
+  border-radius: 6px;
+  background: var(--surface);
+  color: var(--text);
+  font: inherit;
+  font-size: 12px;
+  cursor: pointer;
+}
+.fourier-button:hover {
+  background: var(--accent-soft);
+}
+.fourier-button:disabled {
+  opacity: 0.45;
+  cursor: default;
+}
+.fourier-detail {
+  display: flex;
+  align-items: center;
+  flex: 1 1 150px;
+  gap: 8px;
+  min-height: 32px;
+}
+.fourier-detail label {
+  display: flex;
+  gap: 5px;
+  white-space: nowrap;
+  font-size: 12px;
+  color: var(--muted);
+}
+.fourier-detail output {
+  min-width: 2ch;
+  font-variant-numeric: tabular-nums;
+  color: var(--text);
+}
+.fourier-detail input {
+  flex: 1;
+  min-width: 0;
+  width: 100%;
+  height: 32px;
+  accent-color: var(--accent);
+}
+.fourier-status {
+  min-height: 34px;
+  margin: 8px 0 2px;
+  color: var(--muted);
+  font-size: 11px;
+  line-height: 1.5;
+}
+.fourier-project-link {
+  display: inline-flex;
+  gap: 5px;
+  color: var(--accent);
+  font-size: 12px;
+}
+@media (max-width: 760px) {
+  .home-page .hero {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+  .home-page .hero-playground {
+    width: 100%;
+    min-height: 0;
   }
 }

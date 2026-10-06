@@ -2,7 +2,7 @@ import Link from "next/link";
 import { ProjectCard } from "@/components/project-card";
 import { SkillList } from "@/components/skill-list";
 import { LiveInterests } from "@/components/live-interests";
-import { SystemsGraphic } from "@/components/systems-graphic";
+import { FourierSketchpad } from "@/components/fourier-sketchpad";
 import { workExperience } from "@/config/profile";
 import { projects, siteConfig } from "@/config/site";
 export default function Home() {
@@ -39,8 +39,8 @@ export default function Home() {
             <span className="status-dot" /> Open to internship opportunities
           </div>
         </div>
-        <div className="hero-visual">
-          <SystemsGraphic />
+        <div className="hero-visual hero-playground">
+          <FourierSketchpad />
         </div>
       </section>
       <section className="section container">

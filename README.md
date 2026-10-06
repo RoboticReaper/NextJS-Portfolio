@@ -6,7 +6,7 @@ The compact homepage flows from the introduction to highlighted projects, combin
 
 Profile content and the downloadable PDF reflect the supplied October 2026 software engineering résumé. OtherWise and RideList are highlighted, with LHS Schedule alongside them on Projects; earlier apps remain available below. Shared experience and technical skills live in `config/profile.ts`. Additional skill glyphs come from the [Simple Icons project](https://simpleicons.org/); the SQL icon is a local SVG.
 
-The public LinkedIn profile supplies the introduction and current NOBE role, alongside the résumé details. The homepage uses a software/mathematics/AI diagram instead of a headshot. Navbar and footer share the original transparent SVG monogram, rendered light in dark mode and dark in light mode.
+The public LinkedIn profile supplies the introduction and current NOBE role, alongside the résumé details. The homepage uses a Fourier sketchpad instead of a headshot: draw a loop with mouse or touch, watch rotating circles reconstruct it, adjust the circle count, or reload the sample. Controls work with the keyboard; reduced-motion visitors get a static example until they choose Play. Animation suspends offscreen and in hidden tabs. Drawings stay in the browser. The transform follows the [standard discrete Fourier transform convention](https://numpy.org/doc/stable/reference/routines.fft.html), with normalization in the forward transform. Navbar and footer share the original transparent SVG monogram, rendered light in dark mode and dark in light mode.
 
 ## Development
 
@@ -33,7 +33,7 @@ npm run test:e2e
 
 `.github/workflows/ci.yml` runs on development/production pushes, pull requests targeting `main` or `master`, merge queues, and manual dispatch. The aggregate **Quality gate** passes only when lint, types, API regression tests, the production build, and desktop/mobile browser tests succeed. Tests isolate upstream API responses and require no real credentials. The production branch now requires **Quality gate** with strict status checks and admin enforcement. A workflow file alone does not enforce merge restrictions; repository settings must also require the check.
 
-The browser tests cover intro timing, reduced motion, theme persistence, navigation and case studies, mobile overflow, integration failure/retry, disabled JavaScript, and unavailable browser storage. API tests cover missing credentials, expired Spotify authorization, upstream failures/rate limits, malformed responses, missing league/album art, empty history, and cron authorization.
+The browser tests cover intro timing, reduced motion, theme persistence, navigation and case studies, mobile overflow, integration failure/retry, disabled JavaScript, unavailable browser storage, and sketchpad keyboard/mouse/touch controls and offscreen suspension. Unit tests also verify equal-distance sampling and Fourier reconstruction. API tests cover missing credentials, expired Spotify authorization, upstream failures/rate limits, malformed responses, missing league/album art, empty history, and cron authorization.
 
 ## Clash of Clans
 
@@ -57,6 +57,5 @@ Never put credentials in `NEXT_PUBLIC_*` variables, commit `.env`, or supply pro
 
 A cohesive set of future features:
 
-- **Fourier signature playground:** draw a shape and watch rotating circles reconstruct it, with a detail slider. Connects the math background to a memorable live demo.
 - **Project decision explorer:** let visitors inspect a project’s challenge, tradeoffs, and measured result. Helps employers see engineering judgment alongside the finished work.
 - **Recruiter quick tour:** a keyboard-accessible command menu that jumps to the most relevant project, experience, résumé, or contact link in a few keystrokes.
