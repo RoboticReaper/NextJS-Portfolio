@@ -7,8 +7,8 @@ export default function Home() {
       <section className="hero container">
         <div className="hero-copy">
           <p className="eyebrow">
-            <span className="status-dot" /> Developer · Problem solver · Curious
-            human
+            <span className="status-dot" /> Computer Science + Mathematics at
+            UIUC
           </p>
           <h1>
             Baoren Liu
@@ -16,16 +16,10 @@ export default function Home() {
               .
             </span>
           </h1>
-          <h2>
-            I build things
-            <br />
-            that <span className="hero-emphasis">make a difference.</span>
-          </h2>
           <p className="hero-description">
-            Computer Science + Mathematics at UIUC.
-            <br className="desktop-break" /> Turning everyday problems into
-            useful software.
-            <br className="desktop-break" /> Always learning. Always building.
+            I’m interested in software, AI, and the math behind them.
+            <br className="desktop-break" /> This site has some of my projects,
+            notes, and interests.
           </p>
           <div className="hero-actions">
             <Link className="button primary" href="#work">
@@ -58,7 +52,7 @@ export default function Home() {
             />
           </div>
           <div className="floating-label label-code">
-            <span className="accent">&lt;/&gt;</span> Ideas into impact.
+            <span className="accent">&lt;/&gt;</span> Coding since 2018
           </div>
           <div className="floating-label label-location">
             <span className="status-dot" /> Based in Urbana-Champaign
@@ -66,7 +60,6 @@ export default function Home() {
           <span className="visual-plus" aria-hidden="true">
             ✳
           </span>
-          <div className="visual-coordinate bottom">BUILD. LEARN. REPEAT.</div>
         </div>
       </section>
       <div className="container">
@@ -90,9 +83,9 @@ export default function Home() {
             <span>Hours of community service</span>
           </div>
           <p>
-            Small ideas.
+            A few things
             <br />
-            <span>Real-world impact.</span>
+            <span>I’ve worked on.</span>
           </p>
         </div>
       </div>
@@ -100,7 +93,7 @@ export default function Home() {
         <div className="section-heading">
           <div>
             <p className="eyebrow">01 / Selected work</p>
-            <h2>Built with purpose.</h2>
+            <h2>Selected projects</h2>
           </div>
           <Link className="text-link" href="/projects">
             All projects <span aria-hidden="true">↗</span>
@@ -116,21 +109,17 @@ export default function Home() {
         <div className="container about-band-inner">
           <div>
             <p className="eyebrow">02 / A little about me</p>
-            <h2>
-              Curiosity is
-              <br />
-              my default setting.
-            </h2>
+            <h2>About me</h2>
           </div>
           <div>
             <p>
-              I’ve been writing code since 2018. What keeps me going is the
-              moment an idea becomes something someone can actually use.
+              I’m studying Computer Science + Mathematics at UIUC, after
+              transferring from Northeastern University.
             </p>
             <p>
-              From building tools for my school to exploring AI in healthcare,
-              I’m interested in the space where thoughtful engineering meets
-              real human problems.
+              I’ve worked on a school schedule app, an Android notes app, and
+              healthcare research. I also enjoy exploring how mathematics
+              connects with software.
             </p>
             <Link className="text-link" href="/about">
               More about me <span aria-hidden="true">↗</span>
@@ -140,11 +129,7 @@ export default function Home() {
       </section>
       <section className="section container skills-section">
         <p className="eyebrow">03 / My toolkit</p>
-        <h2>
-          Different tools.
-          <br />
-          One builder’s mindset.
-        </h2>
+        <h2>Tools and languages</h2>
         <div className="skill-list">
           {skills.map((skill) => (
             <span key={skill}>{skill}</span>
@@ -153,14 +138,10 @@ export default function Home() {
       </section>
       <section className="contact-section container" id="contacts">
         <p className="eyebrow">04 / Let’s connect</p>
-        <h2>
-          Have something
-          <br />
-          in mind<span className="accent">?</span>
-        </h2>
+        <h2>Get in touch</h2>
         <p>
-          I’d love to hear about it. Projects, opportunities,
-          <br className="desktop-break" /> or just a good conversation.
+          Feel free to reach out about internships, projects, or anything on
+          this site.
         </p>
         <a className="contact-email" href={siteConfig.links.email}>
           liubaoren2006@gmail.com <span aria-hidden="true">↗</span>

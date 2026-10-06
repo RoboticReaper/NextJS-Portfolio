@@ -1,7 +1,7 @@
 export const siteConfig = {
-  name: "Baoren Liu — Developer & Problem Solver",
+  name: "Baoren Liu",
   description:
-    "Computer Science + Mathematics at UIUC. Building useful software, exploring AI, and turning curiosity into things people use.",
+    "Computer Science + Mathematics student at UIUC. A few projects, interests, and things I’m learning along the way.",
   links: {
     github: "https://github.com/RoboticReaper",
     instagram: "https://www.instagram.com/littleant2333/",
@@ -15,7 +15,7 @@ export const projects = [
     title: "LHS Schedule",
     category: "Web application",
     description:
-      "Making a six-day school schedule feel simple. A daily companion built for my high school community.",
+      "A web app I built to help students follow my high school’s six-day rotating schedule.",
     impact: "1,300 peak users",
     tags: ["React", "Firebase", "Product design"],
     href: "/projects/lhsschedule",
@@ -27,7 +27,7 @@ export const projects = [
     title: "Notes",
     category: "Android application",
     description:
-      "A fast, focused space to capture ideas. Built natively for Android and shared with thousands of people.",
+      "A native Android notes app distributed on third-party app stores.",
     impact: "7k+ downloads",
     tags: ["Kotlin", "Android"],
     href: "https://com-hoversfw-notes.en.aptoide.com/app",
@@ -39,8 +39,8 @@ export const projects = [
     title: "Fourier Series Visualizer",
     category: "Math × code",
     description:
-      "Turning curves into a symphony of rotating circles. An exploration of the mathematics behind drawing.",
-    impact: "From equations to motion",
+      "A visualizer that uses Fourier series to draw SVGs and 2D parametric curves.",
+    impact: "SVG and parametric curves",
     tags: ["Python", "Mathematics"],
     href: "https://github.com/RoboticReaper/Fourier-Series-Visualization",
     external: "https://github.com/RoboticReaper/Fourier-Series-Visualization",
@@ -51,8 +51,8 @@ export const projects = [
     title: "Coaching Website",
     category: "Full-stack application",
     description:
-      "An online home for coaching: lesson bookings, Stripe payments, photo galleries, and student communication.",
-    impact: "Booking to checkout",
+      "A coaching website with lesson bookings, Stripe payments, photo galleries, and student communication.",
+    impact: "Lesson bookings",
     tags: ["Web development", "Stripe"],
     href: "https://barry-tennis-website.vercel.app/",
     external: "https://barry-tennis-website.vercel.app/",
@@ -63,8 +63,8 @@ export const projects = [
     title: "Naive Bayes Spam Detection",
     category: "Machine learning",
     description:
-      "A probabilistic spam classifier inspired by discrete structures. Putting classroom theory to work.",
-    impact: "Probability in practice",
+      "A spam classifier using Naive Bayes, inspired by my discrete structures class.",
+    impact: "Naive Bayes classifier",
     tags: ["Python", "Machine learning"],
     href: "https://github.com/RoboticReaper/NaiveBayesSpam",
     external: "https://github.com/RoboticReaper/NaiveBayesSpam",

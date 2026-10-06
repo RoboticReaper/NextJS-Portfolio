@@ -39,7 +39,7 @@ test("theme survives reload and navigation works at every viewport", async ({
     .getByRole("link", { name: "Projects", exact: true })
     .click();
   await expect(
-    page.getByRole("heading", { name: "Built with purpose." }),
+    page.getByRole("heading", { name: "Projects", exact: true }),
   ).toBeVisible();
   await page.getByRole("link", { name: "Read the LHS Schedule story" }).click();
   await expect(

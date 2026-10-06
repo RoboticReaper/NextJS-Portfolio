@@ -36,9 +36,7 @@ export function NameIntro() {
     >
       <div className="intro-grid" />
       <div className="intro-type">
-        <span className="intro-caption">
-          A curious mind. A builder at heart.
-        </span>
+        <span className="intro-caption">Personal website</span>
         <div className="intro-name">
           {"Baoren Liu".split("").map((letter, i) => (
             <span key={i} style={{ "--letter": i } as React.CSSProperties}>
@@ -48,9 +46,7 @@ export function NameIntro() {
           <span className="intro-dot">.</span>
         </div>
         <div className="intro-line" />
-        <span className="intro-caption">
-          Welcome to my corner of the internet
-        </span>
+        <span className="intro-caption">Welcome</span>
       </div>
     </div>
   );

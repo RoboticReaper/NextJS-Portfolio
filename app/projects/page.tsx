@@ -7,11 +7,9 @@ export default function ProjectsPage() {
   return (
     <>
       <header className="page-heading">
-        <p className="eyebrow">The things I’ve made</p>
-        <h1>Built with purpose.</h1>
-        <p>
-          Real problems, curious experiments, and lessons learned along the way.
-        </p>
+        <p className="eyebrow">Applications and experiments</p>
+        <h1>Projects</h1>
+        <p>Some applications and experiments I’ve worked on.</p>
       </header>
       <div className="project-grid">
         {projects.map((project, index) => (
@@ -19,8 +17,8 @@ export default function ProjectsPage() {
         ))}
       </div>
       <section className="writing-section">
-        <p className="eyebrow">Notes from the journey</p>
-        <h2>Learning in public.</h2>
+        <p className="eyebrow">Writing</p>
+        <h2>Notes</h2>
         <Link className="writing-card" href="/projects/ctf">
           <span>01</span>
           <div>

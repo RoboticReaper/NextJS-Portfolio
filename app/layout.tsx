@@ -49,9 +49,7 @@ export default function RootLayout({
               <Link className="wordmark" href="/">
                 bl<span className="accent">.</span>
               </Link>
-              <p>
-                Made with curiosity. © {new Date().getFullYear()} Baoren Liu.
-              </p>
+              <p>© {new Date().getFullYear()} Baoren Liu.</p>
               <a
                 href={siteConfig.links.github}
                 target="_blank"
