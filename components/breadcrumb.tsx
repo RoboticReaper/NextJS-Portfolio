@@ -5,6 +5,8 @@ export function Breadcrumb() {
   const pathname = usePathname();
   const labels: Record<string, string> = {
     projects: "Projects",
+    otherwise: "OtherWise",
+    ridelist: "RideList",
     lhsschedule: "LHS Schedule",
     ctf: "Capture The Flag",
   };

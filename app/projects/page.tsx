@@ -12,10 +12,24 @@ export default function ProjectsPage() {
         <p>Some applications and experiments I’ve worked on.</p>
       </header>
       <div className="project-grid">
-        {projects.map((project, index) => (
+        {projects.slice(0, 3).map((project, index) => (
           <ProjectCard key={project.title} project={project} index={index} />
         ))}
       </div>
+      <section className="section earlier-projects">
+        <div className="section-heading">
+          <h2>Earlier projects</h2>
+        </div>
+        <div className="project-grid">
+          {projects.slice(3).map((project, index) => (
+            <ProjectCard
+              key={project.title}
+              project={project}
+              index={index + 3}
+            />
+          ))}
+        </div>
+      </section>
       <section className="writing-section">
         <p className="eyebrow">Writing</p>
         <h2>Notes</h2>

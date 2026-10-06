@@ -1,5 +1,36 @@
 import { expect, test } from "@playwright/test";
 
+for (const project of [
+  {
+    name: "OtherWise",
+    path: "/projects/otherwise",
+    live: "https://roboticreaper.github.io/OtherWise/",
+  },
+  {
+    name: "RideList",
+    path: "/projects/ridelist",
+    live: "https://www.ridelist.app/",
+  },
+]) {
+  test(`${project.name} has a readable case study and a live application link`, async ({
+    page,
+  }) => {
+    await page.emulateMedia({ reducedMotion: "reduce" });
+    await page.goto("/projects");
+    await page
+      .getByRole("heading", { name: project.name })
+      .getByRole("link")
+      .click({ timeout: 5000 });
+    await expect(page).toHaveURL(new RegExp(`${project.path}$`));
+    await expect(
+      page.getByRole("heading", { name: project.name, exact: true }),
+    ).toBeVisible();
+    await expect(
+      page.getByRole("link", { name: `Open ${project.name}` }),
+    ).toHaveAttribute("href", project.live);
+  });
+}
+
 test("résumé navigation leads to a readable page and a downloadable PDF", async ({
   page,
   isMobile,

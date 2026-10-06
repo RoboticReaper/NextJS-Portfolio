@@ -57,9 +57,7 @@ export function ProjectCard({
           </div>
         ) : (
           <div className="type-art" aria-hidden="true">
-            {project.title.includes("Bayes")
-              ? "P(A|B)"
-              : "play.\nlearn.\ngrow."}
+            {project.title.includes("Bayes") ? "P(A|B)" : project.title}
           </div>
         )}
         <span className="impact-badge">{project.impact}</span>

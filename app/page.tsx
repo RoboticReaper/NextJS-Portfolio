@@ -66,7 +66,7 @@ export default function Home() {
       >
         <div className="section-heading">
           <div>
-            <p className="eyebrow">01 / Teaching and community work</p>
+            <p className="eyebrow">01 / Current roles</p>
             <h2 id="work-experience-heading">Work experience</h2>
           </div>
           <Link className="text-link" href="/about">
@@ -109,7 +109,7 @@ export default function Home() {
         <div className="section container">
           <div className="section-heading">
             <div>
-              <p className="eyebrow">04 / Healthcare and AI</p>
+              <p className="eyebrow">04 / Healthcare and robotics</p>
               <h2>Research</h2>
             </div>
             <Link className="text-link" href="/about#research">
@@ -122,6 +122,16 @@ export default function Home() {
                 <h3>{item.role}</h3>
                 <p className="overview-role">{item.organization}</p>
                 <p>{item.summary}</p>
+                {item.publication && (
+                  <a
+                    className="inline-link research-paper-link"
+                    href={item.publication.href}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    Read the preprint ↗
+                  </a>
+                )}
               </article>
             ))}
           </div>
@@ -153,6 +163,13 @@ export default function Home() {
           liubaoren2006@gmail.com <span aria-hidden="true">↗</span>
         </a>
         <div className="contact-links">
+          <a
+            href={siteConfig.links.linkedin}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            LinkedIn ↗
+          </a>
           <a
             href={siteConfig.links.github}
             target="_blank"

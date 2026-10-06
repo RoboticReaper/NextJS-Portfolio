@@ -4,6 +4,8 @@ A responsive portfolio built with Next.js 16.3.8 and React 19.3. Includes light/
 
 The homepage briefly covers work experience, highlighted projects, skills with icons, research, and games/music. Dedicated Projects, About, and Résumé pages are linked in the desktop and mobile navigation. The résumé includes a readable summary, PDF preview on larger screens, and open/download links on every screen. The homepage shows three Spotify tracks; About keeps the full list.
 
+Profile content and the downloadable PDF reflect the supplied October 2026 software engineering résumé. OtherWise and RideList are highlighted, with LHS Schedule alongside them on Projects; earlier apps remain available below. Shared experience and technical skills live in `config/profile.ts`. Additional skill glyphs come from the [Simple Icons project](https://simpleicons.org/); the SQL icon is a local SVG.
+
 ## Development
 
 Use Node 24 LTS (minimum 22.12).

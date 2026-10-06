@@ -4,6 +4,7 @@ export const siteConfig = {
     "Computer Science + Mathematics student at UIUC. A few projects, interests, and things I’m learning along the way.",
   links: {
     github: "https://github.com/RoboticReaper",
+    linkedin: "https://www.linkedin.com/in/baoren-liu/",
     instagram: "https://www.instagram.com/littleant2333/",
     discord: "https://discord.com/users/1294767398972428391",
     resume: "/Baoren Liu Resume.pdf",
@@ -12,12 +13,36 @@ export const siteConfig = {
 };
 export const projects = [
   {
+    title: "OtherWise",
+    category: "Semantic discovery",
+    description:
+      "A discovery system and Chrome extension that connects familiar interests with new topics using keyword embeddings and interactive topic maps.",
+    impact: "October 2026",
+    tags: ["Python", "SentenceTransformer", "FastAPI", "PCA / UMAP"],
+    href: "/projects/otherwise",
+    external: "https://roboticreaper.github.io/OtherWise/",
+    image: null,
+    tone: "lavender",
+  },
+  {
+    title: "RideList",
+    category: "Campus ridesharing",
+    description:
+      "A bilingual ridesharing app with privacy-preserving ride matching, real-time messaging, and a self-hosted PostgreSQL database secured with mTLS.",
+    impact: "December 2025 — October 2026",
+    tags: ["Next.js", "PostgreSQL", "PostGIS", "Cloudflare"],
+    href: "/projects/ridelist",
+    external: "https://www.ridelist.app/",
+    image: null,
+    tone: "blue",
+  },
+  {
     title: "LHS Schedule",
     category: "Web application",
     description:
-      "A web app I built to help students follow my high school’s six-day rotating schedule.",
-    impact: "1,300 peak users",
-    tags: ["React", "Firebase", "Product design"],
+      "A school schedule app with real-time updates, cross-device sync, offline access, PDF schedule importing, and social features.",
+    impact: "July 2020 — December 2024",
+    tags: ["React", "Material UI", "Firebase", "Netlify"],
     href: "/projects/lhsschedule",
     external: "https://lhsschedule.netlify.app/",
     image: "/schedule_interface.png",
@@ -76,11 +101,13 @@ export const skills = [
   "Python",
   "Java",
   "C++",
-  "Kotlin",
-  "JavaScript",
+  "SQL",
   "TypeScript",
   "React",
   "Next.js",
-  "Firebase",
-  "MySQL",
+  "Flask",
+  "PyTorch",
+  "PostgreSQL",
+  "Docker",
+  "Git",
 ] as const;

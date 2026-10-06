@@ -1,6 +1,11 @@
 import type { Metadata } from "next";
 import { siteConfig } from "@/config/site";
-import { researchExperience, workExperience } from "@/config/profile";
+import {
+  award,
+  education,
+  technicalSkills,
+  workExperience,
+} from "@/config/profile";
 
 export const metadata: Metadata = { title: "Résumé" };
 
@@ -11,8 +16,7 @@ export default function ResumePage() {
         <p className="eyebrow">Education and experience</p>
         <h1>Résumé</h1>
         <p>
-          My background in computer science, mathematics, research, and
-          teaching.
+          My background in software engineering, mathematics, AI, and robotics.
         </p>
         <div className="resume-actions">
           <a className="button primary" href={siteConfig.links.resume} download>
@@ -31,19 +35,34 @@ export default function ResumePage() {
       <section className="resume-summary" aria-labelledby="resume-education">
         <h2 id="resume-education">Education</h2>
         <p>
-          Computer Science + Mathematics at the University of Illinois
-          Urbana-Champaign. Previously studied at Northeastern University.
+          {education.degree} at {education.university}. Expected graduation:{" "}
+          {education.graduation}. GPA: {education.gpa}.
+        </p>
+        <p>
+          {education.activity}. Coursework: {education.coursework}.
         </p>
         <h2>Experience</h2>
         <div className="overview-grid">
-          {[...researchExperience, ...workExperience].map((item) => (
+          {workExperience.map((item) => (
             <article className="overview-card" key={item.organization}>
               <h3>{item.organization}</h3>
               <p className="overview-role">{item.role}</p>
+              <p className="eyebrow">{item.date}</p>
               <p>{item.summary}</p>
             </article>
           ))}
         </div>
+        <h2 className="resume-subheading">Technical skills</h2>
+        <dl className="technical-skills">
+          {Object.entries(technicalSkills).map(([group, values]) => (
+            <div key={group}>
+              <dt>{group}</dt>
+              <dd>{values.join(", ")}</dd>
+            </div>
+          ))}
+        </dl>
+        <h2 className="resume-subheading">Awards</h2>
+        <p>{award}</p>
       </section>
       <section className="resume-document" aria-label="Résumé document">
         <iframe

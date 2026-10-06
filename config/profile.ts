@@ -1,14 +1,63 @@
-export const researchExperience = [
+type Experience = {
+  date: string;
+  role: string;
+  organization: string;
+  summary: string;
+  detail: string;
+  href: string;
+  publication?: { title: string; href: string; status: string };
+};
+export const education = {
+  university: "University of Illinois Urbana-Champaign",
+  degree: "Bachelor of Science in Mathematics & Computer Science",
+  graduation: "May 2028",
+  gpa: "3.92",
+  activity: "Software engineering in NOBE’s Technology Division",
+  coursework:
+    "Data Structures & Algorithms, Database Systems, Linear Algebra, Probability & Statistics",
+};
+export const workExperience: Experience[] = [
   {
-    date: "Healthcare × AI",
-    role: "Research & engineering",
+    date: "July 2026 — Present",
+    role: "Undergraduate Researcher",
+    organization: "HCESC-XR Lab, UIUC",
+    summary:
+      "Building Python simulation environments and an Isaac Sim benchmark for AI agents.",
+    detail:
+      "Developing an Isaac Sim benchmark for agents that diagnose hidden physical failures and recover from manipulation errors. Building Python environments with sensor feedback, inverse-kinematics control, and an observation-action API for LLM, VLA, and reinforcement learning agents.",
+    href: "https://illinois.edu/",
+  },
+  {
+    date: "June 2024 — Present",
+    role: "AI Research Intern",
     organization: "Mass General Brigham",
     summary:
-      "Electronic health records, retrieval augmented generation, and generative AI for diagnosis.",
+      "Working on clinical retrieval augmented generation, multi-agent support tools, and deployment automation.",
     detail:
-      "Worked with electronic health records, retrieval augmented generation, and generative AI to support diagnosis using structured and unstructured data. Research paper co-author.",
+      "Built a retrieval augmented generation pipeline to process, embed, retrieve, and classify clinical evidence in a HIPAA-compliant environment. Co-authored a dementia-identification paper, built a LangGraph hospital support prototype, and automated team website deployment with GitLab CI/CD, SSH-managed Linux runners, and webhooks.",
     href: "https://www.massgeneralbrigham.org/",
+    publication: {
+      title: "Dementia identification with retrieval augmented generation",
+      href: "https://doi.org/10.64898/2026.01.24.26344477",
+      status: "Under peer review",
+    },
   },
+];
+export const researchExperience: Experience[] = [
+  {
+    ...workExperience[0],
+    role: "AI agents and robotic manipulation",
+    summary:
+      "Studying how agents diagnose hidden physical failures and recover in Isaac Sim.",
+  },
+  {
+    ...workExperience[1],
+    role: "Clinical retrieval augmented generation",
+    summary:
+      "Co-authored a paper on identifying dementia from clinical evidence; currently under peer review.",
+  },
+];
+export const earlierExperience: Experience[] = [
   {
     date: "Scientific research",
     role: "Pain measurement research",
@@ -17,9 +66,6 @@ export const researchExperience = [
     detail: "Research into scientifically quantifying pain measurements.",
     href: "https://www.massgeneral.org/",
   },
-];
-
-export const workExperience = [
   {
     date: "2020 — 2024",
     role: "Community project leadership",
@@ -41,3 +87,44 @@ export const workExperience = [
     href: "https://www.ktbyte.com/",
   },
 ];
+export const technicalSkills = {
+  Languages: [
+    "Python",
+    "Java",
+    "C++",
+    "SQL",
+    "HTML",
+    "CSS",
+    "JavaScript",
+    "TypeScript",
+    "Kotlin",
+    "Bash",
+  ],
+  Technologies: [
+    "React",
+    "Next.js",
+    "Flask",
+    "PyTorch",
+    "LangChain",
+    "NumPy",
+    "Pandas",
+    "scikit-learn",
+    "ChromaDB",
+    "Hugging Face",
+  ],
+  Tools: [
+    "Git",
+    "CI/CD",
+    "PostgreSQL",
+    "Vercel",
+    "Docker",
+    "Google Cloud",
+    "Microsoft Azure",
+    "Linux",
+    "Ollama",
+    "Isaac Sim",
+    "Codex",
+  ],
+};
+export const award =
+  "1st in the Beginner Division and 6th of 131 teams overall at the SIGPwny (ACM @ UIUC) Fall CTF Competition, 2025.";

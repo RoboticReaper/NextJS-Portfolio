@@ -2,10 +2,10 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { LiveInterests } from "@/components/live-interests";
 import { siteConfig } from "@/config/site";
-import { researchExperience, workExperience } from "@/config/profile";
+import { education, earlierExperience, workExperience } from "@/config/profile";
 import { SkillList } from "@/components/skill-list";
 export const metadata: Metadata = { title: "About" };
-const experience = [...researchExperience, ...workExperience];
+const experience = [...workExperience, ...earlierExperience];
 export default function AboutPage() {
   return (
     <>
@@ -29,12 +29,13 @@ export default function AboutPage() {
           <p>
             I’m studying Computer Science + Mathematics at the University of
             Illinois Urbana-Champaign, after transferring from Northeastern
-            University.
+            University. I expect to graduate in {education.graduation}.
           </p>
           <p>
             I’ve been coding since 2018. I enjoy making programs to solve
-            everyday problems, exploring AI algorithms, and finding new ways to
-            connect mathematics with software.
+            everyday problems, exploring AI and robotics, and finding new ways
+            to connect mathematics with software. I’m also part of NOBE’s
+            Technology Division at UIUC.
           </p>
           <p>
             I’m looking for summer internships and exploring the areas of
@@ -77,6 +78,19 @@ export default function AboutPage() {
                   {item.organization} ↗
                 </a>
                 <p>{item.detail}</p>
+                {item.publication && (
+                  <p>
+                    <a
+                      className="inline-link"
+                      href={item.publication.href}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      Research preprint ↗
+                    </a>{" "}
+                    · {item.publication.status}
+                  </p>
+                )}
               </div>
             </article>
           ))}

@@ -572,11 +572,14 @@ p {
   background: inherit;
 }
 .type-art {
-  font-size: 70px;
+  font-size: clamp(36px, 4.5vw, 64px);
   letter-spacing: -0.07em;
   font-weight: 600;
-  white-space: pre-line;
-  line-height: 0.92;
+  max-width: 100%;
+  padding: 24px;
+  text-align: center;
+  overflow-wrap: anywhere;
+  line-height: 1.1;
 }
 .project-copy {
   padding: 24px 2px 0;
@@ -727,6 +730,30 @@ p {
 }
 .resume-document {
   margin-top: 48px;
+}
+.resume-summary .resume-subheading {
+  margin-top: 40px;
+}
+.technical-skills {
+  margin: 0;
+}
+.technical-skills > div {
+  padding-block: 16px;
+  border-bottom: 1px solid var(--line);
+}
+.technical-skills dt {
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+.technical-skills dd {
+  margin: 0;
+  color: var(--muted);
+  font-size: 14px;
+}
+.research-paper-link {
+  display: inline-block;
+  margin-top: 16px;
+  font-size: 13px;
 }
 .resume-document iframe {
   display: block;
