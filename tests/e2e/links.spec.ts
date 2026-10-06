@@ -1,5 +1,65 @@
 import { expect, test } from "@playwright/test";
 
+test("section links jump instantly to content below the navbar", async ({
+  page,
+}) => {
+  await page.emulateMedia({ reducedMotion: "no-preference" });
+  await page.addInitScript(() => localStorage.setItem("baoren-visited", "yes"));
+  await page.route("**/api/{coc,spotify}", (route) =>
+    route.fulfill({ status: 503, json: { error: "Unavailable" } }),
+  );
+  for (const destination of [
+    { link: "View selected work", hash: "#work", content: ".section-heading" },
+    { link: "More details", hash: "#research", content: ".section-heading" },
+    { link: "More about my hobbies", hash: "#hobbies", content: ".eyebrow" },
+  ]) {
+    await page.goto("/");
+    await expect(page.getByTestId("name-intro")).toBeHidden();
+    await page.getByRole("link", { name: destination.link, exact: true }).click();
+    await expect(page).toHaveURL(new RegExp(`${destination.hash}$`));
+    const frames = await page.evaluate(async ({ hash, content }) => {
+      const anchor = document.querySelector(hash)!;
+      const target = anchor.matches(content)
+        ? anchor
+        : anchor.querySelector(content)!;
+      const positions: { gap: number; scroll: number }[] = [];
+      for (let frame = 0; frame < 5; frame++) {
+        await new Promise(requestAnimationFrame);
+        positions.push({
+          gap:
+            target.getBoundingClientRect().top -
+            document.querySelector(".site-header")!.getBoundingClientRect().bottom,
+          scroll: window.scrollY,
+        });
+      }
+      return positions;
+    }, destination);
+    // The heading/eyebrow should clear the navbar without a large empty gap.
+    for (const frame of frames) {
+      expect(frame.gap, destination.hash).toBeGreaterThanOrEqual(12);
+      expect(frame.gap, destination.hash).toBeLessThanOrEqual(24);
+    }
+    expect(
+      Math.max(...frames.map((frame) => frame.scroll)) -
+        Math.min(...frames.map((frame) => frame.scroll)),
+    ).toBeLessThanOrEqual(1);
+    await page.reload();
+    await expect(page.getByTestId("name-intro")).toBeHidden();
+    const gap = await page.evaluate(({ hash, content }) => {
+      const anchor = document.querySelector(hash)!;
+      const target = anchor.matches(content)
+        ? anchor
+        : anchor.querySelector(content)!;
+      return (
+        target.getBoundingClientRect().top -
+        document.querySelector(".site-header")!.getBoundingClientRect().bottom
+      );
+    }, destination);
+    expect(gap, `Reload ${destination.hash}`).toBeGreaterThanOrEqual(12);
+    expect(gap, `Reload ${destination.hash}`).toBeLessThanOrEqual(24);
+  }
+});
+
 test("all internal links and section shortcuts have usable destinations", async ({
   page,
 }) => {

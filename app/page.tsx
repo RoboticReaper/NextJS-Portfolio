@@ -73,8 +73,8 @@ export default function Home() {
           ))}
         </div>
       </section>
-      <section className="section container" id="work">
-        <div className="section-heading">
+      <section className="section container">
+        <div className="section-heading" id="work">
           <div>
             <p className="eyebrow">02 / Selected work</p>
             <h2>Highlighted projects</h2>

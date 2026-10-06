@@ -1,4 +1,5 @@
 :root {
+  --header-height: 84px;
   --bg: #f7f9fc;
   --surface: #fff;
   --text: #192537;
@@ -52,8 +53,8 @@ html[data-theme="dark"] {
   box-sizing: border-box;
 }
 html {
-  scroll-behavior: smooth;
-  scroll-padding-top: 110px;
+  scroll-behavior: auto;
+  scroll-padding-top: calc(var(--header-height) + 17px);
 }
 body {
   margin: 0;
@@ -155,7 +156,7 @@ p {
   border-bottom: 1px solid var(--line);
 }
 .nav-wrap {
-  height: 84px;
+  height: var(--header-height);
   width: min(1280px, calc(100% - 80px));
   margin: auto;
   display: flex;
@@ -1285,12 +1286,14 @@ html[data-intro-pending] .name-intro {
   }
 }
 @media (max-width: 800px) {
+  :root {
+    --header-height: 72px;
+  }
   .container {
     width: calc(100% - 48px);
   }
   .nav-wrap {
     width: calc(100% - 48px);
-    height: 72px;
   }
   .main-nav {
     gap: 24px;
@@ -1394,18 +1397,20 @@ html[data-intro-pending] .name-intro {
   }
 }
 @media (max-width: 600px) {
+  :root {
+    --header-height: 68px;
+  }
   .container,
   .nav-wrap {
     width: calc(100% - 40px);
   }
   .nav-wrap {
-    height: 68px;
     gap: 16px;
   }
   .main-nav {
     display: none;
     position: absolute;
-    inset: 68px 0 auto;
+    inset: var(--header-height) 0 auto;
     background: var(--surface);
     border-bottom: 1px solid var(--line);
     padding: 20px;
