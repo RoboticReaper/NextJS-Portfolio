@@ -22,7 +22,7 @@ test("section links jump instantly to content below the navbar", async ({
       const target = anchor.matches(content)
         ? anchor
         : anchor.querySelector(content)!;
-      const positions: { gap: number; scroll: number }[] = [];
+      const positions: { gap: number; scroll: number; maxScroll: number }[] = [];
       for (let frame = 0; frame < 5; frame++) {
         await new Promise(requestAnimationFrame);
         positions.push({
@@ -30,6 +30,7 @@ test("section links jump instantly to content below the navbar", async ({
             target.getBoundingClientRect().top -
             document.querySelector(".site-header")!.getBoundingClientRect().bottom,
           scroll: window.scrollY,
+          maxScroll: document.documentElement.scrollHeight - innerHeight,
         });
       }
       return positions;
@@ -37,7 +38,7 @@ test("section links jump instantly to content below the navbar", async ({
     // The heading/eyebrow should clear the navbar without a large empty gap.
     for (const frame of frames) {
       expect(frame.gap, destination.hash).toBeGreaterThanOrEqual(12);
-      expect(frame.gap, destination.hash).toBeLessThanOrEqual(24);
+      expect(frame.gap, `${destination.hash}: ${JSON.stringify(frame)}`).toBeLessThanOrEqual(24);
     }
     expect(
       Math.max(...frames.map((frame) => frame.scroll)) -

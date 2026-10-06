@@ -2,43 +2,35 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { LiveInterests } from "@/components/live-interests";
 import { siteConfig } from "@/config/site";
-import { education, earlierExperience, workExperience } from "@/config/profile";
-import { SkillList } from "@/components/skill-list";
+import { award, education, earlierExperience, technicalSkills, workExperience } from "@/config/profile";
 export const metadata: Metadata = { title: "About" };
 const experience = [...workExperience, ...earlierExperience];
 export default function AboutPage() {
   return (
-    <>
+    <div className="about-page dense-page">
       <header className="page-heading">
         <p className="eyebrow">Background and interests</p>
         <h1>About me</h1>
         <p>Computer Science + Mathematics student at UIUC.</p>
       </header>
       <section className="about-intro">
-        <div className="about-profile-card">
+        <div className="about-profile-card about-education">
           <span className="logo-mark" aria-hidden="true" />
-          <p className="eyebrow">At a glance</p>
-          <h2>Hi, I’m Baoren.</h2>
-          <p>CS + Mathematics at UIUC</p>
-          <p>Software, AI, and infrastructure</p>
-          <a
-            className="text-link"
-            href={siteConfig.links.linkedin}
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            LinkedIn ↗
-          </a>
+          <h2>Education</h2>
+          <p className="education-university">{education.university}</p>
+          <p>{education.degree}</p>
+          <p>Expected {education.graduation} · GPA {education.gpa}</p>
+          <p className="education-coursework"><strong>Coursework</strong><br />{education.coursework}</p>
+          <div className="about-profile-links">
+            <a className="inline-link" href={siteConfig.links.linkedin} target="_blank" rel="noopener noreferrer">LinkedIn ↗</a>
+            <Link className="inline-link" href="/resume">Résumé ↗</Link>
+          </div>
         </div>
-        <div>
-          <h2>Education and interests</h2>
+        <div className="about-background">
+          <h2>Background</h2>
           <p>
-            I’m studying Computer Science + Mathematics at the University of
-            Illinois Urbana-Champaign, after transferring from Northeastern
-            University. I expect to graduate in {education.graduation}.
-          </p>
-          <p>
-            I’ve been coding since 2018. I enjoy making programs to solve
+            I transferred to UIUC from Northeastern University and have been
+            coding since 2018. I enjoy making programs to solve
             everyday problems. I’m interested in how systems work, from
             databases to secure networked applications, alongside AI and
             robotics research. I work as a software engineer in NOBE’s
@@ -64,18 +56,10 @@ export default function AboutPage() {
             </Link>,
             a campus ridesharing app.
           </p>
-          <a
-            className="button primary"
-            href={siteConfig.links.resume}
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            View my résumé ↗
-          </a>
         </div>
       </section>
-      <section className="experience-section" id="research">
-        <div className="section-heading">
+      <section className="experience-section">
+        <div className="section-heading" id="research">
           <div>
             <p className="eyebrow">Research, teaching, and volunteering</p>
             <h2>Experience</h2>
@@ -116,11 +100,22 @@ export default function AboutPage() {
       </section>
       <section className="section about-skills">
         <p className="eyebrow" id="tools">Programming</p>
-        <h2>Tools and languages</h2>
-        <SkillList />
+        <h2 id="technical-skills">Tools and languages</h2>
+        <dl className="technical-skills">
+          {Object.entries(technicalSkills).map(([group, values]) => (
+            <div key={group}>
+              <dt>{group}</dt>
+              <dd>{values.join(", ")}</dd>
+            </div>
+          ))}
+        </dl>
+        <div className="about-awards" id="awards">
+          <h3>Awards</h3>
+          <p>{award}</p>
+        </div>
       </section>
-      <section className="personal-section" id="hobbies">
-        <p className="eyebrow">Beyond the keyboard</p>
+      <section className="personal-section">
+        <p className="eyebrow" id="hobbies">Beyond the keyboard</p>
         <h2>Outside of school</h2>
         <p className="section-description">
           I also enjoy playing games and listening to music.
@@ -137,6 +132,6 @@ export default function AboutPage() {
           </p>
         </div>
       </section>
-    </>
+    </div>
   );
 }

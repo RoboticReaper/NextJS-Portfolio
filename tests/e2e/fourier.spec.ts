@@ -63,7 +63,7 @@ test("a drawn loop replaces the example and restores without scrolling the page"
   await board.scrollIntoViewIfNeeded();
   const box = (await board.boundingBox())!;
   const points = [
-    [0.3, 0.25], [0.7, 0.25], [0.7, 0.75], [0.3, 0.75], [0.3, 0.25],
+    [0.1, 0.04], [0.9, 0.04], [0.9, 0.96], [0.1, 0.96], [0.1, 0.04],
   ].map(([x, y]) => ({ x: box.x + box.width * x, y: box.y + box.height * y }));
   const scrollBefore = await page.evaluate(() => scrollY);
   if (isMobile) {
@@ -80,8 +80,25 @@ test("a drawn loop replaces the example and restores without scrolling the page"
     await page.mouse.up();
   }
   await expect(pad.getByRole("status", { name: "Drawing status" })).toContainText("Your loop is ready");
+  const firstPoint = await pad.locator(".fourier-source").evaluate((element) => {
+    const path = element as SVGPathElement;
+    const point = path.getPointAtLength(0).matrixTransform(path.getScreenCTM()!);
+    return { x: point.x, y: point.y };
+  });
+  expect(Math.hypot(firstPoint.x - points[0].x, firstPoint.y - points[0].y)).toBeLessThan(1);
   await expect(pad.getByTestId("fourier-path")).not.toHaveAttribute("d", original!);
   expect(await page.evaluate(() => scrollY)).toBe(scrollBefore);
+  await page.setViewportSize({ width: 320, height: 800 });
+  await expect.poll(() => board.evaluate((element) => {
+    const svg = element as SVGSVGElement;
+    return Math.abs(svg.viewBox.baseVal.width - 200 * svg.clientWidth / svg.clientHeight);
+  })).toBeLessThan(0.1);
+  await expect.poll(() => pad.locator(".fourier-source").evaluate((element) => {
+    const path = element as SVGPathElement;
+    const board = path.ownerSVGElement!.getBoundingClientRect();
+    const bounds = path.getBoundingClientRect();
+    return bounds.left >= board.left && bounds.right <= board.right && bounds.top >= board.top && bounds.bottom <= board.bottom;
+  })).toBe(true);
   await pad.getByRole("button", { name: "Load example" }).click();
   await expect(pad.getByTestId("fourier-path")).toHaveAttribute("d", original!);
 });

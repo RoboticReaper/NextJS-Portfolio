@@ -26,7 +26,9 @@ export function FourierSketchpad() {
   const [time, setTime] = useState(0);
   const [message, setMessage] = useState(initialMessage);
   const [visible, setVisible] = useState(false);
+  const [boardWidth, setBoardWidth] = useState(360);
   const region = useRef<HTMLElement>(null);
+  const drawingArea = useRef<HTMLDivElement>(null);
   const pointer = useRef<number | null>(null);
   const points = useRef<Point[]>([]);
   const phase = useRef(0);
@@ -38,14 +40,26 @@ export function FourierSketchpad() {
     const chain = epicycleChain(terms, i / 256, detail);
     return chain[chain.length - 1];
   }) : [], [terms, detail]);
+  // Preserve the complete drawing on narrower screens without changing its Fourier data.
+  const fit = useMemo(() => {
+    if (drawing || !stroke.length) return 1;
+    const extentX = Math.max(...stroke.map(point => Math.abs(point.x)), 1);
+    const extentY = Math.max(...stroke.map(point => Math.abs(point.y)), 1);
+    return Math.min(1, (boardWidth / 2 - 5) / extentX, 95 / extentY);
+  }, [drawing, stroke, boardWidth]);
   const chain = epicycleChain(terms, time, detail);
   const tracing = wantsPlayback && visible && tabVisible;
   const trace = tracing ? curve.slice(0, Math.max(2, Math.floor(time * 256) + 1)) : curve;
 
   useEffect(() => {
     const observer = new IntersectionObserver(([entry]) => setVisible(entry.isIntersecting), { threshold: 0.1 });
+    const resize = new ResizeObserver(([entry]) => {
+      const { width, height } = entry.contentRect;
+      if (height > 0) setBoardWidth(200 * width / height);
+    });
     if (region.current) observer.observe(region.current);
-    return () => observer.disconnect();
+    if (drawingArea.current) resize.observe(drawingArea.current);
+    return () => { observer.disconnect(); resize.disconnect(); };
   }, []);
 
   useEffect(() => {
@@ -94,7 +108,11 @@ export function FourierSketchpad() {
     point.y = event.clientY;
     const matrix = svg.getScreenCTM();
     const mapped = matrix ? point.matrixTransform(matrix.inverse()) : point;
-    return { x: Math.max(-165, Math.min(165, mapped.x)), y: Math.max(-85, Math.min(85, mapped.y)) };
+    const bounds = svg.viewBox.baseVal;
+    return {
+      x: Math.max(bounds.x + 5, Math.min(bounds.x + bounds.width - 5, mapped.x)),
+      y: Math.max(bounds.y + 5, Math.min(bounds.y + bounds.height - 5, mapped.y)),
+    };
   }
 
   function pointerDown(event: PointerEvent<SVGSVGElement>) {
@@ -146,18 +164,23 @@ export function FourierSketchpad() {
     <section className="fourier-sketchpad" aria-labelledby="fourier-heading" ref={region}>
       <div className="fourier-header">
         <h2 id="fourier-heading">Fourier sketchpad</h2>
-        <button type="button" className="fourier-button" disabled={drawing} aria-label={wantsPlayback ? "Pause animation" : "Play animation"} onClick={() => {
-          setPlaying(!wantsPlayback);
-          setExplicitPlay(!wantsPlayback);
-        }}>
-          <span aria-hidden="true">{wantsPlayback ? "Ⅱ" : "▶"}</span> {wantsPlayback ? "Pause" : "Play"}
-        </button>
+        <div className="fourier-header-actions">
+          <a className="fourier-project-link" href="https://github.com/RoboticReaper/Fourier-Series-Visualization" aria-label="Explore the Fourier project" target="_blank" rel="noopener noreferrer">Project <span aria-hidden="true">↗</span></a>
+          <button type="button" className="fourier-button" disabled={drawing} aria-label={wantsPlayback ? "Pause animation" : "Play animation"} onClick={() => {
+            setPlaying(!wantsPlayback);
+            setExplicitPlay(!wantsPlayback);
+          }}>
+            <span aria-hidden="true">{wantsPlayback ? "Ⅱ" : "▶"}</span> {wantsPlayback ? "Pause" : "Play"}
+          </button>
+        </div>
       </div>
-      <svg className={`fourier-board${drawing ? " is-drawing" : ""}`} viewBox="-180 -100 360 200" role="img" aria-label="Fourier drawing area" aria-describedby="fourier-status" onPointerDown={pointerDown} onPointerMove={pointerMove} onPointerUp={pointerUp} onPointerCancel={cancelPointer} onLostPointerCapture={cancelPointer}>
+      <div className="fourier-drawing" ref={drawingArea}>
+        <svg className={`fourier-board${drawing ? " is-drawing" : ""}`} viewBox={`${-boardWidth / 2} -100 ${boardWidth} 200`} role="img" aria-label="Fourier drawing area" aria-describedby="fourier-status" onPointerDown={pointerDown} onPointerMove={pointerMove} onPointerUp={pointerUp} onPointerCancel={cancelPointer} onLostPointerCapture={cancelPointer}>
         <defs>
           <pattern id="fourier-grid" width="20" height="20" patternUnits="userSpaceOnUse"><circle cx="0" cy="0" r="0.7" fill="var(--muted)" /></pattern>
         </defs>
-        <rect x="-180" y="-100" width="360" height="200" fill="url(#fourier-grid)" className="fourier-grid" />
+        <rect x={-boardWidth / 2} y="-100" width={boardWidth} height="200" fill="url(#fourier-grid)" className="fourier-grid" />
+        <g transform={`scale(${fit})`}>
         <path className="fourier-source" d={pathFor(stroke) + (!drawing && stroke.length ? " Z" : "")} />
         {!drawing && terms.length > 0 && <>
           {chain.slice(0, -1).map((point, i) => <circle className="fourier-circle" key={i} cx={point.x} cy={point.y} r={terms[i + 1].amplitude} />)}
@@ -165,7 +188,10 @@ export function FourierSketchpad() {
           <path className="fourier-trace" data-testid="fourier-path" d={pathFor(trace)} />
           <circle className="fourier-tip" cx={chain[chain.length - 1].x} cy={chain[chain.length - 1].y} r="2.8" />
         </>}
-      </svg>
+        </g>
+        </svg>
+        <p id="fourier-status" className={`fourier-status${message === initialMessage ? " is-idle" : ""}`} role="status" aria-label="Drawing status">{message}</p>
+      </div>
       <div className="fourier-controls">
         <button type="button" className="fourier-button" onClick={drawLoop}>Draw a loop</button>
         <button type="button" className="fourier-button" onClick={loadExample}>Load example</button>
@@ -174,8 +200,6 @@ export function FourierSketchpad() {
           <input id="fourier-detail" type="range" min="1" max="48" value={detail} disabled={drawing} onChange={(event) => setDetail(Number(event.target.value))} />
         </div>
       </div>
-      <p id="fourier-status" className="fourier-status" role="status" aria-label="Drawing status">{message}</p>
-      <a className="fourier-project-link" href="https://github.com/RoboticReaper/Fourier-Series-Visualization" target="_blank" rel="noopener noreferrer">Explore the Fourier project <span aria-hidden="true">↗</span></a>
     </section>
   );
 }

@@ -653,19 +653,8 @@ p {
   gap: 12px;
   margin-top: 28px;
 }
-.resume-summary h2 {
-  font-size: 30px;
-  margin-bottom: 24px;
-}
-.resume-summary > p {
-  margin-bottom: 40px;
-  max-width: 700px;
-}
 .resume-document {
   margin-top: 48px;
-}
-.resume-summary .resume-subheading {
-  margin-top: 40px;
 }
 .technical-skills {
   margin: 0;
@@ -688,17 +677,12 @@ p {
   margin-top: 16px;
   font-size: 13px;
 }
-.resume-document iframe {
+.resume-document img {
   display: block;
   width: 100%;
-  height: 850px;
-  border: 1px solid var(--line);
-  border-radius: 12px;
+  height: auto;
   background: #fff;
-}
-.resume-document > p {
-  margin-top: 18px;
-  font-size: 12px;
+  border: 1px solid var(--line);
 }
 @media (max-width: 600px) {
   .overview-grid {
@@ -706,9 +690,6 @@ p {
   }
   .overview-card {
     padding: 22px;
-  }
-  .resume-document {
-    display: none;
   }
 }
 .contact-section {
@@ -1680,7 +1661,7 @@ html[data-intro-pending] .name-intro {
   gap: 12px;
   font-size: 12px;
 }
-.home-page .project-card {
+:is(.home-page, .projects-page) .project-card {
   display: grid;
   grid-template-columns: 128px minmax(0, 1fr);
   align-items: start;
@@ -1690,37 +1671,37 @@ html[data-intro-pending] .name-intro {
   border-radius: 12px;
   background: var(--surface);
 }
-.home-page .project-art {
+:is(.home-page, .projects-page) .project-art {
   height: 144px;
   border-radius: 8px;
 }
-.home-page .project-number,
-.home-page .impact-badge {
+:is(.home-page, .projects-page) .project-number,
+:is(.home-page, .projects-page) .impact-badge {
   display: none;
 }
-.home-page .project-launch {
+:is(.home-page, .projects-page) .project-launch {
   top: 8px;
   right: 8px;
   width: 26px;
   height: 26px;
   font-size: 15px;
 }
-.home-page .type-art {
+:is(.home-page, .projects-page) .type-art {
   padding: 12px;
   font-size: 22px;
 }
-.home-page .project-copy {
+:is(.home-page, .projects-page) .project-copy {
   padding: 0;
 }
-.home-page .project-copy h3 {
+:is(.home-page, .projects-page) .project-copy h3 {
   font-size: 22px;
   margin-top: 4px;
 }
-.home-page .project-copy > p:not(.eyebrow) {
+:is(.home-page, .projects-page) .project-copy > p:not(.eyebrow) {
   margin-top: 8px;
   max-width: none;
 }
-.home-page .tags {
+:is(.home-page, .projects-page) .tags {
   margin-top: 12px;
 }
 .project-links {
@@ -1797,7 +1778,7 @@ html[data-intro-pending] .name-intro {
   margin-top: 18px;
 }
 @media (max-width: 1000px) {
-  .home-page .project-grid {
+  :is(.home-page, .projects-page) .project-grid {
     grid-template-columns: 1fr;
     gap: 18px;
   }
@@ -1834,11 +1815,11 @@ html[data-intro-pending] .name-intro {
   .home-page .section-heading {
     margin-bottom: 20px;
   }
-  .home-page .project-card {
+  :is(.home-page, .projects-page) .project-card {
     grid-template-columns: 1fr;
     padding: 18px;
   }
-  .home-page .project-art {
+  :is(.home-page, .projects-page) .project-art {
     display: none;
   }
   .home-page .home-overview .overview-grid {
@@ -1879,6 +1860,15 @@ html[data-intro-pending] .name-intro {
   gap: 12px;
   margin-bottom: 8px;
 }
+.fourier-header-actions {
+  display: flex;
+  align-items: center;
+  flex-shrink: 0;
+  gap: 10px;
+}
+.fourier-drawing {
+  position: relative;
+}
 .fourier-sketchpad h2 {
   margin: 0;
   font-size: 16px;
@@ -1888,7 +1878,7 @@ html[data-intro-pending] .name-intro {
 .fourier-board {
   display: block;
   width: 100%;
-  height: 180px;
+  height: 240px;
   overflow: hidden;
   border-radius: 8px;
   background: var(--bg);
@@ -1985,14 +1975,30 @@ html[data-intro-pending] .name-intro {
   accent-color: var(--accent);
 }
 .fourier-status {
-  min-height: 34px;
-  margin: 8px 0 2px;
+  position: absolute;
+  bottom: 8px;
+  left: 8px;
+  right: 8px;
+  margin: 0;
+  padding: 4px 6px;
+  border-radius: 4px;
+  background: var(--surface);
   color: var(--muted);
   font-size: 11px;
   line-height: 1.5;
+  pointer-events: none;
+}
+.fourier-status.is-idle {
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  overflow: hidden;
+  clip-path: inset(50%);
 }
 .fourier-project-link {
   display: inline-flex;
+  align-items: center;
+  min-height: 32px;
   gap: 5px;
   color: var(--accent);
   font-size: 12px;
@@ -2005,5 +2011,243 @@ html[data-intro-pending] .name-intro {
   .home-page .hero-playground {
     width: 100%;
     min-height: 0;
+  }
+}
+/* Secondary pages use the same compact rhythm as Home. */
+.dense-page .page-heading {
+  padding-block: 44px 32px;
+}
+.dense-page .page-heading h1 {
+  font-size: clamp(48px, 5.5vw, 68px);
+  margin-block: 12px;
+}
+.dense-page .page-heading > p:last-of-type {
+  font-size: 14px;
+}
+.dense-page .section-heading {
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 20px;
+}
+.dense-page .section h2,
+.dense-page .experience-section h2,
+.dense-page .personal-section h2,
+.dense-page .writing-section h2 {
+  font-size: clamp(28px, 3vw, 38px);
+  margin-block: 8px 20px;
+}
+.projects-page .project-grid {
+  gap: 18px;
+}
+.projects-page .earlier-projects {
+  padding-block: 40px 0;
+}
+.projects-page .writing-section {
+  margin-top: 40px;
+}
+.projects-page .writing-card {
+  padding-block: 18px;
+  gap: 18px;
+}
+.projects-page .writing-card h3 {
+  font-size: 20px;
+}
+.projects-page .writing-card p {
+  margin-top: 6px;
+}
+.projects-page .schedule-preview {
+  padding: 12px;
+}
+.projects-page .preview-top {
+  font-size: 10px;
+}
+.projects-page .preview-top > span:last-child,
+.projects-page .preview-heading,
+.projects-page .notes-preview > span,
+.projects-page .fourier-art > span {
+  display: none;
+}
+.projects-page .schedule-preview img {
+  margin-top: 8px;
+}
+.projects-page .notes-preview img {
+  width: 72px;
+  height: 72px;
+}
+.projects-page .fourier-art div {
+  width: 62px;
+  height: 62px;
+}
+.about-page .about-intro {
+  grid-template-columns: minmax(240px, 0.8fr) minmax(0, 1.2fr);
+  align-items: start;
+  gap: 28px;
+  margin-top: 0;
+}
+.about-page .about-profile-card {
+  padding: 20px;
+}
+.about-page .about-profile-card .logo-mark {
+  width: 32px;
+  height: 32px;
+  margin-bottom: 12px;
+}
+.about-page .about-intro h2 {
+  font-size: 24px;
+  margin-block: 0 12px;
+}
+.about-page .about-intro p {
+  margin-bottom: 12px;
+  font-size: 14px;
+  line-height: 1.65;
+}
+.about-page .education-university {
+  color: var(--text);
+  font-weight: 600;
+}
+.about-page .education-coursework {
+  padding-top: 12px;
+  border-top: 1px solid var(--line);
+}
+.about-profile-links {
+  display: flex;
+  gap: 20px;
+  font-size: 13px;
+}
+.about-page .experience-section {
+  margin-top: 40px;
+}
+.about-page .experience-row {
+  grid-template-columns: 180px minmax(0, 1fr);
+  gap: 28px;
+  padding-block: 20px;
+}
+.about-page .experience-row h3 {
+  font-size: 20px;
+  margin-bottom: 6px;
+}
+.about-page .experience-row p {
+  max-width: none;
+  margin-top: 10px;
+  line-height: 1.65;
+}
+.about-page .about-skills {
+  padding-block: 40px;
+  border-top: 1px solid var(--line);
+}
+.about-page .technical-skills > div {
+  display: grid;
+  grid-template-columns: 120px minmax(0, 1fr);
+  gap: 20px;
+  padding-block: 12px;
+}
+.about-page .technical-skills dt {
+  margin: 0;
+  font-size: 14px;
+}
+.about-page .technical-skills dd {
+  line-height: 1.65;
+}
+.about-awards {
+  margin-top: 24px;
+  font-size: 14px;
+}
+.about-awards h3 {
+  font-size: 20px;
+  margin-bottom: 8px;
+}
+.about-page .personal-section {
+  padding-top: 40px;
+  border-top: 1px solid var(--line);
+}
+.about-page .personal-section {
+  min-height: calc(100svh - var(--header-height) - 32px);
+}
+.about-page .section-description {
+  margin-bottom: 20px;
+}
+.about-page .interests-grid {
+  gap: 18px;
+}
+.about-page .interest-card {
+  padding: 20px;
+}
+.about-page .interest-heading h3 {
+  font-size: 22px;
+}
+.about-page .player-name {
+  margin-block: 20px 16px;
+}
+.about-page .track-list li {
+  padding-block: 8px;
+}
+.about-page .other-interests {
+  margin-top: 18px;
+  gap: 18px;
+}
+.resume-page {
+  padding-block: 32px 44px;
+}
+.resume-page .page-heading {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  padding: 0;
+}
+.resume-page .page-heading h1 {
+  font-size: 32px;
+  margin: 0;
+}
+.resume-page .resume-actions {
+  margin: 0;
+  gap: 8px;
+}
+.resume-page .button {
+  padding: 10px 14px;
+}
+.resume-page .resume-document {
+  display: block;
+  margin-top: 20px;
+}
+.resume-page .page-heading,
+.resume-page .resume-document {
+  max-width: 900px;
+  margin-inline: auto;
+}
+@media (max-width: 800px) {
+  .about-page .about-intro {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+}
+@media (max-width: 600px) {
+  .dense-page .page-heading {
+    padding-block: 32px 24px;
+  }
+  .projects-page .earlier-projects,
+  .about-page .about-skills {
+    padding-block: 32px 0;
+  }
+  .about-page .experience-section,
+  .projects-page .writing-section {
+    margin-top: 32px;
+  }
+  .about-page .personal-section {
+    padding-top: 32px;
+    margin-top: 32px;
+  }
+  .about-page .experience-row {
+    grid-template-columns: 1fr;
+    gap: 8px;
+    padding-block: 18px;
+  }
+  .about-page .experience-row > .eyebrow {
+    padding-top: 0;
+  }
+  .about-page .technical-skills > div {
+    grid-template-columns: 1fr;
+    gap: 6px;
   }
 }

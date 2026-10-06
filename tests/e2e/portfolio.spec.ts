@@ -31,7 +31,7 @@ for (const project of [
   });
 }
 
-test("résumé navigation leads to a readable page and a downloadable PDF", async ({
+test("résumé navigation opens only the document and PDF controls", async ({
   page,
   isMobile,
 }) => {
@@ -47,6 +47,11 @@ test("résumé navigation leads to a readable page and a downloadable PDF", asyn
   await expect(
     page.getByRole("heading", { name: "Résumé", exact: true }),
   ).toBeVisible();
+  const preview = page.getByRole("img", { name: "Baoren Liu résumé" });
+  await expect(preview).toBeVisible();
+  await expect.poll(() => preview.evaluate((image) => (image as HTMLImageElement).naturalWidth)).toBeGreaterThan(0);
+  await expect(page.getByRole("heading", { name: "Education", exact: true })).toHaveCount(0);
+  await expect(page.getByRole("heading", { name: "Technical skills", exact: true })).toHaveCount(0);
   const download = page.getByRole("link", { name: "Download PDF" });
   const response = await page.request.get(
     (await download.getAttribute("href"))!,
@@ -107,7 +112,7 @@ test("theme survives reload and navigation works at every viewport", async ({
   await expect(
     page.getByRole("heading", { name: "Projects", exact: true }),
   ).toBeVisible();
-  await page.getByRole("link", { name: "Read the LHS Schedule story" }).click();
+  await page.getByRole("link", { name: "Project details for LHS Schedule" }).click();
   await expect(
     page.getByRole("heading", { name: /Building the LHS Schedule App/ }),
   ).toBeVisible();

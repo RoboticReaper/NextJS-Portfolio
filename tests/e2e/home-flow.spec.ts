@@ -32,9 +32,12 @@ test("home experience previews open the matching About entry", async ({
   }
   await page.goto("/");
   await page.getByRole("link", { name: "All skills", exact: true }).click();
-  await expect(page).toHaveURL(/\/resume#technical-skills$/);
+  await expect(page).toHaveURL(/\/about#technical-skills$/);
   await expect(page.locator("#technical-skills")).toBeInViewport();
   await expect(page.locator(".technical-skills")).toContainText("Isaac Sim");
+  await expect(page.locator(".about-education")).toContainText("3.92");
+  await expect(page.locator(".about-education")).toContainText("Database Systems");
+  await expect(page.locator("#awards")).toContainText("Fall CTF");
 });
 
 test("home project previews distinguish project details from the live app", async ({

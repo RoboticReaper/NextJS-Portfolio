@@ -103,7 +103,7 @@ export default function Home() {
             <p className="eyebrow">03 / My toolkit</p>
             <h2>Skills</h2>
           </div>
-          <Link className="text-link" href="/resume#technical-skills">
+          <Link className="text-link" href="/about#technical-skills">
             All skills <span aria-hidden="true">↗</span>
           </Link>
         </div>
