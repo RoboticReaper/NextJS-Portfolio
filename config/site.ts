@@ -1,7 +1,7 @@
 export const siteConfig = {
   name: "Baoren Liu",
   description:
-    "Computer Science + Mathematics student at UIUC. A few projects, interests, and things I’m learning along the way.",
+    "Computer Science + Mathematics student at UIUC, working on AI research, full-stack applications, and infrastructure.",
   links: {
     github: "https://github.com/RoboticReaper",
     linkedin: "https://www.linkedin.com/in/baoren-liu/",

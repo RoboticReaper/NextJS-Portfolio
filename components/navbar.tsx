@@ -47,7 +47,7 @@ export function Navbar() {
           onClick={() => setOpen(false)}
           aria-label="Baoren Liu home"
         >
-          <img src="/logo.svg" alt="Baoren Liu logo" width={36} height={36} />
+          <span className="logo-mark" aria-hidden="true" />
         </Link>
         <nav
           aria-label="Main navigation"

@@ -19,7 +19,7 @@ export const education = {
 export const workExperience: Experience[] = [
   {
     date: "July 2026 — Present",
-    role: "Undergraduate Researcher",
+    role: "Undergraduate Student Researcher",
     organization: "HCESC-XR Lab, UIUC",
     summary:
       "Building Python simulation environments and an Isaac Sim benchmark for AI agents.",
@@ -34,13 +34,23 @@ export const workExperience: Experience[] = [
     summary:
       "Working on clinical retrieval augmented generation, multi-agent support tools, and deployment automation.",
     detail:
-      "Built a retrieval augmented generation pipeline to process, embed, retrieve, and classify clinical evidence in a HIPAA-compliant environment. Co-authored a dementia-identification paper, built a LangGraph hospital support prototype, and automated team website deployment with GitLab CI/CD, SSH-managed Linux runners, and webhooks.",
+      "Built a retrieval augmented generation pipeline for clinical evidence in a HIPAA-compliant environment. Compared it with traditional machine learning models using cross-validation and bootstrapping, co-authored a dementia-identification paper, and built a LangGraph hospital support prototype. Automated the research website’s deployment with GitLab CI/CD, webhooks, and SSH-managed Linux runners.",
     href: "https://www.massgeneralbrigham.org/",
     publication: {
       title: "Dementia identification with retrieval augmented generation",
-      href: "https://doi.org/10.64898/2026.01.24.26344477",
-      status: "Under peer review",
+      href: "https://pubmed.ncbi.nlm.nih.gov/41646828/",
+      status: "Under peer review at the Journal of Biomedical Informatics",
     },
+  },
+  {
+    date: "September 2026 — Present",
+    role: "Software Engineer",
+    organization: "NOBE, Illinois Chapter",
+    summary:
+      "Software engineering in UIUC’s National Organization for Business and Engineering Technology Division.",
+    detail:
+      "Working as a software engineer in the Technology Division of UIUC’s National Organization for Business and Engineering chapter.",
+    href: "https://www.linkedin.com/in/baoren-liu/",
   },
 ];
 export const researchExperience: Experience[] = [
@@ -67,17 +77,17 @@ export const earlierExperience: Experience[] = [
     href: "https://www.massgeneral.org/",
   },
   {
-    date: "2020 — 2024",
-    role: "Community project leadership",
+    date: "September 2020 — May 2024",
+    role: "Founder, Project Leader & Technical Lead",
     organization: "Lexington Youth STEAM Team",
     summary:
       "Website development, data analysis, and event organization for community projects.",
     detail:
-      "Led website development, data analysis, and event organization projects. Volunteered nearly 400 hours on community projects.",
+      "Partnered with local municipal committees on a virtual Patriots’ Day event platform, analyzed historical grant trends for the Community Endowment of Lexington, and maintained the organization’s website. Led volunteer recruitment and onboarding.",
     href: "https://youthsteaminitiative.org/",
   },
   {
-    date: "2021 — 2023",
+    date: "September 2021 — May 2023",
     role: "Teaching assistant",
     organization: "KTByte",
     summary:

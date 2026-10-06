@@ -163,19 +163,18 @@ p {
   justify-content: space-between;
   gap: 30px;
 }
-.wordmark {
-  font-size: 38px;
-  line-height: 1;
-  font-weight: 700;
-  letter-spacing: -0.09em;
-}
 .brand-logo {
   display: inline-flex;
   flex-shrink: 0;
 }
-.brand-logo img {
+.logo-mark {
+  display: block;
   width: 36px;
   height: 36px;
+  color: var(--text);
+  background: currentColor;
+  -webkit-mask: url("/logo.svg") center / contain no-repeat;
+  mask: url("/logo.svg") center / contain no-repeat;
 }
 .main-nav {
   display: flex;
@@ -302,92 +301,58 @@ p {
   isolation: isolate;
   background: radial-gradient(ellipse, var(--accent-soft), transparent 68%);
 }
-.portrait-frame {
-  position: relative;
-  width: 260px;
-  height: 330px;
-  transform: rotate(-5deg);
-  border: 8px solid var(--surface);
-  border-radius: 16px;
-  box-shadow: var(--shadow);
-  overflow: hidden;
-}
-.portrait-frame img {
+.systems-graphic {
+  display: block;
   width: 100%;
-  height: 100%;
-  object-fit: cover;
-  object-position: center 25%;
-  transition: transform 0.8s;
-}
-.hero-visual:hover .portrait-frame img {
-  transform: scale(1.035);
-}
-.orbit {
-  position: absolute;
-  border: 1px solid var(--line);
-  border-radius: 50%;
-  z-index: -1;
-}
-.orbit-one {
-  width: 390px;
-  height: 390px;
-}
-.orbit-two {
-  width: 455px;
-  height: 455px;
-  border-style: dashed;
-  opacity: 0.6;
-}
-.visual-coordinate {
-  position: absolute;
-  font-family: ui-monospace, monospace;
-  font-size: 9px;
-  color: var(--muted);
-  letter-spacing: 0.06em;
-}
-.visual-coordinate.top {
-  top: 0;
-  left: 15px;
-}
-.visual-coordinate.bottom {
-  bottom: 2px;
-  right: 25px;
-}
-.floating-label {
-  position: absolute;
-  background: var(--surface);
-  border: 1px solid var(--line);
-  border-radius: 9px;
-  padding: 12px 17px;
-  font-size: 11px;
-  box-shadow: var(--shadow);
-  display: flex;
-  align-items: center;
-  gap: 12px;
-}
-.label-code {
-  right: -10px;
-  top: 90px;
-  transform: rotate(5deg);
-}
-.label-code .accent {
-  font:
-    700 18px ui-monospace,
-    monospace;
-}
-.label-location {
-  bottom: 65px;
-  left: -15px;
-  transform: rotate(-3deg);
-}
-.visual-plus {
-  position: absolute;
-  top: 16px;
-  right: 20px;
-  font-size: 60px;
-  font-weight: 200;
+  max-width: 440px;
   color: var(--accent);
-  line-height: 1;
+}
+.systems-paths {
+  stroke-width: 1;
+  opacity: 0.5;
+}
+.systems-nodes {
+  fill: var(--accent);
+}
+.systems-center {
+  fill: var(--surface);
+  stroke: var(--accent);
+  stroke-width: 1;
+}
+.systems-labels {
+  fill: var(--muted);
+  font:
+    11px ui-monospace,
+    monospace;
+  letter-spacing: 1px;
+}
+.systems-symbol {
+  fill: var(--text);
+  font:
+    34px Georgia,
+    serif;
+}
+.hero-linkedin {
+  align-self: center;
+  margin-left: 6px;
+}
+.about-profile-card {
+  padding: 32px;
+  border: 1px solid var(--line);
+  border-radius: 16px;
+  background: var(--band);
+}
+.about-profile-card .logo-mark {
+  width: 64px;
+  height: 64px;
+  margin-bottom: 30px;
+}
+.about-profile-card h2 {
+  font-size: 34px;
+  margin-top: 18px;
+}
+.about-profile-card .text-link {
+  margin-top: 10px;
 }
 .section {
   padding-block: 100px;
@@ -684,6 +649,14 @@ p {
 .home-overview {
   padding-top: 35px;
 }
+.home-overview .overview-grid {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+@media (max-width: 900px) {
+  .home-overview .overview-grid {
+    grid-template-columns: 1fr;
+  }
+}
 .overview-grid {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -829,9 +802,6 @@ p {
 .footer-inner > a:last-child {
   font-size: 11px;
 }
-.footer-inner .wordmark {
-  font-size: 28px;
-}
 .page-container {
   padding-bottom: 100px;
 }
@@ -855,28 +825,6 @@ p {
   gap: 90px;
   align-items: center;
   margin-top: 15px;
-}
-.about-portrait {
-  position: relative;
-  padding: 14px;
-  border: 1px solid var(--line);
-  border-radius: 12px;
-  background: var(--surface);
-}
-.about-portrait img {
-  width: 100%;
-  height: 370px;
-  object-fit: cover;
-  object-position: center 25%;
-  border-radius: 6px;
-}
-.about-portrait span {
-  display: block;
-  font:
-    16px Georgia,
-    serif;
-  text-align: center;
-  margin-top: 12px;
 }
 .about-intro h2 {
   font-size: 46px;
@@ -1318,28 +1266,6 @@ html[data-intro-pending] .name-intro {
   .hero-visual {
     min-height: 390px;
   }
-  .orbit-one {
-    width: 310px;
-    height: 310px;
-  }
-  .orbit-two {
-    width: 370px;
-    height: 370px;
-  }
-  .portrait-frame {
-    width: 220px;
-    height: 285px;
-  }
-  .label-code {
-    right: -5px;
-    font-size: 10px;
-    padding: 10px;
-  }
-  .label-location {
-    left: -5px;
-    padding: 10px;
-    font-size: 9px;
-  }
   .about-intro {
     gap: 50px;
     grid-template-columns: 300px 1fr;
@@ -1387,24 +1313,6 @@ html[data-intro-pending] .name-intro {
     width: min(450px, 100%);
     margin: auto;
     min-height: 420px;
-  }
-  .portrait-frame {
-    width: 250px;
-    height: 310px;
-  }
-  .orbit-one {
-    width: 340px;
-    height: 340px;
-  }
-  .orbit-two {
-    width: 400px;
-    height: 400px;
-  }
-  .label-code {
-    right: 0;
-  }
-  .label-location {
-    left: 0;
   }
   .section {
     padding-block: 70px;
@@ -1457,9 +1365,6 @@ html[data-intro-pending] .name-intro {
   .about-intro {
     grid-template-columns: 230px 1fr;
     gap: 30px;
-  }
-  .about-portrait img {
-    height: 310px;
   }
   .about-intro h2 {
     font-size: 35px;
@@ -1534,9 +1439,6 @@ html[data-intro-pending] .name-intro {
     height: 36px;
     font-size: 22px;
   }
-  .wordmark {
-    font-size: 34px;
-  }
   .hero {
     padding-top: 52px;
     gap: 40px;
@@ -1567,38 +1469,6 @@ html[data-intro-pending] .name-intro {
   }
   .hero-visual {
     min-height: 375px;
-  }
-  .orbit-one {
-    width: 285px;
-    height: 285px;
-  }
-  .orbit-two {
-    width: 330px;
-    height: 330px;
-  }
-  .portrait-frame {
-    width: 220px;
-    height: 285px;
-  }
-  .visual-coordinate.top {
-    left: 5px;
-    font-size: 8px;
-  }
-  .visual-coordinate.bottom {
-    right: 0;
-    font-size: 8px;
-  }
-  .visual-plus {
-    right: 0;
-    font-size: 45px;
-  }
-  .label-code {
-    top: 76px;
-    right: 0;
-  }
-  .label-location {
-    bottom: 38px;
-    left: 0;
   }
   .section {
     padding-block: 60px;
@@ -1706,12 +1576,6 @@ html[data-intro-pending] .name-intro {
     grid-template-columns: 1fr;
     gap: 38px;
     margin-top: 10px;
-  }
-  .about-portrait {
-    max-width: 280px;
-  }
-  .about-portrait img {
-    height: 325px;
   }
   .about-intro h2 {
     font-size: 38px;

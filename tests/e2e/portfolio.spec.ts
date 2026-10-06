@@ -88,8 +88,14 @@ test("theme survives reload and navigation works at every viewport", async ({
   await page.emulateMedia({ reducedMotion: "reduce", colorScheme: "light" });
   await page.goto("/");
   await expect(page.getByTestId("name-intro")).toBeHidden();
+  const logos = page.locator(".logo-mark");
+  await expect(logos).toHaveCount(2);
+  for (const logo of await logos.all())
+    await expect(logo).toHaveCSS("background-color", "rgb(25, 37, 55)");
   await page.getByRole("button", { name: "Switch to dark mode" }).click();
   await expect(page.locator("html")).toHaveAttribute("data-theme", "dark");
+  for (const logo of await logos.all())
+    await expect(logo).toHaveCSS("background-color", "rgb(234, 240, 248)");
   await page.reload();
   await expect(page.locator("html")).toHaveAttribute("data-theme", "dark");
   if (isMobile)
@@ -139,6 +145,22 @@ test("integration failures remain usable and retry recovers", async ({
   );
   await clash.getByRole("button", { name: "Try again" }).click();
   await expect(clash.getByText("2,200")).toBeVisible();
+  await page.route("**/api/spotify", (route) =>
+    route.fulfill({
+      json: {
+        rows: [
+          {
+            name: "Recovered song",
+            artist: "Artist",
+            image: null,
+            link: "https://open.spotify.com/track/test",
+          },
+        ],
+      },
+    }),
+  );
+  await spotify.getByRole("button", { name: "Try again" }).click();
+  await expect(spotify.getByText("Recovered song")).toBeVisible();
   expect(
     await page.evaluate(
       () => document.documentElement.scrollWidth <= window.innerWidth,

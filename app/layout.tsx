@@ -15,7 +15,6 @@ export const metadata: Metadata = {
     description: siteConfig.description,
     url: "https://baorenliu.com",
     type: "website",
-    images: [{ url: "/Baoren Liu Portrait.jpg" }],
   },
   icons: { icon: "/favicon.ico" },
 };
@@ -46,16 +45,16 @@ export default function RootLayout({
           <main id="main-content">{children}</main>
           <footer className="site-footer">
             <div className="container footer-inner">
-              <Link className="wordmark" href="/">
-                bl<span className="accent">.</span>
+              <Link className="brand-logo" href="/" aria-label="Back to home">
+                <span className="logo-mark" aria-hidden="true" />
               </Link>
               <p>© {new Date().getFullYear()} Baoren Liu.</p>
               <a
-                href={siteConfig.links.github}
+                href={siteConfig.links.linkedin}
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                GitHub ↗
+                LinkedIn ↗
               </a>
             </div>
           </footer>

@@ -2,6 +2,7 @@ import Link from "next/link";
 import { ProjectCard } from "@/components/project-card";
 import { SkillList } from "@/components/skill-list";
 import { LiveInterests } from "@/components/live-interests";
+import { SystemsGraphic } from "@/components/systems-graphic";
 import { researchExperience, workExperience } from "@/config/profile";
 import { projects, siteConfig } from "@/config/site";
 export default function Home() {
@@ -20,9 +21,9 @@ export default function Home() {
             </span>
           </h1>
           <p className="hero-description">
-            I’m interested in software, AI, and the math behind them.
-            <br className="desktop-break" /> This site has some of my projects,
-            notes, and interests.
+            I enjoy understanding how systems work and building practical
+            software. My interests include AI research, full-stack web
+            applications, and infrastructure.
           </p>
           <div className="hero-actions">
             <Link className="button primary" href="#work">
@@ -31,33 +32,21 @@ export default function Home() {
             <Link className="button secondary" href="/resume">
               My résumé <span aria-hidden="true">↗</span>
             </Link>
+            <a
+              className="text-link hero-linkedin"
+              href={siteConfig.links.linkedin}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              LinkedIn <span aria-hidden="true">↗</span>
+            </a>
           </div>
           <div className="hero-footnote">
             <span className="status-dot" /> Open to internship opportunities
           </div>
         </div>
         <div className="hero-visual">
-          <div className="orbit orbit-one" />
-          <div className="orbit orbit-two" />
-          <div className="visual-coordinate top">40.1106° N / 88.2073° W</div>
-          <div className="portrait-frame">
-            <img
-              src="/Baoren Liu Portrait.jpg"
-              alt="Portrait of Baoren Liu"
-              fetchPriority="high"
-              width={480}
-              height={687}
-            />
-          </div>
-          <div className="floating-label label-code">
-            <span className="accent">&lt;/&gt;</span> Coding since 2018
-          </div>
-          <div className="floating-label label-location">
-            <span className="status-dot" /> Based in Urbana-Champaign
-          </div>
-          <span className="visual-plus" aria-hidden="true">
-            ✳
-          </span>
+          <SystemsGraphic />
         </div>
       </section>
       <section

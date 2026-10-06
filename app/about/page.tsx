@@ -15,14 +15,20 @@ export default function AboutPage() {
         <p>Computer Science + Mathematics student at UIUC.</p>
       </header>
       <section className="about-intro">
-        <div className="about-portrait">
-          <img
-            src="/Baoren Liu Portrait.jpg"
-            alt="Baoren Liu"
-            width={480}
-            height={687}
-          />
-          <span>Hi, I’m Baoren.</span>
+        <div className="about-profile-card">
+          <span className="logo-mark" aria-hidden="true" />
+          <p className="eyebrow">At a glance</p>
+          <h2>Hi, I’m Baoren.</h2>
+          <p>CS + Mathematics at UIUC</p>
+          <p>Software, AI, and infrastructure</p>
+          <a
+            className="text-link"
+            href={siteConfig.links.linkedin}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            LinkedIn ↗
+          </a>
         </div>
         <div>
           <h2>Education and interests</h2>
@@ -33,8 +39,9 @@ export default function AboutPage() {
           </p>
           <p>
             I’ve been coding since 2018. I enjoy making programs to solve
-            everyday problems, exploring AI and robotics, and finding new ways
-            to connect mathematics with software. I’m also part of NOBE’s
+            everyday problems. I’m interested in how systems work, from
+            databases to secure networked applications, alongside AI and
+            robotics research. I work as a software engineer in NOBE’s
             Technology Division at UIUC.
           </p>
           <p>

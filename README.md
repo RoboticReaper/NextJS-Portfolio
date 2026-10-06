@@ -6,6 +6,8 @@ The homepage briefly covers work experience, highlighted projects, skills with i
 
 Profile content and the downloadable PDF reflect the supplied October 2026 software engineering résumé. OtherWise and RideList are highlighted, with LHS Schedule alongside them on Projects; earlier apps remain available below. Shared experience and technical skills live in `config/profile.ts`. Additional skill glyphs come from the [Simple Icons project](https://simpleicons.org/); the SQL icon is a local SVG.
 
+The public LinkedIn profile supplies the introduction and current NOBE role, alongside the résumé details. The homepage uses a software/mathematics/AI diagram instead of a headshot. Navbar and footer share the original transparent SVG monogram, rendered light in dark mode and dark in light mode.
+
 ## Development
 
 Use Node 24 LTS (minimum 22.12).
