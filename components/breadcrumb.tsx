@@ -1,26 +1,28 @@
-'use client'
-
-import { Breadcrumbs, BreadcrumbItem } from "@heroui/breadcrumbs";
-import { usePathname} from 'next/navigation'
-import { siteConfig } from "@/config/site";
-
-export const Breadcrumb = () => {
-    const pathname = usePathname()
-    // based on the pathname, generate a breadcrumb
-    // e.g. /projects -> Home / Projects
-    // e.g. /projects/lhsschedule -> Home / Projects / LHS Schedule
-    
-    const pathnames = pathname.split('/').filter(Boolean).map((_, index, array) => (
-        `/${array.slice(0, index + 1).join('/')}`
-    ))
-
-
-    return <Breadcrumbs>
-        <BreadcrumbItem href="/">Home</BreadcrumbItem>
-        {pathnames.map((path) => {
-            const match = siteConfig.links.projectLinks.find((item) => item.href === path)
-
-            return <BreadcrumbItem href={path} key={path}>{match?.label}</BreadcrumbItem>
-        })}
-    </Breadcrumbs>
+"use client";
+import Link from "next/link";
+import { usePathname } from "next/navigation";
+export function Breadcrumb() {
+  const pathname = usePathname();
+  const labels: Record<string, string> = {
+    projects: "Projects",
+    lhsschedule: "LHS Schedule",
+    ctf: "Capture The Flag",
+  };
+  const parts = pathname.split("/").filter(Boolean);
+  return (
+    <nav aria-label="Breadcrumb" className="breadcrumb">
+      <Link href="/">Home</Link>
+      {parts.map((part, index) => (
+        <span key={part}>
+          <span aria-hidden="true"> / </span>
+          <Link
+            href={`/${parts.slice(0, index + 1).join("/")}`}
+            aria-current={index === parts.length - 1 ? "page" : undefined}
+          >
+            {labels[part] || part}
+          </Link>
+        </span>
+      ))}
+    </nav>
+  );
 }

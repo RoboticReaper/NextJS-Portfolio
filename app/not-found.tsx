@@ -1,17 +1,13 @@
-'use client'
- 
-import { useRouter } from 'next/navigation'
-import {Button} from "@heroui/button";
-
-export default function Custom404() {
-    const router = useRouter()
-
-    return (
-        <div className="flex flex-col items-center justify-center gap-4 py-8 md:py-10">
-            <div className="text-base text-center justify-center">
-                404 - Page Not Found
-            </div>
-            <Button onPress={() => router.push('/')} color="primary">Go back home</Button>
-        </div>
-    );
+import Link from "next/link";
+export default function NotFound() {
+  return (
+    <section className="container page-heading">
+      <p className="eyebrow">404 / A wrong turn</p>
+      <h1>Nothing here. Yet.</h1>
+      <p>Let’s get you back to something useful.</p>
+      <Link className="button primary" href="/">
+        Back home ↗
+      </Link>
+    </section>
+  );
 }
