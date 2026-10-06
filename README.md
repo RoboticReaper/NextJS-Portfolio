@@ -2,6 +2,8 @@
 
 A responsive portfolio built with Next.js 16.3.8 and React 19.3. Includes light/dark mode, a typography intro, project stories, and live Clash of Clans / Spotify cards. The first intro lasts about 1.8 seconds; later document loads take about 0.25 seconds. Internal navigation does not replay it. Reduced-motion visitors skip it, and content works without JavaScript.
 
+The homepage briefly covers work experience, highlighted projects, skills with icons, research, and games/music. Dedicated Projects, About, and Résumé pages are linked in the desktop and mobile navigation. The résumé includes a readable summary, PDF preview on larger screens, and open/download links on every screen. The homepage shows three Spotify tracks; About keeps the full list.
+
 ## Development
 
 Use Node 24 LTS (minimum 22.12).

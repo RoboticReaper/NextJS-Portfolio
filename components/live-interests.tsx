@@ -69,7 +69,7 @@ function ConnectionState({
     </div>
   ) : null;
 }
-export function LiveInterests() {
+export function LiveInterests({ trackLimit }: { trackLimit?: number } = {}) {
   const clash = useConnection<ClashPlayer>("/api/coc");
   const spotify = useConnection<{ rows: Song[] }>("/api/spotify");
   return (
@@ -127,7 +127,7 @@ export function LiveInterests() {
         {spotify.data &&
           (spotify.data.rows.length ? (
             <ol className="track-list">
-              {spotify.data.rows.map((song, i) => (
+              {spotify.data.rows.slice(0, trackLimit).map((song, i) => (
                 <li key={`${song.link}-${i}`}>
                   <span className="track-index">
                     {String(i + 1).padStart(2, "0")}

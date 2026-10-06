@@ -56,7 +56,7 @@ export function Navbar() {
           {[
             { href: "/projects", label: "Projects" },
             { href: "/about", label: "About" },
-            { href: "/#contacts", label: "Contact" },
+            { href: "/resume", label: "Résumé" },
           ].map((item) => (
             <Link
               key={item.href}

@@ -83,4 +83,4 @@ export const skills = [
   "Next.js",
   "Firebase",
   "MySQL",
-];
+] as const;

@@ -12,3 +12,4 @@
 - Production dependency audit returned no vulnerabilities. Five audit entries remain in the developer-only Next ESLint glob dependency chain (`braces` and dependents); npm's offered fix downgrades the Next ESLint config to 14.x. No production dependency is affected.
 - Production code is neither merged nor deployed. Preview credentials must be updated separately in Vercel by the owner.
 - Final quality gate: lint and typecheck succeeded; 18 unit/API/OAuth-helper tests passed; production build succeeded; all 14 desktop/mobile browser tests passed.
+- Homepage/navigation follow-up: lint and production build (including TypeScript) passed; 18 unit tests and 16 desktop/mobile browser tests passed. The résumé navigation/PDF test failed before implementation and passed after. Independent review found no actionable issues. Visual inspection confirmed all ten skill icons load, three Spotify tracks on Home, and no horizontal overflow.

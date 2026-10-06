@@ -1,5 +1,34 @@
 import { expect, test } from "@playwright/test";
 
+test("résumé navigation leads to a readable page and a downloadable PDF", async ({
+  page,
+  isMobile,
+}) => {
+  await page.emulateMedia({ reducedMotion: "reduce" });
+  await page.goto("/");
+  if (isMobile)
+    await page.getByRole("button", { name: "Open navigation" }).click();
+  await page
+    .getByRole("navigation", { name: "Main navigation" })
+    .getByRole("link", { name: "Résumé", exact: true })
+    .click();
+  await expect(page).toHaveURL(/\/resume$/);
+  await expect(
+    page.getByRole("heading", { name: "Résumé", exact: true }),
+  ).toBeVisible();
+  const download = page.getByRole("link", { name: "Download PDF" });
+  const response = await page.request.get(
+    (await download.getAttribute("href"))!,
+  );
+  expect(response.ok()).toBe(true);
+  expect(response.headers()["content-type"]).toContain("application/pdf");
+  expect((await response.body()).subarray(0, 5).toString()).toBe("%PDF-");
+  if (isMobile)
+    await expect(
+      page.getByRole("button", { name: "Open navigation" }),
+    ).toBeVisible();
+});
+
 test("first visit introduction gives way to usable content and reload is fast", async ({
   page,
 }) => {
