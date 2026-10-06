@@ -1,10 +1,34 @@
 import { expect, test } from "@playwright/test";
+import { readFile } from "node:fs/promises";
 
 test.beforeEach(async ({ page }) => {
   await page.emulateMedia({ reducedMotion: "reduce" });
   await page.route("**/api/{coc,spotify}", (route) =>
     route.fulfill({ status: 503, json: { error: "Unavailable" } }),
   );
+});
+
+test("the default example follows the navbar logo outline", async ({ page }) => {
+  const logo = await readFile("public/logo.svg", "utf8");
+  await page.goto("/");
+  const source = await page.getByRole("region", { name: "Fourier sketchpad", exact: true }).locator(".fourier-source").getAttribute("d");
+  const error = await page.evaluate(({ logo, source }) => {
+    const svg = new DOMParser().parseFromString(logo, "image/svg+xml").documentElement;
+    svg.setAttribute("style", "position:absolute;visibility:hidden");
+    document.body.appendChild(svg);
+    const path = svg.querySelector("path") as SVGPathElement;
+    const box = path.getBBox();
+    const scale = 156 / Math.max(box.width, box.height);
+    const values = source!.match(/-?\d+(?:\.\d+)?/g)!.map(Number);
+    const count = values.length / 2;
+    const errors = Array.from({ length: count }, (_, i) => {
+      const point = path.getPointAtLength(path.getTotalLength() * i / count);
+      return Math.hypot(values[i * 2] - (point.x - box.x - box.width / 2) * scale, values[i * 2 + 1] - (point.y - box.y - box.height / 2) * scale);
+    });
+    svg.remove();
+    return Math.max(...errors);
+  }, { logo, source });
+  expect(error).toBeLessThan(0.2);
 });
 
 test("example and detail controls work with the keyboard without autoplay", async ({ page }) => {

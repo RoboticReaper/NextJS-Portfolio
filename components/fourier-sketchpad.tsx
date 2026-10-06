@@ -2,14 +2,8 @@
 
 import { useEffect, useMemo, useRef, useState, useSyncExternalStore, type PointerEvent } from "react";
 import { decompose, epicycleChain, resampleLoop, type Point } from "@/lib/fourier";
+import { logoExample as example } from "@/lib/fourier-logo";
 
-const example = Array.from({ length: 128 }, (_, i) => {
-  const t = 2 * Math.PI * i / 128;
-  return {
-    x: 72 * Math.pow(Math.sin(t), 3),
-    y: -4.5 * (13 * Math.cos(t) - 5 * Math.cos(2 * t) - 2 * Math.cos(3 * t) - Math.cos(4 * t)),
-  };
-});
 const initialMessage = "Draw a loop. Rotating circles trace it back.";
 const pathFor = (points: Point[]) => points.map((p, i) => `${i ? "L" : "M"}${p.x.toFixed(2)},${p.y.toFixed(2)}`).join(" ");
 const motionSnapshot = () => window.matchMedia("(prefers-reduced-motion: reduce)").matches;
@@ -26,7 +20,7 @@ const subscribeVisibility = (listener: () => void) => {
 export function FourierSketchpad() {
   const [stroke, setStroke] = useState<Point[]>(example);
   const [drawing, setDrawing] = useState(false);
-  const [detail, setDetail] = useState(16);
+  const [detail, setDetail] = useState(32);
   const [playing, setPlaying] = useState(true);
   const [explicitPlay, setExplicitPlay] = useState(false);
   const [time, setTime] = useState(0);
@@ -75,7 +69,7 @@ export function FourierSketchpad() {
 
   function loadExample() {
     setStroke(example);
-    setDetail(16);
+    setDetail(32);
     setDrawing(false);
     setPlaying(true);
     setExplicitPlay(false);

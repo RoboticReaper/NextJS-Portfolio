@@ -53,6 +53,8 @@ Spotify tracks are cached for an hour. The deprecated Postgres dependency and de
 
 Never put credentials in `NEXT_PUBLIC_*` variables, commit `.env`, or supply production credentials to PR workflows. No production deployment or production merge is performed as part of this refresh.
 
+The sketchpad’s default and reset example follows the navbar’s `public/logo.svg` outline. Regenerate its equal-distance sample with `node scripts/sample-logo.mjs` after changing that asset; the browser regression compares the example directly with the SVG geometry.
+
 ## Optional interactive additions
 
 A cohesive set of future features:
