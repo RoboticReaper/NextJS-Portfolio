@@ -210,16 +210,13 @@ p {
 .icon-button:hover {
   background: var(--accent-soft);
 }
-.nav-contact {
-  font-size: 12px;
-  border-bottom: 1px solid var(--text);
-  padding: 5px 0;
-}
-.nav-contact span {
-  margin-left: 16px;
-}
 .menu-button {
   display: none;
+  padding: 0;
+  line-height: 1;
+}
+.menu-button svg {
+  display: block;
 }
 .hero {
   display: grid;
@@ -1360,12 +1357,6 @@ html[data-intro-pending] .name-intro {
     margin-left: auto;
     gap: 12px;
   }
-  .nav-contact {
-    font-size: 11px;
-  }
-  .nav-contact span {
-    margin-left: 5px;
-  }
   .icon-button {
     width: 36px;
     height: 36px;
@@ -2227,5 +2218,46 @@ html[data-intro-pending] .name-intro {
   .about-page .technical-skills > div {
     grid-template-columns: 1fr;
     gap: 6px;
+  }
+}
+
+.project-image {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+.project-image-otherwise {
+  background: #101722;
+}
+.project-image-ridelist {
+  padding: 12px;
+  background: #f7f9fc;
+}
+.project-title-icon {
+  display: none;
+}
+.prose .button {
+  min-height: 44px;
+  padding: 8px 14px;
+  line-height: 1.5;
+  margin-top: 12px;
+}
+.prose .button > p {
+  margin: 0;
+  line-height: inherit;
+}
+@media (max-width: 600px) {
+  .project-title-icon {
+    display: inline-block;
+    vertical-align: middle;
+    width: 36px;
+    height: 28px;
+    object-fit: contain;
+    border-radius: 4px;
+    background: #f7f9fc;
+  }
+  .project-copy h3 a:has(.project-title-icon) {
+    justify-content: flex-start;
+    gap: 8px;
   }
 }

@@ -1,6 +1,5 @@
 "use client";
 import Link from "next/link";
-import { siteConfig } from "@/config/site";
 import { usePathname } from "next/navigation";
 import { useEffect, useState, useSyncExternalStore } from "react";
 
@@ -77,16 +76,15 @@ export function Navbar() {
           >
             <span aria-hidden="true">{theme === "dark" ? "☀" : "☾"}</span>
           </button>
-          <a className="nav-contact" href={siteConfig.links.linkedin} target="_blank" rel="noopener noreferrer">
-            Let’s talk <span aria-hidden="true">↗</span>
-          </a>
           <button
             className="menu-button icon-button"
             aria-label={open ? "Close navigation" : "Open navigation"}
             aria-expanded={open}
             onClick={() => setOpen(!open)}
           >
-            <span aria-hidden="true">{open ? "×" : "☰"}</span>
+            <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" aria-hidden="true" focusable="false">
+              <path d={open ? "M6 6L18 18M18 6L6 18" : "M4 6H20M4 12H20M4 18H20"} />
+            </svg>
           </button>
         </div>
       </div>

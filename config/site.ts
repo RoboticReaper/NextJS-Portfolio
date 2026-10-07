@@ -20,7 +20,7 @@ export const projects = [
     tags: ["Python", "SentenceTransformer", "FastAPI", "PCA / UMAP"],
     href: "/projects/otherwise",
     external: "https://roboticreaper.github.io/OtherWise/",
-    image: null,
+    image: "/otherwise.png",
     tone: "lavender",
   },
   {
@@ -32,7 +32,7 @@ export const projects = [
     tags: ["Next.js", "PostgreSQL", "PostGIS", "Cloudflare"],
     href: "/projects/ridelist",
     external: "https://www.ridelist.app/",
-    image: null,
+    image: "/ridelist.svg",
     tone: "blue",
   },
   {

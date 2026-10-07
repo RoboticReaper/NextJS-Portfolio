@@ -22,7 +22,9 @@ export function ProjectCard({
       >
         <span className="project-number">0{index + 1}</span>
         {external && <span className="project-launch" aria-hidden="true">↗</span>}
-        {project.title === "LHS Schedule" ? (
+        {project.title === "OtherWise" || project.title === "RideList" ? (
+          <img className={`project-image project-image-${project.title.toLowerCase()}`} src={project.image!} alt={project.title === "OtherWise" ? "OtherWise topic map" : "RideList logo"} loading="lazy" />
+        ) : project.title === "LHS Schedule" ? (
           <div className="schedule-preview">
             <div className="preview-top">
               <span>
@@ -69,6 +71,7 @@ export function ProjectCard({
               ? { target: "_blank", rel: "noopener noreferrer" }
               : {})}
           >
+            {(project.title === "OtherWise" || project.title === "RideList") && <img className="project-title-icon" src={project.image!} alt="" loading="lazy" />}
             {project.title}{external && <> <span aria-hidden="true">↗</span></>}
           </Link>
         </h3>

@@ -1,0 +1,28 @@
+<svg
+  xmlns="http://www.w3.org/2000/svg"
+  width="800"
+  height="256"
+  viewBox="0 0 800 256"
+  role="img"
+  aria-label="RideList logo"
+>
+  <rect x="16" y="16" width="224" height="224" rx="40" fill="#4987beff"/>
+  <path d="M65 191 C100 150, 105 120, 145 120 S200 88, 191 65" fill="none" stroke="#FFFFFF" stroke-width="13" stroke-linecap="round"/>
+  <circle cx="65" cy="191" r="13" fill="#FFFFFF"/>
+  <circle cx="191" cy="65" r="13" fill="#ffffffff"/>
+  <text x="55" y="113" fill="#FFFFFF" font-family="ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Arial" font-size="80" font-weight="800" letter-spacing="-2">R</text>
+  <text x="150" y="200" fill="#FFFFFF" font-family="ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Arial" font-size="80" font-weight="800" letter-spacing="-2">L</text>
+
+  <!-- Wordmark -->
+  <text
+    x="280"
+    y="175"
+    fill="#0F172A"
+    font-family="ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Arial"
+    font-size="130"
+    font-weight="700"
+    letter-spacing="-1"
+  >
+    RideList
+  </text>
+</svg>
