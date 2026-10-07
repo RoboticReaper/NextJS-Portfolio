@@ -136,7 +136,7 @@ export default function Home() {
           this site.
         </p>
         <a className="contact-email" href={siteConfig.links.email}>
-          liubaoren2006@gmail.com
+          Email me
         </a>
         <div className="contact-links">
           <a
