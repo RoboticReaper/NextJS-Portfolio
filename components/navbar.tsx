@@ -1,5 +1,6 @@
 "use client";
 import Link from "next/link";
+import { siteConfig } from "@/config/site";
 import { usePathname } from "next/navigation";
 import { useEffect, useState, useSyncExternalStore } from "react";
 
@@ -76,8 +77,8 @@ export function Navbar() {
           >
             <span aria-hidden="true">{theme === "dark" ? "☀" : "☾"}</span>
           </button>
-          <a className="nav-contact" href="mailto:liubaoren2006@gmail.com">
-            Let’s talk
+          <a className="nav-contact" href={siteConfig.links.linkedin} target="_blank" rel="noopener noreferrer">
+            Let’s talk <span aria-hidden="true">↗</span>
           </a>
           <button
             className="menu-button icon-button"

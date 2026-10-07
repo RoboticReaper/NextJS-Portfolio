@@ -703,19 +703,6 @@ p {
 .contact-section > p:not(.eyebrow) {
   font-size: 14px;
 }
-.contact-email {
-  display: flex;
-  justify-content: space-between;
-  gap: 20px;
-  font-size: clamp(18px, 3.2vw, 40px);
-  letter-spacing: -0.04em;
-  border-bottom: 1px solid var(--line);
-  padding-block: 30px 24px;
-  overflow-wrap: anywhere;
-}
-.contact-email:hover {
-  color: var(--accent);
-}
 .contact-links {
   display: flex;
   gap: 30px;
@@ -1486,11 +1473,6 @@ html[data-intro-pending] .name-intro {
   .contact-section h2 {
     font-size: 52px;
   }
-  .contact-email {
-    font-size: 21px;
-    padding-block: 25px 20px;
-    gap: 8px;
-  }
   .contact-links {
     gap: 24px;
     font-size: 11px;
@@ -1769,10 +1751,6 @@ html[data-intro-pending] .name-intro {
 }
 .home-page .contact-section h2 {
   margin-bottom: 12px;
-}
-.home-page .contact-email {
-  padding-block: 20px 16px;
-  font-size: clamp(20px, 2.5vw, 30px);
 }
 .home-page .contact-links {
   margin-top: 18px;

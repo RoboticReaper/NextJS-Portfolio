@@ -135,9 +135,6 @@ export default function Home() {
           Feel free to reach out about internships, projects, or anything on
           this site.
         </p>
-        <a className="contact-email" href={siteConfig.links.email}>
-          Email me
-        </a>
         <div className="contact-links">
           <a
             href={siteConfig.links.linkedin}

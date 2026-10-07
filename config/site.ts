@@ -8,7 +8,6 @@ export const siteConfig = {
     instagram: "https://www.instagram.com/littleant2333/",
     discord: "https://discord.com/users/1294767398972428391",
     resume: "/Baoren Liu Resume.pdf",
-    email: "mailto:liubaoren2006@gmail.com",
   },
 };
 export const projects = [
