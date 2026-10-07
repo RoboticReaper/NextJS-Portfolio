@@ -21,9 +21,7 @@ export function ProjectCard({
         {...(external ? { target: "_blank", rel: "noopener noreferrer" } : {})}
       >
         <span className="project-number">0{index + 1}</span>
-        <span className="project-launch" aria-hidden="true">
-          ↗
-        </span>
+        {external && <span className="project-launch" aria-hidden="true">↗</span>}
         {project.title === "LHS Schedule" ? (
           <div className="schedule-preview">
             <div className="preview-top">
@@ -71,7 +69,7 @@ export function ProjectCard({
               ? { target: "_blank", rel: "noopener noreferrer" }
               : {})}
           >
-            {project.title} <span aria-hidden="true">↗</span>
+            {project.title}{external && <> <span aria-hidden="true">↗</span></>}
           </Link>
         </h3>
         <p>{project.description}</p>

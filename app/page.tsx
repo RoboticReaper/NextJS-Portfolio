@@ -26,13 +26,13 @@ export default function Home() {
           </p>
           <div className="hero-actions">
             <Link className="button primary" href="#work">
-              View selected work <span aria-hidden="true">↗</span>
+              View selected work
             </Link>
             <Link className="button secondary" href="/about">
-              About me <span aria-hidden="true">↗</span>
+              About me
             </Link>
             <Link className="text-link hero-context-link" href="/resume">
-              Résumé <span aria-hidden="true">↗</span>
+              Résumé
             </Link>
           </div>
           <div className="hero-footnote">
@@ -50,7 +50,7 @@ export default function Home() {
             <h2>Highlighted projects</h2>
           </div>
           <Link className="text-link" href="/projects">
-            All projects <span aria-hidden="true">↗</span>
+            All projects
           </Link>
         </div>
         <div className="project-grid">
@@ -69,7 +69,7 @@ export default function Home() {
             <h2 id="work-experience-heading">Experience &amp; research</h2>
           </div>
           <Link className="text-link" href="/about#research">
-            Full background <span aria-hidden="true">↗</span>
+            Full background
           </Link>
         </div>
         <div className="overview-grid">
@@ -78,7 +78,7 @@ export default function Home() {
               <p className="eyebrow">{item.date}</p>
               <h3>
                 <Link href={`/about#${item.id}`}>
-                  {item.organization} <span aria-hidden="true">↗</span>
+                  {item.organization}
                 </Link>
               </h3>
               <p className="overview-role">{item.role}</p>
@@ -104,7 +104,7 @@ export default function Home() {
             <h2>Skills</h2>
           </div>
           <Link className="text-link" href="/about#technical-skills">
-            All skills <span aria-hidden="true">↗</span>
+            All skills
           </Link>
         </div>
         <SkillList />
@@ -119,7 +119,7 @@ export default function Home() {
             <h2 id="hobbies-heading">Games and music</h2>
           </div>
           <Link className="text-link" href="/about#hobbies">
-            More about my hobbies <span aria-hidden="true">↗</span>
+            More about my hobbies
           </Link>
         </div>
         <p className="section-description">
@@ -136,7 +136,7 @@ export default function Home() {
           this site.
         </p>
         <a className="contact-email" href={siteConfig.links.email}>
-          liubaoren2006@gmail.com <span aria-hidden="true">↗</span>
+          liubaoren2006@gmail.com
         </a>
         <div className="contact-links">
           <a
@@ -172,7 +172,7 @@ export default function Home() {
             target="_blank"
             rel="noopener noreferrer"
           >
-            Résumé ↗
+            Résumé
           </a>
         </div>
       </section>

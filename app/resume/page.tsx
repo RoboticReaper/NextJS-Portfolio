@@ -19,7 +19,7 @@ export default function ResumePage() {
             target="_blank"
             rel="noopener noreferrer"
           >
-            Open PDF <span aria-hidden="true">↗</span>
+            Open PDF
           </a>
         </div>
       </header>

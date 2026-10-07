@@ -77,7 +77,7 @@ export function Navbar() {
             <span aria-hidden="true">{theme === "dark" ? "☀" : "☾"}</span>
           </button>
           <a className="nav-contact" href="mailto:liubaoren2006@gmail.com">
-            Let’s talk <span aria-hidden="true">↗</span>
+            Let’s talk
           </a>
           <button
             className="menu-button icon-button"

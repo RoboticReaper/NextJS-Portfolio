@@ -25,7 +25,6 @@ export default function ProjectsPage() {
             <h3>Capture The Flag</h3>
             <p>A note from my first UIUC CTF experience.</p>
           </div>
-          <span aria-hidden="true">↗</span>
         </Link>
       </section>
     </div>

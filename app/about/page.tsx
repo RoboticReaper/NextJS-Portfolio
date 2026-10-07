@@ -23,7 +23,7 @@ export default function AboutPage() {
           <p className="education-coursework"><strong>Coursework</strong><br />{education.coursework}</p>
           <div className="about-profile-links">
             <a className="inline-link" href={siteConfig.links.linkedin} target="_blank" rel="noopener noreferrer">LinkedIn ↗</a>
-            <Link className="inline-link" href="/resume">Résumé ↗</Link>
+            <Link className="inline-link" href="/resume">Résumé</Link>
           </div>
         </div>
         <div className="about-background">
