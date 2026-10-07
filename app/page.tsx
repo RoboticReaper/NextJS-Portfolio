@@ -1,146 +1,176 @@
-import { Link } from "@heroui/link";
-import { button as buttonStyles } from "@heroui/theme";
-import { Divider } from "@heroui/divider";
-import { siteConfig } from "@/config/site";
-import { title, subtitle } from "@/components/primitives";
-import {
-  GithubIcon,
-  DiscordIcon,
-  InstagramIcon
-} from "@/components/icons";
-import { Image } from "@heroui/image";
-import Skills from "@/components/skills";
-
+import Link from "next/link";
+import { ProjectCard } from "@/components/project-card";
+import { SkillList } from "@/components/skill-list";
+import { LiveInterests } from "@/components/live-interests";
+import { FourierSketchpad } from "@/components/fourier-sketchpad";
+import { workExperience } from "@/config/profile";
+import { projects, siteConfig } from "@/config/site";
 export default function Home() {
-
   return (
-    <div>
-      <section className="flex flex-col items-center justify-center gap-4 py-8 md:py-10">
-        <div className="inline-block">
-          <Image src="Baoren Liu Portrait.jpg" height={300} alt="My portrait" />
-        </div>
-        <div className="inline-block max-w-xl text-center justify-center">
-          <span className={title({ color: "violet" })}>Baoren Liu</span>
-          <div className={subtitle({ class: "mt-4" })}>
-            Sophomore at University of Illinois Urbana-Champaign, majoring in Computer Science + Math.
+    <div className="home-page">
+      <section className="hero container">
+        <div className="hero-copy">
+          <p className="eyebrow">
+            <span className="status-dot" /> Computer Science + Mathematics at
+            UIUC
+          </p>
+          <h1>
+            Baoren Liu
+            <span className="accent" aria-hidden="true">
+              .
+            </span>
+          </h1>
+          <p className="hero-description">
+            I enjoy figuring out how systems work and building useful software,
+            from web applications to AI and robotics research.
+          </p>
+          <div className="hero-actions">
+            <Link className="button primary" href="#work">
+              View selected work
+            </Link>
+            <Link className="button secondary" href="/about">
+              About me
+            </Link>
+            <Link className="text-link hero-context-link" href="/resume">
+              Résumé
+            </Link>
+          </div>
+          <div className="hero-footnote">
+            <span className="status-dot" /> Open to internship opportunities
           </div>
         </div>
-
-        <div className="flex gap-3">
-          <Link
-            className={buttonStyles({
-              color: "primary",
-              radius: "full",
-              variant: "shadow",
-            })}
-            href={siteConfig.links.about}
-          >
-            About me
+        <div className="hero-visual hero-playground">
+          <FourierSketchpad />
+        </div>
+      </section>
+      <section className="section container">
+        <div className="section-heading" id="work">
+          <div>
+            <p className="eyebrow">01 / Selected work</p>
+            <h2>Highlighted projects</h2>
+          </div>
+          <Link className="text-link" href="/projects">
+            All projects
           </Link>
-          <Link
-            isExternal
-            className={buttonStyles({ variant: "bordered", radius: "full" })}
+        </div>
+        <div className="project-grid">
+          {projects.slice(0, 2).map((project, index) => (
+            <ProjectCard key={project.title} project={project} index={index} />
+          ))}
+        </div>
+      </section>
+      <section
+        className="section container home-overview"
+        aria-labelledby="work-experience-heading"
+      >
+        <div className="section-heading">
+          <div>
+            <p className="eyebrow">02 / Work and research</p>
+            <h2 id="work-experience-heading">Experience &amp; research</h2>
+          </div>
+          <Link className="text-link" href="/about#research">
+            Full background
+          </Link>
+        </div>
+        <div className="overview-grid">
+          {workExperience.map((item) => (
+            <article className="overview-card" key={item.organization}>
+              <p className="eyebrow">{item.date}</p>
+              <h3>
+                <Link href={`/about#${item.id}`}>
+                  {item.organization}
+                </Link>
+              </h3>
+              <p className="overview-role">{item.role}</p>
+              <p>{item.summary}</p>
+              {item.publication && (
+                <a
+                  className="inline-link research-paper-link"
+                  href={item.publication.href}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Research preprint ↗
+                </a>
+              )}
+            </article>
+          ))}
+        </div>
+      </section>
+      <section className="section container skills-section">
+        <div className="section-heading">
+          <div>
+            <p className="eyebrow">03 / My toolkit</p>
+            <h2>Skills</h2>
+          </div>
+          <Link className="text-link" href="/about#technical-skills">
+            All skills
+          </Link>
+        </div>
+        <SkillList />
+      </section>
+      <section
+        className="section container personal-section"
+        aria-labelledby="hobbies-heading"
+      >
+        <div className="section-heading">
+          <div>
+            <p className="eyebrow">04 / Outside of school</p>
+            <h2 id="hobbies-heading">Games and music</h2>
+          </div>
+          <Link className="text-link" href="/about#hobbies">
+            More about my hobbies
+          </Link>
+        </div>
+        <p className="section-description">
+          I play Clash of Clans, Asphalt Legends Unite, and Genshin Impact.
+          Here’s what I’ve been playing and listening to lately.
+        </p>
+        <LiveInterests trackLimit={3} />
+      </section>
+      <section className="contact-section container" id="contacts">
+        <p className="eyebrow">05 / Let’s connect</p>
+        <h2>Get in touch</h2>
+        <p>
+          Feel free to reach out about internships, projects, or anything on
+          this site.
+        </p>
+        <div className="contact-links">
+          <a
+            href={siteConfig.links.linkedin}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            LinkedIn ↗
+          </a>
+          <a
             href={siteConfig.links.github}
+            target="_blank"
+            rel="noopener noreferrer"
           >
-            <GithubIcon size={20} />
-            GitHub
-          </Link>
-        </div>
-
-      </section>
-
-      <Divider className="my-4" />
-
-      <section className="flex flex-col items-center justify-center gap-4 py-8 md:py-10">
-        <div className="inline-block max-w-xl text-center justify-center">
-          <span className={title()}>Project Highlights</span>
-        </div>
-
-        <div className="grid grid-cols-1 gap-6 md:grid-cols-2">
-          <div className="inline-block max-w-md text-center justify-center p-4">
-            <div className={subtitle({ class: "mt-4" })}>
-              {siteConfig.links.projectLinks.find(item => item.id === 0)?.label}
-            </div>
-            <div className="inline-block m-2">
-              <Link href={siteConfig.links.projectLinks.find(item => item.id === 0)?.href}>
-                <Image
-                  width={250}
-                  height={250}
-                  isZoomed
-                  loading="lazy"
-                  alt="Logo of LHS Schedule"
-                  src="LHS Schedule.png" />
-              </Link>
-            </div>
-            <div className="text-base text-center justify-center">
-              A popular web app built for managing my high school's weird schedule that repeats every 6 working days. More than <span className="text-red-400">1300 users</span> currently.
-            </div>
-          </div>
-          <div className="inline-block max-w-md text-center justify-center p-4">
-            <div className={subtitle({ class: "mt-4" })}>
-              {siteConfig.links.projectLinks.find(item => item.id === 1)?.label}
-            </div>
-            <div className="inline-block m-2">
-              <Link href={siteConfig.links.projectLinks.find(item => item.id === 1)?.href}>
-                <Image
-                  width={250}
-                  height={250}
-                  isZoomed
-                  loading="lazy"
-                  alt="Logo of Notes"
-                  src="Notes.jpg" />
-              </Link>
-            </div>
-            <div className="text-base text-center justify-center">
-              A native Android app for taking notes. Distributed on various popular third-party app stores with <span className="text-red-400">7k+ downloads</span>.
-            </div>
-          </div>
-        </div>
-
-        <div className="flex gap-3">
-          <Link
-            className={buttonStyles({
-              color: "primary",
-              radius: "full",
-              variant: "shadow",
-            })}
-            href={siteConfig.links.projects}
+            GitHub ↗
+          </a>
+          <a
+            href={siteConfig.links.instagram}
+            target="_blank"
+            rel="noopener noreferrer"
           >
-            More projects
-          </Link>
-        </div>
-      </section>
-
-      <Divider className="my-4" />
-
-      <section className="flex flex-col items-center justify-center gap-4 py-8 md:py-10">
-        <div className="inline-block max-w-xl text-center justify-center">
-          <span className={title()}>Skills</span>
-        </div>
-
-        <Skills alignment="center" />
-      </section>
-
-      <Divider className="my-4" />
-
-      <section className="flex flex-col items-center justify-center gap-4 py-8 md:py-10 mb-16">
-        <div className="inline-block max-w-xl text-center justify-center">
-          <span className={title()} id="contacts">Contacts</span>
-        </div>
-
-        <div className="flex flex-wrap justify-center gap-2">
-          <Link isExternal aria-label="Instagram" href={siteConfig.links.instagram}>
-            <InstagramIcon className="text-default-500" />
-          </Link>
-          <Link isExternal aria-label="Discord" href={siteConfig.links.discord}>
-            <DiscordIcon className="text-default-500" />
-          </Link>
-          <Link isExternal aria-label="Github" href={siteConfig.links.github}>
-            <GithubIcon className="text-default-500" />
-          </Link>
-        </div>
-        <div className="flex flex-wrap justify-center gap-2">
-          Email: <Link href="mailto:liubaoren2006@gmail.com" isExternal>liubaoren2006@gmail.com</Link>
+            Instagram ↗
+          </a>
+          <a
+            href={siteConfig.links.discord}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Discord ↗
+          </a>
+          <a
+            href={siteConfig.links.resume}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Résumé
+          </a>
         </div>
       </section>
     </div>

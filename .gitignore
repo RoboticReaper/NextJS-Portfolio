@@ -39,3 +39,7 @@ next-env.d.ts
 .vercel
 
 .vscode
+
+# browser test artifacts
+/playwright-report/
+/test-results/

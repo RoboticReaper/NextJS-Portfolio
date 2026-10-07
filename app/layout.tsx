@@ -1,64 +1,64 @@
 import "@/styles/globals.css";
-import { Metadata, Viewport } from "next";
-import { Link } from "@heroui/link";
-import clsx from "clsx";
-import { Providers } from "./providers";
-import { SpeedInsights } from "@vercel/speed-insights/next"
-import { Analytics } from "@vercel/analytics/react"
-import { siteConfig } from "@/config/site";
-import { fontSans } from "@/config/fonts";
+import type { Metadata, Viewport } from "next";
+import Link from "next/link";
+import { Analytics } from "@vercel/analytics/react";
+import { SpeedInsights } from "@vercel/speed-insights/next";
 import { Navbar } from "@/components/navbar";
-
+import { NameIntro } from "@/components/intro";
+import { siteConfig } from "@/config/site";
 export const metadata: Metadata = {
-  title: {
-    default: siteConfig.name,
-    template: `%s - ${siteConfig.name}`,
-  },
+  metadataBase: new URL("https://baorenliu.com"),
+  title: { default: siteConfig.name, template: "%s — Baoren Liu" },
   description: siteConfig.description,
-  icons: {
-    icon: "/favicon.ico",
+  openGraph: {
+    title: siteConfig.name,
+    description: siteConfig.description,
+    url: "https://baorenliu.com",
+    type: "website",
   },
+  icons: { icon: "/favicon.ico" },
 };
-
 export const viewport: Viewport = {
   themeColor: [
-    { media: "(prefers-color-scheme: light)", color: "white" },
-    { media: "(prefers-color-scheme: dark)", color: "black" },
+    { media: "(prefers-color-scheme: light)", color: "#f7f9fc" },
+    { media: "(prefers-color-scheme: dark)", color: "#101722" },
   ],
 };
-
+const initialize = `(function(){var h=document.documentElement;var dark=window.matchMedia('(prefers-color-scheme: dark)').matches;try{var t=localStorage.getItem('portfolio-theme');h.dataset.theme=t==='dark'||t==='light'?t:(dark?'dark':'light')}catch(e){h.dataset.theme=dark?'dark':'light'}if(!window.matchMedia('(prefers-reduced-motion: reduce)').matches){h.dataset.introPending='true';window.setTimeout(function(){delete h.dataset.introPending;var c=document.getElementById('site-content');if(c)c.inert=false},3000)}})();`;
 export default function RootLayout({
   children,
 }: {
   children: React.ReactNode;
 }) {
-
   return (
-    <html suppressHydrationWarning lang="en">
+    <html lang="en" suppressHydrationWarning>
       <head>
-        <meta property="og:title" content={siteConfig.name} />
-        <meta property="og:description" content={siteConfig.description} />
-        <meta property="og:image" content="https://baorenliu.com/social_preview.jpg" />
-        <meta property="og:url" content="https://baorenliu.com" />
-        <meta property="og:type" content="website" />
+        <script dangerouslySetInnerHTML={{ __html: initialize }} />
       </head>
-      <body
-        className={clsx(
-          "min-h-screen bg-background font-sans antialiased",
-          fontSans.variable,
-        )}
-      >
-        <Providers themeProps={{ attribute: "class", defaultTheme: "dark" }}>
-          <div className="relative flex flex-col h-screen">
-            <Navbar />
-            <main className="container mx-auto max-w-7xl px-6 flex-grow">
-              {children}
-            </main>
-            <footer className="w-full flex items-center justify-center p-3">
-              <span className="text-xs text-slate-400 text-center">&copy; {new Date().getFullYear()} Baoren Liu. All rights reserved.</span>
-            </footer>
-          </div>
-        </Providers>
+      <body>
+        <NameIntro />
+        <div id="site-content">
+          <a className="skip-link" href="#main-content">
+            Skip to content
+          </a>
+          <Navbar />
+          <main id="main-content">{children}</main>
+          <footer className="site-footer">
+            <div className="container footer-inner">
+              <Link className="brand-logo" href="/" aria-label="Back to home">
+                <span className="logo-mark" aria-hidden="true" />
+              </Link>
+              <p>© {new Date().getFullYear()} Baoren Liu.</p>
+              <a
+                href={siteConfig.links.linkedin}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                LinkedIn ↗
+              </a>
+            </div>
+          </footer>
+        </div>
         <Analytics />
         <SpeedInsights />
       </body>

@@ -1,112 +1,93 @@
-'use client'
-import {
-  Navbar as NextUINavbar,
-  NavbarContent,
-  NavbarMenu,
-  NavbarMenuToggle,
-  NavbarBrand,
-  NavbarItem,
-  NavbarMenuItem,
-} from "@heroui/navbar";
-import { Button } from "@heroui/button";
-import { Kbd } from "@heroui/kbd";
-import { Link } from "@heroui/link";
-import { Input } from "@heroui/input";
-import { link as linkStyles } from "@heroui/theme";
-import NextLink from "next/link";
-import clsx from "clsx";
-import { useReducer } from "react";
-import { siteConfig } from "@/config/site";
-import { ThemeSwitch } from "@/components/theme-switch";
-import {
-  TwitterIcon,
-  GithubIcon,
-  DiscordIcon,
-  HeartFilledIcon,
-  SearchIcon,
-  InstagramIcon,
-  Logo,
-} from "@/components/icons";
-import { Image } from "@heroui/image";
+"use client";
+import Link from "next/link";
+import { usePathname } from "next/navigation";
+import { useEffect, useState, useSyncExternalStore } from "react";
 
-export const Navbar = () => {
-  const [isMenuOpen, setIsMenuOpen] = useReducer((current) => !current, false);
-
-  return (
-    <NextUINavbar maxWidth="xl" isMenuOpen={isMenuOpen} onMenuOpenChange={setIsMenuOpen} position="sticky">
-      <NavbarContent className="basis-1/5 sm:basis-full" justify="start">
-        <NavbarBrand as="li" className="gap-3 max-w-fit min-w-fit">
-          <NextLink className="flex justify-start items-center gap-2 min-w-fit" href="/" onClick={() => { if (isMenuOpen) setIsMenuOpen() }}>
-            <Image src="/logo.svg" width={36} height={36} radius="none" alt="Logo of my website"/>
-            <p className="font-bold text-inherit">Baoren</p>
-          </NextLink>
-        </NavbarBrand>
-        <ul className="hidden sm:flex gap-4 justify-start ml-2">
-          {siteConfig.navItems.map((item) => (
-              <NavbarItem key={item.href} as="li">
-                <NextLink
-                  className={clsx(
-                    linkStyles({ color: "foreground" }),
-                    "data-[active=true]:text-primary data-[active=true]:font-medium",
-                  )}
-                  color="foreground"
-                  href={item.href}
-                >
-                  {item.label}
-                </NextLink>
-              </NavbarItem>
-          ))}
-        </ul>
-      </NavbarContent>
-
-      <NavbarContent
-        className="hidden sm:flex basis-1/5 sm:basis-full"
-        justify="end"
-      >
-        <NavbarItem className="hidden sm:flex gap-2">
-          <Link isExternal aria-label="Instagram" href={siteConfig.links.instagram}>
-            <InstagramIcon className="text-default-500" />
-          </Link>
-          <Link isExternal aria-label="Discord" href={siteConfig.links.discord}>
-            <DiscordIcon className="text-default-500" />
-          </Link>
-          <Link isExternal aria-label="Github" href={siteConfig.links.github}>
-            <GithubIcon className="text-default-500" />
-          </Link>
-          <ThemeSwitch />
-        </NavbarItem>
-      </NavbarContent>
-
-      <NavbarContent className="sm:hidden basis-1 pl-4" justify="end">
-        <Link isExternal aria-label="Instagram" href={siteConfig.links.instagram}>
-          <InstagramIcon className="text-default-500" />
-        </Link>
-        <Link isExternal aria-label="Discord" href={siteConfig.links.discord}>
-          <DiscordIcon className="text-default-500" />
-        </Link>
-        <Link isExternal aria-label="Github" href={siteConfig.links.github}>
-          <GithubIcon className="text-default-500" />
-        </Link>
-        <ThemeSwitch />
-        <NavbarMenuToggle />
-      </NavbarContent>
-
-      <NavbarMenu>
-        <div className="mx-4 mt-2 flex flex-col gap-2">
-          {siteConfig.navMenuItems.map((item, index) => (
-            <NavbarMenuItem key={`${item}-${index}`}>
-              <Link
-                color="foreground"
-                href={item.href}
-                onPress={() => { setIsMenuOpen() }}
-                size="lg"
-              >
-                {item.label}
-              </Link>
-            </NavbarMenuItem>
-          ))}
-        </div>
-      </NavbarMenu>
-    </NextUINavbar>
-  );
+const subscribe = (callback: () => void) => {
+  window.addEventListener("portfolio-theme", callback);
+  return () => window.removeEventListener("portfolio-theme", callback);
 };
+const snapshot = () => document.documentElement.dataset.theme || "light";
+export function Navbar() {
+  const pathname = usePathname();
+  const [open, setOpen] = useState(false);
+  const theme = useSyncExternalStore(subscribe, snapshot, () => "light");
+  useEffect(() => {
+    const media = window.matchMedia("(prefers-color-scheme: dark)");
+    const update = () => {
+      let saved: string | null = null;
+      try {
+        saved = localStorage.getItem("portfolio-theme");
+      } catch {}
+      if (!saved) {
+        document.documentElement.dataset.theme = media.matches
+          ? "dark"
+          : "light";
+        window.dispatchEvent(new Event("portfolio-theme"));
+      }
+    };
+    update();
+    media.addEventListener("change", update);
+    return () => media.removeEventListener("change", update);
+  }, []);
+  const toggleTheme = () => {
+    const next = theme === "dark" ? "light" : "dark";
+    document.documentElement.dataset.theme = next;
+    try {
+      localStorage.setItem("portfolio-theme", next);
+    } catch {}
+    window.dispatchEvent(new Event("portfolio-theme"));
+  };
+  return (
+    <header className="site-header">
+      <div className="nav-wrap">
+        <Link
+          className="brand-logo"
+          href="/"
+          onClick={() => setOpen(false)}
+          aria-label="Baoren Liu home"
+        >
+          <span className="logo-mark" aria-hidden="true" />
+        </Link>
+        <nav
+          aria-label="Main navigation"
+          className={open ? "main-nav is-open" : "main-nav"}
+        >
+          {[
+            { href: "/projects", label: "Projects" },
+            { href: "/about", label: "About" },
+            { href: "/resume", label: "Résumé" },
+          ].map((item) => (
+            <Link
+              key={item.href}
+              href={item.href}
+              aria-current={pathname === item.href ? "page" : undefined}
+              onClick={() => setOpen(false)}
+            >
+              {item.label}
+            </Link>
+          ))}
+        </nav>
+        <div className="nav-actions">
+          <button
+            className="icon-button"
+            onClick={toggleTheme}
+            aria-label={`Switch to ${theme === "dark" ? "light" : "dark"} mode`}
+          >
+            <span aria-hidden="true">{theme === "dark" ? "☀" : "☾"}</span>
+          </button>
+          <button
+            className="menu-button icon-button"
+            aria-label={open ? "Close navigation" : "Open navigation"}
+            aria-expanded={open}
+            onClick={() => setOpen(!open)}
+          >
+            <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" aria-hidden="true" focusable="false">
+              <path d={open ? "M6 6L18 18M18 6L6 18" : "M4 6H20M4 12H20M4 18H20"} />
+            </svg>
+          </button>
+        </div>
+      </div>
+    </header>
+  );
+}
