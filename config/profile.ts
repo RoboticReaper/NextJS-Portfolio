@@ -27,7 +27,7 @@ export const workExperience: Experience[] = [
       "Building Python simulation environments and an Isaac Sim benchmark for AI agents.",
     detail:
       "Developing an Isaac Sim benchmark for agents that diagnose hidden physical failures and recover from manipulation errors. Building Python environments with sensor feedback, inverse-kinematics control, and an observation-action API for LLM, VLA, and reinforcement learning agents.",
-    href: "https://illinois.edu/",
+    href: "https://rehg.org/",
   },
   {
     id: "mass-general-brigham",
