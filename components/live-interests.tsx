@@ -161,7 +161,6 @@ export function LiveInterests({ trackLimit }: { trackLimit?: number } = {}) {
                     <a className="track-info" href={song.link} target="_blank" rel="noopener noreferrer">
                       <strong>{song.name}</strong>
                       <span>{song.artist}</span>
-                      <span className="track-external" aria-hidden="true">↗</span>
                     </a>
                   )}
                 </li>

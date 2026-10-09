@@ -957,7 +957,6 @@ p {
   flex-shrink: 0;
 }
 .track-list .track-info {
-  position: relative;
   display: flex;
   flex-direction: column;
   flex: 1;
@@ -970,15 +969,6 @@ p {
 .track-info > span {
   font-size: 10px;
   color: var(--muted);
-}
-.track-info:has(.track-external) {
-  padding-right: 24px;
-}
-.track-info > .track-external {
-  position: absolute;
-  right: 0;
-  top: 50%;
-  transform: translateY(-50%);
 }
 .track-placeholder {
   width: 42px;
