@@ -38,6 +38,18 @@ export default function Home() {
           <div className="hero-footnote">
             <span className="status-dot" /> Open to internship opportunities
           </div>
+          <nav className="hero-social-links" aria-label="Social profiles">
+            {[
+              ["LinkedIn", siteConfig.links.linkedin],
+              ["GitHub", siteConfig.links.github],
+              ["Instagram", siteConfig.links.instagram],
+              ["Discord", siteConfig.links.discord],
+            ].map(([label, href]) => (
+              <a key={label} href={href} target="_blank" rel="noopener noreferrer">
+                {label} <span aria-hidden="true">↗</span>
+              </a>
+            ))}
+          </nav>
         </div>
         <div className="hero-visual hero-playground">
           <FourierSketchpad />
@@ -127,51 +139,6 @@ export default function Home() {
           Here’s what I’ve been playing and listening to lately.
         </p>
         <LiveInterests trackLimit={3} />
-      </section>
-      <section className="contact-section container" id="contacts">
-        <p className="eyebrow">05 / Let’s connect</p>
-        <h2>Get in touch</h2>
-        <p>
-          Feel free to reach out about internships, projects, or anything on
-          this site.
-        </p>
-        <div className="contact-links">
-          <a
-            href={siteConfig.links.linkedin}
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            LinkedIn ↗
-          </a>
-          <a
-            href={siteConfig.links.github}
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            GitHub ↗
-          </a>
-          <a
-            href={siteConfig.links.instagram}
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Instagram ↗
-          </a>
-          <a
-            href={siteConfig.links.discord}
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Discord ↗
-          </a>
-          <a
-            href={siteConfig.links.resume}
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Résumé
-          </a>
-        </div>
       </section>
     </div>
   );
