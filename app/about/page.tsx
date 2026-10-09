@@ -101,7 +101,7 @@ export default function AboutPage() {
       </section>
       <section className="section about-skills">
         <p className="eyebrow" id="tools">Programming</p>
-        <h2 id="technical-skills">Tools and languages</h2>
+        <h2 id="technical-skills">Technical skills</h2>
         <dl className="technical-skills">
           {Object.entries(technicalSkills).map(([group, values]) => (
             <div key={group}>
