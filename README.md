@@ -8,6 +8,8 @@ Profile content and the downloadable PDF reflect the supplied October 2026 softw
 
 The public LinkedIn profile supplies the introduction and current NOBE role, alongside the résumé details. The homepage uses a Fourier sketchpad instead of a headshot: draw a loop with mouse or touch, watch rotating circles reconstruct it, adjust the circle count, or reload the sample. Controls work with the keyboard; reduced-motion visitors get a static example until they choose Play. Animation suspends offscreen and in hidden tabs. The larger drawing area uses compact controls and keeps the project link beside Play. Completed drawings fit when the viewport narrows. Drawings stay in the browser. The transform follows the [standard discrete Fourier transform convention](https://numpy.org/doc/stable/reference/routines.fft.html), with normalization in the forward transform. Navbar and footer share the original transparent SVG monogram, rendered light in dark mode and dark in light mode.
 
+The sketchpad’s default and reset example follows the navbar’s `public/logo.svg` outline. Regenerate its equal-distance sample with `node scripts/sample-logo.mjs` after changing that asset; the browser regression compares the example directly with the SVG geometry.
+
 ## Development
 
 Use Node 24 LTS (minimum 22.12).
@@ -49,11 +51,23 @@ The previous token returned `invalid_grant` during diagnosis. Code changes canno
 4. Update `SPOTIFY_REFRESH_TOKEN` in the Vercel environment used by the development/preview deployment. Local `.env` changes do not update Vercel.
 5. Restart the local server after changing credentials, then run `npm run check:integrations` while the site is running. It exits nonzero for an unhealthy integration and prints no secrets. To check a preview, set `INTEGRATION_BASE_URL` to its URL.
 
-Spotify tracks are cached for an hour. The deprecated Postgres dependency and destructive table refresh were removed; no database setup is needed. A daily Vercel cron validates a fresh Spotify response before invalidating the cache. Set `CRON_SECRET` in Vercel; the cron refuses all requests when it is absent. A failed refresh leaves the existing cache intact. Visitors get a clear error and retry control if no valid cached result exists.
+Spotify tracks are cached for an hour and do not use the database. A daily Vercel cron validates a fresh Spotify response before invalidating the cache. Set `CRON_SECRET` in Vercel; the cron refuses all requests when it is absent. A failed refresh leaves the existing cache intact. Visitors get a clear error and retry control if no valid cached result exists.
+
+## Codex token activity
+
+The homepage heatmap reads `/api/token-usage`, which reads the existing Neon PostgreSQL database. Set server-only `POSTGRES_URL` (or `DATABASE_URL`) in both the ignored local `.env` and the Vercel environment for the deployed site. Changing local `.env` does not change Vercel. The API is read-only and cached for five minutes; there is no public upload endpoint. Connection errors never expose credentials. The calendar includes Daily, Weekly, and Cumulative views, keyboard/touch details, theme support, and horizontal scrolling on narrow screens. Unknown dates are patterned rather than reported as zero. Totals are approximations because the source tooltips round counts; partial weeks and today's provisional reading are labeled.
+
+The local snapshot at `public/data/codex-activity.json` is a scrape checkpoint and recovery copy. The website does not load that file or fall back to it. Initialize the additive table and upload a verified snapshot with:
+
+```sh
+npm run codex:upload -- --initialize
+```
+
+Subsequent runs use `npm run codex:upload`. Every batch is validated before writing. Upserts keyed by profile and date preserve unrelated tables and historical records, skip repeated/older snapshots, and prevent provisional data from replacing recorded data. The uploader reads the rows back to verify persistence. Credentials and database errors are never logged.
+
+The existing **Sync portfolio token activity** Codex automation runs at 9:00 a.m. America/Chicago. It uses the signed-in in-app browser to inspect source tooltips for yesterday plus missing past dates, saves verified source values, and runs the uploader. Database records determine missing dates, so failed uploads are recoverable even if the local scrape completed. `npm run codex:pending -- --start YYYY-MM-DD --end YYYY-MM-DD` reports the dates needing collection; it works without a local snapshot when explicit source boundaries are supplied. Zero usage is a real record; color-only rows are insufficient. The local computer, Codex scheduler, and signed-in browser must be available for collection. If they are unavailable, the next successful run catches up within the source calendar's available range.
 
 Never put credentials in `NEXT_PUBLIC_*` variables, commit `.env`, or supply production credentials to PR workflows. No production deployment or production merge is performed as part of this refresh.
-
-The sketchpad’s default and reset example follows the navbar’s `public/logo.svg` outline. Regenerate its equal-distance sample with `node scripts/sample-logo.mjs` after changing that asset; the browser regression compares the example directly with the SVG geometry.
 
 ## Optional interactive additions
 

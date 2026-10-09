@@ -1,0 +1,2924 @@
+{
+  "schemaVersion": 2,
+  "source": "https://chatgpt.com/u/roboticreaper",
+  "username": "roboticreaper",
+  "view": "daily",
+  "fetchedAt": "2026-10-09T22:32:49.411Z",
+  "timezone": null,
+  "tokenPrecision": "source-rounded",
+  "range": {
+    "start": "2025-10-12",
+    "end": "2026-10-09"
+  },
+  "days": [
+    {
+      "date": "2025-10-12",
+      "tokensDisplay": "0 tokens",
+      "tokensApprox": 0,
+      "level": 0,
+      "collectedAt": "2026-10-09T22:15:54.467784Z",
+      "status": "recorded"
+    },
+    {
+      "date": "2025-10-13",
+      "tokensDisplay": "0 tokens",
+      "tokensApprox": 0,
+      "level": 0,
+      "collectedAt": "2026-10-09T22:15:54.467784Z",
+      "status": "recorded"
+    },
+    {
+      "date": "2025-10-14",
+      "tokensDisplay": "0 tokens",
+      "tokensApprox": 0,
+      "level": 0,
+      "collectedAt": "2026-10-09T22:15:54.467784Z",
+      "status": "recorded"
+    },
+    {
+      "date": "2025-10-15",
+      "tokensDisplay": "0 tokens",
+      "tokensApprox": 0,
+      "level": 0,
+      "collectedAt": "2026-10-09T22:15:54.467784Z",
+      "status": "recorded"
+    },
+    {
+      "date": "2025-10-16",
+      "tokensDisplay": "0 tokens",
+      "tokensApprox": 0,
+      "level": 0,
+      "collectedAt": "2026-10-09T22:15:54.467784Z",
+      "status": "recorded"
+    },
+    {
+      "date": "2025-10-17",
+      "tokensDisplay": "0 tokens",
+      "tokensApprox": 0,
+      "level": 0,
+      "collectedAt": "2026-10-09T22:15:54.467784Z",
+      "status": "recorded"
+    },
+    {
+      "date": "2025-10-18",
+      "tokensDisplay": "0 tokens",
+      "tokensApprox": 0,
+      "level": 0,
+      "collectedAt": "2026-10-09T22:15:54.467784Z",
+      "status": "recorded"
+    },
+    {
+      "date": "2025-10-19",
+      "tokensDisplay": "0 tokens",
+      "tokensApprox": 0,
+      "level": 0,
+      "collectedAt": "2026-10-09T22:15:54.467784Z",
+      "status": "recorded"
+    },
+    {
+      "date": "2025-10-20",
+      "tokensDisplay": "0 tokens",
+      "tokensApprox": 0,
+      "level": 0,
+      "collectedAt": "2026-10-09T22:15:54.467784Z",
+      "status": "recorded"
+    },
+    {
+      "date": "2025-10-21",
+      "tokensDisplay": "0 tokens",
+      "tokensApprox": 0,
+      "level": 0,
+      "collectedAt": "2026-10-09T22:15:54.467784Z",
+      "status": "recorded"
+    },
+    {
+      "date": "2025-10-22",
+      "tokensDisplay": "0 tokens",
+      "tokensApprox": 0,
+      "level": 0,
+      "collectedAt": "2026-10-09T22:15:54.467784Z",
+      "status": "recorded"
+    },
+    {
+      "date": "2025-10-23",
+      "tokensDisplay": "0 tokens",
+      "tokensApprox": 0,
+      "level": 0,
+      "collectedAt": "2026-10-09T22:15:54.467784Z",
+      "status": "recorded"
+    },
+    {
+      "date": "2025-10-24",
+      "tokensDisplay": "0 tokens",
+      "tokensApprox": 0,
+      "level": 0,
+      "collectedAt": "2026-10-09T22:15:54.467784Z",
+      "status": "recorded"
+    },
+    {
+      "date": "2025-10-25",
+      "tokensDisplay": "0 tokens",
+      "tokensApprox": 0,
+      "level": 0,
+      "collectedAt": "2026-10-09T22:15:54.467784Z",
+      "status": "recorded"
+    },
+    {
+      "date": "2025-10-26",
+      "tokensDisplay": "0 tokens",
+      "tokensApprox": 0,
+      "level": 0,
+      "collectedAt": "2026-10-09T22:15:54.467784Z",
+      "status": "recorded"
+    },
+    {
+      "date": "2025-10-27",
+      "tokensDisplay": "0 tokens",
+      "tokensApprox": 0,
+      "level": 0,
+      "collectedAt": "2026-10-09T22:15:54.467784Z",
+      "status": "recorded"
+    },
+    {
+      "date": "2025-10-28",
+      "tokensDisplay": "0 tokens",
+      "tokensApprox": 0,
+      "level": 0,
+      "collectedAt": "2026-10-09T22:15:54.467784Z",
+      "status": "recorded"
+    },
+    {
+      "date": "2025-10-29",
+      "tokensDisplay": "0 tokens",
+      "tokensApprox": 0,
+      "level": 0,
+      "collectedAt": "2026-10-09T22:15:54.467784Z",
+      "status": "recorded"
+    },
+    {
+      "date": "2025-10-30",
+      "tokensDisplay": "0 tokens",
+      "tokensApprox": 0,
+      "level": 0,
+      "collectedAt": "2026-10-09T22:15:54.467784Z",
+      "status": "recorded"
+    },
+    {
+      "date": "2025-10-31",
+      "tokensDisplay": "0 tokens",
+      "tokensApprox": 0,
+      "level": 0,
+      "collectedAt": "2026-10-09T22:15:54.467784Z",
+      "status": "recorded"
+    },
+    {
+      "date": "2025-11-01",
+      "tokensDisplay": "0 tokens",
+      "tokensApprox": 0,
+      "level": 0,
+      "collectedAt": "2026-10-09T22:15:54.467784Z",
+      "status": "recorded"
+    },
+    {
+      "date": "2025-11-02",
+      "tokensDisplay": "0 tokens",
+      "tokensApprox": 0,
+      "level": 0,
+      "collectedAt": "2026-10-09T22:15:54.467784Z",
+      "status": "recorded"
+    },
+    {
+      "date": "2025-11-03",
+      "tokensDisplay": "0 tokens",
+      "tokensApprox": 0,
+      "level": 0,
+      "collectedAt": "2026-10-09T22:15:54.467784Z",
+      "status": "recorded"
+    },
+    {
+      "date": "2025-11-04",
+      "tokensDisplay": "0 tokens",
+      "tokensApprox": 0,
+      "level": 0,
+      "collectedAt": "2026-10-09T22:15:54.467784Z",
+      "status": "recorded"
+    },
+    {
+      "date": "2025-11-05",
+      "tokensDisplay": "0 tokens",
+      "tokensApprox": 0,
+      "level": 0,
+      "collectedAt": "2026-10-09T22:15:54.467784Z",
+      "status": "recorded"
+    },
+    {
+      "date": "2025-11-06",
+      "tokensDisplay": "0 tokens",
+      "tokensApprox": 0,
+      "level": 0,
+      "collectedAt": "2026-10-09T22:15:54.467784Z",
+      "status": "recorded"
+    },
+    {
+      "date": "2025-11-07",
+      "tokensDisplay": "0 tokens",
+      "tokensApprox": 0,
+      "level": 0,
+      "collectedAt": "2026-10-09T22:15:54.467784Z",
+      "status": "recorded"
+    },
+    {
+      "date": "2025-11-08",
+      "tokensDisplay": "0 tokens",
+      "tokensApprox": 0,
+      "level": 0,
+      "collectedAt": "2026-10-09T22:15:54.467784Z",
+      "status": "recorded"
+    },
+    {
+      "date": "2025-11-09",
+      "tokensDisplay": "0 tokens",
+      "tokensApprox": 0,
+      "level": 0,
+      "collectedAt": "2026-10-09T22:15:54.467784Z",
+      "status": "recorded"
+    },
+    {
+      "date": "2025-11-10",
+      "tokensDisplay": "0 tokens",
+      "tokensApprox": 0,
+      "level": 0,
+      "collectedAt": "2026-10-09T22:15:54.467784Z",
+      "status": "recorded"
+    },
+    {
+      "date": "2025-11-11",
+      "tokensDisplay": "0 tokens",
+      "tokensApprox": 0,
+      "level": 0,
+      "collectedAt": "2026-10-09T22:15:54.467784Z",
+      "status": "recorded"
+    },
+    {
+      "date": "2025-11-12",
+      "tokensDisplay": "0 tokens",
+      "tokensApprox": 0,
+      "level": 0,
+      "collectedAt": "2026-10-09T22:15:54.467784Z",
+      "status": "recorded"
+    },
+    {
+      "date": "2025-11-13",
+      "tokensDisplay": "0 tokens",
+      "tokensApprox": 0,
+      "level": 0,
+      "collectedAt": "2026-10-09T22:15:54.467784Z",
+      "status": "recorded"
+    },
+    {
+      "date": "2025-11-14",
+      "tokensDisplay": "0 tokens",
+      "tokensApprox": 0,
+      "level": 0,
+      "collectedAt": "2026-10-09T22:15:54.467784Z",
+      "status": "recorded"
+    },
+    {
+      "date": "2025-11-15",
+      "tokensDisplay": "0 tokens",
+      "tokensApprox": 0,
+      "level": 0,
+      "collectedAt": "2026-10-09T22:15:54.467784Z",
+      "status": "recorded"
+    },
+    {
+      "date": "2025-11-16",
+      "tokensDisplay": "0 tokens",
+      "tokensApprox": 0,
+      "level": 0,
+      "collectedAt": "2026-10-09T22:15:54.467784Z",
+      "status": "recorded"
+    },
+    {
+      "date": "2025-11-17",
+      "tokensDisplay": "0 tokens",
+      "tokensApprox": 0,
+      "level": 0,
+      "collectedAt": "2026-10-09T22:15:54.467784Z",
+      "status": "recorded"
+    },
+    {
+      "date": "2025-11-18",
+      "tokensDisplay": "0 tokens",
+      "tokensApprox": 0,
+      "level": 0,
+      "collectedAt": "2026-10-09T22:15:54.467784Z",
+      "status": "recorded"
+    },
+    {
+      "date": "2025-11-19",
+      "tokensDisplay": "0 tokens",
+      "tokensApprox": 0,
+      "level": 0,
+      "collectedAt": "2026-10-09T22:15:54.467784Z",
+      "status": "recorded"
+    },
+    {
+      "date": "2025-11-20",
+      "tokensDisplay": "0 tokens",
+      "tokensApprox": 0,
+      "level": 0,
+      "collectedAt": "2026-10-09T22:15:54.467784Z",
+      "status": "recorded"
+    },
+    {
+      "date": "2025-11-21",
+      "tokensDisplay": "0 tokens",
+      "tokensApprox": 0,
+      "level": 0,
+      "collectedAt": "2026-10-09T22:15:54.467784Z",
+      "status": "recorded"
+    },
+    {
+      "date": "2025-11-22",
+      "tokensDisplay": "0 tokens",
+      "tokensApprox": 0,
+      "level": 0,
+      "collectedAt": "2026-10-09T22:15:54.467784Z",
+      "status": "recorded"
+    },
+    {
+      "date": "2025-11-23",
+      "tokensDisplay": "0 tokens",
+      "tokensApprox": 0,
+      "level": 0,
+      "collectedAt": "2026-10-09T22:15:54.467784Z",
+      "status": "recorded"
+    },
+    {
+      "date": "2025-11-24",
+      "tokensDisplay": "0 tokens",
+      "tokensApprox": 0,
+      "level": 0,
+      "collectedAt": "2026-10-09T22:15:54.467784Z",
+      "status": "recorded"
+    },
+    {
+      "date": "2025-11-25",
+      "tokensDisplay": "0 tokens",
+      "tokensApprox": 0,
+      "level": 0,
+      "collectedAt": "2026-10-09T22:15:54.467784Z",
+      "status": "recorded"
+    },
+    {
+      "date": "2025-11-26",
+      "tokensDisplay": "0 tokens",
+      "tokensApprox": 0,
+      "level": 0,
+      "collectedAt": "2026-10-09T22:15:54.467784Z",
+      "status": "recorded"
+    },
+    {
+      "date": "2025-11-27",
+      "tokensDisplay": "0 tokens",
+      "tokensApprox": 0,
+      "level": 0,
+      "collectedAt": "2026-10-09T22:15:54.467784Z",
+      "status": "recorded"
+    },
+    {
+      "date": "2025-11-28",
+      "tokensDisplay": "0 tokens",
+      "tokensApprox": 0,
+      "level": 0,
+      "collectedAt": "2026-10-09T22:15:54.467784Z",
+      "status": "recorded"
+    },
+    {
+      "date": "2025-11-29",
+      "tokensDisplay": "0 tokens",
+      "tokensApprox": 0,
+      "level": 0,
+      "collectedAt": "2026-10-09T22:15:54.467784Z",
+      "status": "recorded"
+    },
+    {
+      "date": "2025-11-30",
+      "tokensDisplay": "0 tokens",
+      "tokensApprox": 0,
+      "level": 0,
+      "collectedAt": "2026-10-09T22:15:54.467784Z",
+      "status": "recorded"
+    },
+    {
+      "date": "2025-12-01",
+      "tokensDisplay": "0 tokens",
+      "tokensApprox": 0,
+      "level": 0,
+      "collectedAt": "2026-10-09T22:15:54.467784Z",
+      "status": "recorded"
+    },
+    {
+      "date": "2025-12-02",
+      "tokensDisplay": "0 tokens",
+      "tokensApprox": 0,
+      "level": 0,
+      "collectedAt": "2026-10-09T22:15:54.467784Z",
+      "status": "recorded"
+    },
+    {
+      "date": "2025-12-03",
+      "tokensDisplay": "0 tokens",
+      "tokensApprox": 0,
+      "level": 0,
+      "collectedAt": "2026-10-09T22:15:54.467784Z",
+      "status": "recorded"
+    },
+    {
+      "date": "2025-12-04",
+      "tokensDisplay": "0 tokens",
+      "tokensApprox": 0,
+      "level": 0,
+      "collectedAt": "2026-10-09T22:15:54.467784Z",
+      "status": "recorded"
+    },
+    {
+      "date": "2025-12-05",
+      "tokensDisplay": "0 tokens",
+      "tokensApprox": 0,
+      "level": 0,
+      "collectedAt": "2026-10-09T22:15:54.467784Z",
+      "status": "recorded"
+    },
+    {
+      "date": "2025-12-06",
+      "tokensDisplay": "0 tokens",
+      "tokensApprox": 0,
+      "level": 0,
+      "collectedAt": "2026-10-09T22:15:54.467784Z",
+      "status": "recorded"
+    },
+    {
+      "date": "2025-12-07",
+      "tokensDisplay": "0 tokens",
+      "tokensApprox": 0,
+      "level": 0,
+      "collectedAt": "2026-10-09T22:15:54.467784Z",
+      "status": "recorded"
+    },
+    {
+      "date": "2025-12-08",
+      "tokensDisplay": "0 tokens",
+      "tokensApprox": 0,
+      "level": 0,
+      "collectedAt": "2026-10-09T22:15:54.467784Z",
+      "status": "recorded"
+    },
+    {
+      "date": "2025-12-09",
+      "tokensDisplay": "0 tokens",
+      "tokensApprox": 0,
+      "level": 0,
+      "collectedAt": "2026-10-09T22:15:54.467784Z",
+      "status": "recorded"
+    },
+    {
+      "date": "2025-12-10",
+      "tokensDisplay": "0 tokens",
+      "tokensApprox": 0,
+      "level": 0,
+      "collectedAt": "2026-10-09T22:15:54.467784Z",
+      "status": "recorded"
+    },
+    {
+      "date": "2025-12-11",
+      "tokensDisplay": "0 tokens",
+      "tokensApprox": 0,
+      "level": 0,
+      "collectedAt": "2026-10-09T22:15:54.467784Z",
+      "status": "recorded"
+    },
+    {
+      "date": "2025-12-12",
+      "tokensDisplay": "0 tokens",
+      "tokensApprox": 0,
+      "level": 0,
+      "collectedAt": "2026-10-09T22:15:54.467784Z",
+      "status": "recorded"
+    },
+    {
+      "date": "2025-12-13",
+      "tokensDisplay": "0 tokens",
+      "tokensApprox": 0,
+      "level": 0,
+      "collectedAt": "2026-10-09T22:15:54.467784Z",
+      "status": "recorded"
+    },
+    {
+      "date": "2025-12-14",
+      "tokensDisplay": "0 tokens",
+      "tokensApprox": 0,
+      "level": 0,
+      "collectedAt": "2026-10-09T22:15:54.467784Z",
+      "status": "recorded"
+    },
+    {
+      "date": "2025-12-15",
+      "tokensDisplay": "0 tokens",
+      "tokensApprox": 0,
+      "level": 0,
+      "collectedAt": "2026-10-09T22:15:54.467784Z",
+      "status": "recorded"
+    },
+    {
+      "date": "2025-12-16",
+      "tokensDisplay": "0 tokens",
+      "tokensApprox": 0,
+      "level": 0,
+      "collectedAt": "2026-10-09T22:15:54.467784Z",
+      "status": "recorded"
+    },
+    {
+      "date": "2025-12-17",
+      "tokensDisplay": "0 tokens",
+      "tokensApprox": 0,
+      "level": 0,
+      "collectedAt": "2026-10-09T22:15:54.467784Z",
+      "status": "recorded"
+    },
+    {
+      "date": "2025-12-18",
+      "tokensDisplay": "0 tokens",
+      "tokensApprox": 0,
+      "level": 0,
+      "collectedAt": "2026-10-09T22:15:54.467784Z",
+      "status": "recorded"
+    },
+    {
+      "date": "2025-12-19",
+      "tokensDisplay": "0 tokens",
+      "tokensApprox": 0,
+      "level": 0,
+      "collectedAt": "2026-10-09T22:15:54.467784Z",
+      "status": "recorded"
+    },
+    {
+      "date": "2025-12-20",
+      "tokensDisplay": "0 tokens",
+      "tokensApprox": 0,
+      "level": 0,
+      "collectedAt": "2026-10-09T22:15:54.467784Z",
+      "status": "recorded"
+    },
+    {
+      "date": "2025-12-21",
+      "tokensDisplay": "0 tokens",
+      "tokensApprox": 0,
+      "level": 0,
+      "collectedAt": "2026-10-09T22:15:54.467784Z",
+      "status": "recorded"
+    },
+    {
+      "date": "2025-12-22",
+      "tokensDisplay": "0 tokens",
+      "tokensApprox": 0,
+      "level": 0,
+      "collectedAt": "2026-10-09T22:15:54.467784Z",
+      "status": "recorded"
+    },
+    {
+      "date": "2025-12-23",
+      "tokensDisplay": "0 tokens",
+      "tokensApprox": 0,
+      "level": 0,
+      "collectedAt": "2026-10-09T22:15:54.467784Z",
+      "status": "recorded"
+    },
+    {
+      "date": "2025-12-24",
+      "tokensDisplay": "0 tokens",
+      "tokensApprox": 0,
+      "level": 0,
+      "collectedAt": "2026-10-09T22:15:54.467784Z",
+      "status": "recorded"
+    },
+    {
+      "date": "2025-12-25",
+      "tokensDisplay": "0 tokens",
+      "tokensApprox": 0,
+      "level": 0,
+      "collectedAt": "2026-10-09T22:15:54.467784Z",
+      "status": "recorded"
+    },
+    {
+      "date": "2025-12-26",
+      "tokensDisplay": "0 tokens",
+      "tokensApprox": 0,
+      "level": 0,
+      "collectedAt": "2026-10-09T22:15:54.467784Z",
+      "status": "recorded"
+    },
+    {
+      "date": "2025-12-27",
+      "tokensDisplay": "0 tokens",
+      "tokensApprox": 0,
+      "level": 0,
+      "collectedAt": "2026-10-09T22:15:54.467784Z",
+      "status": "recorded"
+    },
+    {
+      "date": "2025-12-28",
+      "tokensDisplay": "0 tokens",
+      "tokensApprox": 0,
+      "level": 0,
+      "collectedAt": "2026-10-09T22:15:54.467784Z",
+      "status": "recorded"
+    },
+    {
+      "date": "2025-12-29",
+      "tokensDisplay": "0 tokens",
+      "tokensApprox": 0,
+      "level": 0,
+      "collectedAt": "2026-10-09T22:15:54.467784Z",
+      "status": "recorded"
+    },
+    {
+      "date": "2025-12-30",
+      "tokensDisplay": "0 tokens",
+      "tokensApprox": 0,
+      "level": 0,
+      "collectedAt": "2026-10-09T22:15:54.467784Z",
+      "status": "recorded"
+    },
+    {
+      "date": "2025-12-31",
+      "tokensDisplay": "0 tokens",
+      "tokensApprox": 0,
+      "level": 0,
+      "collectedAt": "2026-10-09T22:15:54.467784Z",
+      "status": "recorded"
+    },
+    {
+      "date": "2026-01-01",
+      "tokensDisplay": "0 tokens",
+      "tokensApprox": 0,
+      "level": 0,
+      "collectedAt": "2026-10-09T22:15:54.467784Z",
+      "status": "recorded"
+    },
+    {
+      "date": "2026-01-02",
+      "tokensDisplay": "0 tokens",
+      "tokensApprox": 0,
+      "level": 0,
+      "collectedAt": "2026-10-09T22:15:54.467784Z",
+      "status": "recorded"
+    },
+    {
+      "date": "2026-01-03",
+      "tokensDisplay": "0 tokens",
+      "tokensApprox": 0,
+      "level": 0,
+      "collectedAt": "2026-10-09T22:15:54.467784Z",
+      "status": "recorded"
+    },
+    {
+      "date": "2026-01-04",
+      "tokensDisplay": "0 tokens",
+      "tokensApprox": 0,
+      "level": 0,
+      "collectedAt": "2026-10-09T22:15:54.467784Z",
+      "status": "recorded"
+    },
+    {
+      "date": "2026-01-05",
+      "tokensDisplay": "0 tokens",
+      "tokensApprox": 0,
+      "level": 0,
+      "collectedAt": "2026-10-09T22:15:54.467784Z",
+      "status": "recorded"
+    },
+    {
+      "date": "2026-01-06",
+      "tokensDisplay": "0 tokens",
+      "tokensApprox": 0,
+      "level": 0,
+      "collectedAt": "2026-10-09T22:15:54.467784Z",
+      "status": "recorded"
+    },
+    {
+      "date": "2026-01-07",
+      "tokensDisplay": "0 tokens",
+      "tokensApprox": 0,
+      "level": 0,
+      "collectedAt": "2026-10-09T22:15:54.467784Z",
+      "status": "recorded"
+    },
+    {
+      "date": "2026-01-08",
+      "tokensDisplay": "0 tokens",
+      "tokensApprox": 0,
+      "level": 0,
+      "collectedAt": "2026-10-09T22:15:54.467784Z",
+      "status": "recorded"
+    },
+    {
+      "date": "2026-01-09",
+      "tokensDisplay": "0 tokens",
+      "tokensApprox": 0,
+      "level": 0,
+      "collectedAt": "2026-10-09T22:15:54.467784Z",
+      "status": "recorded"
+    },
+    {
+      "date": "2026-01-10",
+      "tokensDisplay": "0 tokens",
+      "tokensApprox": 0,
+      "level": 0,
+      "collectedAt": "2026-10-09T22:15:54.467784Z",
+      "status": "recorded"
+    },
+    {
+      "date": "2026-01-11",
+      "tokensDisplay": "0 tokens",
+      "tokensApprox": 0,
+      "level": 0,
+      "collectedAt": "2026-10-09T22:15:54.467784Z",
+      "status": "recorded"
+    },
+    {
+      "date": "2026-01-12",
+      "tokensDisplay": "0 tokens",
+      "tokensApprox": 0,
+      "level": 0,
+      "collectedAt": "2026-10-09T22:15:54.467784Z",
+      "status": "recorded"
+    },
+    {
+      "date": "2026-01-13",
+      "tokensDisplay": "0 tokens",
+      "tokensApprox": 0,
+      "level": 0,
+      "collectedAt": "2026-10-09T22:15:54.467784Z",
+      "status": "recorded"
+    },
+    {
+      "date": "2026-01-14",
+      "tokensDisplay": "0 tokens",
+      "tokensApprox": 0,
+      "level": 0,
+      "collectedAt": "2026-10-09T22:15:54.467784Z",
+      "status": "recorded"
+    },
+    {
+      "date": "2026-01-15",
+      "tokensDisplay": "0 tokens",
+      "tokensApprox": 0,
+      "level": 0,
+      "collectedAt": "2026-10-09T22:15:54.467784Z",
+      "status": "recorded"
+    },
+    {
+      "date": "2026-01-16",
+      "tokensDisplay": "0 tokens",
+      "tokensApprox": 0,
+      "level": 0,
+      "collectedAt": "2026-10-09T22:15:54.467784Z",
+      "status": "recorded"
+    },
+    {
+      "date": "2026-01-17",
+      "tokensDisplay": "0 tokens",
+      "tokensApprox": 0,
+      "level": 0,
+      "collectedAt": "2026-10-09T22:15:54.467784Z",
+      "status": "recorded"
+    },
+    {
+      "date": "2026-01-18",
+      "tokensDisplay": "0 tokens",
+      "tokensApprox": 0,
+      "level": 0,
+      "collectedAt": "2026-10-09T22:15:54.467784Z",
+      "status": "recorded"
+    },
+    {
+      "date": "2026-01-19",
+      "tokensDisplay": "0 tokens",
+      "tokensApprox": 0,
+      "level": 0,
+      "collectedAt": "2026-10-09T22:15:54.467784Z",
+      "status": "recorded"
+    },
+    {
+      "date": "2026-01-20",
+      "tokensDisplay": "0 tokens",
+      "tokensApprox": 0,
+      "level": 0,
+      "collectedAt": "2026-10-09T22:15:54.467784Z",
+      "status": "recorded"
+    },
+    {
+      "date": "2026-01-21",
+      "tokensDisplay": "0 tokens",
+      "tokensApprox": 0,
+      "level": 0,
+      "collectedAt": "2026-10-09T22:15:54.467784Z",
+      "status": "recorded"
+    },
+    {
+      "date": "2026-01-22",
+      "tokensDisplay": "0 tokens",
+      "tokensApprox": 0,
+      "level": 0,
+      "collectedAt": "2026-10-09T22:15:54.467784Z",
+      "status": "recorded"
+    },
+    {
+      "date": "2026-01-23",
+      "tokensDisplay": "0 tokens",
+      "tokensApprox": 0,
+      "level": 0,
+      "collectedAt": "2026-10-09T22:15:54.467784Z",
+      "status": "recorded"
+    },
+    {
+      "date": "2026-01-24",
+      "tokensDisplay": "0 tokens",
+      "tokensApprox": 0,
+      "level": 0,
+      "collectedAt": "2026-10-09T22:15:54.467784Z",
+      "status": "recorded"
+    },
+    {
+      "date": "2026-01-25",
+      "tokensDisplay": "0 tokens",
+      "tokensApprox": 0,
+      "level": 0,
+      "collectedAt": "2026-10-09T22:15:54.467784Z",
+      "status": "recorded"
+    },
+    {
+      "date": "2026-01-26",
+      "tokensDisplay": "0 tokens",
+      "tokensApprox": 0,
+      "level": 0,
+      "collectedAt": "2026-10-09T22:15:54.467784Z",
+      "status": "recorded"
+    },
+    {
+      "date": "2026-01-27",
+      "tokensDisplay": "0 tokens",
+      "tokensApprox": 0,
+      "level": 0,
+      "collectedAt": "2026-10-09T22:15:54.467784Z",
+      "status": "recorded"
+    },
+    {
+      "date": "2026-01-28",
+      "tokensDisplay": "0 tokens",
+      "tokensApprox": 0,
+      "level": 0,
+      "collectedAt": "2026-10-09T22:15:54.467784Z",
+      "status": "recorded"
+    },
+    {
+      "date": "2026-01-29",
+      "tokensDisplay": "0 tokens",
+      "tokensApprox": 0,
+      "level": 0,
+      "collectedAt": "2026-10-09T22:15:54.467784Z",
+      "status": "recorded"
+    },
+    {
+      "date": "2026-01-30",
+      "tokensDisplay": "0 tokens",
+      "tokensApprox": 0,
+      "level": 0,
+      "collectedAt": "2026-10-09T22:15:54.467784Z",
+      "status": "recorded"
+    },
+    {
+      "date": "2026-01-31",
+      "tokensDisplay": "0 tokens",
+      "tokensApprox": 0,
+      "level": 0,
+      "collectedAt": "2026-10-09T22:15:54.467784Z",
+      "status": "recorded"
+    },
+    {
+      "date": "2026-02-01",
+      "tokensDisplay": "0 tokens",
+      "tokensApprox": 0,
+      "level": 0,
+      "collectedAt": "2026-10-09T22:15:54.467784Z",
+      "status": "recorded"
+    },
+    {
+      "date": "2026-02-02",
+      "tokensDisplay": "0 tokens",
+      "tokensApprox": 0,
+      "level": 0,
+      "collectedAt": "2026-10-09T22:15:54.467784Z",
+      "status": "recorded"
+    },
+    {
+      "date": "2026-02-03",
+      "tokensDisplay": "0 tokens",
+      "tokensApprox": 0,
+      "level": 0,
+      "collectedAt": "2026-10-09T22:15:54.467784Z",
+      "status": "recorded"
+    },
+    {
+      "date": "2026-02-04",
+      "tokensDisplay": "0 tokens",
+      "tokensApprox": 0,
+      "level": 0,
+      "collectedAt": "2026-10-09T22:15:54.467784Z",
+      "status": "recorded"
+    },
+    {
+      "date": "2026-02-05",
+      "tokensDisplay": "0 tokens",
+      "tokensApprox": 0,
+      "level": 0,
+      "collectedAt": "2026-10-09T22:15:54.467784Z",
+      "status": "recorded"
+    },
+    {
+      "date": "2026-02-06",
+      "tokensDisplay": "0 tokens",
+      "tokensApprox": 0,
+      "level": 0,
+      "collectedAt": "2026-10-09T22:15:54.467784Z",
+      "status": "recorded"
+    },
+    {
+      "date": "2026-02-07",
+      "tokensDisplay": "0 tokens",
+      "tokensApprox": 0,
+      "level": 0,
+      "collectedAt": "2026-10-09T22:15:54.467784Z",
+      "status": "recorded"
+    },
+    {
+      "date": "2026-02-08",
+      "tokensDisplay": "0 tokens",
+      "tokensApprox": 0,
+      "level": 0,
+      "collectedAt": "2026-10-09T22:15:54.467784Z",
+      "status": "recorded"
+    },
+    {
+      "date": "2026-02-09",
+      "tokensDisplay": "0 tokens",
+      "tokensApprox": 0,
+      "level": 0,
+      "collectedAt": "2026-10-09T22:15:54.467784Z",
+      "status": "recorded"
+    },
+    {
+      "date": "2026-02-10",
+      "tokensDisplay": "0 tokens",
+      "tokensApprox": 0,
+      "level": 0,
+      "collectedAt": "2026-10-09T22:15:54.467784Z",
+      "status": "recorded"
+    },
+    {
+      "date": "2026-02-11",
+      "tokensDisplay": "0 tokens",
+      "tokensApprox": 0,
+      "level": 0,
+      "collectedAt": "2026-10-09T22:15:54.467784Z",
+      "status": "recorded"
+    },
+    {
+      "date": "2026-02-12",
+      "tokensDisplay": "0 tokens",
+      "tokensApprox": 0,
+      "level": 0,
+      "collectedAt": "2026-10-09T22:15:54.467784Z",
+      "status": "recorded"
+    },
+    {
+      "date": "2026-02-13",
+      "tokensDisplay": "0 tokens",
+      "tokensApprox": 0,
+      "level": 0,
+      "collectedAt": "2026-10-09T22:15:54.467784Z",
+      "status": "recorded"
+    },
+    {
+      "date": "2026-02-14",
+      "tokensDisplay": "0 tokens",
+      "tokensApprox": 0,
+      "level": 0,
+      "collectedAt": "2026-10-09T22:15:54.467784Z",
+      "status": "recorded"
+    },
+    {
+      "date": "2026-02-15",
+      "tokensDisplay": "0 tokens",
+      "tokensApprox": 0,
+      "level": 0,
+      "collectedAt": "2026-10-09T22:15:54.467784Z",
+      "status": "recorded"
+    },
+    {
+      "date": "2026-02-16",
+      "tokensDisplay": "0 tokens",
+      "tokensApprox": 0,
+      "level": 0,
+      "collectedAt": "2026-10-09T22:15:54.467784Z",
+      "status": "recorded"
+    },
+    {
+      "date": "2026-02-17",
+      "tokensDisplay": "0 tokens",
+      "tokensApprox": 0,
+      "level": 0,
+      "collectedAt": "2026-10-09T22:15:54.467784Z",
+      "status": "recorded"
+    },
+    {
+      "date": "2026-02-18",
+      "tokensDisplay": "0 tokens",
+      "tokensApprox": 0,
+      "level": 0,
+      "collectedAt": "2026-10-09T22:15:54.467784Z",
+      "status": "recorded"
+    },
+    {
+      "date": "2026-02-19",
+      "tokensDisplay": "0 tokens",
+      "tokensApprox": 0,
+      "level": 0,
+      "collectedAt": "2026-10-09T22:15:54.467784Z",
+      "status": "recorded"
+    },
+    {
+      "date": "2026-02-20",
+      "tokensDisplay": "0 tokens",
+      "tokensApprox": 0,
+      "level": 0,
+      "collectedAt": "2026-10-09T22:15:54.467784Z",
+      "status": "recorded"
+    },
+    {
+      "date": "2026-02-21",
+      "tokensDisplay": "0 tokens",
+      "tokensApprox": 0,
+      "level": 0,
+      "collectedAt": "2026-10-09T22:15:54.467784Z",
+      "status": "recorded"
+    },
+    {
+      "date": "2026-02-22",
+      "tokensDisplay": "0 tokens",
+      "tokensApprox": 0,
+      "level": 0,
+      "collectedAt": "2026-10-09T22:15:54.467784Z",
+      "status": "recorded"
+    },
+    {
+      "date": "2026-02-23",
+      "tokensDisplay": "0 tokens",
+      "tokensApprox": 0,
+      "level": 0,
+      "collectedAt": "2026-10-09T22:15:54.467784Z",
+      "status": "recorded"
+    },
+    {
+      "date": "2026-02-24",
+      "tokensDisplay": "0 tokens",
+      "tokensApprox": 0,
+      "level": 0,
+      "collectedAt": "2026-10-09T22:15:54.467784Z",
+      "status": "recorded"
+    },
+    {
+      "date": "2026-02-25",
+      "tokensDisplay": "0 tokens",
+      "tokensApprox": 0,
+      "level": 0,
+      "collectedAt": "2026-10-09T22:15:54.467784Z",
+      "status": "recorded"
+    },
+    {
+      "date": "2026-02-26",
+      "tokensDisplay": "0 tokens",
+      "tokensApprox": 0,
+      "level": 0,
+      "collectedAt": "2026-10-09T22:15:54.467784Z",
+      "status": "recorded"
+    },
+    {
+      "date": "2026-02-27",
+      "tokensDisplay": "0 tokens",
+      "tokensApprox": 0,
+      "level": 0,
+      "collectedAt": "2026-10-09T22:15:54.467784Z",
+      "status": "recorded"
+    },
+    {
+      "date": "2026-02-28",
+      "tokensDisplay": "0 tokens",
+      "tokensApprox": 0,
+      "level": 0,
+      "collectedAt": "2026-10-09T22:15:54.467784Z",
+      "status": "recorded"
+    },
+    {
+      "date": "2026-03-01",
+      "tokensDisplay": "0 tokens",
+      "tokensApprox": 0,
+      "level": 0,
+      "collectedAt": "2026-10-09T22:15:54.467784Z",
+      "status": "recorded"
+    },
+    {
+      "date": "2026-03-02",
+      "tokensDisplay": "0 tokens",
+      "tokensApprox": 0,
+      "level": 0,
+      "collectedAt": "2026-10-09T22:15:54.467784Z",
+      "status": "recorded"
+    },
+    {
+      "date": "2026-03-03",
+      "tokensDisplay": "0 tokens",
+      "tokensApprox": 0,
+      "level": 0,
+      "collectedAt": "2026-10-09T22:15:54.467784Z",
+      "status": "recorded"
+    },
+    {
+      "date": "2026-03-04",
+      "tokensDisplay": "0 tokens",
+      "tokensApprox": 0,
+      "level": 0,
+      "collectedAt": "2026-10-09T22:15:54.467784Z",
+      "status": "recorded"
+    },
+    {
+      "date": "2026-03-05",
+      "tokensDisplay": "0 tokens",
+      "tokensApprox": 0,
+      "level": 0,
+      "collectedAt": "2026-10-09T22:15:54.467784Z",
+      "status": "recorded"
+    },
+    {
+      "date": "2026-03-06",
+      "tokensDisplay": "0 tokens",
+      "tokensApprox": 0,
+      "level": 0,
+      "collectedAt": "2026-10-09T22:15:54.467784Z",
+      "status": "recorded"
+    },
+    {
+      "date": "2026-03-07",
+      "tokensDisplay": "0 tokens",
+      "tokensApprox": 0,
+      "level": 0,
+      "collectedAt": "2026-10-09T22:15:54.467784Z",
+      "status": "recorded"
+    },
+    {
+      "date": "2026-03-08",
+      "tokensDisplay": "0 tokens",
+      "tokensApprox": 0,
+      "level": 0,
+      "collectedAt": "2026-10-09T22:15:54.467784Z",
+      "status": "recorded"
+    },
+    {
+      "date": "2026-03-09",
+      "tokensDisplay": "0 tokens",
+      "tokensApprox": 0,
+      "level": 0,
+      "collectedAt": "2026-10-09T22:15:54.467784Z",
+      "status": "recorded"
+    },
+    {
+      "date": "2026-03-10",
+      "tokensDisplay": "0 tokens",
+      "tokensApprox": 0,
+      "level": 0,
+      "collectedAt": "2026-10-09T22:15:54.467784Z",
+      "status": "recorded"
+    },
+    {
+      "date": "2026-03-11",
+      "tokensDisplay": "0 tokens",
+      "tokensApprox": 0,
+      "level": 0,
+      "collectedAt": "2026-10-09T22:15:54.467784Z",
+      "status": "recorded"
+    },
+    {
+      "date": "2026-03-12",
+      "tokensDisplay": "0 tokens",
+      "tokensApprox": 0,
+      "level": 0,
+      "collectedAt": "2026-10-09T22:15:54.467784Z",
+      "status": "recorded"
+    },
+    {
+      "date": "2026-03-13",
+      "tokensDisplay": "0 tokens",
+      "tokensApprox": 0,
+      "level": 0,
+      "collectedAt": "2026-10-09T22:15:54.467784Z",
+      "status": "recorded"
+    },
+    {
+      "date": "2026-03-14",
+      "tokensDisplay": "0 tokens",
+      "tokensApprox": 0,
+      "level": 0,
+      "collectedAt": "2026-10-09T22:15:54.467784Z",
+      "status": "recorded"
+    },
+    {
+      "date": "2026-03-15",
+      "tokensDisplay": "0 tokens",
+      "tokensApprox": 0,
+      "level": 0,
+      "collectedAt": "2026-10-09T22:15:54.467784Z",
+      "status": "recorded"
+    },
+    {
+      "date": "2026-03-16",
+      "tokensDisplay": "0 tokens",
+      "tokensApprox": 0,
+      "level": 0,
+      "collectedAt": "2026-10-09T22:15:54.467784Z",
+      "status": "recorded"
+    },
+    {
+      "date": "2026-03-17",
+      "tokensDisplay": "0 tokens",
+      "tokensApprox": 0,
+      "level": 0,
+      "collectedAt": "2026-10-09T22:15:54.467784Z",
+      "status": "recorded"
+    },
+    {
+      "date": "2026-03-18",
+      "tokensDisplay": "0 tokens",
+      "tokensApprox": 0,
+      "level": 0,
+      "collectedAt": "2026-10-09T22:15:54.467784Z",
+      "status": "recorded"
+    },
+    {
+      "date": "2026-03-19",
+      "tokensDisplay": "0 tokens",
+      "tokensApprox": 0,
+      "level": 0,
+      "collectedAt": "2026-10-09T22:15:54.467784Z",
+      "status": "recorded"
+    },
+    {
+      "date": "2026-03-20",
+      "tokensDisplay": "0 tokens",
+      "tokensApprox": 0,
+      "level": 0,
+      "collectedAt": "2026-10-09T22:15:54.467784Z",
+      "status": "recorded"
+    },
+    {
+      "date": "2026-03-21",
+      "tokensDisplay": "0 tokens",
+      "tokensApprox": 0,
+      "level": 0,
+      "collectedAt": "2026-10-09T22:15:54.467784Z",
+      "status": "recorded"
+    },
+    {
+      "date": "2026-03-22",
+      "tokensDisplay": "0 tokens",
+      "tokensApprox": 0,
+      "level": 0,
+      "collectedAt": "2026-10-09T22:15:54.467784Z",
+      "status": "recorded"
+    },
+    {
+      "date": "2026-03-23",
+      "tokensDisplay": "0 tokens",
+      "tokensApprox": 0,
+      "level": 0,
+      "collectedAt": "2026-10-09T22:15:54.467784Z",
+      "status": "recorded"
+    },
+    {
+      "date": "2026-03-24",
+      "tokensDisplay": "0 tokens",
+      "tokensApprox": 0,
+      "level": 0,
+      "collectedAt": "2026-10-09T22:15:54.467784Z",
+      "status": "recorded"
+    },
+    {
+      "date": "2026-03-25",
+      "tokensDisplay": "0 tokens",
+      "tokensApprox": 0,
+      "level": 0,
+      "collectedAt": "2026-10-09T22:15:54.467784Z",
+      "status": "recorded"
+    },
+    {
+      "date": "2026-03-26",
+      "tokensDisplay": "0 tokens",
+      "tokensApprox": 0,
+      "level": 0,
+      "collectedAt": "2026-10-09T22:15:54.467784Z",
+      "status": "recorded"
+    },
+    {
+      "date": "2026-03-27",
+      "tokensDisplay": "0 tokens",
+      "tokensApprox": 0,
+      "level": 0,
+      "collectedAt": "2026-10-09T22:15:54.467784Z",
+      "status": "recorded"
+    },
+    {
+      "date": "2026-03-28",
+      "tokensDisplay": "0 tokens",
+      "tokensApprox": 0,
+      "level": 0,
+      "collectedAt": "2026-10-09T22:15:54.467784Z",
+      "status": "recorded"
+    },
+    {
+      "date": "2026-03-29",
+      "tokensDisplay": "0 tokens",
+      "tokensApprox": 0,
+      "level": 0,
+      "collectedAt": "2026-10-09T22:15:54.467784Z",
+      "status": "recorded"
+    },
+    {
+      "date": "2026-03-30",
+      "tokensDisplay": "0 tokens",
+      "tokensApprox": 0,
+      "level": 0,
+      "collectedAt": "2026-10-09T22:15:54.467784Z",
+      "status": "recorded"
+    },
+    {
+      "date": "2026-03-31",
+      "tokensDisplay": "0 tokens",
+      "tokensApprox": 0,
+      "level": 0,
+      "collectedAt": "2026-10-09T22:15:54.467784Z",
+      "status": "recorded"
+    },
+    {
+      "date": "2026-04-01",
+      "tokensDisplay": "0 tokens",
+      "tokensApprox": 0,
+      "level": 0,
+      "collectedAt": "2026-10-09T22:15:54.467784Z",
+      "status": "recorded"
+    },
+    {
+      "date": "2026-04-02",
+      "tokensDisplay": "0 tokens",
+      "tokensApprox": 0,
+      "level": 0,
+      "collectedAt": "2026-10-09T22:15:54.467784Z",
+      "status": "recorded"
+    },
+    {
+      "date": "2026-04-03",
+      "tokensDisplay": "0 tokens",
+      "tokensApprox": 0,
+      "level": 0,
+      "collectedAt": "2026-10-09T22:15:54.467784Z",
+      "status": "recorded"
+    },
+    {
+      "date": "2026-04-04",
+      "tokensDisplay": "0 tokens",
+      "tokensApprox": 0,
+      "level": 0,
+      "collectedAt": "2026-10-09T22:15:54.467784Z",
+      "status": "recorded"
+    },
+    {
+      "date": "2026-04-05",
+      "tokensDisplay": "0 tokens",
+      "tokensApprox": 0,
+      "level": 0,
+      "collectedAt": "2026-10-09T22:15:54.467784Z",
+      "status": "recorded"
+    },
+    {
+      "date": "2026-04-06",
+      "tokensDisplay": "0 tokens",
+      "tokensApprox": 0,
+      "level": 0,
+      "collectedAt": "2026-10-09T22:15:54.467784Z",
+      "status": "recorded"
+    },
+    {
+      "date": "2026-04-07",
+      "tokensDisplay": "0 tokens",
+      "tokensApprox": 0,
+      "level": 0,
+      "collectedAt": "2026-10-09T22:15:54.467784Z",
+      "status": "recorded"
+    },
+    {
+      "date": "2026-04-08",
+      "tokensDisplay": "0 tokens",
+      "tokensApprox": 0,
+      "level": 0,
+      "collectedAt": "2026-10-09T22:15:54.467784Z",
+      "status": "recorded"
+    },
+    {
+      "date": "2026-04-09",
+      "tokensDisplay": "0 tokens",
+      "tokensApprox": 0,
+      "level": 0,
+      "collectedAt": "2026-10-09T22:15:54.467784Z",
+      "status": "recorded"
+    },
+    {
+      "date": "2026-04-10",
+      "tokensDisplay": "0 tokens",
+      "tokensApprox": 0,
+      "level": 0,
+      "collectedAt": "2026-10-09T22:15:54.467784Z",
+      "status": "recorded"
+    },
+    {
+      "date": "2026-04-11",
+      "tokensDisplay": "0 tokens",
+      "tokensApprox": 0,
+      "level": 0,
+      "collectedAt": "2026-10-09T22:15:54.467784Z",
+      "status": "recorded"
+    },
+    {
+      "date": "2026-04-12",
+      "tokensDisplay": "0 tokens",
+      "tokensApprox": 0,
+      "level": 0,
+      "collectedAt": "2026-10-09T22:15:54.467784Z",
+      "status": "recorded"
+    },
+    {
+      "date": "2026-04-13",
+      "tokensDisplay": "0 tokens",
+      "tokensApprox": 0,
+      "level": 0,
+      "collectedAt": "2026-10-09T22:15:54.467784Z",
+      "status": "recorded"
+    },
+    {
+      "date": "2026-04-14",
+      "tokensDisplay": "0 tokens",
+      "tokensApprox": 0,
+      "level": 0,
+      "collectedAt": "2026-10-09T22:15:54.467784Z",
+      "status": "recorded"
+    },
+    {
+      "date": "2026-04-15",
+      "tokensDisplay": "0 tokens",
+      "tokensApprox": 0,
+      "level": 0,
+      "collectedAt": "2026-10-09T22:15:54.467784Z",
+      "status": "recorded"
+    },
+    {
+      "date": "2026-04-16",
+      "tokensDisplay": "0 tokens",
+      "tokensApprox": 0,
+      "level": 0,
+      "collectedAt": "2026-10-09T22:15:54.467784Z",
+      "status": "recorded"
+    },
+    {
+      "date": "2026-04-17",
+      "tokensDisplay": "0 tokens",
+      "tokensApprox": 0,
+      "level": 0,
+      "collectedAt": "2026-10-09T22:15:54.467784Z",
+      "status": "recorded"
+    },
+    {
+      "date": "2026-04-18",
+      "tokensDisplay": "0 tokens",
+      "tokensApprox": 0,
+      "level": 0,
+      "collectedAt": "2026-10-09T22:15:54.467784Z",
+      "status": "recorded"
+    },
+    {
+      "date": "2026-04-19",
+      "tokensDisplay": "0 tokens",
+      "tokensApprox": 0,
+      "level": 0,
+      "collectedAt": "2026-10-09T22:15:54.467784Z",
+      "status": "recorded"
+    },
+    {
+      "date": "2026-04-20",
+      "tokensDisplay": "0 tokens",
+      "tokensApprox": 0,
+      "level": 0,
+      "collectedAt": "2026-10-09T22:15:54.467784Z",
+      "status": "recorded"
+    },
+    {
+      "date": "2026-04-21",
+      "tokensDisplay": "0 tokens",
+      "tokensApprox": 0,
+      "level": 0,
+      "collectedAt": "2026-10-09T22:15:54.467784Z",
+      "status": "recorded"
+    },
+    {
+      "date": "2026-04-22",
+      "tokensDisplay": "0 tokens",
+      "tokensApprox": 0,
+      "level": 0,
+      "collectedAt": "2026-10-09T22:15:54.467784Z",
+      "status": "recorded"
+    },
+    {
+      "date": "2026-04-23",
+      "tokensDisplay": "0 tokens",
+      "tokensApprox": 0,
+      "level": 0,
+      "collectedAt": "2026-10-09T22:15:54.467784Z",
+      "status": "recorded"
+    },
+    {
+      "date": "2026-04-24",
+      "tokensDisplay": "0 tokens",
+      "tokensApprox": 0,
+      "level": 0,
+      "collectedAt": "2026-10-09T22:15:54.467784Z",
+      "status": "recorded"
+    },
+    {
+      "date": "2026-04-25",
+      "tokensDisplay": "0 tokens",
+      "tokensApprox": 0,
+      "level": 0,
+      "collectedAt": "2026-10-09T22:15:54.467784Z",
+      "status": "recorded"
+    },
+    {
+      "date": "2026-04-26",
+      "tokensDisplay": "0 tokens",
+      "tokensApprox": 0,
+      "level": 0,
+      "collectedAt": "2026-10-09T22:15:54.467784Z",
+      "status": "recorded"
+    },
+    {
+      "date": "2026-04-27",
+      "tokensDisplay": "0 tokens",
+      "tokensApprox": 0,
+      "level": 0,
+      "collectedAt": "2026-10-09T22:15:54.467784Z",
+      "status": "recorded"
+    },
+    {
+      "date": "2026-04-28",
+      "tokensDisplay": "0 tokens",
+      "tokensApprox": 0,
+      "level": 0,
+      "collectedAt": "2026-10-09T22:15:54.467784Z",
+      "status": "recorded"
+    },
+    {
+      "date": "2026-04-29",
+      "tokensDisplay": "0 tokens",
+      "tokensApprox": 0,
+      "level": 0,
+      "collectedAt": "2026-10-09T22:15:54.467784Z",
+      "status": "recorded"
+    },
+    {
+      "date": "2026-04-30",
+      "tokensDisplay": "0 tokens",
+      "tokensApprox": 0,
+      "level": 0,
+      "collectedAt": "2026-10-09T22:15:54.467784Z",
+      "status": "recorded"
+    },
+    {
+      "date": "2026-05-01",
+      "tokensDisplay": "0 tokens",
+      "tokensApprox": 0,
+      "level": 0,
+      "collectedAt": "2026-10-09T22:15:54.467784Z",
+      "status": "recorded"
+    },
+    {
+      "date": "2026-05-02",
+      "tokensDisplay": "0 tokens",
+      "tokensApprox": 0,
+      "level": 0,
+      "collectedAt": "2026-10-09T22:15:54.467784Z",
+      "status": "recorded"
+    },
+    {
+      "date": "2026-05-03",
+      "tokensDisplay": "0 tokens",
+      "tokensApprox": 0,
+      "level": 0,
+      "collectedAt": "2026-10-09T22:15:54.467784Z",
+      "status": "recorded"
+    },
+    {
+      "date": "2026-05-04",
+      "tokensDisplay": "0 tokens",
+      "tokensApprox": 0,
+      "level": 0,
+      "collectedAt": "2026-10-09T22:15:54.467784Z",
+      "status": "recorded"
+    },
+    {
+      "date": "2026-05-05",
+      "tokensDisplay": "0 tokens",
+      "tokensApprox": 0,
+      "level": 0,
+      "collectedAt": "2026-10-09T22:15:54.467784Z",
+      "status": "recorded"
+    },
+    {
+      "date": "2026-05-06",
+      "tokensDisplay": "0 tokens",
+      "tokensApprox": 0,
+      "level": 0,
+      "collectedAt": "2026-10-09T22:15:54.467784Z",
+      "status": "recorded"
+    },
+    {
+      "date": "2026-05-07",
+      "tokensDisplay": "0 tokens",
+      "tokensApprox": 0,
+      "level": 0,
+      "collectedAt": "2026-10-09T22:15:54.467784Z",
+      "status": "recorded"
+    },
+    {
+      "date": "2026-05-08",
+      "tokensDisplay": "0 tokens",
+      "tokensApprox": 0,
+      "level": 0,
+      "collectedAt": "2026-10-09T22:15:54.467784Z",
+      "status": "recorded"
+    },
+    {
+      "date": "2026-05-09",
+      "tokensDisplay": "0 tokens",
+      "tokensApprox": 0,
+      "level": 0,
+      "collectedAt": "2026-10-09T22:15:54.467784Z",
+      "status": "recorded"
+    },
+    {
+      "date": "2026-05-10",
+      "tokensDisplay": "0 tokens",
+      "tokensApprox": 0,
+      "level": 0,
+      "collectedAt": "2026-10-09T22:15:54.467784Z",
+      "status": "recorded"
+    },
+    {
+      "date": "2026-05-11",
+      "tokensDisplay": "0 tokens",
+      "tokensApprox": 0,
+      "level": 0,
+      "collectedAt": "2026-10-09T22:15:54.467784Z",
+      "status": "recorded"
+    },
+    {
+      "date": "2026-05-12",
+      "tokensDisplay": "0 tokens",
+      "tokensApprox": 0,
+      "level": 0,
+      "collectedAt": "2026-10-09T22:15:54.467784Z",
+      "status": "recorded"
+    },
+    {
+      "date": "2026-05-13",
+      "tokensDisplay": "0 tokens",
+      "tokensApprox": 0,
+      "level": 0,
+      "collectedAt": "2026-10-09T22:15:54.467784Z",
+      "status": "recorded"
+    },
+    {
+      "date": "2026-05-14",
+      "tokensDisplay": "0 tokens",
+      "tokensApprox": 0,
+      "level": 0,
+      "collectedAt": "2026-10-09T22:15:54.467784Z",
+      "status": "recorded"
+    },
+    {
+      "date": "2026-05-15",
+      "tokensDisplay": "0 tokens",
+      "tokensApprox": 0,
+      "level": 0,
+      "collectedAt": "2026-10-09T22:15:54.467784Z",
+      "status": "recorded"
+    },
+    {
+      "date": "2026-05-16",
+      "tokensDisplay": "0 tokens",
+      "tokensApprox": 0,
+      "level": 0,
+      "collectedAt": "2026-10-09T22:15:54.467784Z",
+      "status": "recorded"
+    },
+    {
+      "date": "2026-05-17",
+      "tokensDisplay": "0 tokens",
+      "tokensApprox": 0,
+      "level": 0,
+      "collectedAt": "2026-10-09T22:15:54.467784Z",
+      "status": "recorded"
+    },
+    {
+      "date": "2026-05-18",
+      "tokensDisplay": "0 tokens",
+      "tokensApprox": 0,
+      "level": 0,
+      "collectedAt": "2026-10-09T22:15:54.467784Z",
+      "status": "recorded"
+    },
+    {
+      "date": "2026-05-19",
+      "tokensDisplay": "0 tokens",
+      "tokensApprox": 0,
+      "level": 0,
+      "collectedAt": "2026-10-09T22:15:54.467784Z",
+      "status": "recorded"
+    },
+    {
+      "date": "2026-05-20",
+      "tokensDisplay": "0 tokens",
+      "tokensApprox": 0,
+      "level": 0,
+      "collectedAt": "2026-10-09T22:15:54.467784Z",
+      "status": "recorded"
+    },
+    {
+      "date": "2026-05-21",
+      "tokensDisplay": "0 tokens",
+      "tokensApprox": 0,
+      "level": 0,
+      "collectedAt": "2026-10-09T22:15:54.467784Z",
+      "status": "recorded"
+    },
+    {
+      "date": "2026-05-22",
+      "tokensDisplay": "0 tokens",
+      "tokensApprox": 0,
+      "level": 0,
+      "collectedAt": "2026-10-09T22:15:54.467784Z",
+      "status": "recorded"
+    },
+    {
+      "date": "2026-05-23",
+      "tokensDisplay": "0 tokens",
+      "tokensApprox": 0,
+      "level": 0,
+      "collectedAt": "2026-10-09T22:15:54.467784Z",
+      "status": "recorded"
+    },
+    {
+      "date": "2026-05-24",
+      "tokensDisplay": "0 tokens",
+      "tokensApprox": 0,
+      "level": 0,
+      "collectedAt": "2026-10-09T22:15:54.467784Z",
+      "status": "recorded"
+    },
+    {
+      "date": "2026-05-25",
+      "tokensDisplay": "0 tokens",
+      "tokensApprox": 0,
+      "level": 0,
+      "collectedAt": "2026-10-09T22:15:54.467784Z",
+      "status": "recorded"
+    },
+    {
+      "date": "2026-05-26",
+      "tokensDisplay": "0 tokens",
+      "tokensApprox": 0,
+      "level": 0,
+      "collectedAt": "2026-10-09T22:15:54.467784Z",
+      "status": "recorded"
+    },
+    {
+      "date": "2026-05-27",
+      "tokensDisplay": "0 tokens",
+      "tokensApprox": 0,
+      "level": 0,
+      "collectedAt": "2026-10-09T22:15:54.467784Z",
+      "status": "recorded"
+    },
+    {
+      "date": "2026-05-28",
+      "tokensDisplay": "0 tokens",
+      "tokensApprox": 0,
+      "level": 0,
+      "collectedAt": "2026-10-09T22:15:54.467784Z",
+      "status": "recorded"
+    },
+    {
+      "date": "2026-05-29",
+      "tokensDisplay": "0 tokens",
+      "tokensApprox": 0,
+      "level": 0,
+      "collectedAt": "2026-10-09T22:15:54.467784Z",
+      "status": "recorded"
+    },
+    {
+      "date": "2026-05-30",
+      "tokensDisplay": "0 tokens",
+      "tokensApprox": 0,
+      "level": 0,
+      "collectedAt": "2026-10-09T22:15:54.467784Z",
+      "status": "recorded"
+    },
+    {
+      "date": "2026-05-31",
+      "tokensDisplay": "0 tokens",
+      "tokensApprox": 0,
+      "level": 0,
+      "collectedAt": "2026-10-09T22:15:54.467784Z",
+      "status": "recorded"
+    },
+    {
+      "date": "2026-06-01",
+      "tokensDisplay": "0 tokens",
+      "tokensApprox": 0,
+      "level": 0,
+      "collectedAt": "2026-10-09T22:15:54.467784Z",
+      "status": "recorded"
+    },
+    {
+      "date": "2026-06-02",
+      "tokensDisplay": "0 tokens",
+      "tokensApprox": 0,
+      "level": 0,
+      "collectedAt": "2026-10-09T22:15:54.467784Z",
+      "status": "recorded"
+    },
+    {
+      "date": "2026-06-03",
+      "tokensDisplay": "0 tokens",
+      "tokensApprox": 0,
+      "level": 0,
+      "collectedAt": "2026-10-09T22:15:54.467784Z",
+      "status": "recorded"
+    },
+    {
+      "date": "2026-06-04",
+      "tokensDisplay": "0 tokens",
+      "tokensApprox": 0,
+      "level": 0,
+      "collectedAt": "2026-10-09T22:15:54.467784Z",
+      "status": "recorded"
+    },
+    {
+      "date": "2026-06-05",
+      "tokensDisplay": "0 tokens",
+      "tokensApprox": 0,
+      "level": 0,
+      "collectedAt": "2026-10-09T22:15:54.467784Z",
+      "status": "recorded"
+    },
+    {
+      "date": "2026-06-06",
+      "tokensDisplay": "0 tokens",
+      "tokensApprox": 0,
+      "level": 0,
+      "collectedAt": "2026-10-09T22:15:54.467784Z",
+      "status": "recorded"
+    },
+    {
+      "date": "2026-06-07",
+      "tokensDisplay": "0 tokens",
+      "tokensApprox": 0,
+      "level": 0,
+      "collectedAt": "2026-10-09T22:15:54.467784Z",
+      "status": "recorded"
+    },
+    {
+      "date": "2026-06-08",
+      "tokensDisplay": "0 tokens",
+      "tokensApprox": 0,
+      "level": 0,
+      "collectedAt": "2026-10-09T22:15:54.467784Z",
+      "status": "recorded"
+    },
+    {
+      "date": "2026-06-09",
+      "tokensDisplay": "0 tokens",
+      "tokensApprox": 0,
+      "level": 0,
+      "collectedAt": "2026-10-09T22:15:54.467784Z",
+      "status": "recorded"
+    },
+    {
+      "date": "2026-06-10",
+      "tokensDisplay": "0 tokens",
+      "tokensApprox": 0,
+      "level": 0,
+      "collectedAt": "2026-10-09T22:15:54.467784Z",
+      "status": "recorded"
+    },
+    {
+      "date": "2026-06-11",
+      "tokensDisplay": "0 tokens",
+      "tokensApprox": 0,
+      "level": 0,
+      "collectedAt": "2026-10-09T22:15:54.467784Z",
+      "status": "recorded"
+    },
+    {
+      "date": "2026-06-12",
+      "tokensDisplay": "0 tokens",
+      "tokensApprox": 0,
+      "level": 0,
+      "collectedAt": "2026-10-09T22:15:54.467784Z",
+      "status": "recorded"
+    },
+    {
+      "date": "2026-06-13",
+      "tokensDisplay": "0 tokens",
+      "tokensApprox": 0,
+      "level": 0,
+      "collectedAt": "2026-10-09T22:15:54.467784Z",
+      "status": "recorded"
+    },
+    {
+      "date": "2026-06-14",
+      "tokensDisplay": "0 tokens",
+      "tokensApprox": 0,
+      "level": 0,
+      "collectedAt": "2026-10-09T22:15:54.467784Z",
+      "status": "recorded"
+    },
+    {
+      "date": "2026-06-15",
+      "tokensDisplay": "0 tokens",
+      "tokensApprox": 0,
+      "level": 0,
+      "collectedAt": "2026-10-09T22:15:54.467784Z",
+      "status": "recorded"
+    },
+    {
+      "date": "2026-06-16",
+      "tokensDisplay": "0 tokens",
+      "tokensApprox": 0,
+      "level": 0,
+      "collectedAt": "2026-10-09T22:15:54.467784Z",
+      "status": "recorded"
+    },
+    {
+      "date": "2026-06-17",
+      "tokensDisplay": "0 tokens",
+      "tokensApprox": 0,
+      "level": 0,
+      "collectedAt": "2026-10-09T22:15:54.467784Z",
+      "status": "recorded"
+    },
+    {
+      "date": "2026-06-18",
+      "tokensDisplay": "0 tokens",
+      "tokensApprox": 0,
+      "level": 0,
+      "collectedAt": "2026-10-09T22:15:54.467784Z",
+      "status": "recorded"
+    },
+    {
+      "date": "2026-06-19",
+      "tokensDisplay": "0 tokens",
+      "tokensApprox": 0,
+      "level": 0,
+      "collectedAt": "2026-10-09T22:15:54.467784Z",
+      "status": "recorded"
+    },
+    {
+      "date": "2026-06-20",
+      "tokensDisplay": "0 tokens",
+      "tokensApprox": 0,
+      "level": 0,
+      "collectedAt": "2026-10-09T22:15:54.467784Z",
+      "status": "recorded"
+    },
+    {
+      "date": "2026-06-21",
+      "tokensDisplay": "0 tokens",
+      "tokensApprox": 0,
+      "level": 0,
+      "collectedAt": "2026-10-09T22:15:54.467784Z",
+      "status": "recorded"
+    },
+    {
+      "date": "2026-06-22",
+      "tokensDisplay": "0 tokens",
+      "tokensApprox": 0,
+      "level": 0,
+      "collectedAt": "2026-10-09T22:15:54.467784Z",
+      "status": "recorded"
+    },
+    {
+      "date": "2026-06-23",
+      "tokensDisplay": "0 tokens",
+      "tokensApprox": 0,
+      "level": 0,
+      "collectedAt": "2026-10-09T22:15:54.467784Z",
+      "status": "recorded"
+    },
+    {
+      "date": "2026-06-24",
+      "tokensDisplay": "0 tokens",
+      "tokensApprox": 0,
+      "level": 0,
+      "collectedAt": "2026-10-09T22:15:54.467784Z",
+      "status": "recorded"
+    },
+    {
+      "date": "2026-06-25",
+      "tokensDisplay": "0 tokens",
+      "tokensApprox": 0,
+      "level": 0,
+      "collectedAt": "2026-10-09T22:15:54.467784Z",
+      "status": "recorded"
+    },
+    {
+      "date": "2026-06-26",
+      "tokensDisplay": "0 tokens",
+      "tokensApprox": 0,
+      "level": 0,
+      "collectedAt": "2026-10-09T22:15:54.467784Z",
+      "status": "recorded"
+    },
+    {
+      "date": "2026-06-27",
+      "tokensDisplay": "0 tokens",
+      "tokensApprox": 0,
+      "level": 0,
+      "collectedAt": "2026-10-09T22:15:54.467784Z",
+      "status": "recorded"
+    },
+    {
+      "date": "2026-06-28",
+      "tokensDisplay": "0 tokens",
+      "tokensApprox": 0,
+      "level": 0,
+      "collectedAt": "2026-10-09T22:15:54.467784Z",
+      "status": "recorded"
+    },
+    {
+      "date": "2026-06-29",
+      "tokensDisplay": "0 tokens",
+      "tokensApprox": 0,
+      "level": 0,
+      "collectedAt": "2026-10-09T22:15:54.467784Z",
+      "status": "recorded"
+    },
+    {
+      "date": "2026-06-30",
+      "tokensDisplay": "0 tokens",
+      "tokensApprox": 0,
+      "level": 0,
+      "collectedAt": "2026-10-09T22:15:54.467784Z",
+      "status": "recorded"
+    },
+    {
+      "date": "2026-07-01",
+      "tokensDisplay": "0 tokens",
+      "tokensApprox": 0,
+      "level": 0,
+      "collectedAt": "2026-10-09T22:15:54.467784Z",
+      "status": "recorded"
+    },
+    {
+      "date": "2026-07-02",
+      "tokensDisplay": "0 tokens",
+      "tokensApprox": 0,
+      "level": 0,
+      "collectedAt": "2026-10-09T22:15:54.467784Z",
+      "status": "recorded"
+    },
+    {
+      "date": "2026-07-03",
+      "tokensDisplay": "0 tokens",
+      "tokensApprox": 0,
+      "level": 0,
+      "collectedAt": "2026-10-09T22:15:54.467784Z",
+      "status": "recorded"
+    },
+    {
+      "date": "2026-07-04",
+      "tokensDisplay": "0 tokens",
+      "tokensApprox": 0,
+      "level": 0,
+      "collectedAt": "2026-10-09T22:15:54.467784Z",
+      "status": "recorded"
+    },
+    {
+      "date": "2026-07-05",
+      "tokensDisplay": "0 tokens",
+      "tokensApprox": 0,
+      "level": 0,
+      "collectedAt": "2026-10-09T22:15:54.467784Z",
+      "status": "recorded"
+    },
+    {
+      "date": "2026-07-06",
+      "tokensDisplay": "0 tokens",
+      "tokensApprox": 0,
+      "level": 0,
+      "collectedAt": "2026-10-09T22:15:54.467784Z",
+      "status": "recorded"
+    },
+    {
+      "date": "2026-07-07",
+      "tokensDisplay": "0 tokens",
+      "tokensApprox": 0,
+      "level": 0,
+      "collectedAt": "2026-10-09T22:15:54.467784Z",
+      "status": "recorded"
+    },
+    {
+      "date": "2026-07-08",
+      "tokensDisplay": "0 tokens",
+      "tokensApprox": 0,
+      "level": 0,
+      "collectedAt": "2026-10-09T22:15:54.467784Z",
+      "status": "recorded"
+    },
+    {
+      "date": "2026-07-09",
+      "tokensDisplay": "0 tokens",
+      "tokensApprox": 0,
+      "level": 0,
+      "collectedAt": "2026-10-09T22:15:54.467784Z",
+      "status": "recorded"
+    },
+    {
+      "date": "2026-07-10",
+      "tokensDisplay": "0 tokens",
+      "tokensApprox": 0,
+      "level": 0,
+      "collectedAt": "2026-10-09T22:15:54.467784Z",
+      "status": "recorded"
+    },
+    {
+      "date": "2026-07-11",
+      "tokensDisplay": "0 tokens",
+      "tokensApprox": 0,
+      "level": 0,
+      "collectedAt": "2026-10-09T22:15:54.467784Z",
+      "status": "recorded"
+    },
+    {
+      "date": "2026-07-12",
+      "tokensDisplay": "0 tokens",
+      "tokensApprox": 0,
+      "level": 0,
+      "collectedAt": "2026-10-09T22:15:54.467784Z",
+      "status": "recorded"
+    },
+    {
+      "date": "2026-07-13",
+      "tokensDisplay": "0 tokens",
+      "tokensApprox": 0,
+      "level": 0,
+      "collectedAt": "2026-10-09T22:15:54.467784Z",
+      "status": "recorded"
+    },
+    {
+      "date": "2026-07-14",
+      "tokensDisplay": "0 tokens",
+      "tokensApprox": 0,
+      "level": 0,
+      "collectedAt": "2026-10-09T22:15:54.467784Z",
+      "status": "recorded"
+    },
+    {
+      "date": "2026-07-15",
+      "tokensDisplay": "25.4M tokens",
+      "tokensApprox": 25400000,
+      "level": 2,
+      "collectedAt": "2026-10-09T22:15:54.467784Z",
+      "status": "recorded"
+    },
+    {
+      "date": "2026-07-16",
+      "tokensDisplay": "44.9M tokens",
+      "tokensApprox": 44900000,
+      "level": 2,
+      "collectedAt": "2026-10-09T22:15:54.467784Z",
+      "status": "recorded"
+    },
+    {
+      "date": "2026-07-17",
+      "tokensDisplay": "94.9M tokens",
+      "tokensApprox": 94900000,
+      "level": 4,
+      "collectedAt": "2026-10-09T22:15:54.467784Z",
+      "status": "recorded"
+    },
+    {
+      "date": "2026-07-18",
+      "tokensDisplay": "10M tokens",
+      "tokensApprox": 10000000,
+      "level": 1,
+      "collectedAt": "2026-10-09T22:15:54.467784Z",
+      "status": "recorded"
+    },
+    {
+      "date": "2026-07-19",
+      "tokensDisplay": "62M tokens",
+      "tokensApprox": 62000000,
+      "level": 3,
+      "collectedAt": "2026-10-09T22:15:54.467784Z",
+      "status": "recorded"
+    },
+    {
+      "date": "2026-07-20",
+      "tokensDisplay": "79.3M tokens",
+      "tokensApprox": 79300000,
+      "level": 4,
+      "collectedAt": "2026-10-09T22:15:54.467784Z",
+      "status": "recorded"
+    },
+    {
+      "date": "2026-07-21",
+      "tokensDisplay": "11M tokens",
+      "tokensApprox": 11000000,
+      "level": 1,
+      "collectedAt": "2026-10-09T22:15:54.467784Z",
+      "status": "recorded"
+    },
+    {
+      "date": "2026-07-22",
+      "tokensDisplay": "2.4M tokens",
+      "tokensApprox": 2400000,
+      "level": 1,
+      "collectedAt": "2026-10-09T22:15:54.467784Z",
+      "status": "recorded"
+    },
+    {
+      "date": "2026-07-23",
+      "tokensDisplay": "2.5M tokens",
+      "tokensApprox": 2500000,
+      "level": 1,
+      "collectedAt": "2026-10-09T22:15:54.467784Z",
+      "status": "recorded"
+    },
+    {
+      "date": "2026-07-24",
+      "tokensDisplay": "28.7M tokens",
+      "tokensApprox": 28700000,
+      "level": 2,
+      "collectedAt": "2026-10-09T22:15:54.467784Z",
+      "status": "recorded"
+    },
+    {
+      "date": "2026-07-25",
+      "tokensDisplay": "0 tokens",
+      "tokensApprox": 0,
+      "level": 0,
+      "collectedAt": "2026-10-09T22:15:54.467784Z",
+      "status": "recorded"
+    },
+    {
+      "date": "2026-07-26",
+      "tokensDisplay": "23.3M tokens",
+      "tokensApprox": 23300000,
+      "level": 1,
+      "collectedAt": "2026-10-09T22:15:54.467784Z",
+      "status": "recorded"
+    },
+    {
+      "date": "2026-07-27",
+      "tokensDisplay": "21M tokens",
+      "tokensApprox": 21000000,
+      "level": 1,
+      "collectedAt": "2026-10-09T22:15:54.467784Z",
+      "status": "recorded"
+    },
+    {
+      "date": "2026-07-28",
+      "tokensDisplay": "51.6M tokens",
+      "tokensApprox": 51600000,
+      "level": 3,
+      "collectedAt": "2026-10-09T22:15:54.467784Z",
+      "status": "recorded"
+    },
+    {
+      "date": "2026-07-29",
+      "tokensDisplay": "59.3M tokens",
+      "tokensApprox": 59300000,
+      "level": 3,
+      "collectedAt": "2026-10-09T22:15:54.467784Z",
+      "status": "recorded"
+    },
+    {
+      "date": "2026-07-30",
+      "tokensDisplay": "13.9M tokens",
+      "tokensApprox": 13900000,
+      "level": 1,
+      "collectedAt": "2026-10-09T22:15:54.467784Z",
+      "status": "recorded"
+    },
+    {
+      "date": "2026-07-31",
+      "tokensDisplay": "2.1M tokens",
+      "tokensApprox": 2100000,
+      "level": 1,
+      "collectedAt": "2026-10-09T22:15:54.467784Z",
+      "status": "recorded"
+    },
+    {
+      "date": "2026-08-01",
+      "tokensDisplay": "0 tokens",
+      "tokensApprox": 0,
+      "level": 0,
+      "collectedAt": "2026-10-09T22:15:54.467784Z",
+      "status": "recorded"
+    },
+    {
+      "date": "2026-08-02",
+      "tokensDisplay": "1.4M tokens",
+      "tokensApprox": 1400000,
+      "level": 1,
+      "collectedAt": "2026-10-09T22:15:54.467784Z",
+      "status": "recorded"
+    },
+    {
+      "date": "2026-08-03",
+      "tokensDisplay": "66.7M tokens",
+      "tokensApprox": 66700000,
+      "level": 3,
+      "collectedAt": "2026-10-09T22:15:54.467784Z",
+      "status": "recorded"
+    },
+    {
+      "date": "2026-08-04",
+      "tokensDisplay": "3.5M tokens",
+      "tokensApprox": 3500000,
+      "level": 1,
+      "collectedAt": "2026-10-09T22:15:54.467784Z",
+      "status": "recorded"
+    },
+    {
+      "date": "2026-08-05",
+      "tokensDisplay": "20.9M tokens",
+      "tokensApprox": 20900000,
+      "level": 1,
+      "collectedAt": "2026-10-09T22:15:54.467784Z",
+      "status": "recorded"
+    },
+    {
+      "date": "2026-08-06",
+      "tokensDisplay": "804.6K tokens",
+      "tokensApprox": 804600,
+      "level": 1,
+      "collectedAt": "2026-10-09T22:15:54.467784Z",
+      "status": "recorded"
+    },
+    {
+      "date": "2026-08-07",
+      "tokensDisplay": "16.1M tokens",
+      "tokensApprox": 16100000,
+      "level": 1,
+      "collectedAt": "2026-10-09T22:15:54.467784Z",
+      "status": "recorded"
+    },
+    {
+      "date": "2026-08-08",
+      "tokensDisplay": "468.5K tokens",
+      "tokensApprox": 468500,
+      "level": 1,
+      "collectedAt": "2026-10-09T22:15:54.467784Z",
+      "status": "recorded"
+    },
+    {
+      "date": "2026-08-09",
+      "tokensDisplay": "17.6M tokens",
+      "tokensApprox": 17600000,
+      "level": 1,
+      "collectedAt": "2026-10-09T22:15:54.467784Z",
+      "status": "recorded"
+    },
+    {
+      "date": "2026-08-10",
+      "tokensDisplay": "91.1M tokens",
+      "tokensApprox": 91100000,
+      "level": 4,
+      "collectedAt": "2026-10-09T22:15:54.467784Z",
+      "status": "recorded"
+    },
+    {
+      "date": "2026-08-11",
+      "tokensDisplay": "0 tokens",
+      "tokensApprox": 0,
+      "level": 0,
+      "collectedAt": "2026-10-09T22:15:54.467784Z",
+      "status": "recorded"
+    },
+    {
+      "date": "2026-08-12",
+      "tokensDisplay": "54M tokens",
+      "tokensApprox": 54000000,
+      "level": 3,
+      "collectedAt": "2026-10-09T22:15:54.467784Z",
+      "status": "recorded"
+    },
+    {
+      "date": "2026-08-13",
+      "tokensDisplay": "377.5K tokens",
+      "tokensApprox": 377500,
+      "level": 1,
+      "collectedAt": "2026-10-09T22:15:54.467784Z",
+      "status": "recorded"
+    },
+    {
+      "date": "2026-08-14",
+      "tokensDisplay": "21.6M tokens",
+      "tokensApprox": 21600000,
+      "level": 1,
+      "collectedAt": "2026-10-09T22:15:54.467784Z",
+      "status": "recorded"
+    },
+    {
+      "date": "2026-08-15",
+      "tokensDisplay": "152.6M tokens",
+      "tokensApprox": 152600000,
+      "level": 4,
+      "collectedAt": "2026-10-09T22:15:54.467784Z",
+      "status": "recorded"
+    },
+    {
+      "date": "2026-08-16",
+      "tokensDisplay": "0 tokens",
+      "tokensApprox": 0,
+      "level": 0,
+      "collectedAt": "2026-10-09T22:15:54.467784Z",
+      "status": "recorded"
+    },
+    {
+      "date": "2026-08-17",
+      "tokensDisplay": "0 tokens",
+      "tokensApprox": 0,
+      "level": 0,
+      "collectedAt": "2026-10-09T22:15:54.467784Z",
+      "status": "recorded"
+    },
+    {
+      "date": "2026-08-18",
+      "tokensDisplay": "0 tokens",
+      "tokensApprox": 0,
+      "level": 0,
+      "collectedAt": "2026-10-09T22:15:54.467784Z",
+      "status": "recorded"
+    },
+    {
+      "date": "2026-08-19",
+      "tokensDisplay": "0 tokens",
+      "tokensApprox": 0,
+      "level": 0,
+      "collectedAt": "2026-10-09T22:15:54.467784Z",
+      "status": "recorded"
+    },
+    {
+      "date": "2026-08-20",
+      "tokensDisplay": "0 tokens",
+      "tokensApprox": 0,
+      "level": 0,
+      "collectedAt": "2026-10-09T22:15:54.467784Z",
+      "status": "recorded"
+    },
+    {
+      "date": "2026-08-21",
+      "tokensDisplay": "0 tokens",
+      "tokensApprox": 0,
+      "level": 0,
+      "collectedAt": "2026-10-09T22:15:54.467784Z",
+      "status": "recorded"
+    },
+    {
+      "date": "2026-08-22",
+      "tokensDisplay": "0 tokens",
+      "tokensApprox": 0,
+      "level": 0,
+      "collectedAt": "2026-10-09T22:15:54.467784Z",
+      "status": "recorded"
+    },
+    {
+      "date": "2026-08-23",
+      "tokensDisplay": "0 tokens",
+      "tokensApprox": 0,
+      "level": 0,
+      "collectedAt": "2026-10-09T22:15:54.467784Z",
+      "status": "recorded"
+    },
+    {
+      "date": "2026-08-24",
+      "tokensDisplay": "70.5K tokens",
+      "tokensApprox": 70500,
+      "level": 1,
+      "collectedAt": "2026-10-09T22:15:54.467784Z",
+      "status": "recorded"
+    },
+    {
+      "date": "2026-08-25",
+      "tokensDisplay": "270.5K tokens",
+      "tokensApprox": 270500,
+      "level": 1,
+      "collectedAt": "2026-10-09T22:15:54.467784Z",
+      "status": "recorded"
+    },
+    {
+      "date": "2026-08-26",
+      "tokensDisplay": "24.7M tokens",
+      "tokensApprox": 24700000,
+      "level": 2,
+      "collectedAt": "2026-10-09T22:15:54.467784Z",
+      "status": "recorded"
+    },
+    {
+      "date": "2026-08-27",
+      "tokensDisplay": "84.4M tokens",
+      "tokensApprox": 84400000,
+      "level": 4,
+      "collectedAt": "2026-10-09T22:15:54.467784Z",
+      "status": "recorded"
+    },
+    {
+      "date": "2026-08-28",
+      "tokensDisplay": "64.3M tokens",
+      "tokensApprox": 64300000,
+      "level": 3,
+      "collectedAt": "2026-10-09T22:15:54.467784Z",
+      "status": "recorded"
+    },
+    {
+      "date": "2026-08-29",
+      "tokensDisplay": "40.3M tokens",
+      "tokensApprox": 40300000,
+      "level": 2,
+      "collectedAt": "2026-10-09T22:15:54.467784Z",
+      "status": "recorded"
+    },
+    {
+      "date": "2026-08-30",
+      "tokensDisplay": "65.8M tokens",
+      "tokensApprox": 65800000,
+      "level": 3,
+      "collectedAt": "2026-10-09T22:15:54.467784Z",
+      "status": "recorded"
+    },
+    {
+      "date": "2026-08-31",
+      "tokensDisplay": "24.5M tokens",
+      "tokensApprox": 24500000,
+      "level": 2,
+      "collectedAt": "2026-10-09T22:15:54.467784Z",
+      "status": "recorded"
+    },
+    {
+      "date": "2026-09-01",
+      "tokensDisplay": "36.6M tokens",
+      "tokensApprox": 36600000,
+      "level": 2,
+      "collectedAt": "2026-10-09T22:15:54.467784Z",
+      "status": "recorded"
+    },
+    {
+      "date": "2026-09-02",
+      "tokensDisplay": "27.8M tokens",
+      "tokensApprox": 27800000,
+      "level": 2,
+      "collectedAt": "2026-10-09T22:15:54.467784Z",
+      "status": "recorded"
+    },
+    {
+      "date": "2026-09-03",
+      "tokensDisplay": "68.9M tokens",
+      "tokensApprox": 68900000,
+      "level": 3,
+      "collectedAt": "2026-10-09T22:15:54.467784Z",
+      "status": "recorded"
+    },
+    {
+      "date": "2026-09-04",
+      "tokensDisplay": "68.8M tokens",
+      "tokensApprox": 68800000,
+      "level": 3,
+      "collectedAt": "2026-10-09T22:15:54.467784Z",
+      "status": "recorded"
+    },
+    {
+      "date": "2026-09-05",
+      "tokensDisplay": "20.5M tokens",
+      "tokensApprox": 20500000,
+      "level": 1,
+      "collectedAt": "2026-10-09T22:15:54.467784Z",
+      "status": "recorded"
+    },
+    {
+      "date": "2026-09-06",
+      "tokensDisplay": "173.9K tokens",
+      "tokensApprox": 173900,
+      "level": 1,
+      "collectedAt": "2026-10-09T22:15:54.467784Z",
+      "status": "recorded"
+    },
+    {
+      "date": "2026-09-07",
+      "tokensDisplay": "9.2M tokens",
+      "tokensApprox": 9200000,
+      "level": 1,
+      "collectedAt": "2026-10-09T22:15:54.467784Z",
+      "status": "recorded"
+    },
+    {
+      "date": "2026-09-08",
+      "tokensDisplay": "6.3M tokens",
+      "tokensApprox": 6300000,
+      "level": 1,
+      "collectedAt": "2026-10-09T22:15:54.467784Z",
+      "status": "recorded"
+    },
+    {
+      "date": "2026-09-09",
+      "tokensDisplay": "26.4M tokens",
+      "tokensApprox": 26400000,
+      "level": 2,
+      "collectedAt": "2026-10-09T22:15:54.467784Z",
+      "status": "recorded"
+    },
+    {
+      "date": "2026-09-10",
+      "tokensDisplay": "29.9M tokens",
+      "tokensApprox": 29900000,
+      "level": 2,
+      "collectedAt": "2026-10-09T22:15:54.467784Z",
+      "status": "recorded"
+    },
+    {
+      "date": "2026-09-11",
+      "tokensDisplay": "440.8K tokens",
+      "tokensApprox": 440800,
+      "level": 1,
+      "collectedAt": "2026-10-09T22:15:54.467784Z",
+      "status": "recorded"
+    },
+    {
+      "date": "2026-09-12",
+      "tokensDisplay": "1.9M tokens",
+      "tokensApprox": 1900000,
+      "level": 1,
+      "collectedAt": "2026-10-09T22:15:54.467784Z",
+      "status": "recorded"
+    },
+    {
+      "date": "2026-09-13",
+      "tokensDisplay": "8M tokens",
+      "tokensApprox": 8000000,
+      "level": 1,
+      "collectedAt": "2026-10-09T22:15:54.467784Z",
+      "status": "recorded"
+    },
+    {
+      "date": "2026-09-14",
+      "tokensDisplay": "0 tokens",
+      "tokensApprox": 0,
+      "level": 0,
+      "collectedAt": "2026-10-09T22:15:54.467784Z",
+      "status": "recorded"
+    },
+    {
+      "date": "2026-09-15",
+      "tokensDisplay": "275.7K tokens",
+      "tokensApprox": 275700,
+      "level": 1,
+      "collectedAt": "2026-10-09T22:15:54.467784Z",
+      "status": "recorded"
+    },
+    {
+      "date": "2026-09-16",
+      "tokensDisplay": "8.7M tokens",
+      "tokensApprox": 8700000,
+      "level": 1,
+      "collectedAt": "2026-10-09T22:15:54.467784Z",
+      "status": "recorded"
+    },
+    {
+      "date": "2026-09-17",
+      "tokensDisplay": "2.3M tokens",
+      "tokensApprox": 2300000,
+      "level": 1,
+      "collectedAt": "2026-10-09T22:15:54.467784Z",
+      "status": "recorded"
+    },
+    {
+      "date": "2026-09-18",
+      "tokensDisplay": "13.5M tokens",
+      "tokensApprox": 13500000,
+      "level": 1,
+      "collectedAt": "2026-10-09T22:15:54.467784Z",
+      "status": "recorded"
+    },
+    {
+      "date": "2026-09-19",
+      "tokensDisplay": "3.4M tokens",
+      "tokensApprox": 3400000,
+      "level": 1,
+      "collectedAt": "2026-10-09T22:15:54.467784Z",
+      "status": "recorded"
+    },
+    {
+      "date": "2026-09-20",
+      "tokensDisplay": "961.8K tokens",
+      "tokensApprox": 961800,
+      "level": 1,
+      "collectedAt": "2026-10-09T22:15:54.467784Z",
+      "status": "recorded"
+    },
+    {
+      "date": "2026-09-21",
+      "tokensDisplay": "772.3K tokens",
+      "tokensApprox": 772300,
+      "level": 1,
+      "collectedAt": "2026-10-09T22:15:54.467784Z",
+      "status": "recorded"
+    },
+    {
+      "date": "2026-09-22",
+      "tokensDisplay": "8.5M tokens",
+      "tokensApprox": 8500000,
+      "level": 1,
+      "collectedAt": "2026-10-09T22:15:54.467784Z",
+      "status": "recorded"
+    },
+    {
+      "date": "2026-09-23",
+      "tokensDisplay": "28.4M tokens",
+      "tokensApprox": 28400000,
+      "level": 2,
+      "collectedAt": "2026-10-09T22:15:54.467784Z",
+      "status": "recorded"
+    },
+    {
+      "date": "2026-09-24",
+      "tokensDisplay": "10.1M tokens",
+      "tokensApprox": 10100000,
+      "level": 1,
+      "collectedAt": "2026-10-09T22:15:54.467784Z",
+      "status": "recorded"
+    },
+    {
+      "date": "2026-09-25",
+      "tokensDisplay": "19.1M tokens",
+      "tokensApprox": 19100000,
+      "level": 1,
+      "collectedAt": "2026-10-09T22:15:54.467784Z",
+      "status": "recorded"
+    },
+    {
+      "date": "2026-09-26",
+      "tokensDisplay": "11.7M tokens",
+      "tokensApprox": 11700000,
+      "level": 1,
+      "collectedAt": "2026-10-09T22:15:54.467784Z",
+      "status": "recorded"
+    },
+    {
+      "date": "2026-09-27",
+      "tokensDisplay": "7.1M tokens",
+      "tokensApprox": 7100000,
+      "level": 1,
+      "collectedAt": "2026-10-09T22:15:54.467784Z",
+      "status": "recorded"
+    },
+    {
+      "date": "2026-09-28",
+      "tokensDisplay": "516.5K tokens",
+      "tokensApprox": 516500,
+      "level": 1,
+      "collectedAt": "2026-10-09T22:15:54.467784Z",
+      "status": "recorded"
+    },
+    {
+      "date": "2026-09-29",
+      "tokensDisplay": "8.5M tokens",
+      "tokensApprox": 8500000,
+      "level": 1,
+      "collectedAt": "2026-10-09T22:15:54.467784Z",
+      "status": "recorded"
+    },
+    {
+      "date": "2026-09-30",
+      "tokensDisplay": "19.9M tokens",
+      "tokensApprox": 19900000,
+      "level": 1,
+      "collectedAt": "2026-10-09T22:15:54.467784Z",
+      "status": "recorded"
+    },
+    {
+      "date": "2026-10-01",
+      "tokensDisplay": "9.8M tokens",
+      "tokensApprox": 9800000,
+      "level": 1,
+      "collectedAt": "2026-10-09T22:15:54.467784Z",
+      "status": "recorded"
+    },
+    {
+      "date": "2026-10-02",
+      "tokensDisplay": "26.5M tokens",
+      "tokensApprox": 26500000,
+      "level": 2,
+      "collectedAt": "2026-10-09T22:15:54.467784Z",
+      "status": "recorded"
+    },
+    {
+      "date": "2026-10-03",
+      "tokensDisplay": "37.5M tokens",
+      "tokensApprox": 37500000,
+      "level": 2,
+      "collectedAt": "2026-10-09T22:15:54.467784Z",
+      "status": "recorded"
+    },
+    {
+      "date": "2026-10-04",
+      "tokensDisplay": "4.7M tokens",
+      "tokensApprox": 4700000,
+      "level": 1,
+      "collectedAt": "2026-10-09T22:15:54.467784Z",
+      "status": "recorded"
+    },
+    {
+      "date": "2026-10-05",
+      "tokensDisplay": "1.8M tokens",
+      "tokensApprox": 1800000,
+      "level": 1,
+      "collectedAt": "2026-10-09T22:15:54.467784Z",
+      "status": "recorded"
+    },
+    {
+      "date": "2026-10-06",
+      "tokensDisplay": "95.8M tokens",
+      "tokensApprox": 95800000,
+      "level": 4,
+      "collectedAt": "2026-10-09T22:15:54.467784Z",
+      "status": "recorded"
+    },
+    {
+      "date": "2026-10-07",
+      "tokensDisplay": "98.3M tokens",
+      "tokensApprox": 98300000,
+      "level": 4,
+      "collectedAt": "2026-10-09T22:15:54.467784Z",
+      "status": "recorded"
+    },
+    {
+      "date": "2026-10-08",
+      "tokensDisplay": "800.7M tokens",
+      "tokensApprox": 800700000,
+      "level": 4,
+      "collectedAt": "2026-10-09T22:32:49.411Z",
+      "status": "recorded"
+    },
+    {
+      "date": "2026-10-09",
+      "tokensDisplay": "958.8M tokens",
+      "tokensApprox": 958800000,
+      "level": 4,
+      "collectedAt": "2026-10-09T22:15:54.467784Z",
+      "status": "provisional"
+    }
+  ],
+  "reportingTimezone": "America/Chicago",
+  "sourceRange": {
+    "start": "2025-10-12",
+    "end": "2026-10-09"
+  }
+}

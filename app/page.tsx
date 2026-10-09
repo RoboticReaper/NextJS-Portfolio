@@ -3,6 +3,7 @@ import { ProjectCard } from "@/components/project-card";
 import { SkillList } from "@/components/skill-list";
 import { LiveInterests } from "@/components/live-interests";
 import { FourierSketchpad } from "@/components/fourier-sketchpad";
+import { TokenActivity } from "@/components/token-activity";
 import { workExperience } from "@/config/profile";
 import { projects, siteConfig } from "@/config/site";
 export default function Home() {
@@ -121,6 +122,7 @@ export default function Home() {
         </div>
         <SkillList />
       </section>
+      <TokenActivity />
       <section
         className="section container personal-section"
         aria-labelledby="hobbies-heading"
