@@ -1031,6 +1031,84 @@ p {
   font-size: 13px;
   line-height: 1.6;
 }
+.game-interest.has-gallery {
+  display: block;
+}
+.game-interest-heading {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+}
+.genshin-gallery {
+  margin-top: 20px;
+  padding-top: 14px;
+  border-top: 1px solid var(--line);
+}
+.genshin-gallery-heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 12px;
+}
+.genshin-gallery-heading h4 {
+  margin: 0;
+  font-size: 13px;
+  font-weight: 600;
+}
+.genshin-gallery-controls {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  flex-shrink: 0;
+}
+.genshin-gallery-controls button {
+  display: grid;
+  place-items: center;
+  width: 44px;
+  height: 44px;
+  padding: 0;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: transparent;
+  font-size: 24px;
+  line-height: 1;
+}
+.genshin-gallery-controls button:hover {
+  background: var(--accent-soft);
+}
+.genshin-gallery-count {
+  min-width: 30px;
+  color: var(--muted);
+  font-size: 11px;
+  text-align: center;
+}
+.genshin-gallery iframe {
+  display: block;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  border: 0;
+  border-radius: 8px;
+  background: var(--bg);
+}
+.genshin-gallery-caption {
+  margin-top: 12px;
+}
+.genshin-gallery-caption a {
+  display: grid;
+  gap: 5px;
+}
+.genshin-gallery-caption strong {
+  font-size: 13px;
+  line-height: 1.5;
+}
+.genshin-gallery-caption a > span {
+  color: var(--muted);
+  font-size: 11px;
+}
+.genshin-gallery-caption a:hover strong {
+  color: var(--accent);
+}
 .writing-section {
   margin-top: 90px;
 }

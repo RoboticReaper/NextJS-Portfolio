@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { LiveInterests } from "@/components/live-interests";
+import { GenshinVideoGallery } from "@/components/genshin-video-gallery";
 import { siteConfig } from "@/config/site";
 import { award, education, earlierExperience, technicalSkills, workExperience } from "@/config/profile";
 export const metadata: Metadata = { title: "About" };
@@ -130,13 +131,16 @@ export default function AboutPage() {
                 <p>Ex-Legions United</p>
               </div>
             </article>
-            <article className="game-interest" aria-labelledby="genshin-heading">
-              <img src="/genshin.webp" alt="" width={64} height={64} loading="lazy" />
-              <div>
-                <h3 id="genshin-heading">Genshin Impact</h3>
-                <p>Adventure rank 59</p>
-                <p>Playing since version 1.0</p>
+            <article className="game-interest has-gallery" aria-labelledby="genshin-heading">
+              <div className="game-interest-heading">
+                <img src="/genshin.webp" alt="" width={64} height={64} loading="lazy" />
+                <div>
+                  <h3 id="genshin-heading">Genshin Impact</h3>
+                  <p>Adventure rank 60</p>
+                  <p>Playing since version 1.0</p>
+                </div>
               </div>
+              <GenshinVideoGallery />
             </article>
           </div>
         </LiveInterests>
