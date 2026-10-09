@@ -175,9 +175,7 @@ export const technicalSkills = {
     "Logistic regression",
     "Cross-validation",
     "Bootstrapping",
-    "Inverse kinematics",
-    "Reinforcement learning",
   ],
-};
+} as const;
 export const award =
   "1st in the Beginner Division and 6th of 131 teams overall at the SIGPwny (ACM @ UIUC) Fall CTF Competition, 2025.";

@@ -1818,17 +1818,49 @@ html[data-intro-pending] .name-intro {
 .home-page .skills-section {
   display: block;
 }
+.skill-groups {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 24px;
+}
+.skill-group {
+  border-top: 1px solid var(--line);
+  padding-top: 14px;
+  min-width: 0;
+}
+.skill-group h3 {
+  margin: 0 0 10px;
+  font-size: 13px;
+  font-weight: 600;
+  line-height: 1.5;
+}
 .home-page .skill-list {
   margin-top: 0;
-  gap: 8px;
+  gap: 6px;
 }
 .home-page .skill-list > li {
-  padding: 8px 12px;
-  gap: 8px;
+  padding: 5px 7px;
+  gap: 6px;
+  font-size: 12px;
+  line-height: 1.4;
+  max-width: 100%;
+  transform: none;
 }
 .home-page .skill-list img {
-  width: 26px;
-  height: 26px;
+  width: 24px;
+  height: 24px;
+}
+@media (max-width: 1100px) {
+  .skill-groups {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 20px;
+  }
+}
+@media (max-width: 600px) {
+  .skill-groups {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
 }
 .home-page .section-description {
   margin-bottom: 22px;
@@ -1888,7 +1920,7 @@ html[data-intro-pending] .name-intro {
     padding: 16px 18px;
   }
   .home-page .skill-list > li {
-    padding: 8px 10px;
+    padding: 5px 7px;
   }
   .home-page .interest-card {
     padding: 18px;

@@ -1,35 +1,21 @@
-import { skills } from "@/config/site";
-
-const icons: Record<(typeof skills)[number], string> = {
-  Python: "/python logo.png",
-  Java: "/java logo.svg",
-  "C++": "/cpp logo.svg",
-  SQL: "/skills/sql.svg",
-  TypeScript: "/typescript.svg",
-  React: "/react logo.webp",
-  "Next.js": "/next.svg",
-  Flask: "/skills/flask.svg",
-  PyTorch: "/skills/pytorch.svg",
-  PostgreSQL: "/skills/postgresql.svg",
-  Docker: "/skills/docker.svg",
-  Git: "/skills/git.svg",
-};
+import { featuredSkills } from "@/config/featured-skills";
 
 export function SkillList() {
   return (
-    <ul className="skill-list" aria-label="Skills">
-      {skills.map((skill) => (
-        <li key={skill}>
-          <img
-            src={icons[skill]}
-            alt=""
-            width={28}
-            height={28}
-            loading="lazy"
-          />
-          {skill}
-        </li>
+    <div className="skill-groups">
+      {Object.entries(featuredSkills).map(([category, skills]) => (
+        <div className="skill-group" key={category}>
+          <h3>{category}</h3>
+          <ul className="skill-list" aria-label={category}>
+            {skills.map((skill) => (
+              <li key={skill.name} title={skill.name}>
+                <img src={skill.icon} alt="" width={22} height={22} loading="lazy" />
+                {"label" in skill ? skill.label : skill.name}
+              </li>
+            ))}
+          </ul>
+        </div>
       ))}
-    </ul>
+    </div>
   );
 }

@@ -96,17 +96,3 @@ export const projects = [
     tone: "mint",
   },
 ];
-export const skills = [
-  "Python",
-  "Java",
-  "C++",
-  "SQL",
-  "TypeScript",
-  "React",
-  "Next.js",
-  "Flask",
-  "PyTorch",
-  "PostgreSQL",
-  "Docker",
-  "Git",
-] as const;
