@@ -1,5 +1,5 @@
 "use client";
-import { useEffect, useState } from "react";
+import { useEffect, useState, type ReactNode } from "react";
 import Link from "next/link";
 import type { ClashPlayer, Song } from "@/lib/integrations";
 function useConnection<T>(url: string) {
@@ -70,7 +70,7 @@ function ConnectionState({
     </div>
   ) : null;
 }
-export function LiveInterests({ trackLimit }: { trackLimit?: number } = {}) {
+export function LiveInterests({ trackLimit, children }: { trackLimit?: number; children?: ReactNode } = {}) {
   const preview = trackLimit !== undefined;
   const clash = useConnection<ClashPlayer>("/api/coc");
   const spotify = useConnection<{ rows: Song[] }>("/api/spotify");
@@ -81,38 +81,41 @@ export function LiveInterests({ trackLimit }: { trackLimit?: number } = {}) {
   }, [preview, spotify.loading]);
   return (
     <div className="interests-grid">
-      <section className="interest-card" aria-label="Clash of Clans">
-        <div className="interest-heading">
-          <img src="/cocIcon.jpg" alt="" width={44} height={44} />
-          <div>
-            <p className="eyebrow">Outside the editor</p>
-            <h3>Clash of Clans</h3>
-          </div>
-          <span className="live-label">Live</span>
-        </div>
-        <ConnectionState {...clash} />
-        {clash.data && (
-          <>
-            <p className="player-name">{clash.data.name}</p>
-            <div className="player-stats">
-              <div>
-                <strong>{clash.data.townHallLevel}</strong>
-                <span>Town Hall</span>
-              </div>
-              <div>
-                <strong>{clash.data.trophies.toLocaleString("en-US")}</strong>
-                <span>Trophies</span>
-              </div>
-              <div>
-                <strong className="league-label">
-                  {clash.data.league.name}
-                </strong>
-                <span>League</span>
-              </div>
+      <div className="game-interests-column">
+        <section className="interest-card" aria-label="Clash of Clans">
+          <div className="interest-heading">
+            <img src="/cocIcon.jpg" alt="" width={44} height={44} />
+            <div>
+              <p className="eyebrow">Outside the editor</p>
+              <h3>Clash of Clans</h3>
             </div>
-          </>
-        )}
-      </section>
+            <span className="live-label">Live</span>
+          </div>
+          <ConnectionState {...clash} />
+          {clash.data && (
+            <>
+              <p className="player-name">{clash.data.name}</p>
+              <div className="player-stats">
+                <div>
+                  <strong>{clash.data.townHallLevel}</strong>
+                  <span>Town Hall</span>
+                </div>
+                <div>
+                  <strong>{clash.data.trophies.toLocaleString("en-US")}</strong>
+                  <span>Trophies</span>
+                </div>
+                <div>
+                  <strong className="league-label">
+                    {clash.data.league.name}
+                  </strong>
+                  <span>League</span>
+                </div>
+              </div>
+            </>
+          )}
+        </section>
+        {children}
+      </div>
       <section className={`interest-card music-card${preview ? " music-preview" : ""}`} id={preview ? undefined : "music"} aria-label="On repeat">
         <div className="interest-heading">
           <div className="music-mark" aria-hidden="true">
