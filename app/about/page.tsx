@@ -122,14 +122,22 @@ export default function AboutPage() {
         </p>
         <LiveInterests />
         <div className="other-interests">
-          <p>
-            <strong>Asphalt Legends Unite</strong> Reputation level 100 · Garage
-            level 22 · Ex-Legions United
-          </p>
-          <p>
-            <strong>Genshin Impact</strong> Adventure rank 59 · Playing since
-            version 1.0
-          </p>
+          <article className="game-interest" aria-labelledby="asphalt-heading">
+            <img src="/A9%20icon.jpg" alt="" width={64} height={64} loading="lazy" />
+            <div>
+              <h3 id="asphalt-heading">Asphalt Legends Unite</h3>
+              <p>Reputation level 100 · Garage level 22</p>
+              <p>Ex-Legions United</p>
+            </div>
+          </article>
+          <article className="game-interest" aria-labelledby="genshin-heading">
+            <img src="/genshin.webp" alt="" width={64} height={64} loading="lazy" />
+            <div>
+              <h3 id="genshin-heading">Genshin Impact</h3>
+              <p>Adventure rank 59</p>
+              <p>Playing since version 1.0</p>
+            </div>
+          </article>
         </div>
       </section>
     </div>

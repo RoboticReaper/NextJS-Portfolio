@@ -1003,15 +1003,35 @@ p {
 }
 .other-interests {
   margin-top: 25px;
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 25px;
-  font-size: 11px;
 }
-.other-interests strong {
-  display: block;
-  color: var(--text);
-  font-size: 12px;
-  margin-bottom: 4px;
+.game-interest {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  padding: 22px;
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  min-width: 0;
+}
+.game-interest img {
+  width: 64px;
+  height: 64px;
+  border-radius: 14px;
+  object-fit: cover;
+  flex-shrink: 0;
+}
+.game-interest h3 {
+  font-size: 19px;
+  line-height: 1.2;
+  margin-bottom: 8px;
+}
+.game-interest p {
+  font-size: 13px;
+  line-height: 1.6;
 }
 .writing-section {
   margin-top: 90px;
@@ -1334,7 +1354,7 @@ html[data-intro-pending] .name-intro {
     font-size: 8px;
   }
   .other-interests {
-    flex-direction: column;
+    grid-template-columns: 1fr;
     gap: 15px;
   }
 }
