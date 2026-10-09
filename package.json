@@ -12,7 +12,9 @@
     "test:watch": "vitest",
     "test:e2e": "playwright test",
     "check:integrations": "node --env-file=.env scripts/check-integrations.mjs",
-    "spotify:authorize": "node --env-file=.env scripts/spotify-authorize.mjs"
+    "spotify:authorize": "node --env-file=.env scripts/spotify-authorize.mjs",
+    "codex:upload": "node --env-file=.env scripts/codex-usage.mjs",
+    "codex:pending": "node --env-file=.env scripts/codex-usage.mjs --pending"
   },
   "dependencies": {
     "@mdx-js/loader": "^3.1.1",
@@ -21,6 +23,7 @@
     "@vercel/analytics": "^1.5.0",
     "@vercel/speed-insights": "^1.2.0",
     "next": "16.3.8",
+    "postgres": "^3.4.9",
     "react": "19.3.0",
     "react-dom": "19.3.0"
   },
