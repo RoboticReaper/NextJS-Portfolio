@@ -63,3 +63,46 @@ test("home project previews distinguish project details from the live app", asyn
     ).toHaveAttribute("target", "_blank");
   }
 });
+
+test("the home music card opens the full song list by pointer and keyboard", async ({ page }) => {
+  await page.route("**/api/spotify", (route) => route.fulfill({
+    json: { rows: Array.from({ length: 10 }, (_, i) => ({
+      name: `Song ${i + 1}`,
+      artist: "Test artist",
+      image: null,
+      link: `https://open.spotify.com/track/test${i + 1}`,
+    })) },
+  }));
+  for (const keyboard of [false, true]) {
+    await page.goto("/");
+    const card = page.getByRole("region", { name: "On repeat" });
+    await expect(card.locator(".track-list li")).toHaveCount(3);
+    await expect(card.locator('a[href^="https://open.spotify.com"]')).toHaveCount(0);
+    await expect(card).not.toContainText("↗");
+    const link = card.getByRole("link", { name: "View all top songs" });
+    if (keyboard) {
+      await link.focus();
+      await page.keyboard.press("Enter");
+    } else {
+      // Click through the stretched card link at a song's visible coordinates.
+      const song = card.getByText("Song 2", { exact: true });
+      await song.scrollIntoViewIfNeeded();
+      const bounds = (await song.boundingBox())!;
+      const x = bounds.x + bounds.width / 2;
+      const y = bounds.y + bounds.height / 2;
+      if (test.info().project.use.hasTouch)
+        await page.touchscreen.tap(x, y);
+      else await page.mouse.click(x, y);
+    }
+    await expect(page).toHaveURL(/\/about#music$/);
+    const songs = page.getByRole("region", { name: "On repeat" });
+    await expect(songs.locator(".track-list li")).toHaveCount(10);
+    await expect(songs.getByRole("link", { name: /Song 10/ })).toHaveAttribute("href", "https://open.spotify.com/track/test10");
+    await expect.poll(() => songs.evaluate((element) =>
+      element.getBoundingClientRect().top - document.querySelector(".site-header")!.getBoundingClientRect().bottom))
+      .toBeGreaterThanOrEqual(12);
+    await expect.poll(() => songs.evaluate((element) =>
+      element.getBoundingClientRect().top - document.querySelector(".site-header")!.getBoundingClientRect().bottom))
+      .toBeLessThanOrEqual(24);
+  }
+});

@@ -183,10 +183,11 @@ export function FourierSketchpad() {
         <g transform={`scale(${fit})`}>
         <path className="fourier-source" d={pathFor(stroke) + (!drawing && stroke.length ? " Z" : "")} />
         {!drawing && terms.length > 0 && <>
-          {chain.slice(0, -1).map((point, i) => <circle className="fourier-circle" key={i} cx={point.x} cy={point.y} r={terms[i + 1].amplitude} />)}
+          {/* Match path precision so runtime math differences cannot change hydration attributes. */}
+          {chain.slice(0, -1).map((point, i) => <circle className="fourier-circle" key={i} cx={point.x.toFixed(2)} cy={point.y.toFixed(2)} r={terms[i + 1].amplitude.toFixed(2)} />)}
           <path className="fourier-arms" d={pathFor(chain)} />
           <path className="fourier-trace" data-testid="fourier-path" d={pathFor(trace)} />
-          <circle className="fourier-tip" cx={chain[chain.length - 1].x} cy={chain[chain.length - 1].y} r="2.8" />
+          <circle className="fourier-tip" cx={chain[chain.length - 1].x.toFixed(2)} cy={chain[chain.length - 1].y.toFixed(2)} r="2.8" />
         </>}
         </g>
         </svg>

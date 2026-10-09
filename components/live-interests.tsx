@@ -1,5 +1,6 @@
 "use client";
 import { useEffect, useState } from "react";
+import Link from "next/link";
 import type { ClashPlayer, Song } from "@/lib/integrations";
 function useConnection<T>(url: string) {
   const [state, setState] = useState<{
@@ -70,8 +71,14 @@ function ConnectionState({
   ) : null;
 }
 export function LiveInterests({ trackLimit }: { trackLimit?: number } = {}) {
+  const preview = trackLimit !== undefined;
   const clash = useConnection<ClashPlayer>("/api/coc");
   const spotify = useConnection<{ rows: Song[] }>("/api/spotify");
+  useEffect(() => {
+    // The initial anchor jump can be clamped before the async song list expands.
+    if (!preview && !spotify.loading && window.location.hash === "#music")
+      document.getElementById("music")?.scrollIntoView({ block: "start", behavior: "instant" });
+  }, [preview, spotify.loading]);
   return (
     <div className="interests-grid">
       <section className="interest-card" aria-label="Clash of Clans">
@@ -106,14 +113,14 @@ export function LiveInterests({ trackLimit }: { trackLimit?: number } = {}) {
           </>
         )}
       </section>
-      <section className="interest-card" aria-label="On repeat">
+      <section className={`interest-card music-card${preview ? " music-preview" : ""}`} id={preview ? undefined : "music"} aria-label="On repeat">
         <div className="interest-heading">
           <div className="music-mark" aria-hidden="true">
             ♫
           </div>
           <div>
             <p className="eyebrow">The coding soundtrack</p>
-            <h3>On repeat</h3>
+            <h3>{preview ? <Link className="music-card-link" href="/about#music" aria-label="View all top songs">On repeat</Link> : "On repeat"}</h3>
           </div>
           <div className="equalizer" aria-hidden="true">
             <i />
@@ -145,11 +152,18 @@ export function LiveInterests({ trackLimit }: { trackLimit?: number } = {}) {
                       ♪
                     </span>
                   )}
-                  <a href={song.link} target="_blank" rel="noopener noreferrer">
-                    <strong>{song.name}</strong>
-                    <span>{song.artist}</span>
-                  </a>
-                  <span aria-hidden="true">↗</span>
+                  {preview ? (
+                    <span className="track-info">
+                      <strong>{song.name}</strong>
+                      <span>{song.artist}</span>
+                    </span>
+                  ) : (
+                    <a className="track-info" href={song.link} target="_blank" rel="noopener noreferrer">
+                      <strong>{song.name}</strong>
+                      <span>{song.artist}</span>
+                      <span className="track-external" aria-hidden="true">↗</span>
+                    </a>
+                  )}
                 </li>
               ))}
             </ol>
