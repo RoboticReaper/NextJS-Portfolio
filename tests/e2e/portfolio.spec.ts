@@ -121,6 +121,17 @@ test("theme survives reload and navigation works at every viewport", async ({
       () => document.documentElement.scrollWidth <= window.innerWidth,
     ),
   ).toBe(true);
+  if (isMobile)
+    await page.getByRole("button", { name: "Open navigation" }).click();
+  const home = page
+    .getByRole("navigation", { name: "Main navigation", includeHidden: true })
+    .getByRole("link", { name: "Home", exact: true, includeHidden: true });
+  await home.click();
+  await expect(page).toHaveURL(/\/$/);
+  await expect(home).toHaveAttribute("aria-current", "page");
+  if (isMobile)
+    await expect(page.getByRole("button", { name: "Open navigation" }))
+      .toHaveAttribute("aria-expanded", "false");
 });
 
 test("integration failures remain usable and retry recovers", async ({
