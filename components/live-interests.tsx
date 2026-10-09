@@ -1,5 +1,6 @@
 "use client";
-import { useEffect, useState } from "react";
+import { useEffect, useState, type ReactNode } from "react";
+import Link from "next/link";
 import type { ClashPlayer, Song } from "@/lib/integrations";
 function useConnection<T>(url: string) {
   const [state, setState] = useState<{
@@ -69,51 +70,60 @@ function ConnectionState({
     </div>
   ) : null;
 }
-export function LiveInterests({ trackLimit }: { trackLimit?: number } = {}) {
+export function LiveInterests({ trackLimit, children }: { trackLimit?: number; children?: ReactNode } = {}) {
+  const preview = trackLimit !== undefined;
   const clash = useConnection<ClashPlayer>("/api/coc");
   const spotify = useConnection<{ rows: Song[] }>("/api/spotify");
+  useEffect(() => {
+    // The initial anchor jump can be clamped before the async song list expands.
+    if (!preview && !spotify.loading && window.location.hash === "#music")
+      document.getElementById("music")?.scrollIntoView({ block: "start", behavior: "instant" });
+  }, [preview, spotify.loading]);
   return (
     <div className="interests-grid">
-      <section className="interest-card" aria-label="Clash of Clans">
-        <div className="interest-heading">
-          <img src="/cocIcon.jpg" alt="" width={44} height={44} />
-          <div>
-            <p className="eyebrow">Outside the editor</p>
-            <h3>Clash of Clans</h3>
-          </div>
-          <span className="live-label">Live</span>
-        </div>
-        <ConnectionState {...clash} />
-        {clash.data && (
-          <>
-            <p className="player-name">{clash.data.name}</p>
-            <div className="player-stats">
-              <div>
-                <strong>{clash.data.townHallLevel}</strong>
-                <span>Town Hall</span>
-              </div>
-              <div>
-                <strong>{clash.data.trophies.toLocaleString("en-US")}</strong>
-                <span>Trophies</span>
-              </div>
-              <div>
-                <strong className="league-label">
-                  {clash.data.league.name}
-                </strong>
-                <span>League</span>
-              </div>
+      <div className="game-interests-column">
+        <section className="interest-card" aria-label="Clash of Clans">
+          <div className="interest-heading">
+            <img src="/cocIcon.jpg" alt="" width={44} height={44} />
+            <div>
+              <p className="eyebrow">Outside the editor</p>
+              <h3>Clash of Clans</h3>
             </div>
-          </>
-        )}
-      </section>
-      <section className="interest-card" aria-label="On repeat">
+            <span className="live-label">Live</span>
+          </div>
+          <ConnectionState {...clash} />
+          {clash.data && (
+            <>
+              <p className="player-name">{clash.data.name}</p>
+              <div className="player-stats">
+                <div>
+                  <strong>{clash.data.townHallLevel}</strong>
+                  <span>Town Hall</span>
+                </div>
+                <div>
+                  <strong>{clash.data.trophies.toLocaleString("en-US")}</strong>
+                  <span>Trophies</span>
+                </div>
+                <div>
+                  <strong className="league-label">
+                    {clash.data.league.name}
+                  </strong>
+                  <span>League</span>
+                </div>
+              </div>
+            </>
+          )}
+        </section>
+        {children}
+      </div>
+      <section className={`interest-card music-card${preview ? " music-preview" : ""}`} id={preview ? undefined : "music"} aria-label="On repeat">
         <div className="interest-heading">
           <div className="music-mark" aria-hidden="true">
             ♫
           </div>
           <div>
             <p className="eyebrow">The coding soundtrack</p>
-            <h3>On repeat</h3>
+            <h3>{preview ? <Link className="music-card-link" href="/about#music" aria-label="View all top songs">On repeat</Link> : "On repeat"}</h3>
           </div>
           <div className="equalizer" aria-hidden="true">
             <i />
@@ -145,11 +155,17 @@ export function LiveInterests({ trackLimit }: { trackLimit?: number } = {}) {
                       ♪
                     </span>
                   )}
-                  <a href={song.link} target="_blank" rel="noopener noreferrer">
-                    <strong>{song.name}</strong>
-                    <span>{song.artist}</span>
-                  </a>
-                  <span aria-hidden="true">↗</span>
+                  {preview ? (
+                    <span className="track-info">
+                      <strong>{song.name}</strong>
+                      <span>{song.artist}</span>
+                    </span>
+                  ) : (
+                    <a className="track-info" href={song.link} target="_blank" rel="noopener noreferrer">
+                      <strong>{song.name}</strong>
+                      <span>{song.artist}</span>
+                    </a>
+                  )}
                 </li>
               ))}
             </ol>

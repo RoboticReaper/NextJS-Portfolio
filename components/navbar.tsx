@@ -54,6 +54,7 @@ export function Navbar() {
           className={open ? "main-nav is-open" : "main-nav"}
         >
           {[
+            { href: "/", label: "Home" },
             { href: "/projects", label: "Projects" },
             { href: "/about", label: "About" },
             { href: "/resume", label: "Résumé" },

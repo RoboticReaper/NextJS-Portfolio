@@ -291,6 +291,23 @@ p {
   color: var(--muted);
   font-size: 11px;
 }
+.hero-social-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px 22px;
+  margin-top: 14px;
+  color: var(--muted);
+  font-size: 13px;
+}
+.hero-social-links a {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  min-height: 44px;
+}
+.hero-social-links a:hover {
+  color: var(--text);
+}
 .hero-visual {
   position: relative;
   min-height: 460px;
@@ -332,7 +349,6 @@ p {
 }
 .section h2,
 .about-band h2,
-.contact-section h2,
 .experience-section h2,
 .personal-section h2,
 .writing-section h2 {
@@ -689,28 +705,6 @@ p {
     padding: 22px;
   }
 }
-.contact-section {
-  padding-block: 80px 95px;
-  border-top: 1px solid var(--line);
-}
-.contact-section h2 {
-  font-size: clamp(48px, 6.5vw, 84px);
-  margin-block: 20px;
-}
-.contact-section > p:not(.eyebrow) {
-  font-size: 14px;
-}
-.contact-links {
-  display: flex;
-  gap: 30px;
-  margin-top: 24px;
-  font-size: 12px;
-  color: var(--muted);
-  flex-wrap: wrap;
-}
-.contact-links a:hover {
-  color: var(--text);
-}
 .site-footer {
   border-top: 1px solid var(--line);
 }
@@ -806,12 +800,38 @@ p {
   gap: 28px;
   align-items: start;
 }
+.game-interests-column {
+  display: grid;
+  gap: 18px;
+  min-width: 0;
+}
 .interest-card {
   padding: 28px;
   background: var(--surface);
   border: 1px solid var(--line);
   border-radius: 12px;
   min-width: 0;
+}
+.music-preview {
+  position: relative;
+}
+.music-card-link::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: 12px;
+  z-index: 1;
+}
+.music-card-link:focus-visible::after {
+  outline: 2px solid var(--accent);
+  outline-offset: 4px;
+}
+.music-preview:has(.music-card-link:hover) {
+  border-color: var(--accent);
+}
+.music-preview .connection-error button {
+  position: relative;
+  z-index: 2;
 }
 .interest-heading {
   display: flex;
@@ -935,7 +955,7 @@ p {
   height: 42px;
   flex-shrink: 0;
 }
-.track-list a {
+.track-list .track-info {
   display: flex;
   flex-direction: column;
   flex: 1;
@@ -945,11 +965,8 @@ p {
   font-size: 12px;
   overflow-wrap: anywhere;
 }
-.track-list a > span {
+.track-info > span {
   font-size: 10px;
-  color: var(--muted);
-}
-.track-list li > span:last-child {
   color: var(--muted);
 }
 .track-placeholder {
@@ -984,16 +1001,113 @@ p {
   animation-delay: -0.9s;
 }
 .other-interests {
-  margin-top: 25px;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 18px;
+}
+.game-interest {
   display: flex;
-  gap: 25px;
+  align-items: center;
+  gap: 18px;
+  padding: 22px;
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  min-width: 0;
+}
+.game-interest img {
+  width: 64px;
+  height: 64px;
+  border-radius: 14px;
+  object-fit: cover;
+  flex-shrink: 0;
+}
+.game-interest h3 {
+  font-size: 19px;
+  line-height: 1.2;
+  margin-bottom: 8px;
+}
+.game-interest p {
+  font-size: 13px;
+  line-height: 1.6;
+}
+.game-interest.has-gallery {
+  display: block;
+}
+.game-interest-heading {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+}
+.genshin-gallery {
+  margin-top: 20px;
+  padding-top: 14px;
+  border-top: 1px solid var(--line);
+}
+.genshin-gallery-heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 12px;
+}
+.genshin-gallery-heading h4 {
+  margin: 0;
+  font-size: 13px;
+  font-weight: 600;
+}
+.genshin-gallery-controls {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  flex-shrink: 0;
+}
+.genshin-gallery-controls button {
+  display: grid;
+  place-items: center;
+  width: 44px;
+  height: 44px;
+  padding: 0;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: transparent;
+  font-size: 24px;
+  line-height: 1;
+}
+.genshin-gallery-controls button:hover {
+  background: var(--accent-soft);
+}
+.genshin-gallery-count {
+  min-width: 30px;
+  color: var(--muted);
+  font-size: 11px;
+  text-align: center;
+}
+.genshin-gallery iframe {
+  display: block;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  border: 0;
+  border-radius: 8px;
+  background: var(--bg);
+}
+.genshin-gallery-caption {
+  margin-top: 12px;
+}
+.genshin-gallery-caption a {
+  display: grid;
+  gap: 5px;
+}
+.genshin-gallery-caption strong {
+  font-size: 13px;
+  line-height: 1.5;
+}
+.genshin-gallery-caption a > span {
+  color: var(--muted);
   font-size: 11px;
 }
-.other-interests strong {
-  display: block;
-  color: var(--text);
-  font-size: 12px;
-  margin-bottom: 4px;
+.genshin-gallery-caption a:hover strong {
+  color: var(--accent);
 }
 .writing-section {
   margin-top: 90px;
@@ -1283,9 +1397,6 @@ html[data-intro-pending] .name-intro {
   .skill-list {
     margin-top: 12px;
   }
-  .contact-section {
-    padding-block: 65px;
-  }
   .page-heading {
     padding-block: 65px 40px;
   }
@@ -1314,10 +1425,6 @@ html[data-intro-pending] .name-intro {
   }
   .interest-heading .eyebrow {
     font-size: 8px;
-  }
-  .other-interests {
-    flex-direction: column;
-    gap: 15px;
   }
 }
 @media (max-width: 600px) {
@@ -1460,13 +1567,6 @@ html[data-intro-pending] .name-intro {
   .skill-list > li {
     font-size: 11px;
     padding: 10px 13px;
-  }
-  .contact-section h2 {
-    font-size: 52px;
-  }
-  .contact-links {
-    gap: 24px;
-    font-size: 11px;
   }
   .footer-inner {
     flex-wrap: wrap;
@@ -1624,8 +1724,7 @@ html[data-intro-pending] .name-intro {
   gap: 12px 24px;
   margin-bottom: 24px;
 }
-.home-page .section h2,
-.home-page .contact-section h2 {
+.home-page .section h2 {
   font-size: clamp(28px, 3vw, 38px);
   margin-block: 6px 0;
 }
@@ -1719,32 +1818,55 @@ html[data-intro-pending] .name-intro {
 .home-page .skills-section {
   display: block;
 }
+.skill-groups {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 24px;
+}
+.skill-group {
+  border-top: 1px solid var(--line);
+  padding-top: 14px;
+  min-width: 0;
+}
+.skill-group h3 {
+  margin: 0 0 10px;
+  font-size: 13px;
+  font-weight: 600;
+  line-height: 1.5;
+}
 .home-page .skill-list {
   margin-top: 0;
-  gap: 8px;
+  gap: 6px;
 }
 .home-page .skill-list > li {
-  padding: 8px 12px;
-  gap: 8px;
+  padding: 5px 7px;
+  gap: 6px;
+  font-size: 12px;
+  line-height: 1.4;
+  max-width: 100%;
+  transform: none;
 }
 .home-page .skill-list img {
-  width: 26px;
-  height: 26px;
+  width: 24px;
+  height: 24px;
+}
+@media (max-width: 1100px) {
+  .skill-groups {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 20px;
+  }
+}
+@media (max-width: 600px) {
+  .skill-groups {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
 }
 .home-page .section-description {
   margin-bottom: 22px;
 }
 .home-page .interest-card {
   padding: 22px;
-}
-.home-page .contact-section {
-  padding-block: 44px;
-}
-.home-page .contact-section h2 {
-  margin-bottom: 12px;
-}
-.home-page .contact-links {
-  margin-top: 18px;
 }
 @media (max-width: 1000px) {
   :is(.home-page, .projects-page) .project-grid {
@@ -1777,8 +1899,7 @@ html[data-intro-pending] .name-intro {
   .home-page .hero-visual {
     min-height: 170px;
   }
-  .home-page .section,
-  .home-page .contact-section {
+  .home-page .section {
     padding-block: 32px;
   }
   .home-page .section-heading {
@@ -1799,7 +1920,7 @@ html[data-intro-pending] .name-intro {
     padding: 16px 18px;
   }
   .home-page .skill-list > li {
-    padding: 8px 10px;
+    padding: 5px 7px;
   }
   .home-page .interest-card {
     padding: 18px;
@@ -2149,10 +2270,6 @@ html[data-intro-pending] .name-intro {
 }
 .about-page .track-list li {
   padding-block: 8px;
-}
-.about-page .other-interests {
-  margin-top: 18px;
-  gap: 18px;
 }
 .resume-page {
   padding-block: 32px 44px;

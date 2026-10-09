@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { LiveInterests } from "@/components/live-interests";
+import { GenshinVideoGallery } from "@/components/genshin-video-gallery";
 import { siteConfig } from "@/config/site";
 import { award, education, earlierExperience, technicalSkills, workExperience } from "@/config/profile";
 export const metadata: Metadata = { title: "About" };
@@ -100,7 +101,7 @@ export default function AboutPage() {
       </section>
       <section className="section about-skills">
         <p className="eyebrow" id="tools">Programming</p>
-        <h2 id="technical-skills">Tools and languages</h2>
+        <h2 id="technical-skills">Technical skills</h2>
         <dl className="technical-skills">
           {Object.entries(technicalSkills).map(([group, values]) => (
             <div key={group}>
@@ -120,17 +121,29 @@ export default function AboutPage() {
         <p className="section-description">
           I also enjoy playing games and listening to music.
         </p>
-        <LiveInterests />
-        <div className="other-interests">
-          <p>
-            <strong>Asphalt Legends Unite</strong> Reputation level 100 · Garage
-            level 22 · Ex-Legions United
-          </p>
-          <p>
-            <strong>Genshin Impact</strong> Adventure rank 59 · Playing since
-            version 1.0
-          </p>
-        </div>
+        <LiveInterests>
+          <div className="other-interests">
+            <article className="game-interest" aria-labelledby="asphalt-heading">
+              <img src="/A9%20icon.jpg" alt="" width={64} height={64} loading="lazy" />
+              <div>
+                <h3 id="asphalt-heading">Asphalt Legends Unite</h3>
+                <p>Reputation level 100 · Garage level 22</p>
+                <p>Ex-Legions United</p>
+              </div>
+            </article>
+            <article className="game-interest has-gallery" aria-labelledby="genshin-heading">
+              <div className="game-interest-heading">
+                <img src="/genshin.webp" alt="" width={64} height={64} loading="lazy" />
+                <div>
+                  <h3 id="genshin-heading">Genshin Impact</h3>
+                  <p>Adventure rank 60</p>
+                  <p>Playing since version 1.0</p>
+                </div>
+              </div>
+              <GenshinVideoGallery />
+            </article>
+          </div>
+        </LiveInterests>
       </section>
     </div>
   );

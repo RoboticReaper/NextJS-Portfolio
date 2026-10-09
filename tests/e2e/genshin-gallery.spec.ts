@@ -1,0 +1,36 @@
+import { expect, test } from "@playwright/test";
+
+test("Genshin gallery shows one video and cycles through all three links", async ({ page }) => {
+  await page.emulateMedia({ reducedMotion: "reduce" });
+  await page.route("**/api/{coc,spotify}", route => route.fulfill({ status: 503, json: { error: "Unavailable" } }));
+  await page.goto("/about#hobbies");
+  const game = page.getByRole("article", { name: "Genshin Impact" });
+  const gallery = game.getByRole("region", { name: "Genshin video gallery" });
+  const video = gallery.getByRole("link");
+  const next = gallery.getByRole("button", { name: "Next video" });
+  const previous = gallery.getByRole("button", { name: "Previous video" });
+  const player = gallery.locator("iframe");
+  await expect(player).toHaveCount(1);
+  await expect(player).toHaveAttribute("src", "https://www.youtube-nocookie.com/embed/YCZDF-mJo_g");
+  await expect(video).toHaveCount(1);
+  await expect(video).toHaveAttribute("href", "https://youtu.be/YCZDF-mJo_g");
+  await expect(video).toContainText("Rickrolling random coop people");
+  await expect(video).toHaveAttribute("target", "_blank");
+  await next.click();
+  await expect(player).toHaveAttribute("src", "https://www.youtube-nocookie.com/embed/XH8EY3DaMYI");
+  await expect(video).toHaveAttribute("href", "https://youtu.be/XH8EY3DaMYI");
+  await expect(video).toContainText("57k HP Zhongli");
+  await next.click();
+  await expect(video).toHaveAttribute("href", "https://youtu.be/xO2RFpQqoEU");
+  await expect(video).toContainText('"Friends the World Over"');
+  await next.click();
+  await expect(video).toHaveAttribute("href", "https://youtu.be/YCZDF-mJo_g");
+  await previous.focus();
+  await page.keyboard.press("Enter");
+  await expect(video).toHaveAttribute("href", "https://youtu.be/xO2RFpQqoEU");
+  await expect(video).toHaveCount(1);
+  await expect(player).toHaveCount(1);
+  await expect(player).toHaveAttribute("src", "https://www.youtube-nocookie.com/embed/xO2RFpQqoEU");
+  await expect(game).toContainText("Adventure rank 60");
+  expect(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth)).toBe(true);
+});
