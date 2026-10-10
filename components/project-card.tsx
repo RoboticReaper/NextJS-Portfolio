@@ -24,6 +24,10 @@ export function ProjectCard({
         {external && <span className="project-launch" aria-hidden="true">↗</span>}
         {project.title === "OtherWise" || project.title === "RideList" ? (
           <img className={`project-image project-image-${project.title.toLowerCase()}`} src={project.image!} alt={project.title === "OtherWise" ? "OtherWise topic map" : "RideList logo"} loading="lazy" />
+        ) : project.title === "Stridez" ? (
+          <img className="project-image" src={project.image!} alt="Stridez welcome screen with sign-up and sign-in buttons" loading="lazy" />
+        ) : project.title === "UI-LogOut" ? (
+          <img className="project-image" src={project.image!} alt="UI-LogOut extension icon" loading="lazy" />
         ) : project.title === "LHS Schedule" ? (
           <div className="schedule-preview">
             <div className="preview-top">
@@ -57,7 +61,7 @@ export function ProjectCard({
           </div>
         ) : (
           <div className="type-art" aria-hidden="true">
-            {project.title.includes("Bayes") ? "P(A|B)" : project.title}
+            {project.title.includes("Bayes") ? "P(A|B)" : project.title === "RateMySchedule" ? "Rate My Schedule" : project.title}
           </div>
         )}
         <span className="impact-badge">{project.impact}</span>
@@ -71,7 +75,7 @@ export function ProjectCard({
               ? { target: "_blank", rel: "noopener noreferrer" }
               : {})}
           >
-            {(project.title === "OtherWise" || project.title === "RideList") && <img className="project-title-icon" src={project.image!} alt="" loading="lazy" />}
+            {(project.title === "OtherWise" || project.title === "RideList" || project.title === "Stridez" || project.title === "UI-LogOut") && <img className="project-title-icon" src={project.image!} alt="" loading="lazy" />}
             {project.title}{external && <> <span aria-hidden="true">↗</span></>}
           </Link>
         </h3>
@@ -96,7 +100,11 @@ export function ProjectCard({
               target="_blank"
               rel="noopener noreferrer"
             >
-              Open live app ↗
+              {project.external.startsWith("https://github.com/")
+                ? "View source ↗"
+                : project.category === "Android application"
+                  ? "Get Android app ↗"
+                  : "Open live app ↗"}
             </a>
           </div>
         )}

@@ -18,7 +18,7 @@ export default function ProjectsPage() {
       </div>
       <section className="writing-section">
         <p className="eyebrow">Writing</p>
-        <h2>Notes</h2>
+        <h2>Blog</h2>
         <Link className="writing-card" href="/projects/ctf">
           <span>01</span>
           <div>

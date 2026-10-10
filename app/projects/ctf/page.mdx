@@ -5,6 +5,58 @@ import { Breadcrumb } from "@/components/breadcrumb";
 <Breadcrumb />
 <br />
 
-Soon after my first semester at UIUC started, I received an email about the 2025 Fall CTF, which is an annual CTF run for UIUC students by SIGPwny, the cybersecurity club at UIUC.
+Soon after my first semester at UIUC started, I received an email about the [2025 Fall CTF](https://2025.fallctf.com/), an annual capture-the-flag competition run for UIUC students by SIGPwny, the cybersecurity club at UIUC.
 
-Our team placed first in the Beginner Division and sixth out of 131 teams overall.
+I was intrigued because I'd played a bit of [OverTheWire's Bandit](https://overthewire.org/wargames/bandit/), where you find the password to reach the next level. Finding a flag sounded like a similar idea. I'd also played around with cybersecurity in a freshman-level class, using Hashcat to crack passwords from shadow-file hashes. That was about the extent of my experience, so I joined the Beginner Division.
+
+As soon as I walked into the room, they handed me a custom PCB badge. It was really cool: you could play games on it, and it even contained one of the hidden flags we needed to find.
+
+<figure>
+  <img src="/ctf/badge.webp" alt="The custom Fall CTF PCB badge displaying a hidden flag" width={900} height={1600} loading="lazy" />
+  <figcaption>The badge was a game console and a challenge of its own.</figcaption>
+</figure>
+
+I teamed up with my friend, and we called ourselves **null**.
+
+<figure>
+  <img src="/ctf/team-null.webp" alt="Team null's profile showing members arthur and baoren, 18,711 points, and sixth place overall" width={1600} height={734} loading="lazy" />
+  <figcaption>Team null: my friend and me, with our final score.</figcaption>
+</figure>
+
+The first few challenges were pretty straightforward: finding flags in a website's console, source code, or network requests, and trying SQL injection. Things started taking longer as we got into cross-site scripting, cryptography, and more advanced, math-heavy problems. There were also side quests that I hadn't expected, like GeoGuessr-style challenges, digging through publicly available information online, and even talking to sponsors.
+
+Eventually, we finished those side quests, but we were still behind on points. We had to face the harder problems. Watching other teams' scores keep going up while we had no idea where to start was stressful, so we turned to AI. I had Gemini through its free one-year student Pro plan, and my friend had a paid ChatGPT subscription. We started vibe-solving the challenges and slowly caught up. AI use wasn't prohibited at the event.
+
+<figure>
+  <img src="/ctf/scoreboard.webp" alt="Points over time for the top ten Beginner Division teams, with null finishing just ahead of north wolfie llc" width={1600} height={783} loading="lazy" />
+  <figcaption>A lot of catching up, followed by a very close finish.</figcaption>
+</figure>
+
+In the final few minutes, we were neck and neck with another team. One moment from that stretch is still the clearest memory I have of the competition.
+
+The AI had already worked out a password we needed to log in over SSH and retrieve a flag. The problem was that the password contained binary bytes, so I couldn't just copy and paste it into the password prompt. The AI suggested several ways to enter it, but none worked.
+
+Then I thought of shell pipes. I asked the AI to generate a program that would output the password, so I could pipe those bytes into the login process instead of trying to type them. That finally worked. We retrieved the flag and moved just ahead of the other team.
+
+For the last few seconds, we kept watching the leaderboard, scared they would solve one more challenge and overtake us. Thankfully, they didn't. We finished with **18,711 points**, just **49 points** ahead of second place, winning the Beginner Division. I was also surprised to see how we compared with the advanced teams in the overall standings: we placed **sixth out of 131 teams overall**.
+
+<figure>
+  <img src="/ctf/results.webp" alt="The closing ceremony screen announcing null as the Beginner Division winner with 18,711 points, ahead of 18,662 in second place" width={1080} height={1440} loading="lazy" />
+  <figcaption>First place, by 49 points. Those last few seconds felt very long.</figcaption>
+</figure>
+
+I picked an Orange Pi as one of my prizes. I'd always wanted something like a Raspberry Pi, so I figured this little alternative would do.
+
+<figure>
+  <img src="/ctf/orange-pi-prize.webp" alt="The boxed Orange Pi I picked as a prize after the competition" width={1600} height={900} loading="lazy" />
+  <figcaption>My excuse to finally get a tiny computer to experiment with.</figcaption>
+</figure>
+
+It turned out to be pretty capable. After setting it up, I put it in my home's basement, where it now hosts databases and API servers for some of my other projects, along with my own photo library through Immich.
+
+<figure>
+  <img src="/ctf/orange-pi-server.webp" alt="My Orange Pi powered on and connected to cables after setup" width={900} height={1600} loading="lazy" />
+  <figcaption>From a CTF prize to my basement server.</figcaption>
+</figure>
+
+Overall, it was a really fun event. AI helped immensely with our progress, and getting that final password to work under time pressure was especially satisfying. I went in curious about CTFs and came home with a close win and a new server.

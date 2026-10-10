@@ -4,23 +4,97 @@ import { Breadcrumb } from "@/components/breadcrumb";
 
 <Breadcrumb />
 
-October 2026 · Python, SentenceTransformer, FastAPI, PCA, UMAP
+October 2026 · A four-person hackathon project, now continuing toward research
 
-<a
-  className="button secondary"
-  href="https://roboticreaper.github.io/OtherWise/"
-  target="_blank"
-  rel="noopener noreferrer"
->
-  Open OtherWise ↗
-</a>
+<aside className="otherwise-collaboration" aria-label="Research collaboration">
+  <strong>We're open to faculty collaboration.</strong>
+  <p>We're planning a study of whether OtherWise helps people develop lasting interests in a broader range of topics. If you're a professor working on recommendation systems, human–computer interaction, or related research, we'd love to <a href="https://www.linkedin.com/in/baoren-liu/" target="_blank" rel="noopener noreferrer">connect</a>.</p>
+</aside>
 
-## Overview
+<div className="project-links">
+  <a className="button secondary" href="https://roboticreaper.github.io/OtherWise/" target="_blank" rel="noopener noreferrer">Explore OtherWise ↗</a>
+  <a className="button secondary" href="https://github.com/RoboticReaper/OtherWise" target="_blank" rel="noopener noreferrer">View source on GitHub ↗</a>
+  <a className="button secondary" href="https://www.youtube.com/watch?v=MXGB1wnODo4" target="_blank" rel="noopener noreferrer">Watch the demo ↗</a>
+</div>
 
-OtherWise is a discovery system designed to help people move from familiar interests into new knowledge domains. A Chrome extension surfaces suggestions from a semantic exploration engine.
+<figure className="otherwise-media otherwise-wordmark">
+  <img src="/otherwise/logo.webp" width="1800" height="597" alt="OtherWise: Other in blue and Wise in white on a black background." />
+</figure>
 
-## How it works
+## Twenty-four hours to find an idea
 
-I used keyword embeddings to balance relevance with novelty. Instead of only finding topics close to a user’s existing interests, the engine also suggests connections to less familiar areas.
+Our hackathon started with this prompt:
 
-Interactive topic-galaxy and trail views use PCA and UMAP to map discoveries and show how interests expand over time.
+> Choose a product, service, or system that meaningful groups of people struggle to use, and build or redesign a digital product that substantially expands who can successfully use it.
+
+There were four of us on the team, and we had 24 hours. Since it was a low-code/no-code hackathon, we thought choosing a good idea mattered more than rushing into implementation. AI tools could help us build quickly once we knew what we wanted to make, so we spent a lot of time figuring that out first.
+
+We went through ideas from silly to realistic: a tax form agent, a VR haircut previewer, an insurance coverage research agent, a scam identifier, and a website that put school resources like PrairieLearn, Self-Service, and McKinley in one place. The Illinois app already covered that last one. For most of the others, we kept finding existing products, practical problems, or something ChatGPT could already do reasonably well. We wanted an idea that gave us a stronger reason to build it.
+
+Eventually, we started talking about algorithmic bubbles. A feed learns what you like and gives you more of it, but that makes it harder to discover things you don't already know to search for. We were also concerned about how isolated online communities can reinforce people's views. What if we could help people find their way into other topics, starting from something they already cared about?
+
+## From interests to a galaxy
+
+My internship at the [Wang AI Health Lab at Mass General Brigham](https://wangaihealthlab.bwh.harvard.edu/) gave me a starting point. I'd worked with embeddings and semantic retrieval in clinical research, including our [preprint on dementia identification with retrieval-augmented generation](https://pubmed.ncbi.nlm.nih.gov/41646828/). I wondered whether we could use a similar way of representing meaning to connect people's interests.
+
+I proposed treating someone's existing interests as regions in an embedding space, where related topics tend to be closer together. We could search around the boundaries of those regions to find something connected enough to make sense but unfamiliar enough to open a new direction. If someone became interested in that topic, it could become the starting point for another step.
+
+My teammates refined the algorithm with me and suggested showing those interests as galaxies. That made the idea much easier to see: the topics you know are only a small part of a much larger space. We also wanted exploration to feel rewarding, so discovering new connections would give people a reason to keep going.
+
+<figure className="otherwise-media">
+  <a href="/otherwise/context-matching.webp" target="_blank" rel="noopener noreferrer">
+    <img src="/otherwise/context-matching.webp" width="1160" height="720" loading="lazy" alt="A pitch diagram connecting computer science to psychology through human–computer interaction and cognitive psychology." />
+  </a>
+  <figcaption>One example from our pitch: human–computer interaction can connect an interest in computer science with psychology.</figcaption>
+</figure>
+
+We called it OtherWise. The goal was to help people develop interests in a wider range of topics. A recommendation should give you a connection you can follow, with enough context to understand why it might interest you.
+
+## Making it work
+
+Once we settled on the idea, we went straight into implementation. We split the work across the backend algorithm, frontend visualization, and presentation. There was very little sleep and quite a bit of Red Bull, but it was exciting to see something we'd just been discussing turn into a working product.
+
+By the end, we had an MVP, a presentation explaining the idea from beginning to end, and a two-minute introduction with a recorded demo. The prototype combined a Chrome extension with a Python recommendation service and an interactive topic map.
+
+In the extension, browsing titles can suggest interests through matching on the user's device. The user reviews and confirms what to keep, and only saved interests are sent to the recommendation service. We wanted people to have control over their profile and what they chose to explore.
+
+The engine looks for topics in an adjustable band beyond familiar interests. The galaxy uses PCA and UMAP to make the topic space visible in two dimensions, while the recommendation search uses the original embeddings. You can look across the whole map, highlight a subject area, or focus on one topic and explore its neighbors.
+
+<figure className="otherwise-media">
+  <a href="/otherwise/full-galaxy.webp" target="_blank" rel="noopener noreferrer">
+    <img src="/otherwise/full-galaxy.webp" width="1532" height="986" loading="lazy" alt="OtherWise's full galaxy map, with colored topic clusters spanning computing, mathematics, biology, history, and other subject areas." />
+  </a>
+  <figcaption>The full topic galaxy gives a view of the many directions available to explore.</figcaption>
+</figure>
+
+<figure className="otherwise-media">
+  <a href="/otherwise/focused-view.webp" target="_blank" rel="noopener noreferrer">
+    <img src="/otherwise/focused-view.webp" width="1172" height="732" loading="lazy" alt="A focused galaxy view centered on cooperative games, with nearby topics including educational games, board games, and game theory." />
+  </a>
+  <figcaption>The focused view brings one topic and its nearby connections into view.</figcaption>
+</figure>
+
+<div className="otherwise-video">
+  <iframe
+    src="https://www.youtube-nocookie.com/embed/MXGB1wnODo4"
+    title="OtherWise introduction and recorded demo"
+    width="1280"
+    height="720"
+    loading="lazy"
+    referrerPolicy="strict-origin-when-cross-origin"
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+    allowFullScreen
+  />
+</div>
+
+[Watch the introduction and demo on YouTube ↗](https://www.youtube.com/watch?v=MXGB1wnODo4)
+
+## After the hackathon
+
+The event didn't end the way we'd hoped. The organizers canceled the open live demo and Q&A session, and only the top five teams selected from the videos got to present publicly. We didn't make that group. I was disappointed, especially because we'd been looking forward to letting people try OtherWise and asking them what they thought.
+
+Still, all four of us came away wanting to keep working on it. The idea had come out of our own experiences and a long discussion together, and we felt it was worth pursuing beyond a competition result.
+
+We're continuing development and planning a research project with measurable outcomes and A/B comparisons. The question we're most interested in is whether these recommendations help people adopt and retain interests in a broader range of topics over time. Getting someone to click on an unfamiliar topic is a useful first step, but we want to find out whether they keep caring about it afterward.
+
+That study is still ahead of us. If the results support the idea, we'd like to develop OtherWise further as a product. For now, I'm happy that a 24-hour hackathon gave us something we're still curious enough to keep building.

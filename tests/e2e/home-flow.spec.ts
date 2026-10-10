@@ -44,8 +44,8 @@ test("home project previews distinguish project details from the live app", asyn
   page,
 }) => {
   for (const project of [
-    { name: "OtherWise", path: "/projects/otherwise" },
-    { name: "RideList", path: "/projects/ridelist" },
+    { name: "OtherWise", path: "/projects/otherwise", link: "Explore OtherWise" },
+    { name: "RideList", path: "/projects/ridelist", link: "Open RideList" },
   ]) {
     await page.goto("/");
     await page
@@ -59,7 +59,7 @@ test("home project previews distinguish project details from the live app", asyn
       page.getByRole("heading", { name: project.name, exact: true }),
     ).toBeVisible();
     await expect(
-      page.getByRole("link", { name: `Open ${project.name}` }),
+      page.getByRole("link", { name: project.link }),
     ).toHaveAttribute("target", "_blank");
   }
 });

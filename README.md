@@ -76,4 +76,4 @@ A cohesive set of future features:
 - **Project decision explorer:** let visitors inspect a project’s challenge, tradeoffs, and measured result. Helps employers see engineering judgment alongside the finished work.
 - **Recruiter quick tour:** a keyboard-accessible command menu that jumps to the most relevant project, experience, résumé, or contact link in a few keystrokes.
 
-The résumé preview is generated directly from the original one-page PDF with `pdftocairo -svg "public/Baoren Liu Resume.pdf" public/resume.svg`. Regenerate it when replacing the PDF; the original PDF remains the selectable, downloadable document.
+The résumé preview preserves the PDF's appearance with an SVG, plus a selectable text layer and accessible links extracted from the same PDF. After replacing `public/Baoren Liu Resume.pdf`, run `python3 scripts/generate-resume-preview.py` to regenerate both `public/resume.svg` and `lib/generated/resume-overlay.json`. The generator requires `pdfplumber` and Poppler's `pdftocairo`; no PDF processing runs in the browser. The original PDF remains available to open and download.
