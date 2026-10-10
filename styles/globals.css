@@ -456,7 +456,7 @@ p {
   border-radius: 10px;
   padding: 16px 17px 0;
   overflow: hidden;
-  transform: rotate(-4deg) translateY(21px);
+  transform: translateY(21px);
   box-shadow: 0 15px 40px #0002;
 }
 .preview-top {
@@ -711,6 +711,38 @@ p {
   height: auto;
   background: #fff;
   border: 1px solid var(--line);
+}
+.resume-preview {
+  position: relative;
+}
+.resume-preview img {
+  user-select: none;
+}
+.resume-overlay {
+  position: absolute;
+  inset: 1px;
+  width: calc(100% - 2px);
+  height: calc(100% - 2px);
+}
+.resume-text-layer {
+  fill: transparent;
+  font-family: "Times New Roman", serif;
+  user-select: text;
+  cursor: text;
+}
+.resume-text-layer ::selection {
+  fill: transparent;
+  background: rgb(72 135 255 / 30%);
+}
+.resume-link-layer rect {
+  fill: transparent;
+  cursor: pointer;
+}
+.resume-link-layer a:hover rect,
+.resume-link-layer a:focus-visible rect {
+  fill: rgb(72 135 255 / 12%);
+  stroke: #4878cc;
+  stroke-width: 0.6px;
 }
 @media (max-width: 600px) {
   .overview-grid {
@@ -1690,6 +1722,37 @@ html[data-intro-pending] .name-intro {
   margin: 24px 0;
 }
 .prose figure img {
+  border-radius: 10px;
+}
+
+.otherwise-collaboration {
+  margin-block: 24px;
+  padding: 20px 24px;
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  background: var(--surface);
+}
+.prose .otherwise-collaboration p {
+  margin: 8px 0 0;
+}
+.prose .otherwise-media img {
+  width: 100%;
+  max-height: none;
+}
+.otherwise-wordmark {
+  overflow: hidden;
+  border-radius: 10px;
+  background: #000;
+}
+.otherwise-video {
+  margin-top: 28px;
+  aspect-ratio: 16 / 9;
+}
+.otherwise-video iframe {
+  display: block;
+  width: 100%;
+  height: 100%;
+  border: 0;
   border-radius: 10px;
 }
 

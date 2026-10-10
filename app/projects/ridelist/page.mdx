@@ -4,25 +4,47 @@ import { Breadcrumb } from "@/components/breadcrumb";
 
 <Breadcrumb />
 
-December 2025 — October 2026 · Next.js, PostgreSQL, PostGIS, Cloudflare, Vercel
+Started December 2025 · Maintained side project
 
-<a
-  className="button secondary"
-  href="https://www.ridelist.app/"
-  target="_blank"
-  rel="noopener noreferrer"
->
-  Open RideList ↗
-</a>
+<div className="project-links">
+  <a
+    className="button secondary"
+    href="https://www.ridelist.app/"
+    target="_blank"
+    rel="noopener noreferrer"
+  >
+    Open RideList ↗
+  </a>
+  <a
+    className="button secondary"
+    href="https://github.com/RoboticReaper/RideList"
+    target="_blank"
+    rel="noopener noreferrer"
+  >
+    View source on GitHub ↗
+  </a>
+</div>
 
-## Overview
+## Why I built it
 
-RideList is a bilingual campus ridesharing app for finding rides, arranging trips, and communicating with other riders. It has supported more than 60 trips, more than 75 messages, and 7 completed bookings, as recorded in my October 2026 résumé.
+I built RideList after experiencing how fragile transportation between Chicago and UIUC can be. A snowstorm delayed my flight, which meant I missed my charter bus. Then I found out that the ticket couldn't be transferred. Trains required inconvenient transfers, and buses often sold out around university breaks. I realized students needed another option.
 
-## Matching and messaging
+I'd also seen students informally offer spare seats in their cars, so I wanted to make it easier for student passengers and drivers to find each other. The idea was a scheduled ridesharing marketplace: closer to booking an airline ticket in advance than requesting an on-demand Uber.
 
-I used PostGIS for privacy-preserving geospatial ride matching. Firebase supports real-time messaging and trip synchronization, while Bash scripts on Linux automate PostgreSQL backups.
+## Building and launching RideList
 
-## Infrastructure
+I independently took the product from idea to launch, designing and building the full-stack application with Next.js and PostgreSQL. I implemented ride discovery, booking, real-time messaging, bilingual support, and privacy-preserving geospatial matching with PostGIS. Firebase supports messaging and trip synchronization, while Bash scripts on Linux automate PostgreSQL backups.
 
-The app runs on Next.js with Vercel-hosted APIs and a self-hosted PostgreSQL database. I secured communication between them using a custom certificate authority and mutual TLS. The project also uses the Cloudflare API, Google Cloud, and Microsoft Azure.
+I also operated the production infrastructure across Vercel, Google Cloud, and Azure. To secure communication between the Vercel-hosted APIs and my self-hosted database, I set up a custom certificate authority and mutual TLS. The project also uses the Cloudflare API.
+
+Since launch, the platform has supported **more than 60 trips, 75 messages, and seven completed bookings**.
+
+## Finding enough drivers and passengers
+
+The hardest challenge was getting enough people on both sides of the marketplace. Without enough drivers, passengers wouldn't return. Without enough passengers, drivers had little incentive to post rides.
+
+After roughly six months of testing and outreach, I concluded that reaching sustainable scale would require substantially more investment in distribution than I could responsibly make while studying full-time. I transitioned RideList from a startup attempt into a maintained side project.
+
+## What I learned
+
+Shipping the software was only part of building a useful product. Distribution, user behavior, and marketplace dynamics were constraints I had to account for, too. I learned to validate my assumptions honestly, adapt when the evidence changed, and still take ownership of maintaining something real people use.

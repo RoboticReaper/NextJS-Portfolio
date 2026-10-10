@@ -5,11 +5,13 @@ for (const project of [
     name: "OtherWise",
     path: "/projects/otherwise",
     live: "https://roboticreaper.github.io/OtherWise/",
+    link: "Explore OtherWise",
   },
   {
     name: "RideList",
     path: "/projects/ridelist",
     live: "https://www.ridelist.app/",
+    link: "Open RideList",
   },
 ]) {
   test(`${project.name} has a readable case study and a live application link`, async ({
@@ -26,7 +28,7 @@ for (const project of [
       page.getByRole("heading", { name: project.name, exact: true }),
     ).toBeVisible();
     await expect(
-      page.getByRole("link", { name: `Open ${project.name}` }),
+      page.getByRole("link", { name: project.link }),
     ).toHaveAttribute("href", project.live);
   });
 }
@@ -114,7 +116,7 @@ test("theme survives reload and navigation works at every viewport", async ({
   ).toBeVisible();
   await page.getByRole("link", { name: "Project details for LHS Schedule" }).click();
   await expect(
-    page.getByRole("heading", { name: /Building the LHS Schedule App/ }),
+    page.getByRole("heading", { name: "Building LHS Schedule", exact: true }),
   ).toBeVisible();
   expect(
     await page.evaluate(

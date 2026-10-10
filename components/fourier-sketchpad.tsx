@@ -1,5 +1,6 @@
 "use client";
 
+import Link from "next/link";
 import { useEffect, useMemo, useRef, useState, useSyncExternalStore, type PointerEvent } from "react";
 import { decompose, epicycleChain, resampleLoop, type Point } from "@/lib/fourier";
 import { logoExample as example } from "@/lib/fourier-logo";
@@ -165,7 +166,7 @@ export function FourierSketchpad() {
       <div className="fourier-header">
         <h2 id="fourier-heading">Fourier sketchpad</h2>
         <div className="fourier-header-actions">
-          <a className="fourier-project-link" href="https://github.com/RoboticReaper/Fourier-Series-Visualization" aria-label="Explore the Fourier project" target="_blank" rel="noopener noreferrer">Project <span aria-hidden="true">↗</span></a>
+          <Link className="fourier-project-link" href="/projects/fourier-series" aria-label="Explore the Fourier project">Project <span aria-hidden="true">→</span></Link>
           <button type="button" className="fourier-button" disabled={drawing} aria-label={wantsPlayback ? "Pause animation" : "Play animation"} onClick={() => {
             setPlaying(!wantsPlayback);
             setExplicitPlay(!wantsPlayback);

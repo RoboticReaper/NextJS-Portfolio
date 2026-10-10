@@ -38,7 +38,7 @@ export const workExperience: Experience[] = [
       "Working on clinical retrieval augmented generation, multi-agent support tools, and deployment automation.",
     detail:
       "Built a retrieval augmented generation pipeline for clinical evidence in a HIPAA-compliant environment. Compared it with traditional machine learning models using cross-validation and bootstrapping, co-authored a dementia-identification paper, and built a LangGraph hospital support prototype. Automated the research website’s deployment with GitLab CI/CD, webhooks, and SSH-managed Linux runners.",
-    href: "https://www.massgeneralbrigham.org/",
+    href: "https://wangaihealthlab.bwh.harvard.edu/",
     publication: {
       title: "Dementia identification with retrieval augmented generation",
       href: "https://pubmed.ncbi.nlm.nih.gov/41646828/",
@@ -54,7 +54,7 @@ export const workExperience: Experience[] = [
       "Software engineering in UIUC’s National Organization for Business and Engineering Technology Division.",
     detail:
       "Working as a software engineer in the Technology Division of UIUC’s National Organization for Business and Engineering chapter.",
-    href: "https://www.linkedin.com/in/baoren-liu/",
+    href: "https://www.nobeillinois.org/",
   },
 ];
 export const earlierExperience: Experience[] = [

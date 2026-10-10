@@ -1,0 +1,4491 @@
+{
+  "sourceSha256": "da006648aad19600b5e454275ae6f2a4f02054a716cff435a61c5b20b5007ee8",
+  "width": 612,
+  "height": 792,
+  "lines": [
+    [
+      {
+        "text": "Baoren ",
+        "x": 237.893,
+        "y": 53.064,
+        "width": 96.224,
+        "size": 24.787,
+        "bold": true,
+        "italic": false
+      },
+      {
+        "text": "Liu",
+        "x": 334.117,
+        "y": 53.064,
+        "width": 39.992,
+        "size": 24.787,
+        "bold": true,
+        "italic": false
+      }
+    ],
+    [
+      {
+        "text": "liubaoren2006@gmail.com ",
+        "x": 87.596,
+        "y": 66.105,
+        "width": 115.706,
+        "size": 9.963,
+        "bold": false,
+        "italic": false
+      },
+      {
+        "text": "| ",
+        "x": 203.302,
+        "y": 66.105,
+        "width": 6.085,
+        "size": 9.963,
+        "bold": false,
+        "italic": false
+      },
+      {
+        "text": "baorenliu.com ",
+        "x": 209.387,
+        "y": 66.105,
+        "width": 64.234,
+        "size": 9.963,
+        "bold": false,
+        "italic": false
+      },
+      {
+        "text": "| ",
+        "x": 273.621,
+        "y": 66.105,
+        "width": 6.085,
+        "size": 9.963,
+        "bold": false,
+        "italic": false
+      },
+      {
+        "text": "linkedin.com/in/baoren-liu ",
+        "x": 279.706,
+        "y": 66.105,
+        "width": 120.137,
+        "size": 9.963,
+        "bold": false,
+        "italic": false
+      },
+      {
+        "text": "| ",
+        "x": 399.843,
+        "y": 66.105,
+        "width": 6.085,
+        "size": 9.963,
+        "bold": false,
+        "italic": false
+      },
+      {
+        "text": "github.com/RoboticReaper",
+        "x": 405.928,
+        "y": 66.105,
+        "width": 118.475,
+        "size": 9.963,
+        "bold": false,
+        "italic": false
+      }
+    ],
+    [
+      {
+        "text": "Education",
+        "x": 36.0,
+        "y": 89.831,
+        "width": 62.872,
+        "size": 11.955,
+        "bold": false,
+        "italic": false
+      }
+    ],
+    [
+      {
+        "text": "University ",
+        "x": 46.8,
+        "y": 109.057,
+        "width": 61.066,
+        "size": 10.909,
+        "bold": true,
+        "italic": false
+      },
+      {
+        "text": "of ",
+        "x": 107.866,
+        "y": 109.057,
+        "width": 14.284,
+        "size": 10.909,
+        "bold": true,
+        "italic": false
+      },
+      {
+        "text": "Illinois ",
+        "x": 122.15,
+        "y": 109.057,
+        "width": 41.064,
+        "size": 10.909,
+        "bold": true,
+        "italic": false
+      },
+      {
+        "text": "Urbana-Champaign ",
+        "x": 163.214,
+        "y": 109.057,
+        "width": 335.416,
+        "size": 10.909,
+        "bold": true,
+        "italic": false
+      },
+      {
+        "text": "Champaign, ",
+        "x": 498.63,
+        "y": 109.057,
+        "width": 61.21,
+        "size": 10.909,
+        "bold": false,
+        "italic": false
+      },
+      {
+        "text": "IL",
+        "x": 559.84,
+        "y": 109.057,
+        "width": 10.757,
+        "size": 10.909,
+        "bold": false,
+        "italic": false
+      }
+    ],
+    [
+      {
+        "text": "GPA: ",
+        "x": 46.8,
+        "y": 122.611,
+        "width": 32.175,
+        "size": 9.963,
+        "bold": true,
+        "italic": true
+      },
+      {
+        "text": "3.92; ",
+        "x": 78.975,
+        "y": 122.611,
+        "width": 28.319,
+        "size": 9.963,
+        "bold": true,
+        "italic": true
+      },
+      {
+        "text": "Bachelor ",
+        "x": 107.294,
+        "y": 122.611,
+        "width": 41.758,
+        "size": 9.963,
+        "bold": false,
+        "italic": true
+      },
+      {
+        "text": "of ",
+        "x": 149.052,
+        "y": 122.611,
+        "width": 11.714,
+        "size": 9.963,
+        "bold": false,
+        "italic": true
+      },
+      {
+        "text": "Science ",
+        "x": 160.766,
+        "y": 122.611,
+        "width": 35.647,
+        "size": 9.963,
+        "bold": false,
+        "italic": true
+      },
+      {
+        "text": "in ",
+        "x": 196.413,
+        "y": 122.611,
+        "width": 12.223,
+        "size": 9.963,
+        "bold": false,
+        "italic": true
+      },
+      {
+        "text": "Mathematics ",
+        "x": 208.636,
+        "y": 122.611,
+        "width": 58.827,
+        "size": 9.963,
+        "bold": false,
+        "italic": true
+      },
+      {
+        "text": "& ",
+        "x": 267.464,
+        "y": 122.611,
+        "width": 11.205,
+        "size": 9.963,
+        "bold": false,
+        "italic": true
+      },
+      {
+        "text": "Computer ",
+        "x": 278.669,
+        "y": 122.611,
+        "width": 46.468,
+        "size": 9.963,
+        "bold": false,
+        "italic": true
+      },
+      {
+        "text": "Science ",
+        "x": 325.136,
+        "y": 122.611,
+        "width": 156.583,
+        "size": 9.963,
+        "bold": false,
+        "italic": true
+      },
+      {
+        "text": "Expected: ",
+        "x": 481.719,
+        "y": 122.611,
+        "width": 44.735,
+        "size": 9.963,
+        "bold": false,
+        "italic": true
+      },
+      {
+        "text": "May ",
+        "x": 526.454,
+        "y": 122.611,
+        "width": 22.43,
+        "size": 9.963,
+        "bold": false,
+        "italic": true
+      },
+      {
+        "text": "2028",
+        "x": 548.884,
+        "y": 122.611,
+        "width": 20.368,
+        "size": 9.963,
+        "bold": false,
+        "italic": true
+      }
+    ],
+    [
+      {
+        "text": "Activities",
+        "x": 46.8,
+        "y": 136.033,
+        "width": 48.027,
+        "size": 9.963,
+        "bold": true,
+        "italic": false
+      },
+      {
+        "text": ": ",
+        "x": 94.827,
+        "y": 136.033,
+        "width": 7.201,
+        "size": 9.963,
+        "bold": false,
+        "italic": false
+      },
+      {
+        "text": "SWE ",
+        "x": 102.028,
+        "y": 136.033,
+        "width": 25.873,
+        "size": 9.963,
+        "bold": false,
+        "italic": false
+      },
+      {
+        "text": "@ ",
+        "x": 127.901,
+        "y": 136.033,
+        "width": 11.066,
+        "size": 9.963,
+        "bold": false,
+        "italic": false
+      },
+      {
+        "text": "National ",
+        "x": 138.967,
+        "y": 136.033,
+        "width": 40.678,
+        "size": 9.963,
+        "bold": false,
+        "italic": false
+      },
+      {
+        "text": "Organization ",
+        "x": 179.645,
+        "y": 136.033,
+        "width": 59.811,
+        "size": 9.963,
+        "bold": false,
+        "italic": false
+      },
+      {
+        "text": "for ",
+        "x": 239.457,
+        "y": 136.033,
+        "width": 15.246,
+        "size": 9.963,
+        "bold": false,
+        "italic": false
+      },
+      {
+        "text": "Business ",
+        "x": 254.703,
+        "y": 136.033,
+        "width": 40.427,
+        "size": 9.963,
+        "bold": false,
+        "italic": false
+      },
+      {
+        "text": "and ",
+        "x": 295.13,
+        "y": 136.033,
+        "width": 19.379,
+        "size": 9.963,
+        "bold": false,
+        "italic": false
+      },
+      {
+        "text": "Engineering ",
+        "x": 314.509,
+        "y": 136.033,
+        "width": 54.959,
+        "size": 9.963,
+        "bold": false,
+        "italic": false
+      },
+      {
+        "text": "(NOBE) ",
+        "x": 369.468,
+        "y": 136.033,
+        "width": 40.124,
+        "size": 9.963,
+        "bold": false,
+        "italic": false
+      },
+      {
+        "text": "— ",
+        "x": 409.592,
+        "y": 136.033,
+        "width": 13.28,
+        "size": 9.963,
+        "bold": false,
+        "italic": false
+      },
+      {
+        "text": "Technology ",
+        "x": 422.872,
+        "y": 136.033,
+        "width": 52.312,
+        "size": 9.963,
+        "bold": false,
+        "italic": false
+      },
+      {
+        "text": "Division",
+        "x": 475.184,
+        "y": 136.033,
+        "width": 35.617,
+        "size": 9.963,
+        "bold": false,
+        "italic": false
+      }
+    ],
+    [
+      {
+        "text": "Relevant ",
+        "x": 46.8,
+        "y": 147.988,
+        "width": 47.582,
+        "size": 9.963,
+        "bold": true,
+        "italic": false
+      },
+      {
+        "text": "Coursework",
+        "x": 94.382,
+        "y": 147.988,
+        "width": 59.296,
+        "size": 9.963,
+        "bold": true,
+        "italic": false
+      },
+      {
+        "text": ": ",
+        "x": 153.689,
+        "y": 147.988,
+        "width": 7.191,
+        "size": 9.963,
+        "bold": false,
+        "italic": false
+      },
+      {
+        "text": "Data ",
+        "x": 160.88,
+        "y": 147.988,
+        "width": 24.765,
+        "size": 9.963,
+        "bold": false,
+        "italic": false
+      },
+      {
+        "text": "Structures ",
+        "x": 185.645,
+        "y": 147.988,
+        "width": 48.271,
+        "size": 9.963,
+        "bold": false,
+        "italic": false
+      },
+      {
+        "text": "& ",
+        "x": 233.916,
+        "y": 147.988,
+        "width": 11.066,
+        "size": 9.963,
+        "bold": false,
+        "italic": false
+      },
+      {
+        "text": "Algorithms, ",
+        "x": 244.982,
+        "y": 147.988,
+        "width": 54.598,
+        "size": 9.963,
+        "bold": false,
+        "italic": false
+      },
+      {
+        "text": "Database ",
+        "x": 299.58,
+        "y": 147.988,
+        "width": 43.648,
+        "size": 9.963,
+        "bold": false,
+        "italic": false
+      },
+      {
+        "text": "Systems, ",
+        "x": 343.228,
+        "y": 147.988,
+        "width": 41.341,
+        "size": 9.963,
+        "bold": false,
+        "italic": false
+      },
+      {
+        "text": "Linear ",
+        "x": 384.569,
+        "y": 147.988,
+        "width": 31.158,
+        "size": 9.963,
+        "bold": false,
+        "italic": false
+      },
+      {
+        "text": "Algebra, ",
+        "x": 415.727,
+        "y": 147.988,
+        "width": 40.162,
+        "size": 9.963,
+        "bold": false,
+        "italic": false
+      },
+      {
+        "text": "Probability ",
+        "x": 455.889,
+        "y": 147.988,
+        "width": 52.19,
+        "size": 9.963,
+        "bold": false,
+        "italic": false
+      },
+      {
+        "text": "& ",
+        "x": 508.079,
+        "y": 147.988,
+        "width": 11.066,
+        "size": 9.963,
+        "bold": false,
+        "italic": false
+      },
+      {
+        "text": "Statistics",
+        "x": 519.146,
+        "y": 147.988,
+        "width": 39.961,
+        "size": 9.963,
+        "bold": false,
+        "italic": false
+      }
+    ],
+    [
+      {
+        "text": "Technical ",
+        "x": 36.0,
+        "y": 170.419,
+        "width": 66.465,
+        "size": 11.955,
+        "bold": false,
+        "italic": false
+      },
+      {
+        "text": "Skills",
+        "x": 102.465,
+        "y": 170.419,
+        "width": 36.264,
+        "size": 11.955,
+        "bold": false,
+        "italic": false
+      }
+    ],
+    [
+      {
+        "text": "Languages",
+        "x": 46.8,
+        "y": 189.077,
+        "width": 51.987,
+        "size": 9.963,
+        "bold": true,
+        "italic": false
+      },
+      {
+        "text": ": ",
+        "x": 98.787,
+        "y": 189.077,
+        "width": 7.191,
+        "size": 9.963,
+        "bold": false,
+        "italic": false
+      },
+      {
+        "text": "Python, ",
+        "x": 105.978,
+        "y": 189.077,
+        "width": 38.06,
+        "size": 9.963,
+        "bold": false,
+        "italic": false
+      },
+      {
+        "text": "Java, ",
+        "x": 144.038,
+        "y": 189.077,
+        "width": 25.589,
+        "size": 9.963,
+        "bold": false,
+        "italic": false
+      },
+      {
+        "text": "C++, ",
+        "x": 169.627,
+        "y": 189.077,
+        "width": 28.788,
+        "size": 9.963,
+        "bold": false,
+        "italic": false
+      },
+      {
+        "text": "SQL, ",
+        "x": 198.415,
+        "y": 189.077,
+        "width": 25.596,
+        "size": 9.963,
+        "bold": false,
+        "italic": false
+      },
+      {
+        "text": "HTML, ",
+        "x": 224.011,
+        "y": 189.077,
+        "width": 36.111,
+        "size": 9.963,
+        "bold": false,
+        "italic": false
+      },
+      {
+        "text": "CSS, ",
+        "x": 260.122,
+        "y": 189.077,
+        "width": 24.361,
+        "size": 9.963,
+        "bold": false,
+        "italic": false
+      },
+      {
+        "text": "JavaScript, ",
+        "x": 284.483,
+        "y": 189.077,
+        "width": 51.641,
+        "size": 9.963,
+        "bold": false,
+        "italic": false
+      },
+      {
+        "text": "TypeScript, ",
+        "x": 336.124,
+        "y": 189.077,
+        "width": 54.543,
+        "size": 9.963,
+        "bold": false,
+        "italic": false
+      },
+      {
+        "text": "Kotlin, ",
+        "x": 390.667,
+        "y": 189.077,
+        "width": 33.76,
+        "size": 9.963,
+        "bold": false,
+        "italic": false
+      },
+      {
+        "text": "Bash",
+        "x": 424.427,
+        "y": 189.077,
+        "width": 21.502,
+        "size": 9.963,
+        "bold": false,
+        "italic": false
+      }
+    ],
+    [
+      {
+        "text": "Technologies",
+        "x": 46.8,
+        "y": 201.032,
+        "width": 63.088,
+        "size": 9.963,
+        "bold": true,
+        "italic": false
+      },
+      {
+        "text": ": ",
+        "x": 109.888,
+        "y": 201.032,
+        "width": 7.201,
+        "size": 9.963,
+        "bold": false,
+        "italic": false
+      },
+      {
+        "text": "React, ",
+        "x": 117.089,
+        "y": 201.032,
+        "width": 31.129,
+        "size": 9.963,
+        "bold": false,
+        "italic": false
+      },
+      {
+        "text": "Next.js, ",
+        "x": 148.218,
+        "y": 201.032,
+        "width": 36.859,
+        "size": 9.963,
+        "bold": false,
+        "italic": false
+      },
+      {
+        "text": "Flask, ",
+        "x": 185.077,
+        "y": 201.032,
+        "width": 29.535,
+        "size": 9.963,
+        "bold": false,
+        "italic": false
+      },
+      {
+        "text": "PyTorch, ",
+        "x": 214.612,
+        "y": 201.032,
+        "width": 43.059,
+        "size": 9.963,
+        "bold": false,
+        "italic": false
+      },
+      {
+        "text": "LangChain, ",
+        "x": 257.671,
+        "y": 201.032,
+        "width": 53.824,
+        "size": 9.963,
+        "bold": false,
+        "italic": false
+      },
+      {
+        "text": "NumPy, ",
+        "x": 311.495,
+        "y": 201.032,
+        "width": 38.606,
+        "size": 9.963,
+        "bold": false,
+        "italic": false
+      },
+      {
+        "text": "Pandas, ",
+        "x": 350.101,
+        "y": 201.032,
+        "width": 37.549,
+        "size": 9.963,
+        "bold": false,
+        "italic": false
+      },
+      {
+        "text": "scikit-learn, ",
+        "x": 387.65,
+        "y": 201.032,
+        "width": 54.054,
+        "size": 9.963,
+        "bold": false,
+        "italic": false
+      },
+      {
+        "text": "ChromaDB, ",
+        "x": 441.705,
+        "y": 201.032,
+        "width": 55.649,
+        "size": 9.963,
+        "bold": false,
+        "italic": false
+      },
+      {
+        "text": "Hugging ",
+        "x": 497.354,
+        "y": 201.032,
+        "width": 39.571,
+        "size": 9.963,
+        "bold": false,
+        "italic": false
+      },
+      {
+        "text": "Face",
+        "x": 536.925,
+        "y": 201.032,
+        "width": 19.513,
+        "size": 9.963,
+        "bold": false,
+        "italic": false
+      }
+    ],
+    [
+      {
+        "text": "Tools",
+        "x": 46.8,
+        "y": 212.987,
+        "width": 26.491,
+        "size": 9.963,
+        "bold": true,
+        "italic": false
+      },
+      {
+        "text": ": ",
+        "x": 73.291,
+        "y": 212.987,
+        "width": 7.201,
+        "size": 9.963,
+        "bold": false,
+        "italic": false
+      },
+      {
+        "text": "Git, ",
+        "x": 80.492,
+        "y": 212.987,
+        "width": 20.545,
+        "size": 9.963,
+        "bold": false,
+        "italic": false
+      },
+      {
+        "text": "CI/CD, ",
+        "x": 101.036,
+        "y": 212.987,
+        "width": 36.664,
+        "size": 9.963,
+        "bold": false,
+        "italic": false
+      },
+      {
+        "text": "PostgreSQL, ",
+        "x": 137.701,
+        "y": 212.987,
+        "width": 58.204,
+        "size": 9.963,
+        "bold": false,
+        "italic": false
+      },
+      {
+        "text": "Vercel, ",
+        "x": 195.904,
+        "y": 212.987,
+        "width": 32.682,
+        "size": 9.963,
+        "bold": false,
+        "italic": false
+      },
+      {
+        "text": "Docker, ",
+        "x": 228.587,
+        "y": 212.987,
+        "width": 36.413,
+        "size": 9.963,
+        "bold": false,
+        "italic": false
+      },
+      {
+        "text": "Google ",
+        "x": 265.0,
+        "y": 212.987,
+        "width": 33.563,
+        "size": 9.963,
+        "bold": false,
+        "italic": false
+      },
+      {
+        "text": "Cloud, ",
+        "x": 298.563,
+        "y": 212.987,
+        "width": 32.099,
+        "size": 9.963,
+        "bold": false,
+        "italic": false
+      },
+      {
+        "text": "Microsoft ",
+        "x": 330.662,
+        "y": 212.987,
+        "width": 44.358,
+        "size": 9.963,
+        "bold": false,
+        "italic": false
+      },
+      {
+        "text": "Azure, ",
+        "x": 375.021,
+        "y": 212.987,
+        "width": 31.849,
+        "size": 9.963,
+        "bold": false,
+        "italic": false
+      },
+      {
+        "text": "Linux, ",
+        "x": 406.87,
+        "y": 212.987,
+        "width": 31.139,
+        "size": 9.963,
+        "bold": false,
+        "italic": false
+      },
+      {
+        "text": "Ollama, ",
+        "x": 438.009,
+        "y": 212.987,
+        "width": 37.634,
+        "size": 9.963,
+        "bold": false,
+        "italic": false
+      },
+      {
+        "text": "Isaac ",
+        "x": 475.643,
+        "y": 212.987,
+        "width": 25.244,
+        "size": 9.963,
+        "bold": false,
+        "italic": false
+      },
+      {
+        "text": "Sim, ",
+        "x": 500.887,
+        "y": 212.987,
+        "width": 22.69,
+        "size": 9.963,
+        "bold": false,
+        "italic": false
+      },
+      {
+        "text": "Codex",
+        "x": 523.577,
+        "y": 212.987,
+        "width": 27.676,
+        "size": 9.963,
+        "bold": false,
+        "italic": false
+      }
+    ],
+    [
+      {
+        "text": "Experience",
+        "x": 36.0,
+        "y": 235.419,
+        "width": 68.085,
+        "size": 11.955,
+        "bold": false,
+        "italic": false
+      }
+    ],
+    [
+      {
+        "text": "HCESC-XR ",
+        "x": 46.8,
+        "y": 254.645,
+        "width": 70.405,
+        "size": 10.909,
+        "bold": true,
+        "italic": false
+      },
+      {
+        "text": "Lab, ",
+        "x": 117.205,
+        "y": 254.645,
+        "width": 28.287,
+        "size": 10.909,
+        "bold": true,
+        "italic": false
+      },
+      {
+        "text": "UIUC ",
+        "x": 145.492,
+        "y": 254.645,
+        "width": 330.776,
+        "size": 10.909,
+        "bold": true,
+        "italic": false
+      },
+      {
+        "text": "July ",
+        "x": 476.268,
+        "y": 254.645,
+        "width": 24.088,
+        "size": 10.909,
+        "bold": false,
+        "italic": false
+      },
+      {
+        "text": "2026 ",
+        "x": 500.357,
+        "y": 254.645,
+        "width": 25.451,
+        "size": 10.909,
+        "bold": false,
+        "italic": false
+      },
+      {
+        "text": "– ",
+        "x": 525.808,
+        "y": 254.645,
+        "width": 9.098,
+        "size": 10.909,
+        "bold": false,
+        "italic": false
+      },
+      {
+        "text": "Present",
+        "x": 534.906,
+        "y": 254.645,
+        "width": 35.695,
+        "size": 10.909,
+        "bold": false,
+        "italic": false
+      }
+    ],
+    [
+      {
+        "text": "Undergraduate ",
+        "x": 46.8,
+        "y": 268.199,
+        "width": 66.731,
+        "size": 9.963,
+        "bold": false,
+        "italic": true
+      },
+      {
+        "text": "Researcher ",
+        "x": 113.531,
+        "y": 268.199,
+        "width": 391.986,
+        "size": 9.963,
+        "bold": false,
+        "italic": true
+      },
+      {
+        "text": "Champaign, ",
+        "x": 505.517,
+        "y": 268.199,
+        "width": 54.998,
+        "size": 9.963,
+        "bold": false,
+        "italic": true
+      },
+      {
+        "text": "IL",
+        "x": 560.515,
+        "y": 268.199,
+        "width": 10.09,
+        "size": 9.963,
+        "bold": false,
+        "italic": true
+      }
+    ],
+    [
+      {
+        "text": "• ",
+        "x": 61.526,
+        "y": 279.529,
+        "width": 9.274,
+        "size": 5.978,
+        "bold": false,
+        "italic": false
+      },
+      {
+        "text": "Developing ",
+        "x": 70.8,
+        "y": 280.807,
+        "width": 51.33,
+        "size": 9.963,
+        "bold": false,
+        "italic": false
+      },
+      {
+        "text": "an ",
+        "x": 122.13,
+        "y": 280.807,
+        "width": 13.844,
+        "size": 9.963,
+        "bold": false,
+        "italic": false
+      },
+      {
+        "text": "Isaac ",
+        "x": 135.974,
+        "y": 280.807,
+        "width": 28.909,
+        "size": 9.963,
+        "bold": true,
+        "italic": false
+      },
+      {
+        "text": "Sim ",
+        "x": 164.884,
+        "y": 280.807,
+        "width": 22.422,
+        "size": 9.963,
+        "bold": true,
+        "italic": false
+      },
+      {
+        "text": "benchmark ",
+        "x": 187.306,
+        "y": 280.807,
+        "width": 51.222,
+        "size": 9.963,
+        "bold": false,
+        "italic": false
+      },
+      {
+        "text": "to ",
+        "x": 238.527,
+        "y": 280.807,
+        "width": 12.173,
+        "size": 9.963,
+        "bold": false,
+        "italic": false
+      },
+      {
+        "text": "evaluate ",
+        "x": 250.701,
+        "y": 280.807,
+        "width": 39.023,
+        "size": 9.963,
+        "bold": false,
+        "italic": false
+      },
+      {
+        "text": "AI ",
+        "x": 289.723,
+        "y": 280.807,
+        "width": 16.822,
+        "size": 9.963,
+        "bold": true,
+        "italic": false
+      },
+      {
+        "text": "agents",
+        "x": 306.545,
+        "y": 280.807,
+        "width": 31.569,
+        "size": 9.963,
+        "bold": true,
+        "italic": false
+      },
+      {
+        "text": "’ ",
+        "x": 338.114,
+        "y": 280.807,
+        "width": 6.095,
+        "size": 9.963,
+        "bold": false,
+        "italic": false
+      },
+      {
+        "text": "ability ",
+        "x": 344.21,
+        "y": 280.807,
+        "width": 30.991,
+        "size": 9.963,
+        "bold": false,
+        "italic": false
+      },
+      {
+        "text": "to ",
+        "x": 375.2,
+        "y": 280.807,
+        "width": 12.183,
+        "size": 9.963,
+        "bold": false,
+        "italic": false
+      },
+      {
+        "text": "actively ",
+        "x": 387.384,
+        "y": 280.807,
+        "width": 36.801,
+        "size": 9.963,
+        "bold": false,
+        "italic": false
+      },
+      {
+        "text": "diagnose ",
+        "x": 424.184,
+        "y": 280.807,
+        "width": 40.456,
+        "size": 9.963,
+        "bold": false,
+        "italic": false
+      },
+      {
+        "text": "hidden ",
+        "x": 464.641,
+        "y": 280.807,
+        "width": 32.663,
+        "size": 9.963,
+        "bold": false,
+        "italic": false
+      },
+      {
+        "text": "physical ",
+        "x": 497.304,
+        "y": 280.807,
+        "width": 38.24,
+        "size": 9.963,
+        "bold": false,
+        "italic": false
+      },
+      {
+        "text": "failure",
+        "x": 535.544,
+        "y": 280.807,
+        "width": 27.426,
+        "size": 9.963,
+        "bold": false,
+        "italic": false
+      }
+    ],
+    [
+      {
+        "text": "causes ",
+        "x": 70.8,
+        "y": 292.762,
+        "width": 30.547,
+        "size": 9.963,
+        "bold": false,
+        "italic": false
+      },
+      {
+        "text": "and ",
+        "x": 101.347,
+        "y": 292.762,
+        "width": 19.379,
+        "size": 9.963,
+        "bold": false,
+        "italic": false
+      },
+      {
+        "text": "recover ",
+        "x": 120.727,
+        "y": 292.762,
+        "width": 34.096,
+        "size": 9.963,
+        "bold": false,
+        "italic": false
+      },
+      {
+        "text": "from ",
+        "x": 154.823,
+        "y": 292.762,
+        "width": 23.548,
+        "size": 9.963,
+        "bold": false,
+        "italic": false
+      },
+      {
+        "text": "manipulation ",
+        "x": 178.37,
+        "y": 292.762,
+        "width": 60.881,
+        "size": 9.963,
+        "bold": false,
+        "italic": false
+      },
+      {
+        "text": "failures",
+        "x": 239.252,
+        "y": 292.762,
+        "width": 31.355,
+        "size": 9.963,
+        "bold": false,
+        "italic": false
+      }
+    ],
+    [
+      {
+        "text": "• ",
+        "x": 61.526,
+        "y": 304.304,
+        "width": 9.274,
+        "size": 5.978,
+        "bold": false,
+        "italic": false
+      },
+      {
+        "text": "Building ",
+        "x": 70.8,
+        "y": 305.345,
+        "width": 40.403,
+        "size": 9.963,
+        "bold": false,
+        "italic": false
+      },
+      {
+        "text": "Python ",
+        "x": 111.203,
+        "y": 305.345,
+        "width": 40.109,
+        "size": 9.963,
+        "bold": true,
+        "italic": false
+      },
+      {
+        "text": "simulation ",
+        "x": 151.313,
+        "y": 305.345,
+        "width": 48.49,
+        "size": 9.963,
+        "bold": false,
+        "italic": false
+      },
+      {
+        "text": "environments ",
+        "x": 199.803,
+        "y": 305.345,
+        "width": 61.245,
+        "size": 9.963,
+        "bold": false,
+        "italic": false
+      },
+      {
+        "text": "with ",
+        "x": 261.048,
+        "y": 305.345,
+        "width": 22.69,
+        "size": 9.963,
+        "bold": false,
+        "italic": false
+      },
+      {
+        "text": "sensor ",
+        "x": 283.738,
+        "y": 305.345,
+        "width": 30.022,
+        "size": 9.963,
+        "bold": false,
+        "italic": false
+      },
+      {
+        "text": "feedback, ",
+        "x": 313.76,
+        "y": 305.345,
+        "width": 43.453,
+        "size": 9.963,
+        "bold": false,
+        "italic": false
+      },
+      {
+        "text": "inverse-kinematics ",
+        "x": 357.213,
+        "y": 305.345,
+        "width": 82.608,
+        "size": 9.963,
+        "bold": false,
+        "italic": false
+      },
+      {
+        "text": "controller, ",
+        "x": 439.821,
+        "y": 305.345,
+        "width": 47.373,
+        "size": 9.963,
+        "bold": false,
+        "italic": false
+      },
+      {
+        "text": "and",
+        "x": 487.194,
+        "y": 305.345,
+        "width": 16.052,
+        "size": 9.963,
+        "bold": false,
+        "italic": false
+      }
+    ],
+    [
+      {
+        "text": "observation-action ",
+        "x": 70.8,
+        "y": 317.3,
+        "width": 82.831,
+        "size": 9.963,
+        "bold": false,
+        "italic": false
+      },
+      {
+        "text": "API ",
+        "x": 153.631,
+        "y": 317.3,
+        "width": 21.168,
+        "size": 9.963,
+        "bold": false,
+        "italic": false
+      },
+      {
+        "text": "to ",
+        "x": 174.799,
+        "y": 317.3,
+        "width": 12.173,
+        "size": 9.963,
+        "bold": false,
+        "italic": false
+      },
+      {
+        "text": "support ",
+        "x": 186.972,
+        "y": 317.3,
+        "width": 36.89,
+        "size": 9.963,
+        "bold": false,
+        "italic": false
+      },
+      {
+        "text": "LLM, ",
+        "x": 223.861,
+        "y": 317.3,
+        "width": 31.666,
+        "size": 9.963,
+        "bold": true,
+        "italic": false
+      },
+      {
+        "text": "VLA, ",
+        "x": 255.528,
+        "y": 317.3,
+        "width": 31.212,
+        "size": 9.963,
+        "bold": true,
+        "italic": false
+      },
+      {
+        "text": "and ",
+        "x": 286.739,
+        "y": 317.3,
+        "width": 22.115,
+        "size": 9.963,
+        "bold": true,
+        "italic": false
+      },
+      {
+        "text": "RL ",
+        "x": 308.854,
+        "y": 317.3,
+        "width": 19.31,
+        "size": 9.963,
+        "bold": true,
+        "italic": false
+      },
+      {
+        "text": "agents",
+        "x": 328.164,
+        "y": 317.3,
+        "width": 31.569,
+        "size": 9.963,
+        "bold": true,
+        "italic": false
+      }
+    ],
+    [
+      {
+        "text": "Mass ",
+        "x": 46.8,
+        "y": 333.281,
+        "width": 32.083,
+        "size": 10.909,
+        "bold": true,
+        "italic": false
+      },
+      {
+        "text": "General ",
+        "x": 78.883,
+        "y": 333.281,
+        "width": 47.272,
+        "size": 10.909,
+        "bold": true,
+        "italic": false
+      },
+      {
+        "text": "Brigham ",
+        "x": 126.155,
+        "y": 333.281,
+        "width": 347.993,
+        "size": 10.909,
+        "bold": true,
+        "italic": false
+      },
+      {
+        "text": "June ",
+        "x": 474.148,
+        "y": 333.281,
+        "width": 26.209,
+        "size": 10.909,
+        "bold": false,
+        "italic": false
+      },
+      {
+        "text": "2024 ",
+        "x": 500.357,
+        "y": 333.281,
+        "width": 25.451,
+        "size": 10.909,
+        "bold": false,
+        "italic": false
+      },
+      {
+        "text": "– ",
+        "x": 525.808,
+        "y": 333.281,
+        "width": 9.098,
+        "size": 10.909,
+        "bold": false,
+        "italic": false
+      },
+      {
+        "text": "Present",
+        "x": 534.906,
+        "y": 333.281,
+        "width": 35.695,
+        "size": 10.909,
+        "bold": false,
+        "italic": false
+      }
+    ],
+    [
+      {
+        "text": "AI ",
+        "x": 46.8,
+        "y": 346.835,
+        "width": 14.813,
+        "size": 9.963,
+        "bold": false,
+        "italic": true
+      },
+      {
+        "text": "Research ",
+        "x": 61.613,
+        "y": 346.835,
+        "width": 41.506,
+        "size": 9.963,
+        "bold": false,
+        "italic": true
+      },
+      {
+        "text": "Intern ",
+        "x": 103.12,
+        "y": 346.835,
+        "width": 414.341,
+        "size": 9.963,
+        "bold": false,
+        "italic": true
+      },
+      {
+        "text": "Boston, ",
+        "x": 517.461,
+        "y": 346.835,
+        "width": 36.803,
+        "size": 9.963,
+        "bold": false,
+        "italic": true
+      },
+      {
+        "text": "MA",
+        "x": 554.264,
+        "y": 346.835,
+        "width": 16.339,
+        "size": 9.963,
+        "bold": false,
+        "italic": true
+      }
+    ],
+    [
+      {
+        "text": "• ",
+        "x": 61.526,
+        "y": 358.165,
+        "width": 9.274,
+        "size": 5.978,
+        "bold": false,
+        "italic": false
+      },
+      {
+        "text": "Built ",
+        "x": 70.8,
+        "y": 359.443,
+        "width": 25.319,
+        "size": 9.963,
+        "bold": false,
+        "italic": false
+      },
+      {
+        "text": "an ",
+        "x": 96.119,
+        "y": 359.443,
+        "width": 13.844,
+        "size": 9.963,
+        "bold": false,
+        "italic": false
+      },
+      {
+        "text": "end-to-end ",
+        "x": 109.963,
+        "y": 359.443,
+        "width": 49.81,
+        "size": 9.963,
+        "bold": false,
+        "italic": false
+      },
+      {
+        "text": "retrieval-augmented ",
+        "x": 159.773,
+        "y": 359.443,
+        "width": 89.719,
+        "size": 9.963,
+        "bold": false,
+        "italic": false
+      },
+      {
+        "text": "generation ",
+        "x": 249.492,
+        "y": 359.443,
+        "width": 48.731,
+        "size": 9.963,
+        "bold": false,
+        "italic": false
+      },
+      {
+        "text": "pipeline ",
+        "x": 298.223,
+        "y": 359.443,
+        "width": 37.36,
+        "size": 9.963,
+        "bold": false,
+        "italic": false
+      },
+      {
+        "text": "to ",
+        "x": 335.583,
+        "y": 359.443,
+        "width": 12.183,
+        "size": 9.963,
+        "bold": false,
+        "italic": false
+      },
+      {
+        "text": "process, ",
+        "x": 347.766,
+        "y": 359.443,
+        "width": 37.496,
+        "size": 9.963,
+        "bold": false,
+        "italic": false
+      },
+      {
+        "text": "embed, ",
+        "x": 385.262,
+        "y": 359.443,
+        "width": 34.312,
+        "size": 9.963,
+        "bold": false,
+        "italic": false
+      },
+      {
+        "text": "retrieve, ",
+        "x": 419.575,
+        "y": 359.443,
+        "width": 38.803,
+        "size": 9.963,
+        "bold": false,
+        "italic": false
+      },
+      {
+        "text": "and ",
+        "x": 458.378,
+        "y": 359.443,
+        "width": 19.369,
+        "size": 9.963,
+        "bold": false,
+        "italic": false
+      },
+      {
+        "text": "classify ",
+        "x": 477.747,
+        "y": 359.443,
+        "width": 34.423,
+        "size": 9.963,
+        "bold": false,
+        "italic": false
+      },
+      {
+        "text": "evidence",
+        "x": 512.17,
+        "y": 359.443,
+        "width": 36.806,
+        "size": 9.963,
+        "bold": false,
+        "italic": false
+      }
+    ],
+    [
+      {
+        "text": "across ",
+        "x": 70.8,
+        "y": 371.398,
+        "width": 29.468,
+        "size": 9.963,
+        "bold": false,
+        "italic": false
+      },
+      {
+        "text": "115M+ ",
+        "x": 100.268,
+        "y": 371.398,
+        "width": 40.798,
+        "size": 9.963,
+        "bold": true,
+        "italic": false
+      },
+      {
+        "text": "proprietary ",
+        "x": 141.066,
+        "y": 371.398,
+        "width": 60.933,
+        "size": 9.963,
+        "bold": true,
+        "italic": false
+      },
+      {
+        "text": "clinical ",
+        "x": 201.999,
+        "y": 371.398,
+        "width": 38.672,
+        "size": 9.963,
+        "bold": true,
+        "italic": false
+      },
+      {
+        "text": "records ",
+        "x": 240.671,
+        "y": 371.398,
+        "width": 39.71,
+        "size": 9.963,
+        "bold": true,
+        "italic": false
+      },
+      {
+        "text": "in ",
+        "x": 280.381,
+        "y": 371.398,
+        "width": 11.62,
+        "size": 9.963,
+        "bold": false,
+        "italic": false
+      },
+      {
+        "text": "a ",
+        "x": 292.002,
+        "y": 371.398,
+        "width": 8.309,
+        "size": 9.963,
+        "bold": false,
+        "italic": false
+      },
+      {
+        "text": "HIPAA-compliant ",
+        "x": 300.31,
+        "y": 371.398,
+        "width": 81.498,
+        "size": 9.963,
+        "bold": false,
+        "italic": false
+      },
+      {
+        "text": "environment",
+        "x": 381.808,
+        "y": 371.398,
+        "width": 53.988,
+        "size": 9.963,
+        "bold": false,
+        "italic": false
+      }
+    ],
+    [
+      {
+        "text": "• ",
+        "x": 61.526,
+        "y": 382.94,
+        "width": 9.274,
+        "size": 5.978,
+        "bold": false,
+        "italic": false
+      },
+      {
+        "text": "Co-authored ",
+        "x": 70.8,
+        "y": 383.982,
+        "width": 65.957,
+        "size": 9.963,
+        "bold": true,
+        "italic": false
+      },
+      {
+        "text": "a ",
+        "x": 136.757,
+        "y": 383.982,
+        "width": 8.309,
+        "size": 9.963,
+        "bold": false,
+        "italic": false
+      },
+      {
+        "text": "research ",
+        "x": 145.066,
+        "y": 383.982,
+        "width": 38.571,
+        "size": 9.963,
+        "bold": false,
+        "italic": false
+      },
+      {
+        "text": "paper ",
+        "x": 183.637,
+        "y": 383.982,
+        "width": 27.978,
+        "size": 9.963,
+        "bold": false,
+        "italic": false
+      },
+      {
+        "text": "on ",
+        "x": 211.615,
+        "y": 383.982,
+        "width": 13.844,
+        "size": 9.963,
+        "bold": false,
+        "italic": false
+      },
+      {
+        "text": "the ",
+        "x": 225.459,
+        "y": 383.982,
+        "width": 17.155,
+        "size": 9.963,
+        "bold": false,
+        "italic": false
+      },
+      {
+        "text": "system, ",
+        "x": 242.614,
+        "y": 383.982,
+        "width": 35.806,
+        "size": 9.963,
+        "bold": false,
+        "italic": false
+      },
+      {
+        "text": "which ",
+        "x": 278.42,
+        "y": 383.982,
+        "width": 28.509,
+        "size": 9.963,
+        "bold": false,
+        "italic": false
+      },
+      {
+        "text": "achieved ",
+        "x": 306.929,
+        "y": 383.982,
+        "width": 40.129,
+        "size": 9.963,
+        "bold": false,
+        "italic": false
+      },
+      {
+        "text": "a ",
+        "x": 347.058,
+        "y": 383.982,
+        "width": 8.299,
+        "size": 9.963,
+        "bold": false,
+        "italic": false
+      },
+      {
+        "text": "0.927 ",
+        "x": 355.357,
+        "y": 383.982,
+        "width": 29.912,
+        "size": 9.963,
+        "bold": true,
+        "italic": false
+      },
+      {
+        "text": "F1-score ",
+        "x": 385.268,
+        "y": 383.982,
+        "width": 45.393,
+        "size": 9.963,
+        "bold": true,
+        "italic": false
+      },
+      {
+        "text": "for ",
+        "x": 430.661,
+        "y": 383.982,
+        "width": 15.246,
+        "size": 9.963,
+        "bold": false,
+        "italic": false
+      },
+      {
+        "text": "dementia ",
+        "x": 445.907,
+        "y": 383.982,
+        "width": 42.899,
+        "size": 9.963,
+        "bold": false,
+        "italic": false
+      },
+      {
+        "text": "identification ",
+        "x": 488.806,
+        "y": 383.982,
+        "width": 60.049,
+        "size": 9.963,
+        "bold": false,
+        "italic": false
+      },
+      {
+        "text": "and ",
+        "x": 548.854,
+        "y": 383.982,
+        "width": 19.369,
+        "size": 9.963,
+        "bold": false,
+        "italic": false
+      },
+      {
+        "text": "is",
+        "x": 568.224,
+        "y": 383.982,
+        "width": 6.697,
+        "size": 9.963,
+        "bold": false,
+        "italic": false
+      }
+    ],
+    [
+      {
+        "text": "currently ",
+        "x": 70.8,
+        "y": 395.937,
+        "width": 42.669,
+        "size": 9.963,
+        "bold": false,
+        "italic": false
+      },
+      {
+        "text": "under ",
+        "x": 113.469,
+        "y": 395.937,
+        "width": 28.263,
+        "size": 9.963,
+        "bold": false,
+        "italic": false
+      },
+      {
+        "text": "peer ",
+        "x": 141.732,
+        "y": 395.937,
+        "width": 21.889,
+        "size": 9.963,
+        "bold": false,
+        "italic": false
+      },
+      {
+        "text": "review: ",
+        "x": 163.621,
+        "y": 395.937,
+        "width": 35.169,
+        "size": 9.963,
+        "bold": false,
+        "italic": false
+      },
+      {
+        "text": "https://doi.org/10.64898/2026.01.24.26344477",
+        "x": 198.79,
+        "y": 395.937,
+        "width": 200.719,
+        "size": 9.963,
+        "bold": false,
+        "italic": false
+      }
+    ],
+    [
+      {
+        "text": "• ",
+        "x": 61.526,
+        "y": 407.479,
+        "width": 9.274,
+        "size": 5.978,
+        "bold": false,
+        "italic": false
+      },
+      {
+        "text": "Built ",
+        "x": 70.8,
+        "y": 408.52,
+        "width": 25.319,
+        "size": 9.963,
+        "bold": false,
+        "italic": false
+      },
+      {
+        "text": "a ",
+        "x": 96.119,
+        "y": 408.52,
+        "width": 8.309,
+        "size": 9.963,
+        "bold": false,
+        "italic": false
+      },
+      {
+        "text": "multi-agent ",
+        "x": 104.428,
+        "y": 408.52,
+        "width": 60.6,
+        "size": 9.963,
+        "bold": true,
+        "italic": false
+      },
+      {
+        "text": "hospital ",
+        "x": 165.027,
+        "y": 408.52,
+        "width": 37.69,
+        "size": 9.963,
+        "bold": false,
+        "italic": false
+      },
+      {
+        "text": "support ",
+        "x": 202.717,
+        "y": 408.52,
+        "width": 36.89,
+        "size": 9.963,
+        "bold": false,
+        "italic": false
+      },
+      {
+        "text": "prototype ",
+        "x": 239.606,
+        "y": 408.52,
+        "width": 45.697,
+        "size": 9.963,
+        "bold": false,
+        "italic": false
+      },
+      {
+        "text": "using ",
+        "x": 285.304,
+        "y": 408.52,
+        "width": 26.206,
+        "size": 9.963,
+        "bold": false,
+        "italic": false
+      },
+      {
+        "text": "LangGraph ",
+        "x": 311.509,
+        "y": 408.52,
+        "width": 59.897,
+        "size": 9.963,
+        "bold": true,
+        "italic": false
+      },
+      {
+        "text": "to ",
+        "x": 371.407,
+        "y": 408.52,
+        "width": 12.173,
+        "size": 9.963,
+        "bold": false,
+        "italic": false
+      },
+      {
+        "text": "orchestrate ",
+        "x": 383.58,
+        "y": 408.52,
+        "width": 51.311,
+        "size": 9.963,
+        "bold": false,
+        "italic": false
+      },
+      {
+        "text": "specialized ",
+        "x": 434.891,
+        "y": 408.52,
+        "width": 49.59,
+        "size": 9.963,
+        "bold": false,
+        "italic": false
+      },
+      {
+        "text": "AI ",
+        "x": 484.481,
+        "y": 408.52,
+        "width": 14.397,
+        "size": 9.963,
+        "bold": false,
+        "italic": false
+      },
+      {
+        "text": "agents",
+        "x": 498.878,
+        "y": 408.52,
+        "width": 27.45,
+        "size": 9.963,
+        "bold": false,
+        "italic": false
+      }
+    ],
+    [
+      {
+        "text": "• ",
+        "x": 61.526,
+        "y": 420.062,
+        "width": 9.274,
+        "size": 5.978,
+        "bold": false,
+        "italic": false
+      },
+      {
+        "text": "Automated ",
+        "x": 70.8,
+        "y": 421.103,
+        "width": 52.301,
+        "size": 9.963,
+        "bold": false,
+        "italic": false
+      },
+      {
+        "text": "deployment ",
+        "x": 123.101,
+        "y": 421.103,
+        "width": 53.413,
+        "size": 9.963,
+        "bold": false,
+        "italic": false
+      },
+      {
+        "text": "of ",
+        "x": 176.514,
+        "y": 421.103,
+        "width": 11.343,
+        "size": 9.963,
+        "bold": false,
+        "italic": false
+      },
+      {
+        "text": "the ",
+        "x": 187.858,
+        "y": 421.103,
+        "width": 17.165,
+        "size": 9.963,
+        "bold": false,
+        "italic": false
+      },
+      {
+        "text": "team ",
+        "x": 205.022,
+        "y": 421.103,
+        "width": 24.903,
+        "size": 9.963,
+        "bold": false,
+        "italic": false
+      },
+      {
+        "text": "website ",
+        "x": 229.925,
+        "y": 421.103,
+        "width": 35.205,
+        "size": 9.963,
+        "bold": false,
+        "italic": false
+      },
+      {
+        "text": "using ",
+        "x": 265.129,
+        "y": 421.103,
+        "width": 26.206,
+        "size": 9.963,
+        "bold": false,
+        "italic": false
+      },
+      {
+        "text": "GitLab ",
+        "x": 291.335,
+        "y": 421.103,
+        "width": 39.287,
+        "size": 9.963,
+        "bold": true,
+        "italic": false
+      },
+      {
+        "text": "CI/CD",
+        "x": 330.622,
+        "y": 421.103,
+        "width": 35.409,
+        "size": 9.963,
+        "bold": true,
+        "italic": false
+      },
+      {
+        "text": ", ",
+        "x": 366.031,
+        "y": 421.103,
+        "width": 6.085,
+        "size": 9.963,
+        "bold": false,
+        "italic": false
+      },
+      {
+        "text": "SSH-managed ",
+        "x": 372.116,
+        "y": 421.103,
+        "width": 63.934,
+        "size": 9.963,
+        "bold": false,
+        "italic": false
+      },
+      {
+        "text": "Linux ",
+        "x": 436.05,
+        "y": 421.103,
+        "width": 28.362,
+        "size": 9.963,
+        "bold": false,
+        "italic": false
+      },
+      {
+        "text": "runners, ",
+        "x": 464.411,
+        "y": 421.103,
+        "width": 38.852,
+        "size": 9.963,
+        "bold": false,
+        "italic": false
+      },
+      {
+        "text": "and ",
+        "x": 503.264,
+        "y": 421.103,
+        "width": 19.379,
+        "size": 9.963,
+        "bold": false,
+        "italic": false
+      },
+      {
+        "text": "webhooks,",
+        "x": 522.643,
+        "y": 421.103,
+        "width": 44.611,
+        "size": 9.963,
+        "bold": false,
+        "italic": false
+      }
+    ],
+    [
+      {
+        "text": "eliminating ",
+        "x": 70.8,
+        "y": 433.058,
+        "width": 52.025,
+        "size": 9.963,
+        "bold": false,
+        "italic": false
+      },
+      {
+        "text": "manual ",
+        "x": 122.825,
+        "y": 433.058,
+        "width": 35.151,
+        "size": 9.963,
+        "bold": false,
+        "italic": false
+      },
+      {
+        "text": "deployment ",
+        "x": 157.976,
+        "y": 433.058,
+        "width": 53.404,
+        "size": 9.963,
+        "bold": false,
+        "italic": false
+      },
+      {
+        "text": "steps",
+        "x": 211.379,
+        "y": 433.058,
+        "width": 21.696,
+        "size": 9.963,
+        "bold": false,
+        "italic": false
+      }
+    ],
+    [
+      {
+        "text": "Projects",
+        "x": 36.0,
+        "y": 452.317,
+        "width": 54.751,
+        "size": 11.955,
+        "bold": false,
+        "italic": false
+      }
+    ],
+    [
+      {
+        "text": "OtherWise ",
+        "x": 46.8,
+        "y": 473.541,
+        "width": 57.511,
+        "size": 9.963,
+        "bold": true,
+        "italic": false
+      },
+      {
+        "text": "| ",
+        "x": 104.311,
+        "y": 473.541,
+        "width": 6.095,
+        "size": 9.963,
+        "bold": false,
+        "italic": false
+      },
+      {
+        "text": "SentenceTransformer, ",
+        "x": 110.406,
+        "y": 473.541,
+        "width": 98.65,
+        "size": 9.963,
+        "bold": false,
+        "italic": true
+      },
+      {
+        "text": "FastAPI, ",
+        "x": 209.056,
+        "y": 473.541,
+        "width": 42.838,
+        "size": 9.963,
+        "bold": false,
+        "italic": true
+      },
+      {
+        "text": "PCA, ",
+        "x": 251.894,
+        "y": 473.541,
+        "width": 27.914,
+        "size": 9.963,
+        "bold": false,
+        "italic": true
+      },
+      {
+        "text": "UMAP, ",
+        "x": 279.808,
+        "y": 473.541,
+        "width": 37.124,
+        "size": 9.963,
+        "bold": false,
+        "italic": true
+      },
+      {
+        "text": "Python, ",
+        "x": 316.932,
+        "y": 473.541,
+        "width": 37.312,
+        "size": 9.963,
+        "bold": false,
+        "italic": true
+      },
+      {
+        "text": "Codex ",
+        "x": 354.244,
+        "y": 473.541,
+        "width": 152.391,
+        "size": 9.963,
+        "bold": false,
+        "italic": true
+      },
+      {
+        "text": "October ",
+        "x": 506.635,
+        "y": 473.536,
+        "width": 42.151,
+        "size": 10.909,
+        "bold": false,
+        "italic": false
+      },
+      {
+        "text": "2026",
+        "x": 548.786,
+        "y": 473.536,
+        "width": 21.818,
+        "size": 10.909,
+        "bold": false,
+        "italic": false
+      }
+    ],
+    [
+      {
+        "text": "• ",
+        "x": 61.526,
+        "y": 484.863,
+        "width": 9.274,
+        "size": 5.978,
+        "bold": false,
+        "italic": false
+      },
+      {
+        "text": "Built ",
+        "x": 70.8,
+        "y": 486.142,
+        "width": 25.319,
+        "size": 9.963,
+        "bold": false,
+        "italic": false
+      },
+      {
+        "text": "a ",
+        "x": 96.119,
+        "y": 486.142,
+        "width": 8.309,
+        "size": 9.963,
+        "bold": false,
+        "italic": false
+      },
+      {
+        "text": "discovery ",
+        "x": 104.428,
+        "y": 486.142,
+        "width": 50.127,
+        "size": 9.963,
+        "bold": true,
+        "italic": false
+      },
+      {
+        "text": "system ",
+        "x": 154.555,
+        "y": 486.142,
+        "width": 37.666,
+        "size": 9.963,
+        "bold": true,
+        "italic": false
+      },
+      {
+        "text": "designed ",
+        "x": 192.22,
+        "y": 486.142,
+        "width": 40.456,
+        "size": 9.963,
+        "bold": false,
+        "italic": false
+      },
+      {
+        "text": "to ",
+        "x": 232.676,
+        "y": 486.142,
+        "width": 12.173,
+        "size": 9.963,
+        "bold": false,
+        "italic": false
+      },
+      {
+        "text": "counter ",
+        "x": 244.85,
+        "y": 486.142,
+        "width": 35.732,
+        "size": 9.963,
+        "bold": false,
+        "italic": false
+      },
+      {
+        "text": "algorithmic ",
+        "x": 280.581,
+        "y": 486.142,
+        "width": 52.606,
+        "size": 9.963,
+        "bold": false,
+        "italic": false
+      },
+      {
+        "text": "filter ",
+        "x": 333.187,
+        "y": 486.142,
+        "width": 23.825,
+        "size": 9.963,
+        "bold": false,
+        "italic": false
+      },
+      {
+        "text": "bubbles ",
+        "x": 357.012,
+        "y": 486.142,
+        "width": 36.593,
+        "size": 9.963,
+        "bold": false,
+        "italic": false
+      },
+      {
+        "text": "by ",
+        "x": 393.604,
+        "y": 486.142,
+        "width": 13.832,
+        "size": 9.963,
+        "bold": false,
+        "italic": false
+      },
+      {
+        "text": "guiding ",
+        "x": 407.436,
+        "y": 486.142,
+        "width": 35.421,
+        "size": 9.963,
+        "bold": false,
+        "italic": false
+      },
+      {
+        "text": "users ",
+        "x": 442.857,
+        "y": 486.142,
+        "width": 25.051,
+        "size": 9.963,
+        "bold": false,
+        "italic": false
+      },
+      {
+        "text": "from ",
+        "x": 467.908,
+        "y": 486.142,
+        "width": 23.548,
+        "size": 9.963,
+        "bold": false,
+        "italic": false
+      },
+      {
+        "text": "familiar ",
+        "x": 491.456,
+        "y": 486.142,
+        "width": 36.832,
+        "size": 9.963,
+        "bold": false,
+        "italic": false
+      },
+      {
+        "text": "interests",
+        "x": 528.288,
+        "y": 486.142,
+        "width": 36.388,
+        "size": 9.963,
+        "bold": false,
+        "italic": false
+      }
+    ],
+    [
+      {
+        "text": "into ",
+        "x": 70.8,
+        "y": 498.097,
+        "width": 20.197,
+        "size": 9.963,
+        "bold": false,
+        "italic": false
+      },
+      {
+        "text": "new ",
+        "x": 90.997,
+        "y": 498.097,
+        "width": 20.485,
+        "size": 9.963,
+        "bold": false,
+        "italic": false
+      },
+      {
+        "text": "knowledge ",
+        "x": 111.482,
+        "y": 498.097,
+        "width": 48.147,
+        "size": 9.963,
+        "bold": false,
+        "italic": false
+      },
+      {
+        "text": "domains: ",
+        "x": 159.63,
+        "y": 498.097,
+        "width": 43.233,
+        "size": 9.963,
+        "bold": false,
+        "italic": false
+      },
+      {
+        "text": "https://roboticreaper.github.io/OtherWise/",
+        "x": 202.862,
+        "y": 498.097,
+        "width": 191.442,
+        "size": 9.963,
+        "bold": false,
+        "italic": false
+      }
+    ],
+    [
+      {
+        "text": "• ",
+        "x": 61.526,
+        "y": 509.639,
+        "width": 9.274,
+        "size": 5.978,
+        "bold": false,
+        "italic": false
+      },
+      {
+        "text": "Developed ",
+        "x": 70.8,
+        "y": 510.68,
+        "width": 48.288,
+        "size": 9.963,
+        "bold": false,
+        "italic": false
+      },
+      {
+        "text": "a ",
+        "x": 119.088,
+        "y": 510.68,
+        "width": 8.309,
+        "size": 9.963,
+        "bold": false,
+        "italic": false
+      },
+      {
+        "text": "semantic ",
+        "x": 127.397,
+        "y": 510.68,
+        "width": 47.478,
+        "size": 9.963,
+        "bold": true,
+        "italic": false
+      },
+      {
+        "text": "exploration ",
+        "x": 174.874,
+        "y": 510.68,
+        "width": 60.417,
+        "size": 9.963,
+        "bold": true,
+        "italic": false
+      },
+      {
+        "text": "engine ",
+        "x": 235.291,
+        "y": 510.68,
+        "width": 35.461,
+        "size": 9.963,
+        "bold": true,
+        "italic": false
+      },
+      {
+        "text": "using ",
+        "x": 270.752,
+        "y": 510.68,
+        "width": 26.206,
+        "size": 9.963,
+        "bold": false,
+        "italic": false
+      },
+      {
+        "text": "keyword ",
+        "x": 296.958,
+        "y": 510.68,
+        "width": 45.619,
+        "size": 9.963,
+        "bold": true,
+        "italic": false
+      },
+      {
+        "text": "embeddings ",
+        "x": 342.577,
+        "y": 510.68,
+        "width": 62.257,
+        "size": 9.963,
+        "bold": true,
+        "italic": false
+      },
+      {
+        "text": "to ",
+        "x": 404.834,
+        "y": 510.68,
+        "width": 12.173,
+        "size": 9.963,
+        "bold": false,
+        "italic": false
+      },
+      {
+        "text": "balance ",
+        "x": 417.007,
+        "y": 510.68,
+        "width": 35.983,
+        "size": 9.963,
+        "bold": false,
+        "italic": false
+      },
+      {
+        "text": "relevance ",
+        "x": 452.99,
+        "y": 510.68,
+        "width": 42.914,
+        "size": 9.963,
+        "bold": false,
+        "italic": false
+      },
+      {
+        "text": "and ",
+        "x": 495.904,
+        "y": 510.68,
+        "width": 19.379,
+        "size": 9.963,
+        "bold": false,
+        "italic": false
+      },
+      {
+        "text": "novelty,",
+        "x": 515.283,
+        "y": 510.68,
+        "width": 33.206,
+        "size": 9.963,
+        "bold": false,
+        "italic": false
+      }
+    ],
+    [
+      {
+        "text": "surfaced ",
+        "x": 70.8,
+        "y": 522.635,
+        "width": 39.1,
+        "size": 9.963,
+        "bold": false,
+        "italic": false
+      },
+      {
+        "text": "through ",
+        "x": 109.9,
+        "y": 522.635,
+        "width": 37.663,
+        "size": 9.963,
+        "bold": false,
+        "italic": false
+      },
+      {
+        "text": "a ",
+        "x": 147.563,
+        "y": 522.635,
+        "width": 8.309,
+        "size": 9.963,
+        "bold": false,
+        "italic": false
+      },
+      {
+        "text": "Chrome ",
+        "x": 155.872,
+        "y": 522.635,
+        "width": 37.661,
+        "size": 9.963,
+        "bold": false,
+        "italic": false
+      },
+      {
+        "text": "extension",
+        "x": 193.532,
+        "y": 522.635,
+        "width": 40.736,
+        "size": 9.963,
+        "bold": false,
+        "italic": false
+      }
+    ],
+    [
+      {
+        "text": "• ",
+        "x": 61.526,
+        "y": 534.177,
+        "width": 9.274,
+        "size": 5.978,
+        "bold": false,
+        "italic": false
+      },
+      {
+        "text": "Created ",
+        "x": 70.8,
+        "y": 535.218,
+        "width": 37.661,
+        "size": 9.963,
+        "bold": false,
+        "italic": false
+      },
+      {
+        "text": "interactive ",
+        "x": 108.461,
+        "y": 535.218,
+        "width": 49.013,
+        "size": 9.963,
+        "bold": false,
+        "italic": false
+      },
+      {
+        "text": "topic-galaxy ",
+        "x": 157.474,
+        "y": 535.218,
+        "width": 64.27,
+        "size": 9.963,
+        "bold": true,
+        "italic": false
+      },
+      {
+        "text": "and ",
+        "x": 221.743,
+        "y": 535.218,
+        "width": 19.369,
+        "size": 9.963,
+        "bold": false,
+        "italic": false
+      },
+      {
+        "text": "trail ",
+        "x": 241.113,
+        "y": 535.218,
+        "width": 21.611,
+        "size": 9.963,
+        "bold": false,
+        "italic": false
+      },
+      {
+        "text": "visualizations ",
+        "x": 262.724,
+        "y": 535.218,
+        "width": 61.821,
+        "size": 9.963,
+        "bold": false,
+        "italic": false
+      },
+      {
+        "text": "with ",
+        "x": 324.544,
+        "y": 535.218,
+        "width": 22.7,
+        "size": 9.963,
+        "bold": false,
+        "italic": false
+      },
+      {
+        "text": "PCA/UMAP ",
+        "x": 347.244,
+        "y": 535.218,
+        "width": 69.997,
+        "size": 9.963,
+        "bold": true,
+        "italic": false
+      },
+      {
+        "text": "to ",
+        "x": 417.241,
+        "y": 535.218,
+        "width": 12.173,
+        "size": 9.963,
+        "bold": false,
+        "italic": false
+      },
+      {
+        "text": "map ",
+        "x": 429.415,
+        "y": 535.218,
+        "width": 22.146,
+        "size": 9.963,
+        "bold": false,
+        "italic": false
+      },
+      {
+        "text": "discoveries ",
+        "x": 451.561,
+        "y": 535.218,
+        "width": 49.123,
+        "size": 9.963,
+        "bold": false,
+        "italic": false
+      },
+      {
+        "text": "and ",
+        "x": 500.683,
+        "y": 535.218,
+        "width": 19.369,
+        "size": 9.963,
+        "bold": false,
+        "italic": false
+      },
+      {
+        "text": "show ",
+        "x": 520.052,
+        "y": 535.218,
+        "width": 24.689,
+        "size": 9.963,
+        "bold": false,
+        "italic": false
+      },
+      {
+        "text": "how",
+        "x": 544.742,
+        "y": 535.218,
+        "width": 17.433,
+        "size": 9.963,
+        "bold": false,
+        "italic": false
+      }
+    ],
+    [
+      {
+        "text": "users’ ",
+        "x": 70.8,
+        "y": 547.174,
+        "width": 27.809,
+        "size": 9.963,
+        "bold": false,
+        "italic": false
+      },
+      {
+        "text": "interests ",
+        "x": 98.609,
+        "y": 547.174,
+        "width": 39.716,
+        "size": 9.963,
+        "bold": false,
+        "italic": false
+      },
+      {
+        "text": "expand ",
+        "x": 138.325,
+        "y": 547.174,
+        "width": 34.59,
+        "size": 9.963,
+        "bold": false,
+        "italic": false
+      },
+      {
+        "text": "over ",
+        "x": 172.915,
+        "y": 547.174,
+        "width": 21.339,
+        "size": 9.963,
+        "bold": false,
+        "italic": false
+      },
+      {
+        "text": "time",
+        "x": 194.254,
+        "y": 547.174,
+        "width": 19.371,
+        "size": 9.963,
+        "bold": false,
+        "italic": false
+      }
+    ],
+    [
+      {
+        "text": "RideList ",
+        "x": 46.8,
+        "y": 565.134,
+        "width": 45.756,
+        "size": 9.963,
+        "bold": true,
+        "italic": false
+      },
+      {
+        "text": "| ",
+        "x": 92.556,
+        "y": 565.134,
+        "width": 6.095,
+        "size": 9.963,
+        "bold": false,
+        "italic": false
+      },
+      {
+        "text": "Next.js, ",
+        "x": 98.651,
+        "y": 565.134,
+        "width": 36.716,
+        "size": 9.963,
+        "bold": false,
+        "italic": true
+      },
+      {
+        "text": "PostgreSQL, ",
+        "x": 135.368,
+        "y": 565.134,
+        "width": 58.202,
+        "size": 9.963,
+        "bold": false,
+        "italic": true
+      },
+      {
+        "text": "Cloudflare ",
+        "x": 193.569,
+        "y": 565.134,
+        "width": 47.997,
+        "size": 9.963,
+        "bold": false,
+        "italic": true
+      },
+      {
+        "text": "API, ",
+        "x": 241.566,
+        "y": 565.134,
+        "width": 24.617,
+        "size": 9.963,
+        "bold": false,
+        "italic": true
+      },
+      {
+        "text": "Vercel, ",
+        "x": 266.182,
+        "y": 565.134,
+        "width": 32.74,
+        "size": 9.963,
+        "bold": false,
+        "italic": true
+      },
+      {
+        "text": "Google ",
+        "x": 298.923,
+        "y": 565.134,
+        "width": 32.153,
+        "size": 9.963,
+        "bold": false,
+        "italic": true
+      },
+      {
+        "text": "Cloud, ",
+        "x": 331.076,
+        "y": 565.134,
+        "width": 31.819,
+        "size": 9.963,
+        "bold": false,
+        "italic": true
+      },
+      {
+        "text": "Azure, ",
+        "x": 362.894,
+        "y": 565.134,
+        "width": 31.724,
+        "size": 9.963,
+        "bold": false,
+        "italic": true
+      },
+      {
+        "text": "Git ",
+        "x": 394.618,
+        "y": 565.134,
+        "width": 26.683,
+        "size": 9.963,
+        "bold": false,
+        "italic": true
+      },
+      {
+        "text": "December ",
+        "x": 421.301,
+        "y": 565.129,
+        "width": 50.783,
+        "size": 10.909,
+        "bold": false,
+        "italic": false
+      },
+      {
+        "text": "2025 ",
+        "x": 472.084,
+        "y": 565.129,
+        "width": 25.451,
+        "size": 10.909,
+        "bold": false,
+        "italic": false
+      },
+      {
+        "text": "– ",
+        "x": 497.535,
+        "y": 565.129,
+        "width": 9.098,
+        "size": 10.909,
+        "bold": false,
+        "italic": false
+      },
+      {
+        "text": "October ",
+        "x": 506.633,
+        "y": 565.129,
+        "width": 42.151,
+        "size": 10.909,
+        "bold": false,
+        "italic": false
+      },
+      {
+        "text": "2026",
+        "x": 548.784,
+        "y": 565.129,
+        "width": 21.818,
+        "size": 10.909,
+        "bold": false,
+        "italic": false
+      }
+    ],
+    [
+      {
+        "text": "• ",
+        "x": 61.526,
+        "y": 576.457,
+        "width": 9.274,
+        "size": 5.978,
+        "bold": false,
+        "italic": false
+      },
+      {
+        "text": "Built ",
+        "x": 70.8,
+        "y": 577.735,
+        "width": 25.319,
+        "size": 9.963,
+        "bold": false,
+        "italic": false
+      },
+      {
+        "text": "and ",
+        "x": 96.119,
+        "y": 577.735,
+        "width": 19.369,
+        "size": 9.963,
+        "bold": false,
+        "italic": false
+      },
+      {
+        "text": "launched ",
+        "x": 115.488,
+        "y": 577.735,
+        "width": 41.793,
+        "size": 9.963,
+        "bold": false,
+        "italic": false
+      },
+      {
+        "text": "a ",
+        "x": 157.281,
+        "y": 577.735,
+        "width": 8.299,
+        "size": 9.963,
+        "bold": false,
+        "italic": false
+      },
+      {
+        "text": "bilingual ",
+        "x": 165.58,
+        "y": 577.735,
+        "width": 40.956,
+        "size": 9.963,
+        "bold": false,
+        "italic": false
+      },
+      {
+        "text": "campus ",
+        "x": 206.536,
+        "y": 577.735,
+        "width": 36.038,
+        "size": 9.963,
+        "bold": false,
+        "italic": false
+      },
+      {
+        "text": "ridesharing ",
+        "x": 242.574,
+        "y": 577.735,
+        "width": 51.582,
+        "size": 9.963,
+        "bold": false,
+        "italic": false
+      },
+      {
+        "text": "app ",
+        "x": 294.157,
+        "y": 577.735,
+        "width": 19.369,
+        "size": 9.963,
+        "bold": false,
+        "italic": false
+      },
+      {
+        "text": "with ",
+        "x": 313.526,
+        "y": 577.735,
+        "width": 22.7,
+        "size": 9.963,
+        "bold": false,
+        "italic": false
+      },
+      {
+        "text": "Next.js, ",
+        "x": 336.226,
+        "y": 577.735,
+        "width": 36.859,
+        "size": 9.963,
+        "bold": false,
+        "italic": false
+      },
+      {
+        "text": "supporting ",
+        "x": 373.084,
+        "y": 577.735,
+        "width": 50.313,
+        "size": 9.963,
+        "bold": false,
+        "italic": false
+      },
+      {
+        "text": "60+ ",
+        "x": 423.397,
+        "y": 577.735,
+        "width": 24.183,
+        "size": 9.963,
+        "bold": true,
+        "italic": false
+      },
+      {
+        "text": "trips, ",
+        "x": 447.581,
+        "y": 577.735,
+        "width": 30.247,
+        "size": 9.963,
+        "bold": true,
+        "italic": false
+      },
+      {
+        "text": "75+ ",
+        "x": 477.828,
+        "y": 577.735,
+        "width": 24.183,
+        "size": 9.963,
+        "bold": true,
+        "italic": false
+      },
+      {
+        "text": "messages",
+        "x": 502.011,
+        "y": 577.735,
+        "width": 44.904,
+        "size": 9.963,
+        "bold": true,
+        "italic": false
+      },
+      {
+        "text": ", ",
+        "x": 546.916,
+        "y": 577.735,
+        "width": 6.085,
+        "size": 9.963,
+        "bold": false,
+        "italic": false
+      },
+      {
+        "text": "and",
+        "x": 553.001,
+        "y": 577.735,
+        "width": 16.052,
+        "size": 9.963,
+        "bold": false,
+        "italic": false
+      }
+    ],
+    [
+      {
+        "text": "7 ",
+        "x": 70.8,
+        "y": 589.69,
+        "width": 9.544,
+        "size": 9.963,
+        "bold": true,
+        "italic": false
+      },
+      {
+        "text": "completed ",
+        "x": 80.344,
+        "y": 589.69,
+        "width": 55.063,
+        "size": 9.963,
+        "bold": true,
+        "italic": false
+      },
+      {
+        "text": "bookings",
+        "x": 135.407,
+        "y": 589.69,
+        "width": 44.301,
+        "size": 9.963,
+        "bold": true,
+        "italic": false
+      },
+      {
+        "text": ": ",
+        "x": 179.708,
+        "y": 589.69,
+        "width": 7.191,
+        "size": 9.963,
+        "bold": false,
+        "italic": false
+      },
+      {
+        "text": "https://www.ridelist.app/",
+        "x": 186.899,
+        "y": 589.69,
+        "width": 113.325,
+        "size": 9.963,
+        "bold": false,
+        "italic": false
+      }
+    ],
+    [
+      {
+        "text": "• ",
+        "x": 61.526,
+        "y": 601.232,
+        "width": 9.274,
+        "size": 5.978,
+        "bold": false,
+        "italic": false
+      },
+      {
+        "text": "Secured ",
+        "x": 70.8,
+        "y": 602.274,
+        "width": 37.108,
+        "size": 9.963,
+        "bold": false,
+        "italic": false
+      },
+      {
+        "text": "communication ",
+        "x": 107.908,
+        "y": 602.274,
+        "width": 69.466,
+        "size": 9.963,
+        "bold": false,
+        "italic": false
+      },
+      {
+        "text": "between ",
+        "x": 177.374,
+        "y": 602.274,
+        "width": 38.461,
+        "size": 9.963,
+        "bold": false,
+        "italic": false
+      },
+      {
+        "text": "Vercel-hosted ",
+        "x": 215.835,
+        "y": 602.274,
+        "width": 61.528,
+        "size": 9.963,
+        "bold": false,
+        "italic": false
+      },
+      {
+        "text": "APIs ",
+        "x": 277.363,
+        "y": 602.274,
+        "width": 25.097,
+        "size": 9.963,
+        "bold": false,
+        "italic": false
+      },
+      {
+        "text": "and ",
+        "x": 302.459,
+        "y": 602.274,
+        "width": 19.369,
+        "size": 9.963,
+        "bold": false,
+        "italic": false
+      },
+      {
+        "text": "a ",
+        "x": 321.829,
+        "y": 602.274,
+        "width": 8.309,
+        "size": 9.963,
+        "bold": false,
+        "italic": false
+      },
+      {
+        "text": "self-hosted ",
+        "x": 330.137,
+        "y": 602.274,
+        "width": 49.09,
+        "size": 9.963,
+        "bold": false,
+        "italic": false
+      },
+      {
+        "text": "database ",
+        "x": 379.227,
+        "y": 602.274,
+        "width": 41.563,
+        "size": 9.963,
+        "bold": false,
+        "italic": false
+      },
+      {
+        "text": "using ",
+        "x": 420.79,
+        "y": 602.274,
+        "width": 26.076,
+        "size": 9.963,
+        "bold": false,
+        "italic": false
+      },
+      {
+        "text": "a ",
+        "x": 446.866,
+        "y": 602.274,
+        "width": 8.299,
+        "size": 9.963,
+        "bold": false,
+        "italic": false
+      },
+      {
+        "text": "custom ",
+        "x": 455.165,
+        "y": 602.274,
+        "width": 34.367,
+        "size": 9.963,
+        "bold": false,
+        "italic": false
+      },
+      {
+        "text": "certificate",
+        "x": 489.532,
+        "y": 602.274,
+        "width": 49.431,
+        "size": 9.963,
+        "bold": true,
+        "italic": false
+      }
+    ],
+    [
+      {
+        "text": "authority ",
+        "x": 70.8,
+        "y": 614.229,
+        "width": 50.382,
+        "size": 9.963,
+        "bold": true,
+        "italic": false
+      },
+      {
+        "text": "and ",
+        "x": 121.182,
+        "y": 614.229,
+        "width": 22.125,
+        "size": 9.963,
+        "bold": true,
+        "italic": false
+      },
+      {
+        "text": "mTLS",
+        "x": 143.307,
+        "y": 614.229,
+        "width": 30.773,
+        "size": 9.963,
+        "bold": true,
+        "italic": false
+      }
+    ],
+    [
+      {
+        "text": "• ",
+        "x": 61.526,
+        "y": 625.771,
+        "width": 9.274,
+        "size": 5.978,
+        "bold": false,
+        "italic": false
+      },
+      {
+        "text": "Built ",
+        "x": 70.8,
+        "y": 626.812,
+        "width": 25.319,
+        "size": 9.963,
+        "bold": false,
+        "italic": false
+      },
+      {
+        "text": "privacy-preserving ",
+        "x": 96.119,
+        "y": 626.812,
+        "width": 82.887,
+        "size": 9.963,
+        "bold": false,
+        "italic": false
+      },
+      {
+        "text": "geospatial ",
+        "x": 179.006,
+        "y": 626.812,
+        "width": 46.544,
+        "size": 9.963,
+        "bold": false,
+        "italic": false
+      },
+      {
+        "text": "ride ",
+        "x": 225.55,
+        "y": 626.812,
+        "width": 19.96,
+        "size": 9.963,
+        "bold": false,
+        "italic": false
+      },
+      {
+        "text": "matching ",
+        "x": 245.51,
+        "y": 626.812,
+        "width": 43.443,
+        "size": 9.963,
+        "bold": false,
+        "italic": false
+      },
+      {
+        "text": "with ",
+        "x": 288.953,
+        "y": 626.812,
+        "width": 22.69,
+        "size": 9.963,
+        "bold": false,
+        "italic": false
+      },
+      {
+        "text": "PostGIS",
+        "x": 311.643,
+        "y": 626.812,
+        "width": 41.934,
+        "size": 9.963,
+        "bold": true,
+        "italic": false
+      },
+      {
+        "text": ", ",
+        "x": 353.576,
+        "y": 626.812,
+        "width": 6.095,
+        "size": 9.963,
+        "bold": false,
+        "italic": false
+      },
+      {
+        "text": "and ",
+        "x": 359.672,
+        "y": 626.812,
+        "width": 19.369,
+        "size": 9.963,
+        "bold": false,
+        "italic": false
+      },
+      {
+        "text": "implemented ",
+        "x": 379.041,
+        "y": 626.812,
+        "width": 58.95,
+        "size": 9.963,
+        "bold": false,
+        "italic": false
+      },
+      {
+        "text": "real-time ",
+        "x": 437.991,
+        "y": 626.812,
+        "width": 42.088,
+        "size": 9.963,
+        "bold": false,
+        "italic": false
+      },
+      {
+        "text": "messaging, ",
+        "x": 480.079,
+        "y": 626.812,
+        "width": 49.92,
+        "size": 9.963,
+        "bold": false,
+        "italic": false
+      },
+      {
+        "text": "trip",
+        "x": 529.998,
+        "y": 626.812,
+        "width": 16.08,
+        "size": 9.963,
+        "bold": false,
+        "italic": false
+      }
+    ],
+    [
+      {
+        "text": "synchronization, ",
+        "x": 70.8,
+        "y": 638.767,
+        "width": 74.245,
+        "size": 9.963,
+        "bold": false,
+        "italic": false
+      },
+      {
+        "text": "and ",
+        "x": 145.045,
+        "y": 638.767,
+        "width": 19.379,
+        "size": 9.963,
+        "bold": false,
+        "italic": false
+      },
+      {
+        "text": "automated ",
+        "x": 164.425,
+        "y": 638.767,
+        "width": 49.81,
+        "size": 9.963,
+        "bold": false,
+        "italic": false
+      },
+      {
+        "text": "PostgreSQL ",
+        "x": 214.235,
+        "y": 638.767,
+        "width": 55.426,
+        "size": 9.963,
+        "bold": false,
+        "italic": false
+      },
+      {
+        "text": "backups ",
+        "x": 269.66,
+        "y": 638.767,
+        "width": 38.25,
+        "size": 9.963,
+        "bold": false,
+        "italic": false
+      },
+      {
+        "text": "using ",
+        "x": 307.911,
+        "y": 638.767,
+        "width": 26.066,
+        "size": 9.963,
+        "bold": false,
+        "italic": false
+      },
+      {
+        "text": "Firebase ",
+        "x": 333.977,
+        "y": 638.767,
+        "width": 39.802,
+        "size": 9.963,
+        "bold": false,
+        "italic": false
+      },
+      {
+        "text": "and ",
+        "x": 373.779,
+        "y": 638.767,
+        "width": 19.369,
+        "size": 9.963,
+        "bold": false,
+        "italic": false
+      },
+      {
+        "text": "Bash ",
+        "x": 393.148,
+        "y": 638.767,
+        "width": 24.82,
+        "size": 9.963,
+        "bold": false,
+        "italic": false
+      },
+      {
+        "text": "scripts ",
+        "x": 417.968,
+        "y": 638.767,
+        "width": 31.693,
+        "size": 9.963,
+        "bold": false,
+        "italic": false
+      },
+      {
+        "text": "on ",
+        "x": 449.661,
+        "y": 638.767,
+        "width": 13.834,
+        "size": 9.963,
+        "bold": false,
+        "italic": false
+      },
+      {
+        "text": "Linux",
+        "x": 463.495,
+        "y": 638.767,
+        "width": 25.044,
+        "size": 9.963,
+        "bold": false,
+        "italic": false
+      }
+    ],
+    [
+      {
+        "text": "LHS ",
+        "x": 46.8,
+        "y": 656.728,
+        "width": 26.038,
+        "size": 9.963,
+        "bold": true,
+        "italic": false
+      },
+      {
+        "text": "Schedule ",
+        "x": 72.838,
+        "y": 656.728,
+        "width": 47.246,
+        "size": 9.963,
+        "bold": true,
+        "italic": false
+      },
+      {
+        "text": "| ",
+        "x": 120.084,
+        "y": 656.728,
+        "width": 6.085,
+        "size": 9.963,
+        "bold": false,
+        "italic": false
+      },
+      {
+        "text": "React, ",
+        "x": 126.169,
+        "y": 656.728,
+        "width": 30.43,
+        "size": 9.963,
+        "bold": false,
+        "italic": true
+      },
+      {
+        "text": "Material ",
+        "x": 156.599,
+        "y": 656.728,
+        "width": 40.379,
+        "size": 9.963,
+        "bold": false,
+        "italic": true
+      },
+      {
+        "text": "UI, ",
+        "x": 196.978,
+        "y": 656.728,
+        "width": 17.869,
+        "size": 9.963,
+        "bold": false,
+        "italic": true
+      },
+      {
+        "text": "Firebase, ",
+        "x": 214.847,
+        "y": 656.728,
+        "width": 42.27,
+        "size": 9.963,
+        "bold": false,
+        "italic": true
+      },
+      {
+        "text": "Netlify ",
+        "x": 257.117,
+        "y": 656.728,
+        "width": 182.24,
+        "size": 9.963,
+        "bold": false,
+        "italic": true
+      },
+      {
+        "text": "July ",
+        "x": 439.358,
+        "y": 656.723,
+        "width": 24.088,
+        "size": 10.909,
+        "bold": false,
+        "italic": false
+      },
+      {
+        "text": "2020 ",
+        "x": 463.446,
+        "y": 656.723,
+        "width": 25.462,
+        "size": 10.909,
+        "bold": false,
+        "italic": false
+      },
+      {
+        "text": "– ",
+        "x": 488.908,
+        "y": 656.723,
+        "width": 9.087,
+        "size": 10.909,
+        "bold": false,
+        "italic": false
+      },
+      {
+        "text": "December ",
+        "x": 497.995,
+        "y": 656.723,
+        "width": 50.783,
+        "size": 10.909,
+        "bold": false,
+        "italic": false
+      },
+      {
+        "text": "2024",
+        "x": 548.778,
+        "y": 656.723,
+        "width": 21.818,
+        "size": 10.909,
+        "bold": false,
+        "italic": false
+      }
+    ],
+    [
+      {
+        "text": "• ",
+        "x": 61.526,
+        "y": 668.051,
+        "width": 9.274,
+        "size": 5.978,
+        "bold": false,
+        "italic": false
+      },
+      {
+        "text": "Built ",
+        "x": 70.8,
+        "y": 669.329,
+        "width": 25.319,
+        "size": 9.963,
+        "bold": false,
+        "italic": false
+      },
+      {
+        "text": "a ",
+        "x": 96.119,
+        "y": 669.329,
+        "width": 8.309,
+        "size": 9.963,
+        "bold": false,
+        "italic": false
+      },
+      {
+        "text": "scheduling ",
+        "x": 104.428,
+        "y": 669.329,
+        "width": 48.48,
+        "size": 9.963,
+        "bold": false,
+        "italic": false
+      },
+      {
+        "text": "app ",
+        "x": 152.908,
+        "y": 669.329,
+        "width": 19.369,
+        "size": 9.963,
+        "bold": false,
+        "italic": false
+      },
+      {
+        "text": "with ",
+        "x": 172.277,
+        "y": 669.329,
+        "width": 22.7,
+        "size": 9.963,
+        "bold": false,
+        "italic": false
+      },
+      {
+        "text": "real-time ",
+        "x": 194.977,
+        "y": 669.329,
+        "width": 42.088,
+        "size": 9.963,
+        "bold": false,
+        "italic": false
+      },
+      {
+        "text": "schedule ",
+        "x": 237.065,
+        "y": 669.329,
+        "width": 39.633,
+        "size": 9.963,
+        "bold": false,
+        "italic": false
+      },
+      {
+        "text": "updates, ",
+        "x": 276.698,
+        "y": 669.329,
+        "width": 40.182,
+        "size": 9.963,
+        "bold": false,
+        "italic": false
+      },
+      {
+        "text": "cross-device ",
+        "x": 316.88,
+        "y": 669.329,
+        "width": 54.651,
+        "size": 9.963,
+        "bold": false,
+        "italic": false
+      },
+      {
+        "text": "synchronization, ",
+        "x": 371.531,
+        "y": 669.329,
+        "width": 74.255,
+        "size": 9.963,
+        "bold": false,
+        "italic": false
+      },
+      {
+        "text": "offline ",
+        "x": 445.786,
+        "y": 669.329,
+        "width": 29.331,
+        "size": 9.963,
+        "bold": false,
+        "italic": false
+      },
+      {
+        "text": "access, ",
+        "x": 475.117,
+        "y": 669.329,
+        "width": 32.217,
+        "size": 9.963,
+        "bold": false,
+        "italic": false
+      },
+      {
+        "text": "PDF ",
+        "x": 507.334,
+        "y": 669.329,
+        "width": 24.212,
+        "size": 9.963,
+        "bold": false,
+        "italic": false
+      },
+      {
+        "text": "schedule",
+        "x": 531.546,
+        "y": 669.329,
+        "width": 36.306,
+        "size": 9.963,
+        "bold": false,
+        "italic": false
+      }
+    ],
+    [
+      {
+        "text": "importing, ",
+        "x": 70.8,
+        "y": 681.284,
+        "width": 49.011,
+        "size": 9.963,
+        "bold": false,
+        "italic": false
+      },
+      {
+        "text": "and ",
+        "x": 119.811,
+        "y": 681.284,
+        "width": 19.369,
+        "size": 9.963,
+        "bold": false,
+        "italic": false
+      },
+      {
+        "text": "social ",
+        "x": 139.18,
+        "y": 681.284,
+        "width": 27.451,
+        "size": 9.963,
+        "bold": false,
+        "italic": false
+      },
+      {
+        "text": "features",
+        "x": 166.631,
+        "y": 681.284,
+        "width": 34.122,
+        "size": 9.963,
+        "bold": false,
+        "italic": false
+      }
+    ],
+    [
+      {
+        "text": "• ",
+        "x": 61.526,
+        "y": 692.826,
+        "width": 9.274,
+        "size": 5.978,
+        "bold": false,
+        "italic": false
+      },
+      {
+        "text": "Supported ",
+        "x": 70.8,
+        "y": 693.867,
+        "width": 48.458,
+        "size": 9.963,
+        "bold": false,
+        "italic": false
+      },
+      {
+        "text": "1,400+ ",
+        "x": 119.258,
+        "y": 693.867,
+        "width": 38.822,
+        "size": 9.963,
+        "bold": true,
+        "italic": false
+      },
+      {
+        "text": "registered ",
+        "x": 158.08,
+        "y": 693.867,
+        "width": 53.266,
+        "size": 9.963,
+        "bold": true,
+        "italic": false
+      },
+      {
+        "text": "users ",
+        "x": 211.346,
+        "y": 693.867,
+        "width": 29.188,
+        "size": 9.963,
+        "bold": true,
+        "italic": false
+      },
+      {
+        "text": "and ",
+        "x": 240.535,
+        "y": 693.867,
+        "width": 22.115,
+        "size": 9.963,
+        "bold": true,
+        "italic": false
+      },
+      {
+        "text": "900 ",
+        "x": 262.65,
+        "y": 693.867,
+        "width": 21.011,
+        "size": 9.963,
+        "bold": true,
+        "italic": false
+      },
+      {
+        "text": "daily ",
+        "x": 283.661,
+        "y": 693.867,
+        "width": 28.16,
+        "size": 9.963,
+        "bold": true,
+        "italic": false
+      },
+      {
+        "text": "active ",
+        "x": 311.821,
+        "y": 693.867,
+        "width": 33.103,
+        "size": 9.963,
+        "bold": true,
+        "italic": false
+      },
+      {
+        "text": "users ",
+        "x": 344.924,
+        "y": 693.867,
+        "width": 28.69,
+        "size": 9.963,
+        "bold": true,
+        "italic": false
+      },
+      {
+        "text": "by ",
+        "x": 373.614,
+        "y": 693.867,
+        "width": 13.832,
+        "size": 9.963,
+        "bold": false,
+        "italic": false
+      },
+      {
+        "text": "parallelizing ",
+        "x": 387.446,
+        "y": 693.867,
+        "width": 55.937,
+        "size": 9.963,
+        "bold": false,
+        "italic": false
+      },
+      {
+        "text": "API ",
+        "x": 443.383,
+        "y": 693.867,
+        "width": 21.168,
+        "size": 9.963,
+        "bold": false,
+        "italic": false
+      },
+      {
+        "text": "requests, ",
+        "x": 464.551,
+        "y": 693.867,
+        "width": 41.369,
+        "size": 9.963,
+        "bold": false,
+        "italic": false
+      },
+      {
+        "text": "caching ",
+        "x": 505.92,
+        "y": 693.867,
+        "width": 35.704,
+        "size": 9.963,
+        "bold": false,
+        "italic": false
+      },
+      {
+        "text": "data",
+        "x": 541.624,
+        "y": 693.867,
+        "width": 19.372,
+        "size": 9.963,
+        "bold": false,
+        "italic": false
+      }
+    ],
+    [
+      {
+        "text": "with ",
+        "x": 70.8,
+        "y": 705.823,
+        "width": 22.69,
+        "size": 9.963,
+        "bold": false,
+        "italic": false
+      },
+      {
+        "text": "a ",
+        "x": 93.49,
+        "y": 705.823,
+        "width": 8.309,
+        "size": 9.963,
+        "bold": false,
+        "italic": false
+      },
+      {
+        "text": "service ",
+        "x": 101.799,
+        "y": 705.823,
+        "width": 37.876,
+        "size": 9.963,
+        "bold": true,
+        "italic": false
+      },
+      {
+        "text": "worker",
+        "x": 139.674,
+        "y": 705.823,
+        "width": 34.1,
+        "size": 9.963,
+        "bold": true,
+        "italic": false
+      },
+      {
+        "text": ", ",
+        "x": 173.774,
+        "y": 705.823,
+        "width": 6.085,
+        "size": 9.963,
+        "bold": false,
+        "italic": false
+      },
+      {
+        "text": "and ",
+        "x": 179.86,
+        "y": 705.823,
+        "width": 19.379,
+        "size": 9.963,
+        "bold": false,
+        "italic": false
+      },
+      {
+        "text": "deploying ",
+        "x": 199.239,
+        "y": 705.823,
+        "width": 44.828,
+        "size": 9.963,
+        "bold": false,
+        "italic": false
+      },
+      {
+        "text": "on ",
+        "x": 244.067,
+        "y": 705.823,
+        "width": 13.834,
+        "size": 9.963,
+        "bold": false,
+        "italic": false
+      },
+      {
+        "text": "Netlify: ",
+        "x": 257.901,
+        "y": 705.823,
+        "width": 36.813,
+        "size": 9.963,
+        "bold": false,
+        "italic": false
+      },
+      {
+        "text": "https://lhsschedule.netlify.app/",
+        "x": 294.713,
+        "y": 705.823,
+        "width": 137.154,
+        "size": 9.963,
+        "bold": false,
+        "italic": false
+      }
+    ],
+    [
+      {
+        "text": "Awards",
+        "x": 36.0,
+        "y": 726.376,
+        "width": 44.727,
+        "size": 11.955,
+        "bold": false,
+        "italic": false
+      }
+    ],
+    [
+      {
+        "text": "1st ",
+        "x": 46.8,
+        "y": 745.587,
+        "width": 18.518,
+        "size": 9.963,
+        "bold": true,
+        "italic": false
+      },
+      {
+        "text": "in ",
+        "x": 65.318,
+        "y": 745.587,
+        "width": 13.373,
+        "size": 9.963,
+        "bold": true,
+        "italic": false
+      },
+      {
+        "text": "Beginner ",
+        "x": 78.691,
+        "y": 745.587,
+        "width": 48.828,
+        "size": 9.963,
+        "bold": true,
+        "italic": false
+      },
+      {
+        "text": "Division; ",
+        "x": 127.519,
+        "y": 745.587,
+        "width": 47.999,
+        "size": 9.963,
+        "bold": true,
+        "italic": false
+      },
+      {
+        "text": "6th ",
+        "x": 175.518,
+        "y": 745.587,
+        "width": 20.365,
+        "size": 9.963,
+        "bold": true,
+        "italic": false
+      },
+      {
+        "text": "of ",
+        "x": 195.882,
+        "y": 745.587,
+        "width": 13.045,
+        "size": 9.963,
+        "bold": true,
+        "italic": false
+      },
+      {
+        "text": "131 ",
+        "x": 208.927,
+        "y": 745.587,
+        "width": 21.011,
+        "size": 9.963,
+        "bold": true,
+        "italic": false
+      },
+      {
+        "text": "teams ",
+        "x": 229.938,
+        "y": 745.587,
+        "width": 33.158,
+        "size": 9.963,
+        "bold": true,
+        "italic": false
+      },
+      {
+        "text": "overall",
+        "x": 263.096,
+        "y": 745.587,
+        "width": 33.04,
+        "size": 9.963,
+        "bold": true,
+        "italic": false
+      },
+      {
+        "text": ", ",
+        "x": 296.136,
+        "y": 745.587,
+        "width": 6.095,
+        "size": 9.963,
+        "bold": false,
+        "italic": false
+      },
+      {
+        "text": "SIGPwny ",
+        "x": 302.231,
+        "y": 745.587,
+        "width": 44.758,
+        "size": 9.963,
+        "bold": false,
+        "italic": false
+      },
+      {
+        "text": "(ACM ",
+        "x": 346.989,
+        "y": 745.587,
+        "width": 30.723,
+        "size": 9.963,
+        "bold": false,
+        "italic": false
+      },
+      {
+        "text": "@ ",
+        "x": 377.712,
+        "y": 745.587,
+        "width": 11.066,
+        "size": 9.963,
+        "bold": false,
+        "italic": false
+      },
+      {
+        "text": "UIUC) ",
+        "x": 388.778,
+        "y": 745.587,
+        "width": 32.928,
+        "size": 9.963,
+        "bold": false,
+        "italic": false
+      },
+      {
+        "text": "Fall ",
+        "x": 421.707,
+        "y": 745.587,
+        "width": 19.511,
+        "size": 9.963,
+        "bold": false,
+        "italic": false
+      },
+      {
+        "text": "CTF ",
+        "x": 441.217,
+        "y": 745.587,
+        "width": 24.221,
+        "size": 9.963,
+        "bold": false,
+        "italic": false
+      },
+      {
+        "text": "Competition ",
+        "x": 465.438,
+        "y": 745.587,
+        "width": 57.838,
+        "size": 9.963,
+        "bold": false,
+        "italic": false
+      },
+      {
+        "text": "– ",
+        "x": 523.276,
+        "y": 745.587,
+        "width": 8.299,
+        "size": 9.963,
+        "bold": false,
+        "italic": false
+      },
+      {
+        "text": "2025",
+        "x": 531.575,
+        "y": 745.587,
+        "width": 19.925,
+        "size": 9.963,
+        "bold": false,
+        "italic": false
+      }
+    ]
+  ],
+  "links": [
+    {
+      "href": "mailto:liubaoren2006@gmail.com",
+      "label": "liubaoren2006@gmail.com",
+      "x": 86.6,
+      "y": 57.696,
+      "width": 114.377,
+      "height": 13.948
+    },
+    {
+      "href": "https://baorenliu.com/",
+      "label": "baorenliu.com",
+      "x": 208.394,
+      "y": 57.696,
+      "width": 62.903,
+      "height": 13.948
+    },
+    {
+      "href": "https://www.linkedin.com/in/baoren-liu/",
+      "label": "linkedin.com/in/baoren-liu",
+      "x": 278.713,
+      "y": 57.696,
+      "width": 118.805,
+      "height": 13.948
+    },
+    {
+      "href": "https://github.com/RoboticReaper",
+      "label": "github.com/RoboticReaper",
+      "x": 404.935,
+      "y": 57.696,
+      "width": 120.465,
+      "height": 13.948
+    },
+    {
+      "href": "https://doi.org/10.64898/2026.01.24.26344477",
+      "label": "https://doi.org/10.64898/2026.01.24.26344477",
+      "x": 197.796,
+      "y": 387.528,
+      "width": 202.712,
+      "height": 13.948
+    },
+    {
+      "href": "https://roboticreaper.github.io/OtherWise/",
+      "label": "https://roboticreaper.github.io/OtherWise/",
+      "x": 201.864,
+      "y": 489.688,
+      "width": 193.442,
+      "height": 13.948
+    },
+    {
+      "href": "https://www.ridelist.app/",
+      "label": "https://www.ridelist.app/",
+      "x": 185.903,
+      "y": 581.282,
+      "width": 115.318,
+      "height": 13.948
+    },
+    {
+      "href": "https://lhsschedule.netlify.app/",
+      "label": "https://lhsschedule.netlify.app/",
+      "x": 293.715,
+      "y": 697.414,
+      "width": 139.145,
+      "height": 13.948
+    }
+  ]
+}

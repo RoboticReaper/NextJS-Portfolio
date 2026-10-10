@@ -8,6 +8,10 @@ export function Breadcrumb() {
     otherwise: "OtherWise",
     ridelist: "RideList",
     lhsschedule: "LHS Schedule",
+    notes: "Notes",
+    "coaching-website": "Coaching Website",
+    "naive-bayes-spam": "Naive Bayes Spam Detection",
+    "fourier-series": "Fourier Series Visualizer",
     ctf: "Capture The Flag",
   };
   const parts = pathname.split("/").filter(Boolean);
