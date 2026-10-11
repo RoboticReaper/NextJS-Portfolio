@@ -86,7 +86,7 @@ test("fresh page loads show a one-second introduction and reloads show half a se
     });
     observer.observe(document, { subtree: true, attributes: true, childList: true });
   });
-  await page.goto("/");
+  await page.goto("/", { waitUntil: "domcontentloaded" });
   await expect(page.getByTestId("name-intro")).toBeVisible();
   await expect(page.getByTestId("name-intro")).toHaveAttribute(
     "data-visit",
