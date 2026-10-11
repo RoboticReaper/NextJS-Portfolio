@@ -6,12 +6,11 @@ export function NameIntro() {
   useEffect(() => {
     const element = ref.current;
     if (!element) return;
-    let returning = false;
-    try {
-      returning = localStorage.getItem("baoren-visited") === "yes";
-      localStorage.setItem("baoren-visited", "yes");
-    } catch {}
-    element.dataset.visit = returning ? "return" : "first";
+    const navigation = performance.getEntriesByType("navigation")[0] as
+      | PerformanceNavigationTiming
+      | undefined;
+    const reloading = navigation?.type === "reload";
+    element.dataset.visit = reloading ? "return" : "first";
     if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) return;
     const content = document.getElementById("site-content");
     if (content) content.inert = true;
@@ -21,9 +20,24 @@ export function NameIntro() {
       delete document.documentElement.dataset.introPending;
       if (content) content.inert = false;
     };
-    const timer = window.setTimeout(finish, returning ? 250 : 1800);
+    let loaded = document.readyState === "complete";
+    let minimumElapsed = false;
+    const finishWhenReady = () => {
+      if (loaded && minimumElapsed) finish();
+    };
+    const onLoad = () => {
+      loaded = true;
+      finishWhenReady();
+    };
+    if (!loaded) window.addEventListener("load", onLoad, { once: true });
+    const timer = window.setTimeout(() => {
+      minimumElapsed = true;
+      finishWhenReady();
+    }, reloading ? 500 : 1000);
+    finishWhenReady();
     return () => {
       window.clearTimeout(timer);
+      window.removeEventListener("load", onLoad);
       finish();
     };
   }, []);
