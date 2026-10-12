@@ -121,6 +121,30 @@ test("fresh page loads show a one-second introduction and reloads show half a se
   await newTab.close();
 });
 
+test("the splash fades through partial opacity before hiding", async ({ page }) => {
+  await page.addInitScript(() => {
+    document.addEventListener("transitionrun", (event) => {
+      const intro = event.target;
+      if (
+        event.propertyName !== "opacity" ||
+        !(intro instanceof HTMLElement) ||
+        !intro.matches(".name-intro")
+      ) return;
+      requestAnimationFrame(() => {
+        requestAnimationFrame(() => {
+          sessionStorage.setItem("intro-fade-opacity", getComputedStyle(intro).opacity);
+        });
+      });
+    });
+  });
+  await page.goto("/");
+  await expect(page.getByTestId("name-intro")).toBeHidden({ timeout: 5000 });
+  const opacity = await page.evaluate(() => Number(sessionStorage.getItem("intro-fade-opacity")));
+  expect(opacity).toBeGreaterThan(0);
+  expect(opacity).toBeLessThan(1);
+  await expect(page.locator("#site-content")).toHaveJSProperty("inert", false);
+});
+
 test("theme survives reload and navigation works at every viewport", async ({
   page,
   isMobile,
