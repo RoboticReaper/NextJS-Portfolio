@@ -67,16 +67,40 @@ test("résumé navigation opens only the document and PDF controls", async ({
     ).toBeVisible();
 });
 
-test("first visit introduction gives way to usable content and reload is fast", async ({
+test("fresh page loads show a one-second introduction and reloads show half a second", async ({
   page,
+  context,
 }) => {
-  await page.goto("/");
+  await context.addInitScript(() => {
+    localStorage.setItem("baoren-visited", "yes");
+    sessionStorage.removeItem("intro-duration");
+    let startedAt: number | undefined;
+    const add = DOMTokenList.prototype.add;
+    const remove = DOMTokenList.prototype.remove;
+    // Record synchronously so a delayed observer cannot undercount the splash.
+    DOMTokenList.prototype.add = function (...tokens) {
+      if (tokens.includes("intro-active")) startedAt = performance.now();
+      return add.apply(this, tokens);
+    };
+    DOMTokenList.prototype.remove = function (...tokens) {
+      if (tokens.includes("intro-active") && startedAt !== undefined) {
+        sessionStorage.setItem(
+          "intro-duration",
+          String(performance.now() - startedAt),
+        );
+      }
+      return remove.apply(this, tokens);
+    };
+  });
+  await page.goto("/", { waitUntil: "domcontentloaded" });
   await expect(page.getByTestId("name-intro")).toBeVisible();
   await expect(page.getByTestId("name-intro")).toHaveAttribute(
     "data-visit",
     "first",
   );
   await expect(page.getByTestId("name-intro")).toBeHidden({ timeout: 5000 });
+  // Allow for browser timer precision.
+  expect(await page.evaluate(() => Number(sessionStorage.getItem("intro-duration")))).toBeGreaterThanOrEqual(990);
   await expect(
     page.getByRole("heading", { name: "Baoren Liu", exact: true }),
   ).toBeVisible();
@@ -85,7 +109,16 @@ test("first visit introduction gives way to usable content and reload is fast", 
     "data-visit",
     "return",
   );
-  await expect(page.getByTestId("name-intro")).toBeHidden({ timeout: 1500 });
+  await expect(page.getByTestId("name-intro")).toBeHidden();
+  expect(await page.evaluate(() => Number(sessionStorage.getItem("intro-duration")))).toBeGreaterThanOrEqual(490);
+  await expect(page.locator("#site-content")).toHaveJSProperty("inert", false);
+
+  const newTab = await context.newPage();
+  await newTab.goto("/");
+  await expect(newTab.getByTestId("name-intro")).toHaveAttribute("data-visit", "first");
+  await expect(newTab.getByTestId("name-intro")).toBeHidden({ timeout: 5000 });
+  expect(await newTab.evaluate(() => Number(sessionStorage.getItem("intro-duration")))).toBeGreaterThanOrEqual(990);
+  await newTab.close();
 });
 
 test("theme survives reload and navigation works at every viewport", async ({
