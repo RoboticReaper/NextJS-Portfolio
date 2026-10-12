@@ -75,16 +75,22 @@ test("fresh page loads show a one-second introduction and reloads show half a se
     localStorage.setItem("baoren-visited", "yes");
     sessionStorage.removeItem("intro-duration");
     let startedAt: number | undefined;
-    const observer = new MutationObserver(() => {
-      const intro = document.querySelector(".name-intro");
-      if (intro?.classList.contains("intro-active")) {
-        startedAt ??= performance.now();
-      } else if (startedAt !== undefined) {
-        sessionStorage.setItem("intro-duration", String(performance.now() - startedAt));
-        observer.disconnect();
+    const add = DOMTokenList.prototype.add;
+    const remove = DOMTokenList.prototype.remove;
+    // Record synchronously so a delayed observer cannot undercount the splash.
+    DOMTokenList.prototype.add = function (...tokens) {
+      if (tokens.includes("intro-active")) startedAt = performance.now();
+      return add.apply(this, tokens);
+    };
+    DOMTokenList.prototype.remove = function (...tokens) {
+      if (tokens.includes("intro-active") && startedAt !== undefined) {
+        sessionStorage.setItem(
+          "intro-duration",
+          String(performance.now() - startedAt),
+        );
       }
-    });
-    observer.observe(document, { subtree: true, attributes: true, childList: true });
+      return remove.apply(this, tokens);
+    };
   });
   await page.goto("/", { waitUntil: "domcontentloaded" });
   await expect(page.getByTestId("name-intro")).toBeVisible();
@@ -93,7 +99,7 @@ test("fresh page loads show a one-second introduction and reloads show half a se
     "first",
   );
   await expect(page.getByTestId("name-intro")).toBeHidden({ timeout: 5000 });
-  // Allow a few milliseconds for the observer's scheduling overhead.
+  // Allow for browser timer precision.
   expect(await page.evaluate(() => Number(sessionStorage.getItem("intro-duration")))).toBeGreaterThanOrEqual(990);
   await expect(
     page.getByRole("heading", { name: "Baoren Liu", exact: true }),
