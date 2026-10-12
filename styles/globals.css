@@ -1235,7 +1235,10 @@ p {
   color: var(--accent);
 }
 .name-intro {
-  display: none;
+  display: flex;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 300ms ease-out, visibility 0s linear 300ms;
   position: fixed;
   inset: 0;
   z-index: 100;
@@ -1246,7 +1249,9 @@ p {
 }
 .name-intro.intro-active,
 html[data-intro-pending] .name-intro {
-  display: flex;
+  opacity: 1;
+  visibility: visible;
+  transition: none;
   animation: intro-failsafe 3s step-end forwards;
 }
 .intro-grid {
