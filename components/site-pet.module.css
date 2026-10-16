@@ -1,0 +1,129 @@
+.pet {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 80;
+  width: 136px;
+  height: 146px;
+  pointer-events: none;
+}
+
+.move {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 120px;
+  height: 130px;
+  padding: 0;
+  background: transparent;
+  border-radius: 36px;
+  cursor: grab;
+  touch-action: none;
+  user-select: none;
+  -webkit-user-select: none;
+  pointer-events: auto;
+}
+
+.pet[data-dragging="true"] .move {
+  cursor: grabbing;
+}
+
+.sprite,
+.launcherPet {
+  display: block;
+  background-image: url("/pets/guga/spritesheet.webp");
+  background-repeat: no-repeat;
+  pointer-events: none;
+}
+
+.sprite {
+  width: 120px;
+  height: 130px;
+  background-size: 960px 1170px;
+  background-position: 0 var(--pet-row);
+  filter: drop-shadow(0 5px 4px #0002);
+  animation: frames var(--pet-duration) steps(var(--pet-frames));
+}
+
+.move[data-animation="rest"] .sprite {
+  animation: none;
+}
+
+@keyframes frames {
+  from { background-position-x: 0; }
+  to { background-position-x: var(--pet-end); }
+}
+
+.close {
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: grid;
+  place-items: center;
+  width: 44px;
+  height: 44px;
+  padding: 0;
+  color: var(--muted);
+  background: transparent;
+  border-radius: 50%;
+  pointer-events: auto;
+}
+
+.close::before {
+  content: "";
+  position: absolute;
+  inset: 8px;
+  z-index: -1;
+  border: 1px solid var(--line);
+  border-radius: 50%;
+  background: var(--surface);
+  box-shadow: 0 2px 8px #0001;
+}
+
+.close:hover {
+  color: var(--text);
+}
+
+.launcher {
+  position: fixed;
+  right: max(20px, env(safe-area-inset-right));
+  bottom: max(20px, env(safe-area-inset-bottom));
+  z-index: 80;
+  display: grid;
+  place-items: center;
+  width: 56px;
+  height: 56px;
+  padding: 0;
+  border: 1px solid var(--line);
+  border-radius: 50%;
+  background: var(--surface);
+  box-shadow: 0 4px 20px #0002;
+  transition: border-color 150ms, box-shadow 150ms;
+}
+
+.launcher:hover {
+  border-color: var(--accent);
+  box-shadow: 0 4px 24px #0003;
+}
+
+.launcherPet {
+  width: 42px;
+  height: 45.5px;
+  background-size: 336px 409.5px;
+}
+
+.srOnly {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip-path: inset(50%);
+  white-space: nowrap;
+}
+
+@media print {
+  .pet,
+  .launcher {
+    display: none;
+  }
+}
