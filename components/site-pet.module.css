@@ -24,6 +24,10 @@
   pointer-events: auto;
 }
 
+.move:focus {
+  outline: none;
+}
+
 .pet[data-dragging="true"] .move {
   cursor: grabbing;
 }

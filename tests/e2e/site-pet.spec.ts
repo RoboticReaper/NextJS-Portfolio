@@ -12,6 +12,7 @@ test("Guga can be hidden and restored without losing its dropped position", asyn
   const pet = page.getByRole("button", { name: "Move Guga" });
   await expect(pet).toBeVisible();
   await pet.focus();
+  await expect(pet).toHaveCSS("outline-style", "none");
   const before = (await pet.boundingBox())!;
   await page.keyboard.press("ArrowLeft");
   await expect.poll(async () => (await pet.boundingBox())!.x).toBeLessThan(before.x);
@@ -29,6 +30,7 @@ test("Guga can be hidden and restored without losing its dropped position", asyn
   await expect(restore).toBeVisible();
   await restore.click();
   await expect(pet).toBeFocused();
+  await expect(pet).toHaveCSS("outline-style", "none");
   const restored = (await pet.boundingBox())!;
   expect(restored.x).toBeCloseTo(dropped.x, 0);
   expect(restored.y).toBeCloseTo(dropped.y, 0);
@@ -43,6 +45,7 @@ test("dragging walks in either direction and releasing leaves Guga in place", as
   const start = (await pet.boundingBox())!;
   await page.mouse.move(start.x + start.width / 2, start.y + start.height / 2);
   await page.mouse.down();
+  await expect(pet).toHaveCSS("outline-style", "none");
   await page.mouse.move(start.x - 100, start.y - 80, { steps: 8 });
   await expect(pet).toHaveAttribute("data-animation", "walk-left");
   await page.mouse.move(start.x - 50, start.y - 60, { steps: 4 });
