@@ -5,6 +5,7 @@ import { Analytics } from "@vercel/analytics/react";
 import { SpeedInsights } from "@vercel/speed-insights/next";
 import { Navbar } from "@/components/navbar";
 import { NameIntro } from "@/components/intro";
+import { SitePet } from "@/components/site-pet";
 import { siteConfig } from "@/config/site";
 export const metadata: Metadata = {
   metadataBase: new URL("https://baorenliu.com"),
@@ -58,6 +59,7 @@ export default function RootLayout({
               </a>
             </div>
           </footer>
+          <SitePet />
         </div>
         <Analytics />
         <SpeedInsights />
