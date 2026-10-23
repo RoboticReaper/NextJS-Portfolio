@@ -115,6 +115,9 @@ function spotifyLink(value: unknown): value is string {
     return false;
   }
 }
+const spotifyTrackBlacklist = new Set(["5K0YvE3MIoKkKrdeH5nH0H"]);
+const spotifyTitleBlacklist = new Set(["kim jung goon"]);
+
 export async function fetchSpotifyTracks(): Promise<Song[]> {
   const clientId = required("SPOTIFY_CLIENT_ID");
   const clientSecret = required("SPOTIFY_CLIENT_SECRET");
@@ -136,7 +139,7 @@ export async function fetchSpotifyTracks(): Promise<Song[]> {
       "Spotify authorization is temporarily unavailable.",
     );
   const data = await requestJson(
-    "https://api.spotify.com/v1/me/top/tracks?time_range=short_term&limit=10",
+    "https://api.spotify.com/v1/me/top/tracks?time_range=short_term&limit=50",
     { headers: { Authorization: `Bearer ${token.access_token}` } },
   );
   if (!Array.isArray(data.items))
@@ -144,7 +147,7 @@ export async function fetchSpotifyTracks(): Promise<Song[]> {
       "INVALID_RESPONSE",
       "Spotify listening history is temporarily unavailable.",
     );
-  return data.items.map(
+  const songs = data.items.map(
     (item: {
       name?: unknown;
       artists?: { name?: unknown }[];
@@ -177,6 +180,15 @@ export async function fetchSpotifyTracks(): Promise<Song[]> {
       };
     },
   );
+  return songs
+    .filter(
+      (song) =>
+        !spotifyTrackBlacklist.has(
+          new URL(song.link).pathname.split("/").at(-1) ?? "",
+        ) &&
+        !spotifyTitleBlacklist.has(song.name.trim().toLowerCase()),
+    )
+    .slice(0, 10);
 }
 export const getClashPlayer = unstable_cache(
   fetchClashPlayer,
@@ -185,7 +197,7 @@ export const getClashPlayer = unstable_cache(
 );
 export const getSpotifyTracks = unstable_cache(
   fetchSpotifyTracks,
-  ["spotify-tracks-v2"],
+  ["spotify-tracks-v3"],
   { revalidate: 3600, tags: ["spotify-tracks"] },
 );
 
