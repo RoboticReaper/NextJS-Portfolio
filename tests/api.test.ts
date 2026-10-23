@@ -114,6 +114,74 @@ describe("Spotify route", () => {
       ],
     });
   });
+  it.each([
+    {
+      name: "Kim Jung Goon",
+      link: "https://open.spotify.com/track/5K0YvE3MIoKkKrdeH5nH0H",
+    },
+    {
+      name: "Renamed track",
+      link: "https://open.spotify.com/track/5K0YvE3MIoKkKrdeH5nH0H?si=test",
+    },
+    {
+      name: "  KIM JUNG GOON  ",
+      link: "https://open.spotify.com/track/another-release",
+    },
+  ])("replaces blacklisted $name with the next eligible tracks", async (blocked) => {
+    const items = Array.from({ length: 12 }, (_, i) => ({
+      name: `Song ${i + 1}`,
+      artists: [{ name: "Artist" }],
+      album: { images: [] },
+      external_urls: { spotify: `https://open.spotify.com/track/song${i + 1}` },
+    }));
+    items.splice(2, 0, {
+      name: blocked.name,
+      artists: [{ name: "Hyperbaiter" }],
+      album: { images: [] },
+      external_urls: { spotify: blocked.link },
+    });
+    fetchMock
+      .mockResolvedValueOnce(json({ access_token: "access" }))
+      .mockImplementationOnce(async (input) => {
+        const limit = Number(new URL(String(input)).searchParams.get("limit"));
+        return json({ items: items.slice(0, limit) });
+      });
+
+    const response = await spotify(req("spotify"));
+    expect(response.status).toBe(200);
+    const { rows } = await response.json();
+    expect(rows.map((song: { name: string }) => song.name)).toEqual([
+      "Song 1",
+      "Song 2",
+      "Song 3",
+      "Song 4",
+      "Song 5",
+      "Song 6",
+      "Song 7",
+      "Song 8",
+      "Song 9",
+      "Song 10",
+    ]);
+  });
+  it("returns an empty list when every track is blacklisted", async () => {
+    fetchMock
+      .mockResolvedValueOnce(json({ access_token: "access" }))
+      .mockResolvedValueOnce(
+        json({
+          items: [{
+            name: "Kim Jung Goon",
+            artists: [{ name: "Hyperbaiter" }],
+            album: { images: [] },
+            external_urls: {
+              spotify: "https://open.spotify.com/track/5K0YvE3MIoKkKrdeH5nH0H",
+            },
+          }],
+        }),
+      );
+    const response = await spotify(req("spotify"));
+    expect(response.status).toBe(200);
+    expect(await response.json()).toEqual({ rows: [] });
+  });
   it("reports an expired refresh token without exposing it or fetching tracks", async () => {
     fetchMock.mockResolvedValueOnce(json({ error: "invalid_grant" }, 400));
     const response = await spotify(req("spotify"));
