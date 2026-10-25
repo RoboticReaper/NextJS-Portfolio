@@ -43,8 +43,15 @@ export function TokenActivity() {
     if (scroll.current) scroll.current.scrollLeft = scroll.current.scrollWidth;
   }, [data, mode]);
   const positive = calendar.cells.map((cell) => cell.tokensApprox ?? 0).filter((n) => n > 0).sort((a, b) => a - b);
-  const thresholds = [0.25, 0.5, 0.75].map((fraction) => positive[Math.floor((positive.length - 1) * fraction)] ?? 0);
-  const level = (value: number | null) => value === null ? "missing" : value === 0 ? "0" : String(1 + thresholds.filter((threshold) => value > threshold).length);
+  const minimum = positive[0] ?? 1;
+  const logRange = Math.log((positive.at(-1) ?? 1) / minimum);
+  const level = (value: number | null) => {
+    if (value === null) return "missing";
+    if (value === 0) return "0";
+    if (logRange === 0) return "4";
+    // Equal token ratios span equal brightness bands within the current view.
+    return String(Math.min(4, 1 + Math.floor(4 * Math.log(value / minimum) / logRange)));
+  };
   const focusIndex = Math.min(selected ?? calendar.cells.length - 1, calendar.cells.length - 1);
   const current = calendar.cells[focusIndex];
   const describe = (cell: typeof current) => `${dateText(cell.date)}${mode === "weekly" ? ` – ${dateText(cell.endDate)}` : ""} · ${cell.tokensDisplay}${cell.status === "provisional" ? " · In progress" : ""}${cell.incomplete ? " · Partial data" : ""}`;
@@ -127,8 +134,8 @@ export function TokenActivity() {
           </div>
           <div className="token-detail" role="status" aria-live="polite" aria-atomic="true">{describe(current)}</div>
           <div className="token-footnote">
-            <p>Approximate token totals{data.updatedAt && Number.isFinite(Date.parse(data.updatedAt)) ? ` · Synced ${new Date(data.updatedAt).toLocaleDateString("en-US", { month: "short", day: "numeric", timeZone: "America/Chicago" })}` : ""}</p>
-            <div className="token-legend" aria-label="Tile intensity: less to more usage; patterned tiles mean not recorded"><span>Less</span>{[0, 1, 2, 3, 4].map((n) => <span key={n} className="token-cell" data-level={n} />)}<span>More</span></div>
+            <p>Approximate token totals · Log scale{data.updatedAt && Number.isFinite(Date.parse(data.updatedAt)) ? ` · Synced ${new Date(data.updatedAt).toLocaleDateString("en-US", { month: "short", day: "numeric", timeZone: "America/Chicago" })}` : ""}</p>
+            <div className="token-legend" aria-label="Tile intensity: less to more usage on a logarithmic scale; patterned tiles mean not recorded"><span>Less</span>{[0, 1, 2, 3, 4].map((n) => <span key={n} className="token-cell" data-level={n} />)}<span>More</span></div>
           </div>
         </>
       )}
